@@ -13,7 +13,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="communityserverapi" Version="1.0.0"/>
+        <PackageReference Include="communityserverapi" Version="1.0.1"/>
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1"/>
         <ProjectReference Include="..\BattleBitAPI.Addons.Common\BattleBitAPI.Addons.Common.csproj"/>
     </ItemGroup>

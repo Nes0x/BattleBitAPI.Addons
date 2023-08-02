@@ -25,9 +25,7 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
         };
         if (!ValidateCheckers(methodRepresentation.MethodInfo.GetCustomAttributes()
                 .Where(a => a is CheckerAttribute<TPlayer>), context))
-        {
             return Task.CompletedTask;
-        }
 
         if (TryConvertParameters(parametersFromCommand, parametersFromMethod, out var convertedParameters))
         {
@@ -61,14 +59,14 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
         property!.SetValue(obj, context);
     }
 
-    private bool ValidateParameters(List<string> commandParameters, ParameterInfo[] methodParameters, out int finalMethodParameters)
+    private bool ValidateParameters(List<string> commandParameters, ParameterInfo[] methodParameters,
+        out int finalMethodParameters)
     {
         var methodParametersLength = methodParameters.Length;
         commandParameters.RemoveAt(0);
         foreach (var methodParameter in methodParameters)
-        {
-            if (methodParameter.HasDefaultValue) methodParametersLength--;
-        }
+            if (methodParameter.HasDefaultValue)
+                methodParametersLength--;
 
         if (commandParameters.Count == methodParameters.Length)
         {
@@ -85,7 +83,6 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
         finalMethodParameters = -1;
         return false;
     }
-    
 
 
     private bool TryConvertParameters(List<string> commandParameters, ParameterInfo[] methodParameters,
@@ -96,7 +93,6 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
         for (var i = 0; i < finalMethodParameters; i++)
             try
             {
-               
                 convertedParameters.Add(Convert.ChangeType(commandParameters[i],
                     methodParameters[i].ParameterType));
             }
@@ -109,10 +105,11 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
         for (var i = finalMethodParameters; i < methodParameters.Length; i++)
         {
             var methodParameter = methodParameters[i];
-            if (methodParameter.HasDefaultValue) convertedParameters.Add(Convert.ChangeType(methodParameter.DefaultValue,
-                methodParameter.ParameterType)!);
+            if (methodParameter.HasDefaultValue)
+                convertedParameters.Add(Convert.ChangeType(methodParameter.DefaultValue,
+                    methodParameter.ParameterType)!);
         }
-    
+
         return true;
     }
 }

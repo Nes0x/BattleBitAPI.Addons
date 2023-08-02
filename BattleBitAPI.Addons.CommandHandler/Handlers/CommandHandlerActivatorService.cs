@@ -36,9 +36,10 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
             _serverListener.OnPlayerTypedMessage += handler;
         }
 
+
         return Task.CompletedTask;
     }
-    
+
     public Task StopAsync(CancellationToken cancellationToken)
     {
         foreach (var handler in _playerTypedMessageHandlers) _serverListener.OnPlayerTypedMessage -= handler;

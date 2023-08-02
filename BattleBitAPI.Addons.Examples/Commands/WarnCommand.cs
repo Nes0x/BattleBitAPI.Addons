@@ -1,14 +1,13 @@
-﻿using BattleBitAPI.Addons.CommandHandler.Handlers;
+﻿using BattleBitAPI.Addons.CommandHandler.Common;
 
 namespace BattleBitAPI.Addons.Examples.Commands;
 
 public class WarnCommand : Command<Player>
 {
-
     [Command(Name = "warn")]
-    public Task HandleAsync(string reason)
+    public Task HandleAsync(string reason, int days)
     {
-        return default;
+        Console.WriteLine($"{reason} : {days}");
+        return Task.CompletedTask;
     }
 }
-

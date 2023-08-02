@@ -1,4 +1,4 @@
-﻿namespace BattleBitAPI.Addons.CommandHandler;
+﻿namespace BattleBitAPI.Addons.CommandHandler.Common;
 
 public class CommandHandlerSettings
 {

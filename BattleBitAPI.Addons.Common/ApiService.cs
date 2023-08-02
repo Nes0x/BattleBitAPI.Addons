@@ -17,15 +17,15 @@ public class ApiService<TPlayer> : IHostedService where TPlayer : Player
         _port = port;
     }
 
-    public async Task StartAsync(CancellationToken cancellationToken)
+    public Task StartAsync(CancellationToken cancellationToken)
     {
         _serverListener.Start(_ipAddress, _port);
-        await Task.CompletedTask;
+        return Task.CompletedTask;
     }
 
-    public async Task StopAsync(CancellationToken cancellationToken)
+    public Task StopAsync(CancellationToken cancellationToken)
     {
         _serverListener.Stop();
-        await Task.CompletedTask;
+        return Task.CompletedTask;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System.Reflection;
+using BattleBitAPI.Addons.CommandHandler.Common;
 using BattleBitAPI.Addons.CommandHandler.Handlers;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,6 +30,7 @@ public static class HostingExtensions
                     services.AddSingleton(targetType, type);
 
             services.AddSingleton<CommandHandlerSettings>(_ => commandHandlerSettings);
+            services.AddSingleton<MessageHandlerService<TPlayer>>();
             services.AddHostedService<CommandHandlerActivatorService<TPlayer>>();
         });
 

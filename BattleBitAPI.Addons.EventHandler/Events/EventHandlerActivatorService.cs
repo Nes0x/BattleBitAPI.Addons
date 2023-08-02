@@ -11,27 +11,17 @@ public class EventHandlerActivatorService<TPlayer> : IHostedService where TPlaye
         _handlers = handlers;
     }
 
-    public async Task StartAsync(CancellationToken cancellationToken)
-    {
-        Subscribe();
-        await Task.CompletedTask;
-    }
-
-    public async Task StopAsync(CancellationToken cancellationToken)
-    {
-        Unsubscribe();
-        await Task.CompletedTask;
-    }
-
-    private void Subscribe()
+    public Task StartAsync(CancellationToken cancellationToken)
     {
         foreach (var handler in _handlers)
             handler.Subscribe();
+        return Task.CompletedTask;
     }
 
-    private void Unsubscribe()
+    public Task StopAsync(CancellationToken cancellationToken)
     {
         foreach (var handler in _handlers)
             handler.UnSubscribe();
+        return Task.CompletedTask;
     }
 }

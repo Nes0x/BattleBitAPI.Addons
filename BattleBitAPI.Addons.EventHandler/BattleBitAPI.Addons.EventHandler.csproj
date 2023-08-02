@@ -8,13 +8,13 @@
         <Authors>Nes0x</Authors>
         <PackageProjectUrl>https://github.com/Nes0x/BattleBitAPI.Addons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
-        <Description>A unofficial library for better event handling. </Description>
+        <Description>A unofficial library for better event handling.</Description>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="communityserverapi" Version="1.0.0" />
-        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
-        <ProjectReference Include="..\BattleBitAPI.Addons.Common\BattleBitAPI.Addons.Common.csproj" />
+        <PackageReference Include="communityserverapi" Version="1.0.0"/>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1"/>
+        <ProjectReference Include="..\BattleBitAPI.Addons.Common\BattleBitAPI.Addons.Common.csproj"/>
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 ﻿using BattleBitAPI.Common;
 
-namespace BattleBitAPI.Addons.CommandHandler.Handlers;
+namespace BattleBitAPI.Addons.CommandHandler.Common;
 
 public class Context<TPlayer> : IContext<TPlayer> where TPlayer : Player
 {

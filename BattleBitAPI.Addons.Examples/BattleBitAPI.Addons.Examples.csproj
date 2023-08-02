@@ -8,8 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\BattleBitAPI.Addons.CommandHandler\BattleBitAPI.Addons.CommandHandler.csproj" />
-      <ProjectReference Include="..\BattleBitAPI.Addons.EventHandler\BattleBitAPI.Addons.EventHandler.csproj" />
+        <ProjectReference Include="..\BattleBitAPI.Addons.CommandHandler\BattleBitAPI.Addons.CommandHandler.csproj"/>
+        <ProjectReference Include="..\BattleBitAPI.Addons.EventHandler\BattleBitAPI.Addons.EventHandler.csproj"/>
     </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
 ﻿using BattleBitAPI;
-using BattleBitAPI.Addons.CommandHandler;
+using BattleBitAPI.Addons.CommandHandler.Common;
 using BattleBitAPI.Addons.CommandHandler.Extensions;
 using BattleBitAPI.Addons.Common.Extensions;
 using BattleBitAPI.Addons.EventHandler.Extensions;

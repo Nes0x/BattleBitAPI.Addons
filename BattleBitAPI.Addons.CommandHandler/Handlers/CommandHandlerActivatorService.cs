@@ -11,7 +11,6 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
     private readonly IEnumerable<Command<TPlayer>> _commands;
     private readonly ServerListener<TPlayer> _serverListener;
 
-
     public CommandHandlerActivatorService(ServerListener<TPlayer> serverListener,
         IEnumerable<Command<TPlayer>> commands, CommandHandlerSettings commandHandlerSettings)
     {
@@ -22,17 +21,21 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
 
     public async Task StartAsync(CancellationToken cancellationToken)
     {
+        var commandNames = new List<string>();
         foreach (var command in _commands)
         {
             var methods = command.GetType().GetMethods()
                 .Where(m => m.GetCustomAttributes(typeof(CommandAttribute), false).Length > 0)
                 .ToArray();
+
             foreach (var methodInfo in methods)
-                _serverListener.OnPlayerTypedMessage += (player, channel, content) =>
-                {
-                    return OnPlayerTypedMessageAsync(player, channel, content, command,
-                        methodInfo.GetCustomAttribute<CommandAttribute>().Name, methodInfo);
-                };
+            {
+                command.CommandName = methodInfo.GetCustomAttribute<CommandAttribute>()!.Name;
+                if (commandNames.Contains(command.CommandName)) continue;
+                command.MethodInfo = methodInfo;
+                commandNames.Add(command.CommandName);
+                _serverListener.OnPlayerTypedMessage += (player, channel, content) => OnPlayerTypedMessageAsync(player, channel, content, command);
+            }
         }
 
         await Task.CompletedTask;
@@ -43,20 +46,18 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
         await Task.CompletedTask;
     }
 
-    private async Task OnPlayerTypedMessageAsync(TPlayer player, ChatChannel chatChannel, string content,
-        Command<TPlayer> command,
-        string commandName,
-        MethodInfo methodInfo
-    )
+    public async Task OnPlayerTypedMessageAsync(Player player, ChatChannel chatChannel, string content,
+        Command<TPlayer> command)
     {
-        command.Context = new Context<TPlayer>
+        var property = command.GetType().GetProperty("Context");
+        property!.SetValue(command, new Context<Player>()
         {
             Player = player,
             ChatChannel = chatChannel
-        };
+        });
         var parametersFromCommand = content.Split(" ").ToList();
         parametersFromCommand.RemoveAt(0);
-        var methodParameters = methodInfo.GetParameters();
+        var methodParameters = command.MethodInfo.GetParameters();
         if (parametersFromCommand.Count != methodParameters.Length)
         {
             player.Message(_commandHandlerSettings.ErrorCallback);
@@ -76,7 +77,7 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
                 return;
             }
 
-        if (content.StartsWith($"{_commandHandlerSettings.CommandRegex.ToLower()}{commandName.ToLower()}"))
-            methodInfo.Invoke(command, convertedParameters.ToArray());
+        if (content.StartsWith($"{_commandHandlerSettings.CommandRegex.ToLower()}{command.CommandName.ToLower()}"))
+            command.MethodInfo.Invoke(command, convertedParameters.ToArray());
     }
 }

@@ -8,8 +8,7 @@ public class WarnCommand : Command<Player>
     [Command(Name = "warn")]
     public Task HandleAsync(string reason)
     {
-        //do anything
-        throw new NotImplementedException();
+        return default;
     }
 }
 

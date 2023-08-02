@@ -2,6 +2,7 @@
 
 namespace BattleBitAPI.Addons.CommandHandler.Common;
 
+
 public class MethodRepresentation
 {
     internal string CommandName { get; init; }

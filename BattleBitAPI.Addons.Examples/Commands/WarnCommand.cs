@@ -9,7 +9,7 @@ public class WarnCommand : Command<Player>
     [AdminChecker]
     public Task HandleAsync(string reason, int days)
     {
-        Console.WriteLine($"{reason}");
+        Console.WriteLine($"{reason} {Context.ChatChannel}");
         return Task.CompletedTask;
     }
 }

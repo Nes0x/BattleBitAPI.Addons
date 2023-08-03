@@ -3,7 +3,10 @@
 public class CommandHandlerSettings
 {
     public string ErrorCallback { get; init; } =
-        "You typed arguments in a wrong way or you can't execute this command.";
+        "You typed arguments in a wrong way.";
+
+    public string CheckerCallback { get; init; } =
+        "You can't execute this command.";
 
     public string CommandRegex { get; init; } = "/";
 }

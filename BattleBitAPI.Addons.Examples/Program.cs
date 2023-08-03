@@ -7,6 +7,9 @@ using Microsoft.Extensions.Hosting;
 
 var host = Host.CreateDefaultBuilder(args);
 host.AddServerListener<Player>(2000).AddTypeReaders<Player>().AddEventHandlers<Player>()
-    .AddCommandHandler<Player>(new CommandHandlerSettings());
+    .AddCommandHandler<Player>(new CommandHandlerSettings
+    {
+        CommandRegex = "."
+    });
 var app = host.Build();
 await app.RunAsync();

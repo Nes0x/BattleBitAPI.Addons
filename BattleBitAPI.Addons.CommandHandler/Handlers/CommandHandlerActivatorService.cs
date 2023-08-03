@@ -31,7 +31,7 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
         foreach (var methodRepresentation in command.MethodRepresentations)
         {
             Func<TPlayer, ChatChannel, string, Task> handler = (player, channel, content) =>
-                _messageHandler.OnPlayerTypedMessage(player, channel, content, command, methodRepresentation);
+                _messageHandler.OnPlayerTypedMessage(player, channel, content.Trim(), command, methodRepresentation);
             _playerTypedMessageHandlers.Add(handler);
             _serverListener.OnPlayerTypedMessage += handler;
         }

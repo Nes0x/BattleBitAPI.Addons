@@ -28,18 +28,29 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
         var parametersFromCommand = content.Split(" ").ToList();
         var parametersFromMethod = methodRepresentation.MethodInfo.GetParameters();
 
-        if (_commandConverter.TryConvertParameters(parametersFromCommand, parametersFromMethod, methodRepresentation,
-                context, out var convertedParameters))
+        var result = _commandConverter.TryConvertParameters(parametersFromCommand, parametersFromMethod,
+            methodRepresentation,
+            context, out var convertedParameters);
+        string message = null;
+        switch (result)
         {
-            context.ChangeContext(command);
-            if (content.StartsWith(
-                    $"{_commandHandlerSettings.CommandRegex.ToLower()}{methodRepresentation.CommandName.ToLower()}"))
-                methodRepresentation.MethodInfo.Invoke(command, convertedParameters.ToArray());
+            case Result.Success:
+            {
+                context.ChangeContext(command);
+                if (content.StartsWith(
+                        $"{_commandHandlerSettings.CommandRegex.ToLower()}{methodRepresentation.CommandName.ToLower()}"))
+                    methodRepresentation.MethodInfo.Invoke(command, convertedParameters.ToArray());
+                break;
+            }
+            case Result.Error:
+                message = _commandHandlerSettings.ErrorCallback;
+                break;
+            case Result.Checker:
+                message = _commandHandlerSettings.CheckerCallback;
+                break;
         }
-        else
-        {
-            player.Message(_commandHandlerSettings.ErrorCallback);
-        }
+
+        if (message is not null && player is not null) player.Message(message);
 
         return Task.CompletedTask;
     }

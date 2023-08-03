@@ -20,25 +20,27 @@ public class CommandConverter<TPlayer> where TPlayer : Player
         _logger = logger;
     }
 
-    public bool TryConvertParameters(List<string> commandParameters, ParameterInfo[] methodParameters,
+    public Result TryConvertParameters(List<string> commandParameters, ParameterInfo[] methodParameters,
         MethodRepresentation methodRepresentation, Context<TPlayer> context,
         out List<object> convertedParameters)
     {
         convertedParameters = new List<object>();
         if (!_commandValidator.ValidateCheckers(methodRepresentation.MethodInfo.GetCustomAttributes()
                 .Where(a => a is CheckerAttribute<TPlayer>), context))
-            return false;
+            return Result.Checker;
 
         if (!_commandValidator.ValidateParametersCount(commandParameters, methodParameters,
                 out var finalMethodParameters))
-            return false;
+            return Result.Error;
+
         for (var i = 0; i < finalMethodParameters; i++)
             if (TryConvertParameter(commandParameters[i], methodParameters[i].ParameterType, context,
                     out var convertedType))
                 convertedParameters.Add(convertedType);
 
         var methodLength = methodParameters.Length;
-        if (finalMethodParameters == methodLength && finalMethodParameters == convertedParameters.Count) return true;
+        if (finalMethodParameters == methodLength && finalMethodParameters == convertedParameters.Count)
+            return Result.Success;
         for (var i = finalMethodParameters; i < methodLength; i++)
         {
             var methodParameter = methodParameters[i];
@@ -47,7 +49,7 @@ public class CommandConverter<TPlayer> where TPlayer : Player
                 convertedParameters.Add(convertedType);
         }
 
-        return methodLength == convertedParameters.Count;
+        return methodLength == convertedParameters.Count ? Result.Success : Result.Error;
     }
 
     private bool TryConvertParameter(object value, Type type, Context<TPlayer> context, out object convertedType)

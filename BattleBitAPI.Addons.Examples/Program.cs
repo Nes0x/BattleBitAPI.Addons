@@ -6,6 +6,7 @@ using BattleBitAPI.Addons.EventHandler.Extensions;
 using Microsoft.Extensions.Hosting;
 
 var host = Host.CreateDefaultBuilder(args);
-host.AddServerListener<Player>(2000).AddEventHandlers<Player>().AddCommandHandler<Player>(new CommandHandlerSettings());
+host.AddServerListener<Player>(2000).AddTypeReaders<Player>().AddEventHandlers<Player>()
+    .AddCommandHandler<Player>(new CommandHandlerSettings());
 var app = host.Build();
 await app.RunAsync();

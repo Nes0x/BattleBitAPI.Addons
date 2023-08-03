@@ -7,9 +7,9 @@ public class WarnCommand : Command<Player>
 {
     [Command(Name = "warn")]
     [AdminChecker]
-    public Task HandleAsync(string reason, int days = 8)
+    public Task HandleAsync(string reason, int days)
     {
-        Console.WriteLine($"{reason} : {days}");
+        Console.WriteLine($"{reason}");
         return Task.CompletedTask;
     }
 }

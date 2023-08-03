@@ -28,10 +28,10 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
     {
         PopulateModifiedCommands();
         foreach (var command in _modifiedCommands)
-        foreach (var methodHandler in command.MethodHandlers)
+        foreach (var methodRepresentation in command.MethodRepresentations)
         {
             Func<TPlayer, ChatChannel, string, Task> handler = (player, channel, content) =>
-                _messageHandler.OnPlayerTypedMessage(player, channel, content, command, methodHandler);
+                _messageHandler.OnPlayerTypedMessage(player, channel, content, command, methodRepresentation);
             _playerTypedMessageHandlers.Add(handler);
             _serverListener.OnPlayerTypedMessage += handler;
         }
@@ -53,22 +53,22 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
         var commandNames = new List<string>();
         foreach (var command in _commands)
         {
-            var methodHandlers = new List<MethodRepresentation>();
+            var methodRepresentations = new List<MethodRepresentation>();
             var methods = command.GetType().GetMethods()
                 .Where(m => m.GetCustomAttributes(typeof(CommandAttribute), false).Length > 0)
                 .ToArray();
 
-            foreach (var methodInfo in methods)
+            foreach (var method in methods)
             {
-                var commandName = methodInfo.GetCustomAttribute<CommandAttribute>()!.Name;
+                var commandName = method.GetCustomAttribute<CommandAttribute>()!.Name;
                 if (commandNames.Contains(commandName)) continue;
-                methodHandlers.Add(new MethodRepresentation
+                methodRepresentations.Add(new MethodRepresentation
                 {
-                    MethodInfo = methodInfo,
+                    MethodInfo = method,
                     CommandName = commandName
                 });
                 commandNames.Add(commandName);
-                command.MethodHandlers = methodHandlers;
+                command.MethodRepresentations = methodRepresentations;
                 _modifiedCommands.Add(command);
             }
         }

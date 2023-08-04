@@ -46,7 +46,10 @@ public static class HostingExtensions
         {
             foreach (var type in types)
                 if (type.IsAssignableTo(targetType) && !type.IsAbstract)
+                {
                     services.AddSingleton(targetType, type);
+                }
+                   
         });
 
         return hostBuilder;

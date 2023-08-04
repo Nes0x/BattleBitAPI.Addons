@@ -13,4 +13,8 @@
         <ProjectReference Include="..\BattleBitAPI.Addons.EventHandler\BattleBitAPI.Addons.EventHandler.csproj"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Commands\TypeReaders\" />
+    </ItemGroup>
+
 </Project>

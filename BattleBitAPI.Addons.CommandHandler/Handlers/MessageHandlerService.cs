@@ -22,7 +22,8 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
         var context = new Context<TPlayer>
         {
             Player = player,
-            ChatChannel = chatChannel
+            ChatChannel = chatChannel,
+            GameServer = player.GameServer
         };
 
         var parametersFromCommand = content.Split(" ").ToList();

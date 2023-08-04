@@ -7,7 +7,7 @@ public class WarnCommand : Command<Player>
 {
     [Command(Name = "warn")]
     [AdminChecker]
-    public Task HandleAsync(string reason, int days)
+    public Task HandleAsync(Player target, string reason)
     {
         Console.WriteLine($"{reason} {Context.ChatChannel}");
         return Task.CompletedTask;

@@ -61,21 +61,24 @@ public class CommandConverter<TPlayer> where TPlayer : Player
         }
         catch (InvalidCastException e)
         {
-            var typeReader = _typeReaders.FirstOrDefault(tr => tr.Type == type);
-            if (typeReader is null)
+            var typeReaders = _typeReaders.Where(tr => tr.Type == type).ToArray();
+            if (typeReaders.Length == 0)
             {
                 _logger.LogError($"Cannot convert {type.Name} type. Try add custom type reader.", e);
             }
             else
             {
-                context.ChangeContext(typeReader);
-                try
+                foreach (var typeReader in typeReaders)
                 {
-                    convertedType = typeReader.ChangeType(value);
-                    return true;
-                }
-                catch (Exception)
-                {
+                    context.ChangeContext(typeReader);
+                    try
+                    {
+                        convertedType = typeReader.ChangeType(value);
+                        return true;
+                    }
+                    catch (Exception)
+                    {
+                    }
                 }
             }
         }

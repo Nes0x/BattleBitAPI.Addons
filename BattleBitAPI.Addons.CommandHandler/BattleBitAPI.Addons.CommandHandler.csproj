@@ -6,10 +6,11 @@
         <Nullable>enable</Nullable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>Nes0x</Authors>
-        <Description>A unofficial library for better creating commands.</Description>
+        <Description>A unofficial library for creating commands.</Description>
         <PackageProjectUrl>https://github.com/Nes0x/BattleBitAPI.Addons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
         <LangVersion>11</LangVersion>
+        <PackageTags>battlebitapi.addons, battlebitapi.commands</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

@@ -10,6 +10,7 @@
         <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
         <Description>A unofficial library for better event handling.</Description>
         <LangVersion>11</LangVersion>
+        <PackageTags>battlebitapi.addons, battlebitapi.events</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

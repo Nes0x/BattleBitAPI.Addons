@@ -10,6 +10,7 @@
         <PackageProjectUrl>https://github.com/Nes0x/BattleBitAPI.Addons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
         <LangVersion>11</LangVersion>
+        <PackageTags>battlebitapi.addons, battlebitapi.common</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>

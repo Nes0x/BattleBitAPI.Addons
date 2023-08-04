@@ -63,11 +63,8 @@ public class CommandConverter<TPlayer> where TPlayer : Player
         {
             var typeReaders = _typeReaders.Where(tr => tr.Type == type).ToArray();
             if (typeReaders.Length == 0)
-            {
                 _logger.LogError($"Cannot convert {type.Name} type. Try add custom type reader.", e);
-            }
             else
-            {
                 foreach (var typeReader in typeReaders)
                 {
                     context.ChangeContext(typeReader);
@@ -80,7 +77,6 @@ public class CommandConverter<TPlayer> where TPlayer : Player
                     {
                     }
                 }
-            }
         }
         catch (Exception)
         {

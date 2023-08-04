@@ -14,7 +14,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Commands\TypeReaders\" />
+        <Folder Include="Commands\TypeReaders\"/>
     </ItemGroup>
 
 </Project>

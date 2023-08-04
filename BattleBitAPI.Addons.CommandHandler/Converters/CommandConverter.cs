@@ -25,8 +25,8 @@ public class CommandConverter<TPlayer> where TPlayer : Player
         out List<object> convertedParameters)
     {
         convertedParameters = new List<object>();
-        if (!_commandValidator.ValidateCheckers(methodRepresentation.MethodInfo.GetCustomAttributes()
-                .Where(a => a is CheckerAttribute<TPlayer>), context))
+
+        if (!_commandValidator.ValidateCheckers(GetCheckers(methodRepresentation.MethodInfo), context))
             return Result.Checker;
 
         if (!_commandValidator.ValidateParametersCount(commandParameters, methodParameters,
@@ -50,6 +50,18 @@ public class CommandConverter<TPlayer> where TPlayer : Player
         }
 
         return methodLength == convertedParameters.Count ? Result.Success : Result.Error;
+    }
+
+    private IEnumerable<Attribute> GetCheckers(MethodInfo methodInfo)
+    {
+        var attributes = new HashSet<Attribute>();
+        var attributesFromClass = methodInfo.DeclaringType.GetCustomAttributes()
+            .Where(a => a is CheckerAttribute<TPlayer>);
+        var attributesFromMethod = methodInfo.GetCustomAttributes()
+            .Where(a => a is CheckerAttribute<TPlayer>);
+        attributes.UnionWith(attributesFromClass);
+        attributes.UnionWith(attributesFromMethod);
+        return attributes;
     }
 
     private bool TryConvertParameter(object value, Type type, Context<TPlayer> context, out object convertedType)

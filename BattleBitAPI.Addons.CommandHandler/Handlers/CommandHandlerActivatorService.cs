@@ -36,7 +36,6 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
             _serverListener.OnPlayerTypedMessage += handler;
         }
 
-
         return Task.CompletedTask;
     }
 

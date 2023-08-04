@@ -49,6 +49,7 @@ public class CommandValidator<TPlayer> where TPlayer : Player
             catch (Exception e)
             {
                 _logger.LogError($"Checker {e.TargetSite.DeclaringType.Name} threw an exception.", e);
+                return false;
             }
 
         return true;

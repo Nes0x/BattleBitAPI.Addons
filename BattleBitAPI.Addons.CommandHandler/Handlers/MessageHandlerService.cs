@@ -1,6 +1,7 @@
 ﻿using BattleBitAPI.Addons.CommandHandler.Common;
 using BattleBitAPI.Addons.CommandHandler.Converters;
 using BattleBitAPI.Common;
+using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 
@@ -8,17 +9,24 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
 {
     private readonly CommandConverter<TPlayer> _commandConverter;
     private readonly CommandHandlerSettings _commandHandlerSettings;
+    private readonly ILogger<MessageHandlerService<TPlayer>> _logger;
 
     public MessageHandlerService(CommandHandlerSettings commandHandlerSettings,
-        CommandConverter<TPlayer> commandConverter)
+        CommandConverter<TPlayer> commandConverter, ILogger<MessageHandlerService<TPlayer>> logger)
     {
         _commandHandlerSettings = commandHandlerSettings;
         _commandConverter = commandConverter;
+        _logger = logger;
     }
 
     public Task OnPlayerTypedMessage(TPlayer player, ChatChannel chatChannel, string content,
         Command<TPlayer> command, MethodRepresentation methodRepresentation)
     {
+        if (player is null)
+        {
+            _logger.LogError("The player mustn't be null.");
+            return Task.CompletedTask;
+        }
         var context = new Context<TPlayer>
         {
             Player = player,
@@ -51,7 +59,7 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
                 break;
         }
 
-        if (message is not null && player is not null) player.Message(message);
+        if (message is not null) player.Message(message);
 
         return Task.CompletedTask;
     }

@@ -34,4 +34,14 @@ public static class HostingExtensions
                 "Unable to get assembly.");
         return assembly;
     }
+    
+    public static Assembly[] GetAssemblies(this IHostBuilder hostBuilder)
+    {
+        var assemblies = AppDomain.CurrentDomain.GetAssemblies();
+        if (assemblies.Length == 0)
+            throw new ArgumentNullException(
+                nameof(assemblies),
+                "Unable to get assemblies.");
+        return assemblies;
+    }
 }

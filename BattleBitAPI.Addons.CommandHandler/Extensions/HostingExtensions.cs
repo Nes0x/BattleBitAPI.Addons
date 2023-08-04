@@ -37,18 +37,22 @@ public static class HostingExtensions
 
     public static IHostBuilder AddTypeReaders<TPlayer>(this IHostBuilder hostBuilder) where TPlayer : Player
     {
-        var assembly = hostBuilder.GetAssembly();
-        var types = assembly.GetTypes();
+        var assemblies = hostBuilder.GetAssemblies();
         var playerType = typeof(TPlayer);
         var targetType = typeof(TypeReader<>).MakeGenericType(playerType);
-
-        hostBuilder.ConfigureServices(services =>
+        foreach (var assembly in assemblies)
         {
-            foreach (var type in types)
-                if (type.IsAssignableTo(targetType) && !type.IsAbstract)
-                    services.AddSingleton(targetType, type);
-        });
-
+            var types = assembly.GetTypes();
+            hostBuilder.ConfigureServices(services =>
+            {
+                foreach (var type in types)
+                    if (type.IsAssignableTo(targetType) && !type.IsAbstract)
+                    {
+                        Console.WriteLine(type.Name);
+                        services.AddSingleton(targetType, type);
+                    }
+            });
+        }
         return hostBuilder;
     }
 }

@@ -12,7 +12,7 @@ public class AdminModule : Command<Player>
         Console.WriteLine($"{reason} {Context.ChatChannel}");
         return Task.CompletedTask;
     }
-    
+
     [Command(Name = "ban")]
     [AdminChecker]
     public Task HandleBanAsync(Player target, string reason)

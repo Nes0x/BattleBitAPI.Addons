@@ -15,7 +15,7 @@
 
 
     <ItemGroup>
-      <Folder Include="Modules\TypeReaders\" />
+        <Folder Include="Modules\TypeReaders\"/>
     </ItemGroup>
 
 </Project>

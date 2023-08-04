@@ -41,7 +41,6 @@ public class CommandValidator<TPlayer> where TPlayer : Player
     public bool ValidateCheckers(IEnumerable<Attribute> attributes, Context<TPlayer> context)
     {
         foreach (var attribute in attributes)
-        {
             try
             {
                 context.ChangeContext(attribute);
@@ -51,8 +50,6 @@ public class CommandValidator<TPlayer> where TPlayer : Player
             {
                 _logger.LogError($"Checker {e.TargetSite.DeclaringType.Name} threw an exception.", e);
             }
-
-        }
 
         return true;
     }

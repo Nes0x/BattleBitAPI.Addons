@@ -1,6 +1,4 @@
-﻿using BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders;
-
-namespace BattleBitAPI.Addons.Examples.Modules.TypeReaders;
+﻿namespace BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders;
 
 public class PlayerSteamIdTypeReader : TypeReader<Player>
 {

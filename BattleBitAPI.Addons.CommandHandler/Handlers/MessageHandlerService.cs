@@ -27,6 +27,7 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
             _logger.LogError("The player mustn't be null.");
             return Task.CompletedTask;
         }
+
         var context = new Context<TPlayer>
         {
             Player = player,

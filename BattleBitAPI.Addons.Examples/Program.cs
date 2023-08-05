@@ -8,7 +8,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 var host = Host.CreateDefaultBuilder(args);
-host.AddServerListener<Player>(2000).AddTypeReaders<Player>().AddEventHandler<Player>()
+host.AddServerListener<Player>(2000)
+    .AddTypeReaders<Player>()
+    .AddEventHandler<Player>()
     .AddCommandHandler<Player>(new CommandHandlerSettings
     {
         CommandRegex = "."

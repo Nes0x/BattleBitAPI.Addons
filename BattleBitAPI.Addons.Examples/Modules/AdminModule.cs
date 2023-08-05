@@ -7,7 +7,7 @@ namespace BattleBitAPI.Addons.Examples.Modules;
 public class AdminModule : Command<Player>
 {
     [Command(Name = "warn")]
-    public Task HandleWarnAsync(string player, string reason)
+    public Task HandleWarnAsync(Player player, string reason)
     {
         Console.WriteLine($"{reason} {Context.ChatChannel}");
         return Task.CompletedTask;

@@ -7,7 +7,7 @@ namespace BattleBitAPI.Addons.EventHandler.Extensions;
 
 public static class HostBuilderExtensions
 {
-    public static IHostBuilder AddEventHandlers<TPlayer>(this IHostBuilder hostBuilder) where TPlayer : Player
+    public static IHostBuilder AddEventHandler<TPlayer>(this IHostBuilder hostBuilder) where TPlayer : Player
     {
         var assembly = hostBuilder.GetAssembly();
         var types = assembly.GetTypes();

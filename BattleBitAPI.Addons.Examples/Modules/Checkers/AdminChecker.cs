@@ -1,4 +1,5 @@
 ﻿using BattleBitAPI.Addons.CommandHandler.Common;
+using BattleBitAPI.Addons.Examples.Services;
 
 namespace BattleBitAPI.Addons.Examples.Modules.Checkers;
 

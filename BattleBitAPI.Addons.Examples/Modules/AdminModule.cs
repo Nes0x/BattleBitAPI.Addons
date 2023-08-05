@@ -4,7 +4,7 @@ using BattleBitAPI.Addons.Examples.Services;
 
 namespace BattleBitAPI.Addons.Examples.Modules;
 
-[AdminChecker]
+
 public class AdminModule : Command<Player>
 {
     private readonly ConfigService _config;

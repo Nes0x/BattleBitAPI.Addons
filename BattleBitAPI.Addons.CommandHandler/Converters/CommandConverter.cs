@@ -71,11 +71,11 @@ public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Pla
             convertedType = Convert.ChangeType(value, type);
             return true;
         }
-        catch (InvalidCastException e)
+        catch (InvalidCastException invalidCastException)
         {
             var typeReaders = _typeReaders.Where(tr => tr.Type == type).ToArray();
             if (typeReaders.Length == 0)
-                _logger.LogError($"Cannot convert {type.Name} type. Try add custom type reader.", e);
+                _logger.LogError($"Cannot convert {type.Name} type. Try add custom type reader.", invalidCastException);
             else
                 foreach (var typeReader in typeReaders)
                 {
@@ -85,8 +85,9 @@ public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Pla
                         convertedType = typeReader.ChangeType(value);
                         return true;
                     }
-                    catch (Exception)
+                    catch (Exception exception)
                     {
+                        _logger.LogError($"TypeReader {exception.TargetSite.DeclaringType.Name} threw an exception.", exception);
                     }
                 }
         }

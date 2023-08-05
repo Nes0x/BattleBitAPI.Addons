@@ -9,13 +9,13 @@ namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPlayer : Player
 {
     private readonly IEnumerable<Command<TPlayer>> _commands;
-    private readonly MessageHandlerService<TPlayer> _messageHandler;
+    private readonly IMessageHandler<TPlayer> _messageHandler;
     private readonly List<Command<TPlayer>> _modifiedCommands;
     private readonly List<Func<TPlayer, ChatChannel, string, Task>> _playerTypedMessageHandlers;
     private readonly ServerListener<TPlayer> _serverListener;
 
     public CommandHandlerActivatorService(ServerListener<TPlayer> serverListener,
-        IEnumerable<Command<TPlayer>> commands, MessageHandlerService<TPlayer> messageHandler)
+        IEnumerable<Command<TPlayer>> commands, IMessageHandler<TPlayer> messageHandler)
     {
         _serverListener = serverListener;
         _commands = commands;

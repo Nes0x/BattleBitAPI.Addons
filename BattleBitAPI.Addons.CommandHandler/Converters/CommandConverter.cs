@@ -6,16 +6,16 @@ using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.CommandHandler.Converters;
 
-public class CommandConverter<TPlayer> where TPlayer : Player
+public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Player
 {
-    private readonly CommandValidator<TPlayer> _commandValidator;
+    private readonly IValidator<TPlayer> _validator;
     private readonly ILogger<CommandConverter<TPlayer>> _logger;
     private readonly IEnumerable<TypeReader<TPlayer>> _typeReaders;
 
-    public CommandConverter(CommandValidator<TPlayer> commandValidator, IEnumerable<TypeReader<TPlayer>> typeReaders,
+    public CommandConverter(IValidator<TPlayer> validator, IEnumerable<TypeReader<TPlayer>> typeReaders,
         ILogger<CommandConverter<TPlayer>> logger)
     {
-        _commandValidator = commandValidator;
+        _validator = validator;
         _typeReaders = typeReaders;
         _logger = logger;
     }
@@ -26,10 +26,10 @@ public class CommandConverter<TPlayer> where TPlayer : Player
     {
         convertedParameters = new List<object>();
 
-        if (!_commandValidator.ValidateCheckers(GetCheckers(methodRepresentation.MethodInfo), context))
+        if (!_validator.ValidateCheckers(GetCheckers(methodRepresentation.MethodInfo), context))
             return Result.Checker;
 
-        if (!_commandValidator.ValidateParametersCount(commandParameters, methodParameters,
+        if (!_validator.ValidateParametersCount(commandParameters, methodParameters,
                 out var finalMethodParameters))
             return Result.Error;
 

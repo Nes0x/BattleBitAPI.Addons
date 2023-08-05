@@ -4,7 +4,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.CommandHandler.Validations;
 
-public class CommandValidator<TPlayer> where TPlayer : Player
+public class CommandValidator<TPlayer> : IValidator<TPlayer> where TPlayer : Player
 {
     private readonly ILogger<CommandValidator<TPlayer>> _logger;
 

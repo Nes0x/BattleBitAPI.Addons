@@ -26,9 +26,9 @@ public static class HostingExtensions
                     services.AddSingleton(targetType, type);
 
             services.AddSingleton<CommandHandlerSettings>(_ => commandHandlerSettings);
-            services.AddSingleton<MessageHandlerService<TPlayer>>();
-            services.AddSingleton<CommandValidator<TPlayer>>();
-            services.AddSingleton<CommandConverter<TPlayer>>();
+            services.AddSingleton<IMessageHandler<TPlayer>, MessageHandlerService<TPlayer>>();
+            services.AddSingleton<IValidator<TPlayer>, CommandValidator<TPlayer>>();
+            services.AddSingleton<IConverter<TPlayer>, CommandConverter<TPlayer>>();
             services.AddHostedService<CommandHandlerActivatorService<TPlayer>>();
         });
 

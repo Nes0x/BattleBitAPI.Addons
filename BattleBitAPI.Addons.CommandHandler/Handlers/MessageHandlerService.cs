@@ -5,17 +5,17 @@ using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 
-public class MessageHandlerService<TPlayer> where TPlayer : Player
+public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPlayer : Player 
 {
-    private readonly CommandConverter<TPlayer> _commandConverter;
+    private readonly IConverter<TPlayer> _converter;
     private readonly CommandHandlerSettings _commandHandlerSettings;
     private readonly ILogger<MessageHandlerService<TPlayer>> _logger;
 
     public MessageHandlerService(CommandHandlerSettings commandHandlerSettings,
-        CommandConverter<TPlayer> commandConverter, ILogger<MessageHandlerService<TPlayer>> logger)
+        IConverter<TPlayer> converter, ILogger<MessageHandlerService<TPlayer>> logger)
     {
         _commandHandlerSettings = commandHandlerSettings;
-        _commandConverter = commandConverter;
+        _converter = converter;
         _logger = logger;
     }
 
@@ -38,7 +38,7 @@ public class MessageHandlerService<TPlayer> where TPlayer : Player
         var parametersFromCommand = content.Split(" ").ToList();
         var parametersFromMethod = methodRepresentation.MethodInfo.GetParameters();
 
-        var result = _commandConverter.TryConvertParameters(parametersFromCommand, parametersFromMethod,
+        var result = _converter.TryConvertParameters(parametersFromCommand, parametersFromMethod,
             methodRepresentation,
             context, out var convertedParameters);
         string message = null;

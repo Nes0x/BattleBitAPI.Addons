@@ -52,7 +52,18 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
                 command.Context = context;
                 if (content.StartsWith(
                         $"{_commandHandlerSettings.CommandRegex.ToLower()}{methodRepresentation.CommandName.ToLower()}"))
-                    methodRepresentation.MethodInfo.Invoke(command, convertedParameters.ToArray());
+                {
+                    try
+                    {
+                        methodRepresentation.MethodInfo.Invoke(command, convertedParameters.ToArray());
+
+                    }
+                    catch (Exception e)
+                    {
+                        _logger.LogError(e.Message, e);
+                        message = e.Message;
+                    }
+                }
                 break;
             }
             case Result.Error:

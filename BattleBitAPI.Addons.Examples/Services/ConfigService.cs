@@ -4,7 +4,7 @@ namespace BattleBitAPI.Addons.Examples.Services;
 
 public class ConfigService
 {
-    public string AdminId { get; init; }
+    public ulong AdminId { get; init; }
     
     public static ConfigService Create()
     {

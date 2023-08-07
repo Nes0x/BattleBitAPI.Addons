@@ -1,5 +1,6 @@
 ﻿using BattleBitAPI.Addons.CommandHandler.Common;
 using BattleBitAPI.Addons.Examples.Services;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace BattleBitAPI.Addons.Examples.Modules.Checkers;
 
@@ -7,6 +8,7 @@ public class AdminChecker : CheckerAttribute<Player>
 {
     public override bool RunCommand()
     {
-        return Context.Player.SteamID == 24929842942;
+        var config = Context.ServiceProvider.GetRequiredService<ConfigService>();
+        return Context.Player.SteamID == config.AdminId;
     }
 }

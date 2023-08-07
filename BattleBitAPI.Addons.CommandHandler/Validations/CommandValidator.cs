@@ -40,11 +40,11 @@ public class CommandValidator<TPlayer> : IValidator<TPlayer> where TPlayer : Pla
 
     public bool ValidateCheckers(IEnumerable<Attribute> attributes, Context<TPlayer> context)
     {
-        foreach (var attribute in attributes)
+        foreach (var attribute in attributes.Select(a => (CheckerAttribute<TPlayer>)a))
             try
             {
-                context.ChangeContext(attribute);
-                if (!((CheckerAttribute<TPlayer>)attribute).RunCommand()) return false;
+                attribute.Context = context;
+                if (!attribute.RunCommand()) return false;
             }
             catch (Exception e)
             {

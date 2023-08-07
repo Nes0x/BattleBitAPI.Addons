@@ -10,13 +10,15 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
     private readonly IConverter<TPlayer> _converter;
     private readonly CommandHandlerSettings _commandHandlerSettings;
     private readonly ILogger<MessageHandlerService<TPlayer>> _logger;
+    private readonly IServiceProvider _provider;
 
     public MessageHandlerService(CommandHandlerSettings commandHandlerSettings,
-        IConverter<TPlayer> converter, ILogger<MessageHandlerService<TPlayer>> logger)
+        IConverter<TPlayer> converter, ILogger<MessageHandlerService<TPlayer>> logger, IServiceProvider provider)
     {
         _commandHandlerSettings = commandHandlerSettings;
         _converter = converter;
         _logger = logger;
+        _provider = provider;
     }
 
     public Task OnPlayerTypedMessage(TPlayer player, ChatChannel chatChannel, string content,
@@ -24,7 +26,7 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
     {
         if (player is null)
         {
-            _logger.LogError("The player mustn't be null.");
+            _logger.LogError("The player is null.");
             return Task.CompletedTask;
         }
 
@@ -32,7 +34,8 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
         {
             Player = player,
             ChatChannel = chatChannel,
-            GameServer = player.GameServer
+            GameServer = player.GameServer,
+            ServiceProvider = _provider
         };
 
         var parametersFromCommand = content.Split(" ").ToList();
@@ -46,7 +49,7 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
         {
             case Result.Success:
             {
-                context.ChangeContext(command);
+                command.Context = context;
                 if (content.StartsWith(
                         $"{_commandHandlerSettings.CommandRegex.ToLower()}{methodRepresentation.CommandName.ToLower()}"))
                     methodRepresentation.MethodInfo.Invoke(command, convertedParameters.ToArray());

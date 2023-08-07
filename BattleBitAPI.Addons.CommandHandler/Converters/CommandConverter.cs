@@ -79,7 +79,7 @@ public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Pla
             else
                 foreach (var typeReader in typeReaders)
                 {
-                    context.ChangeContext(typeReader);
+                    typeReader.Context = context;
                     try
                     {
                         convertedType = typeReader.ChangeType(value);

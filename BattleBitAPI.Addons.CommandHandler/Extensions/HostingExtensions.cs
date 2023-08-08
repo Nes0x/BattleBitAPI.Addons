@@ -2,6 +2,7 @@
 using BattleBitAPI.Addons.CommandHandler.Converters;
 using BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders;
 using BattleBitAPI.Addons.CommandHandler.Handlers;
+using BattleBitAPI.Addons.CommandHandler.Modules;
 using BattleBitAPI.Addons.CommandHandler.Validations;
 using BattleBitAPI.Addons.Common.Extensions;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,15 +17,17 @@ public static class HostingExtensions
     {
         var assembly = hostBuilder.GetAssembly();
         var types = assembly.GetTypes();
-        var playerType = typeof(TPlayer);
-        var targetType = typeof(CommandModule<>).MakeGenericType(playerType);
+        var targetType = typeof(CommandModule<TPlayer>);
 
         hostBuilder.ConfigureServices(services =>
         {
             foreach (var type in types)
                 if (type.IsAssignableTo(targetType) && !type.IsAbstract)
+                {
                     services.AddSingleton(targetType, type);
+                }
 
+            if (commandHandlerSettings.DefaultHelpCommand) services.AddSingleton(targetType, typeof(HelpModule<TPlayer>));
             services.AddSingleton<CommandHandlerSettings>(_ => commandHandlerSettings);
             services.AddSingleton<IMessageHandler<TPlayer>, MessageHandlerService<TPlayer>>();
             services.AddSingleton<IValidator<TPlayer>, CommandValidator<TPlayer>>();
@@ -38,8 +41,7 @@ public static class HostingExtensions
     public static IHostBuilder AddTypeReaders<TPlayer>(this IHostBuilder hostBuilder) where TPlayer : Player
     {
         var assemblies = hostBuilder.GetAssemblies();
-        var playerType = typeof(TPlayer);
-        var targetType = typeof(TypeReader<>).MakeGenericType(playerType);
+        var targetType = typeof(TypeReader<TPlayer>);
         foreach (var assembly in assemblies)
         {
             var types = assembly.GetTypes();

@@ -14,6 +14,7 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
     private readonly IMessageHandler<TPlayer> _messageHandler;
     private readonly ServerListener<TPlayer> _serverListener;
     private readonly IValidator<TPlayer> _validator;
+    public static List<CommandModule<TPlayer>> Commands = new();
 
     public CommandHandlerActivatorService(IEnumerable<CommandModule<TPlayer>> commandModules,
         IMessageHandler<TPlayer> messageHandler, ServerListener<TPlayer> serverListener, IValidator<TPlayer> validator)
@@ -29,13 +30,17 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
     {
         ModifyCommandModules();
         foreach (var commandModule in _commandModules)
-        foreach (var command in commandModule.Commands)
         {
-            Func<TPlayer, ChatChannel, string, Task> handler = (player, channel, content) =>
-                _messageHandler.OnPlayerTypedMessage(player, channel, content.Trim(), commandModule, command);
-            _handlers.Add(handler);
-            _serverListener.OnPlayerTypedMessage += handler;
+            Commands.Add(commandModule);
+            foreach (var command in commandModule.Commands)
+            {
+                Func<TPlayer, ChatChannel, string, Task> handler = (player, channel, content) =>
+                    _messageHandler.OnPlayerTypedMessage(player, channel, content.Trim(), commandModule, command);
+                _handlers.Add(handler);
+                _serverListener.OnPlayerTypedMessage += handler;
+            }
         }
+      
 
         return Task.CompletedTask;
     }
@@ -59,9 +64,9 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
 
             foreach (var commandMethod in commandMethods)
             {
-                var commandName = "";
                 var removeParameters = 1;
                 var commandAttribute = commandMethod.GetCustomAttribute<CommandAttribute>()!;
+                var commandName = $"{commandAttribute.Name}";
                 var commandAttributeClass = commandMethod.DeclaringType.GetCustomAttribute<CommandAttribute>();
                 if (commandAttributeClass is not null)
                 {

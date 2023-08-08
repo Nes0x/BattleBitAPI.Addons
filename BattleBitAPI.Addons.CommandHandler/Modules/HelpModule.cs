@@ -27,22 +27,29 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
                 foreach (var commandParameter in command.Parameters)
                 {
                     var formattedParameter = commandParameter.HasDefaultValue
-                        ? $"{commandParameter.Name} Has default value : {commandParameter.DefaultValue}" : commandParameter.Name;
+                        ? $"{commandParameter.Name} Has default value : {commandParameter.DefaultValue}({commandParameter.ParameterType.Name})" : $"{commandParameter.Name}({commandParameter.ParameterType.Name})" ;
                     formattedParameters.Append(formattedParameter).Append(" ");
                 }
-                
+
                 stringBuilder
                     .Append(_commandHandlerSettings.CommandRegex)
                     .Append(command.CommandName)
-                    .Append(formattedParameters)
-                    .Append(" - ")
-                    .Append(command.CommandDescription)
-                    .Append('\n');
+                    .Append(" ")
+                    .Append(formattedParameters);
+
+                if (!string.IsNullOrWhiteSpace(command.CommandDescription))
+                {
+                    stringBuilder.Append("- ")
+                        .Append(command.CommandDescription);
+                }
+
+                stringBuilder.Append('\n');
             });
           
         }
-        
-        Context.Player.Message(stringBuilder.ToString());
+
+        Console.WriteLine(stringBuilder.ToString());
+        // Context.Player.Message(stringBuilder.ToString());
 
         return Task.CompletedTask;
     }

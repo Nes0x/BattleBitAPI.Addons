@@ -4,25 +4,25 @@ using BattleBitAPI.Addons.Examples.Services;
 
 namespace BattleBitAPI.Addons.Examples.Modules;
 
-[AdminChecker]
-public class AdminModule : Command<Player>
+[Command(Name = "warn")]
+public class WarnModule : CommandModule<Player>
 {
     private readonly ConfigService _config;
 
-    public AdminModule(ConfigService config)
+    public WarnModule(ConfigService config)
     {
         _config = config;
     }
 
-    [Command(Name = "warn")]
-    public Task HandleWarnAsync(Player player, string reason)
+    [Command(Name = "add")]
+    public Task HandleAddAsync(Player target, string reason)
     {
         Console.WriteLine($"{reason} {Context.ChatChannel} {_config.AdminId}");
         return Task.CompletedTask;
     }
-
-    [Command(Name = "ban")]
-    public Task HandleBanAsync(Player target, string reason)
+    
+    [Command(Name = "remove")]
+    public Task HandleRemoveAsync(Player target, string reason)
     {
         Console.WriteLine($"{reason} {target.Name}");
         return Task.CompletedTask;

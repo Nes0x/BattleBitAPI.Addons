@@ -17,7 +17,7 @@ public static class HostingExtensions
         var assembly = hostBuilder.GetAssembly();
         var types = assembly.GetTypes();
         var playerType = typeof(TPlayer);
-        var targetType = typeof(Command<>).MakeGenericType(playerType);
+        var targetType = typeof(CommandModule<>).MakeGenericType(playerType);
 
         hostBuilder.ConfigureServices(services =>
         {

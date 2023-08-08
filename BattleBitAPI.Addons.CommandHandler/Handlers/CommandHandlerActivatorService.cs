@@ -1,5 +1,6 @@
 ﻿using System.Reflection;
 using BattleBitAPI.Addons.CommandHandler.Common;
+using BattleBitAPI.Addons.CommandHandler.Validations;
 using BattleBitAPI.Common;
 using BattleBitAPI.Server;
 using Microsoft.Extensions.Hosting;
@@ -8,31 +9,30 @@ namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 
 public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPlayer : Player
 {
-    private readonly IEnumerable<Command<TPlayer>> _commands;
+    private readonly IEnumerable<CommandModule<TPlayer>> _commandModules;
     private readonly IMessageHandler<TPlayer> _messageHandler;
-    private readonly List<Command<TPlayer>> _modifiedCommands;
-    private readonly List<Func<TPlayer, ChatChannel, string, Task>> _playerTypedMessageHandlers;
+    private readonly List<Func<TPlayer, ChatChannel, string, Task>> _handlers;
     private readonly ServerListener<TPlayer> _serverListener;
+    private readonly IValidator<TPlayer> _validator;
 
-    public CommandHandlerActivatorService(ServerListener<TPlayer> serverListener,
-        IEnumerable<Command<TPlayer>> commands, IMessageHandler<TPlayer> messageHandler)
+    public CommandHandlerActivatorService(IEnumerable<CommandModule<TPlayer>> commandModules, IMessageHandler<TPlayer> messageHandler, ServerListener<TPlayer> serverListener, IValidator<TPlayer> validator)
     {
-        _serverListener = serverListener;
-        _commands = commands;
+        _commandModules = commandModules;
         _messageHandler = messageHandler;
-        _modifiedCommands = new List<Command<TPlayer>>();
-        _playerTypedMessageHandlers = new List<Func<TPlayer, ChatChannel, string, Task>>();
+        _handlers = new List<Func<TPlayer, ChatChannel, string, Task>>();
+        _serverListener = serverListener;
+        _validator = validator;
     }
 
     public Task StartAsync(CancellationToken cancellationToken)
     {
-        PopulateModifiedCommands();
-        foreach (var command in _modifiedCommands)
-        foreach (var methodRepresentation in command.MethodRepresentations)
+        ModifyCommandModules();
+        foreach (var commandModule in _commandModules)
+        foreach (var command in commandModule.Commands)
         {
             Func<TPlayer, ChatChannel, string, Task> handler = (player, channel, content) =>
-                _messageHandler.OnPlayerTypedMessage(player, channel, content.Trim(), command, methodRepresentation);
-            _playerTypedMessageHandlers.Add(handler);
+                _messageHandler.OnPlayerTypedMessage(player, channel, content.Trim(), commandModule, command);
+            _handlers.Add(handler);
             _serverListener.OnPlayerTypedMessage += handler;
         }
 
@@ -41,35 +41,47 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
 
     public Task StopAsync(CancellationToken cancellationToken)
     {
-        foreach (var handler in _playerTypedMessageHandlers) _serverListener.OnPlayerTypedMessage -= handler;
-        _playerTypedMessageHandlers.Clear();
+        foreach (var handler in _handlers) _serverListener.OnPlayerTypedMessage -= handler;
+        _handlers.Clear();
 
         return Task.CompletedTask;
     }
 
-    private void PopulateModifiedCommands()
+    private void ModifyCommandModules()
     {
-        var commandNames = new List<string>();
-        foreach (var command in _commands)
+        foreach (var commandModule in _commandModules)
         {
-            var methodRepresentations = new List<MethodRepresentation>();
-            var methods = command.GetType().GetMethods()
+            var commands = new List<Command>();
+            var commandMethods = commandModule.GetType().GetMethods()
                 .Where(m => m.GetCustomAttributes(typeof(CommandAttribute), false).Length > 0)
                 .ToArray();
-
-            foreach (var method in methods)
+        
+            foreach (var commandMethod in commandMethods)
             {
-                var commandName = method.GetCustomAttribute<CommandAttribute>()!.Name;
-                if (commandNames.Contains(commandName)) continue;
-                methodRepresentations.Add(new MethodRepresentation
+                var commandName = "";
+                var removeParameters = 1;
+                var commandAttribute = commandMethod.GetCustomAttribute<CommandAttribute>()!;
+                var commandAttributeClass = commandMethod.DeclaringType.GetCustomAttribute<CommandAttribute>();
+                if (commandAttributeClass is not null)
                 {
-                    MethodInfo = method,
-                    CommandName = commandName
-                });
-                commandNames.Add(commandName);
-                command.MethodRepresentations = methodRepresentations;
-                _modifiedCommands.Add(command);
+                    commandName = $"{commandAttributeClass.Name} {commandAttribute.Name}".Trim();
+                    removeParameters = 2;
+                }
+
+                var command = new Command
+                {
+                    MethodInfo = commandMethod,
+                    CommandName = commandName,
+                    CommandDescription = commandAttribute.Description.Trim(),
+                    Parameters = commandMethod.GetParameters(),
+                    RemoveParameters = removeParameters
+                };
+                if (!_validator.ValidateUniqueCommand(command, commands)) continue;
+                commands.Add(command);
+               
             }
+            commandModule.Commands = commands;
+           
         }
     }
 }

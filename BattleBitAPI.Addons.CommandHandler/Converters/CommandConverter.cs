@@ -20,24 +20,26 @@ public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Pla
         _logger = logger;
     }
 
-    public Result TryConvertParameters(List<string> commandParameters, ParameterInfo[] methodParameters,
-        MethodRepresentation methodRepresentation, Context<TPlayer> context,
-        out List<object> convertedParameters)
+    public Result TryConvertParameters(List<string> commandParameters,
+        Command command, Context<TPlayer> context,
+        out List<object?> convertedParameters)
     {
-        convertedParameters = new List<object>();
-
-        if (!_validator.ValidateCheckers(GetCheckers(methodRepresentation.MethodInfo), context))
+        convertedParameters = new List<object?>();
+        if (!_validator.ValidateCheckers(GetCheckers(command.MethodInfo), context))
             return Result.Checker;
 
-        if (!_validator.ValidateParametersCount(commandParameters, methodParameters,
+        var methodParameters = command.Parameters;
+        
+        if (!_validator.ValidateParametersCount(commandParameters, methodParameters, command.RemoveParameters,
                 out var finalMethodParameters))
             return Result.Error;
-
+        
         for (var i = 0; i < finalMethodParameters; i++)
             if (TryConvertParameter(commandParameters[i], methodParameters[i].ParameterType, context,
                     out var convertedType))
                 convertedParameters.Add(convertedType);
-
+        
+        
         var methodLength = methodParameters.Length;
         if (finalMethodParameters == methodLength && finalMethodParameters == convertedParameters.Count)
             return Result.Success;
@@ -64,7 +66,7 @@ public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Pla
         return attributes;
     }
 
-    private bool TryConvertParameter(object value, Type type, Context<TPlayer> context, out object convertedType)
+    private bool TryConvertParameter(object value, Type type, Context<TPlayer> context, out object? convertedType)
     {
         try
         {

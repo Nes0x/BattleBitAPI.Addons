@@ -13,11 +13,16 @@ public class CommandValidator<TPlayer> : IValidator<TPlayer> where TPlayer : Pla
         _logger = logger;
     }
 
-    public bool ValidateParametersCount(List<string> commandParameters, ParameterInfo[] methodParameters,
+    public bool ValidateParametersCount(List<string> commandParameters, ParameterInfo[] methodParameters, int removeParameters,
         out int finalMethodParameters)
     {
         var methodParametersLength = methodParameters.Length;
-        commandParameters.RemoveAt(0);
+
+        for (var i = 0; i < removeParameters; i++)
+        {
+            commandParameters.RemoveAt(0);
+        }
+      
         foreach (var methodParameter in methodParameters)
             if (methodParameter.HasDefaultValue)
                 methodParametersLength--;
@@ -52,6 +57,21 @@ public class CommandValidator<TPlayer> : IValidator<TPlayer> where TPlayer : Pla
                 return false;
             }
 
+        return true;
+    }
+
+    public bool ValidateUniqueCommand(Command commandToCheck, List<Command> commands)
+    {
+        if (commands.Count == 0) return true;
+        foreach (var command in commands)
+        {
+            if (commandToCheck.CommandName == command.CommandName &&
+                commandToCheck.Parameters.Length == command.Parameters.Length)
+            {
+                _logger.LogError($"You cannot have more commands with same name and parameters count. Currently registered is {command.MethodInfo.Name}");
+                return false;
+            }
+        }
         return true;
     }
 }

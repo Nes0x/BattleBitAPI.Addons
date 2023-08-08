@@ -9,4 +9,6 @@ public class CommandHandlerSettings
         "You can't execute this command.";
 
     public string CommandRegex { get; init; } = "/";
+
+    public bool DefaultHelpCommand { get; init; } = true;
 }

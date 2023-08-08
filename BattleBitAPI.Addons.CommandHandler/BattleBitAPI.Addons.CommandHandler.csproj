@@ -20,4 +20,8 @@
     </ItemGroup>
 
 
+    <ItemGroup>
+      <Folder Include="Modules\" />
+    </ItemGroup>
+
 </Project>

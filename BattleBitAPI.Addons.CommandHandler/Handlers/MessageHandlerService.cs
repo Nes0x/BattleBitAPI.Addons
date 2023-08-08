@@ -22,7 +22,7 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
     }
 
     public Task OnPlayerTypedMessage(TPlayer player, ChatChannel chatChannel, string content,
-        Command<TPlayer> command, MethodRepresentation methodRepresentation)
+        CommandModule<TPlayer> commandModule, Command command)
     {
         if (player is null)
         {
@@ -39,23 +39,22 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
         };
 
         var parametersFromCommand = content.Split(" ").ToList();
-        var parametersFromMethod = methodRepresentation.MethodInfo.GetParameters();
 
-        var result = _converter.TryConvertParameters(parametersFromCommand, parametersFromMethod,
-            methodRepresentation,
+        var result = _converter.TryConvertParameters(parametersFromCommand,
+            command,
             context, out var convertedParameters);
         string message = null;
         switch (result)
         {
             case Result.Success:
             {
-                command.Context = context;
+                commandModule.Context = context;
                 if (content.StartsWith(
-                        $"{_commandHandlerSettings.CommandRegex.ToLower()}{methodRepresentation.CommandName.ToLower()}"))
+                        $"{_commandHandlerSettings.CommandRegex.ToLower()}{command.CommandName.ToLower()}"))
                 {
                     try
                     {
-                        methodRepresentation.MethodInfo.Invoke(command, convertedParameters.ToArray());
+                        command.MethodInfo.Invoke(commandModule, convertedParameters.ToArray());
 
                     }
                     catch (Exception e)

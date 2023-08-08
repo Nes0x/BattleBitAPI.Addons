@@ -8,7 +8,8 @@ public class EventHandlerActivatorService<TPlayer> : IHostedService where TPlaye
     private readonly IEnumerable<IEventHandler<TPlayer>> _handlers;
     private readonly ILogger<EventHandlerActivatorService<TPlayer>> _logger;
 
-    public EventHandlerActivatorService(IEnumerable<IEventHandler<TPlayer>> handlers, ILogger<EventHandlerActivatorService<TPlayer>> logger)
+    public EventHandlerActivatorService(IEnumerable<IEventHandler<TPlayer>> handlers,
+        ILogger<EventHandlerActivatorService<TPlayer>> logger)
     {
         _handlers = handlers;
         _logger = logger;
@@ -17,18 +18,15 @@ public class EventHandlerActivatorService<TPlayer> : IHostedService where TPlaye
     public Task StartAsync(CancellationToken cancellationToken)
     {
         foreach (var handler in _handlers)
-        {
             try
             {
                 handler.Subscribe();
-
             }
             catch (Exception e)
             {
                 _logger.LogError(e.Message, e);
             }
 
-        }
         return Task.CompletedTask;
     }
 

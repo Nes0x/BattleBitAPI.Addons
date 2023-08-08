@@ -5,10 +5,10 @@ using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 
-public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPlayer : Player 
+public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPlayer : Player
 {
-    private readonly IConverter<TPlayer> _converter;
     private readonly CommandHandlerSettings _commandHandlerSettings;
+    private readonly IConverter<TPlayer> _converter;
     private readonly ILogger<MessageHandlerService<TPlayer>> _logger;
     private readonly IServiceProvider _provider;
 
@@ -51,18 +51,16 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
                 commandModule.Context = context;
                 if (content.StartsWith(
                         $"{_commandHandlerSettings.CommandRegex.ToLower()}{command.CommandName.ToLower()}"))
-                {
                     try
                     {
                         command.MethodInfo.Invoke(commandModule, convertedParameters.ToArray());
-
                     }
                     catch (Exception e)
                     {
                         _logger.LogError(e.Message, e);
                         message = e.Message;
                     }
-                }
+
                 break;
             }
             case Result.Error:

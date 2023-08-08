@@ -21,7 +21,7 @@
 
 
     <ItemGroup>
-      <Folder Include="Modules\" />
+        <Folder Include="Modules\"/>
     </ItemGroup>
 
 </Project>

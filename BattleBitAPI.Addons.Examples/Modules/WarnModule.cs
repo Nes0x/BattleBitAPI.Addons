@@ -1,5 +1,4 @@
 ﻿using BattleBitAPI.Addons.CommandHandler.Common;
-using BattleBitAPI.Addons.Examples.Modules.Checkers;
 using BattleBitAPI.Addons.Examples.Services;
 
 namespace BattleBitAPI.Addons.Examples.Modules;
@@ -20,7 +19,7 @@ public class WarnModule : CommandModule<Player>
         Console.WriteLine($"{reason} {Context.ChatChannel} {_config.AdminId}");
         return Task.CompletedTask;
     }
-    
+
     [Command(Name = "remove")]
     public Task HandleRemoveAsync(Player target, string reason)
     {

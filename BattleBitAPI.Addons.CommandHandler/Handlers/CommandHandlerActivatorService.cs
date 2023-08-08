@@ -10,12 +10,13 @@ namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPlayer : Player
 {
     private readonly IEnumerable<CommandModule<TPlayer>> _commandModules;
-    private readonly IMessageHandler<TPlayer> _messageHandler;
     private readonly List<Func<TPlayer, ChatChannel, string, Task>> _handlers;
+    private readonly IMessageHandler<TPlayer> _messageHandler;
     private readonly ServerListener<TPlayer> _serverListener;
     private readonly IValidator<TPlayer> _validator;
 
-    public CommandHandlerActivatorService(IEnumerable<CommandModule<TPlayer>> commandModules, IMessageHandler<TPlayer> messageHandler, ServerListener<TPlayer> serverListener, IValidator<TPlayer> validator)
+    public CommandHandlerActivatorService(IEnumerable<CommandModule<TPlayer>> commandModules,
+        IMessageHandler<TPlayer> messageHandler, ServerListener<TPlayer> serverListener, IValidator<TPlayer> validator)
     {
         _commandModules = commandModules;
         _messageHandler = messageHandler;
@@ -55,7 +56,7 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
             var commandMethods = commandModule.GetType().GetMethods()
                 .Where(m => m.GetCustomAttributes(typeof(CommandAttribute), false).Length > 0)
                 .ToArray();
-        
+
             foreach (var commandMethod in commandMethods)
             {
                 var commandName = "";
@@ -78,10 +79,9 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
                 };
                 if (!_validator.ValidateUniqueCommand(command, commands)) continue;
                 commands.Add(command);
-               
             }
+
             commandModule.Commands = commands;
-           
         }
     }
 }

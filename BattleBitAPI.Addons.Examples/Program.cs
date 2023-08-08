@@ -14,10 +14,7 @@ host.AddServerListener<Player>(2000)
     .AddCommandHandler<Player>(new CommandHandlerSettings
     {
         CommandRegex = "."
-    }).ConfigureServices((_, services) =>
-    {
-        services.AddSingleton(ConfigService.Create());
-    });
+    }).ConfigureServices((_, services) => { services.AddSingleton(ConfigService.Create()); });
 
 var app = host.Build();
 await app.RunAsync();

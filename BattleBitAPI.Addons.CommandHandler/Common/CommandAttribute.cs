@@ -3,6 +3,6 @@
 [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class)]
 public class CommandAttribute : Attribute
 {
-    public string Name;
     public string Description = "";
+    public string Name;
 }

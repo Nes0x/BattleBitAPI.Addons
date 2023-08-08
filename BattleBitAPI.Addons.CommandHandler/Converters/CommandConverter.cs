@@ -8,9 +8,9 @@ namespace BattleBitAPI.Addons.CommandHandler.Converters;
 
 public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Player
 {
-    private readonly IValidator<TPlayer> _validator;
     private readonly ILogger<CommandConverter<TPlayer>> _logger;
     private readonly IEnumerable<TypeReader<TPlayer>> _typeReaders;
+    private readonly IValidator<TPlayer> _validator;
 
     public CommandConverter(IValidator<TPlayer> validator, IEnumerable<TypeReader<TPlayer>> typeReaders,
         ILogger<CommandConverter<TPlayer>> logger)
@@ -29,17 +29,17 @@ public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Pla
             return Result.Checker;
 
         var methodParameters = command.Parameters;
-        
-        if (!_validator.ValidateParametersCount(commandParameters, methodParameters, command.RemoveParameters,
+
+        if (!_validator.ValidateParametersCount(commandParameters, command,
                 out var finalMethodParameters))
             return Result.Error;
-        
+
         for (var i = 0; i < finalMethodParameters; i++)
             if (TryConvertParameter(commandParameters[i], methodParameters[i].ParameterType, context,
                     out var convertedType))
                 convertedParameters.Add(convertedType);
-        
-        
+
+
         var methodLength = methodParameters.Length;
         if (finalMethodParameters == methodLength && finalMethodParameters == convertedParameters.Count)
             return Result.Success;
@@ -89,7 +89,8 @@ public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Pla
                     }
                     catch (Exception exception)
                     {
-                        _logger.LogError($"TypeReader {exception.TargetSite.DeclaringType.Name} threw an exception.", exception);
+                        _logger.LogError($"TypeReader {exception.TargetSite.DeclaringType.Name} threw an exception.",
+                            exception);
                     }
                 }
         }

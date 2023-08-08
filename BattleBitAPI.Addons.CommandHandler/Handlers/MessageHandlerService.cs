@@ -24,6 +24,12 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
     public Task OnPlayerTypedMessage(TPlayer player, ChatChannel chatChannel, string content,
         CommandModule<TPlayer> commandModule, Command command)
     {
+        if (!content.StartsWith(
+                $"{_commandHandlerSettings.CommandRegex.ToLower()}{command.CommandName.ToLower()}"))
+        {
+            return Task.CompletedTask;
+        }
+        
         if (player is null)
         {
             _logger.LogError("The player is null.");
@@ -49,18 +55,15 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
             case Result.Success:
             {
                 commandModule.Context = context;
-                if (content.StartsWith(
-                        $"{_commandHandlerSettings.CommandRegex.ToLower()}{command.CommandName.ToLower()}"))
-                    try
-                    {
-                        command.MethodInfo.Invoke(commandModule, convertedParameters.ToArray());
-                    }
-                    catch (Exception e)
-                    {
-                        _logger.LogError(e.Message, e);
-                        message = e.Message;
-                    }
-
+                try
+                {
+                    command.MethodInfo.Invoke(commandModule, convertedParameters.ToArray());
+                }
+                catch (Exception e)
+                {
+                    _logger.LogError(e.Message, e);
+                    message = e.Message;
+                }
                 break;
             }
             case Result.Error:

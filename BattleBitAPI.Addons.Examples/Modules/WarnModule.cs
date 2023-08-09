@@ -1,9 +1,11 @@
 ﻿using BattleBitAPI.Addons.CommandHandler.Common;
+using BattleBitAPI.Addons.Examples.Modules.Checkers;
 using BattleBitAPI.Addons.Examples.Services;
 
 namespace BattleBitAPI.Addons.Examples.Modules;
 
 [Command(Name = "warn")]
+[AdminChecker]
 public class WarnModule : CommandModule<Player>
 {
     private readonly ConfigService _config;

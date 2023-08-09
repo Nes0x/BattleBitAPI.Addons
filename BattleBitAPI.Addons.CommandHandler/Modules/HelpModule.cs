@@ -14,7 +14,7 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
     }
     
     
-    [Command(Name = "help", Description = "Show all available commands.")]
+    [Command(Name = "help")]
     public Task HandleHelpAsync()
     {
         var stringBuilder = new StringBuilder();
@@ -33,10 +33,18 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
 
                 stringBuilder
                     .Append(_commandHandlerSettings.CommandRegex)
-                    .Append(command.CommandName)
-                    .Append(" ")
-                    .Append(formattedParameters);
+                    .Append(command.CommandName);
+                   
 
+                if (!string.IsNullOrWhiteSpace(formattedParameters.ToString()))
+                {
+                    stringBuilder
+                        .Append(" ")
+                        .Append(formattedParameters);
+                }
+
+                stringBuilder.Append(" ");
+                
                 if (!string.IsNullOrWhiteSpace(command.CommandDescription))
                 {
                     stringBuilder.Append("- ")
@@ -47,6 +55,7 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
             });
           
         }
+
         Context.Player.Message(stringBuilder.ToString());
         return Task.CompletedTask;
     }

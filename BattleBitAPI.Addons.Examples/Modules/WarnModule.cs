@@ -16,21 +16,21 @@ public class WarnModule : CommandModule<Player>
     }
 
     [Command(Name = "add")]
-    public Task HandleAddAsync(Player target, string reason)
+    public Task HandleAdd(Player target, string reason)
     {
         Console.WriteLine($"{reason} {Context.ChatChannel} {_config.AdminId}");
         return Task.CompletedTask;
     }
     
     [Command(Name = "add")]
-    public Task HandleAddAsync(ulong target, string reason)
+    public Task HandleAdd([CommandParameter(Name = "gracz")]ulong target, string reason)
     {
         Console.WriteLine($"{reason} {target} {Context.ChatChannel} {_config.AdminId}");
         return Task.CompletedTask;
     }
     
     [Command(Name = "remove")]
-    public Task HandleRemoveAsync(Player target, string reason)
+    public Task HandleRemove(Player target, string reason)
     {
         Console.WriteLine($"{reason} {target.Name}");
         return Task.CompletedTask;

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Reflection;
+using System.Text;
 using BattleBitAPI.Addons.CommandHandler.Common;
 using BattleBitAPI.Addons.CommandHandler.Handlers;
 
@@ -15,7 +16,7 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
     
     
     [Command(Name = "help")]
-    public Task HandleHelpAsync()
+    public Task HandleHelp()
     {
         var stringBuilder = new StringBuilder();
         foreach (var commandModule in CommandHandlerActivatorService<TPlayer>.CommandModules)
@@ -26,8 +27,10 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
                 
                 foreach (var commandParameter in command.Parameters)
                 {
+                    var attribute = commandParameter.GetCustomAttribute<CommandParameterAttribute>();
+                    var parameterName = attribute is null ? commandParameter.Name : attribute.Name;
                     var formattedParameter = commandParameter.HasDefaultValue
-                        ? $"{commandParameter.Name} Has default value : {commandParameter.DefaultValue}({commandParameter.ParameterType.Name})" : $"{commandParameter.Name}({commandParameter.ParameterType.Name})" ;
+                        ? $"{parameterName} Has default value : {commandParameter.DefaultValue}({commandParameter.ParameterType.Name})" : $"{parameterName}({commandParameter.ParameterType.Name})" ;
                     formattedParameters.Append(formattedParameter).Append(" ");
                 }
 
@@ -56,6 +59,7 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
           
         }
 
+        Console.WriteLine(stringBuilder.ToString());
         Context.Player.Message(stringBuilder.ToString());
         return Task.CompletedTask;
     }

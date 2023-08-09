@@ -59,7 +59,6 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
           
         }
 
-        Console.WriteLine(stringBuilder.ToString());
         Context.Player.Message(stringBuilder.ToString());
         return Task.CompletedTask;
     }

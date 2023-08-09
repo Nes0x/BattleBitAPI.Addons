@@ -14,7 +14,7 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
     private readonly IMessageHandler<TPlayer> _messageHandler;
     private readonly ServerListener<TPlayer> _serverListener;
     private readonly IValidator<TPlayer> _validator;
-    public static List<CommandModule<TPlayer>> Commands = new();
+    public static List<CommandModule<TPlayer>> CommandModules = new();
 
     public CommandHandlerActivatorService(IEnumerable<CommandModule<TPlayer>> commandModules,
         IMessageHandler<TPlayer> messageHandler, ServerListener<TPlayer> serverListener, IValidator<TPlayer> validator)
@@ -31,7 +31,7 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
         ModifyCommandModules();
         foreach (var commandModule in _commandModules)
         {
-            Commands.Add(commandModule);
+            CommandModules.Add(commandModule);
             foreach (var command in commandModule.Commands)
             {
                 Func<TPlayer, ChatChannel, string, Task> handler = (player, channel, content) =>

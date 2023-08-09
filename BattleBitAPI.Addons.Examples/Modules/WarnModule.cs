@@ -23,7 +23,7 @@ public class WarnModule : CommandModule<Player>
     [Command(Name = "add")]
     public Task HandleAddAsync(ulong target, string reason)
     {
-        Console.WriteLine($"{reason} {Context.ChatChannel} {_config.AdminId}");
+        Console.WriteLine($"{reason} {target} {Context.ChatChannel} {_config.AdminId}");
         return Task.CompletedTask;
     }
     

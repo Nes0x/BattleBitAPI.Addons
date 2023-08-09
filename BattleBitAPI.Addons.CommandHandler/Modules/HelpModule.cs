@@ -18,7 +18,7 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
     public Task HandleHelpAsync()
     {
         var stringBuilder = new StringBuilder();
-        foreach (var commandModule in CommandHandlerActivatorService<TPlayer>.Commands)
+        foreach (var commandModule in CommandHandlerActivatorService<TPlayer>.CommandModules)
         {
             commandModule.Commands.ForEach(command =>
             {
@@ -47,10 +47,7 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
             });
           
         }
-
-        Console.WriteLine(stringBuilder.ToString());
-        // Context.Player.Message(stringBuilder.ToString());
-
+        Context.Player.Message(stringBuilder.ToString());
         return Task.CompletedTask;
     }
 }

@@ -12,6 +12,11 @@ namespace BattleBitAPI.Addons.CommandHandler.Extensions;
 
 public static class HostingExtensions
 {
+    /// <summary>
+    /// Adds all commands from assembly to services and ServerListener
+    /// </summary>
+    /// <param name="commandHandlerSettings">Your settings for command handling</param>
+    /// <typeparam name="TPlayer">Your player type</typeparam>
     public static IHostBuilder AddCommandHandler<TPlayer>(this IHostBuilder hostBuilder,
         CommandHandlerSettings commandHandlerSettings) where TPlayer : Player
     {
@@ -38,6 +43,10 @@ public static class HostingExtensions
         return hostBuilder;
     }
 
+    /// <summary>
+    /// Adds all TypeReaders from assemblies to services
+    /// </summary>
+    /// <typeparam name="TPlayer">Your player type</typeparam>
     public static IHostBuilder AddTypeReaders<TPlayer>(this IHostBuilder hostBuilder) where TPlayer : Player
     {
         var assemblies = hostBuilder.GetAssemblies();

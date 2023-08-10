@@ -9,6 +9,13 @@ namespace BattleBitAPI.Addons.Common.Extensions;
 
 public static class HostingExtensions
 {
+    
+    /// <summary>
+    /// Try adds ServerListener to services
+    /// </summary>
+    /// <param name="port">Port on which the server is running</param>
+    /// <param name="ipAddress">Ip address of server</param>
+    /// <typeparam name="TPlayer">Your player type</typeparam>
     public static IHostBuilder AddServerListener<TPlayer>(this IHostBuilder hostBuilder, int port,
         IPAddress ipAddress = null) where TPlayer : Player
     {

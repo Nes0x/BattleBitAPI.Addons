@@ -1,0 +1,662 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/BattleBitAPI.Addons/BattleBitAPI.Addons/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/requirements.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/requirements.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.Context-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.Context-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.IContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.IContext-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.Result.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.Result.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Modules.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Modules.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.Common.ApiService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.Common.ApiService-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.Common.Extensions.HostingExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.Common.Extensions.HostingExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.Common.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.Common.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "documentation/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "documentation/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/toc.html"
+        },
+        ".json": {
+          "relative_path": "documentation/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

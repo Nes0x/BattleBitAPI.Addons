@@ -10,7 +10,8 @@
         <PackageProjectUrl>https://github.com/Nes0x/BattleBitAPI.Addons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
         <LangVersion>11</LangVersion>
-        <PackageTags>battlebitapi.addons, battlebitapi.commands</PackageTags>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>battlebit;battlebitapi.addons;battlebitapi.commands</PackageTags>
     </PropertyGroup>
 
     <ItemGroup>
@@ -18,11 +19,5 @@
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1"/>
         <ProjectReference Include="..\BattleBitAPI.Addons.Common\BattleBitAPI.Addons.Common.csproj"/>
     </ItemGroup>
-
-
-
-
-
-
 
 </Project>

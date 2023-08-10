@@ -2,9 +2,8 @@ Unofficial addons for the [BattleBitAPI](https://github.com/MrOkiDoki/BattleBit-
 
 The BattleBitAPI.Addons.EventHandler project is inspired by the NetCord.Addons project created by [csmir](https://github.com/csmir).
 
-# Requirements
-- At least .NET 7
-- Microsoft.Extensions.Hosting package
+# Documentation
+[Click](https://nes0x.github.io/BattleBitAPI.Addons/)
 
 # BattleBitAPI.Addons.EventHandler 
 Introducing a better management for handling events.

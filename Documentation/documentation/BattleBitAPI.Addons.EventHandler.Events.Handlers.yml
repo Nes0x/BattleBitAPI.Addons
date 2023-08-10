@@ -1,0 +1,596 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  commentId: N:BattleBitAPI.Addons.EventHandler.Events.Handlers
+  id: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  children:
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler`1
+  langs:
+  - csharp
+  - vb
+  name: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  nameWithType: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  type: Namespace
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+references:
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler-1.html
+  name: OnAPlayerKilledAnotherPlayerHandler<TPlayer>
+  nameWithType: OnAPlayerKilledAnotherPlayerHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler<TPlayer>
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler(Of TPlayer)
+  name.vb: OnAPlayerKilledAnotherPlayerHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler`1
+    name: OnAPlayerKilledAnotherPlayerHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler`1
+    name: OnAPlayerKilledAnotherPlayerHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler-1.html
+  name: OnGameServerConnectedHandler<TPlayer>
+  nameWithType: OnGameServerConnectedHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler<TPlayer>
+  nameWithType.vb: OnGameServerConnectedHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler(Of TPlayer)
+  name.vb: OnGameServerConnectedHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler`1
+    name: OnGameServerConnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler`1
+    name: OnGameServerConnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler-1.html
+  name: OnGameServerConnectingHandler<TPlayer>
+  nameWithType: OnGameServerConnectingHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler<TPlayer>
+  nameWithType.vb: OnGameServerConnectingHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler(Of TPlayer)
+  name.vb: OnGameServerConnectingHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler`1
+    name: OnGameServerConnectingHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler`1
+    name: OnGameServerConnectingHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler-1.html
+  name: OnGameServerDisconnectedHandler<TPlayer>
+  nameWithType: OnGameServerDisconnectedHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler<TPlayer>
+  nameWithType.vb: OnGameServerDisconnectedHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler(Of TPlayer)
+  name.vb: OnGameServerDisconnectedHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler`1
+    name: OnGameServerDisconnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler`1
+    name: OnGameServerDisconnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler-1.html
+  name: OnGameServerReconnectedHandler<TPlayer>
+  nameWithType: OnGameServerReconnectedHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler<TPlayer>
+  nameWithType.vb: OnGameServerReconnectedHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler(Of TPlayer)
+  name.vb: OnGameServerReconnectedHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler`1
+    name: OnGameServerReconnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler`1
+    name: OnGameServerReconnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler-1.html
+  name: OnGameServerTickHandler<TPlayer>
+  nameWithType: OnGameServerTickHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler<TPlayer>
+  nameWithType.vb: OnGameServerTickHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler(Of TPlayer)
+  name.vb: OnGameServerTickHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler`1
+    name: OnGameServerTickHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler`1
+    name: OnGameServerTickHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler-1.html
+  name: OnGetPlayerStatsHandler<TPlayer>
+  nameWithType: OnGetPlayerStatsHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler<TPlayer>
+  nameWithType.vb: OnGetPlayerStatsHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler(Of TPlayer)
+  name.vb: OnGetPlayerStatsHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler`1
+    name: OnGetPlayerStatsHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler`1
+    name: OnGetPlayerStatsHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler-1.html
+  name: OnPlayerChangedRoleHandler<TPlayer>
+  nameWithType: OnPlayerChangedRoleHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler<TPlayer>
+  nameWithType.vb: OnPlayerChangedRoleHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler(Of TPlayer)
+  name.vb: OnPlayerChangedRoleHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler`1
+    name: OnPlayerChangedRoleHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler`1
+    name: OnPlayerChangedRoleHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler-1.html
+  name: OnPlayerChangedTeamHandler<TPlayer>
+  nameWithType: OnPlayerChangedTeamHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler<TPlayer>
+  nameWithType.vb: OnPlayerChangedTeamHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler(Of TPlayer)
+  name.vb: OnPlayerChangedTeamHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler`1
+    name: OnPlayerChangedTeamHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler`1
+    name: OnPlayerChangedTeamHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler-1.html
+  name: OnPlayerConnectedHandler<TPlayer>
+  nameWithType: OnPlayerConnectedHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer)
+  name.vb: OnPlayerConnectedHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+    name: OnPlayerConnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+    name: OnPlayerConnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler-1.html
+  name: OnPlayerDiedHandler<TPlayer>
+  nameWithType: OnPlayerDiedHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler<TPlayer>
+  nameWithType.vb: OnPlayerDiedHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler(Of TPlayer)
+  name.vb: OnPlayerDiedHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler`1
+    name: OnPlayerDiedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler`1
+    name: OnPlayerDiedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler-1.html
+  name: OnPlayerDisconnectedHandler<TPlayer>
+  nameWithType: OnPlayerDisconnectedHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler<TPlayer>
+  nameWithType.vb: OnPlayerDisconnectedHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler(Of TPlayer)
+  name.vb: OnPlayerDisconnectedHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler`1
+    name: OnPlayerDisconnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler`1
+    name: OnPlayerDisconnectedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler-1.html
+  name: OnPlayerJoinedASquadHandler<TPlayer>
+  nameWithType: OnPlayerJoinedASquadHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler<TPlayer>
+  nameWithType.vb: OnPlayerJoinedASquadHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler(Of TPlayer)
+  name.vb: OnPlayerJoinedASquadHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler`1
+    name: OnPlayerJoinedASquadHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler`1
+    name: OnPlayerJoinedASquadHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler-1.html
+  name: OnPlayerLeftSquadHandler<TPlayer>
+  nameWithType: OnPlayerLeftSquadHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler<TPlayer>
+  nameWithType.vb: OnPlayerLeftSquadHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler(Of TPlayer)
+  name.vb: OnPlayerLeftSquadHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler`1
+    name: OnPlayerLeftSquadHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler`1
+    name: OnPlayerLeftSquadHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler-1.html
+  name: OnPlayerReportedHandler<TPlayer>
+  nameWithType: OnPlayerReportedHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler<TPlayer>
+  nameWithType.vb: OnPlayerReportedHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler(Of TPlayer)
+  name.vb: OnPlayerReportedHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler`1
+    name: OnPlayerReportedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler`1
+    name: OnPlayerReportedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler-1.html
+  name: OnPlayerRequestingToChangeRoleHandler<TPlayer>
+  nameWithType: OnPlayerRequestingToChangeRoleHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler<TPlayer>
+  nameWithType.vb: OnPlayerRequestingToChangeRoleHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler(Of TPlayer)
+  name.vb: OnPlayerRequestingToChangeRoleHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler`1
+    name: OnPlayerRequestingToChangeRoleHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler`1
+    name: OnPlayerRequestingToChangeRoleHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler-1.html
+  name: OnPlayerSpawnedHandler<TPlayer>
+  nameWithType: OnPlayerSpawnedHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler<TPlayer>
+  nameWithType.vb: OnPlayerSpawnedHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler(Of TPlayer)
+  name.vb: OnPlayerSpawnedHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler`1
+    name: OnPlayerSpawnedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler`1
+    name: OnPlayerSpawnedHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler-1.html
+  name: OnPlayerSpawningHandler<TPlayer>
+  nameWithType: OnPlayerSpawningHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler<TPlayer>
+  nameWithType.vb: OnPlayerSpawningHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler(Of TPlayer)
+  name.vb: OnPlayerSpawningHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler`1
+    name: OnPlayerSpawningHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler`1
+    name: OnPlayerSpawningHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler-1.html
+  name: OnPlayerTypedMessageHandler<TPlayer>
+  nameWithType: OnPlayerTypedMessageHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler<TPlayer>
+  nameWithType.vb: OnPlayerTypedMessageHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler(Of TPlayer)
+  name.vb: OnPlayerTypedMessageHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler`1
+    name: OnPlayerTypedMessageHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler`1
+    name: OnPlayerTypedMessageHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler-1.html
+  name: OnSavePlayerStatsHandler<TPlayer>
+  nameWithType: OnSavePlayerStatsHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler<TPlayer>
+  nameWithType.vb: OnSavePlayerStatsHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler(Of TPlayer)
+  name.vb: OnSavePlayerStatsHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler`1
+    name: OnSavePlayerStatsHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler`1
+    name: OnSavePlayerStatsHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )

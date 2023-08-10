@@ -1,0 +1,1214 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1
+  id: CommandConverter`1
+  parent: BattleBitAPI.Addons.CommandHandler.Converters
+  children:
+  - BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.#ctor(BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{`0}},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter{`0}})
+  - BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  langs:
+  - csharp
+  - vb
+  name: CommandConverter<TPlayer>
+  nameWithType: CommandConverter<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter<TPlayer>
+  type: Class
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters
+  syntax:
+    content: 'public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Player'
+    typeParameters:
+    - id: TPlayer
+    content.vb: Public Class CommandConverter(Of TPlayer As Player) Implements IConverter(Of TPlayer)
+  inheritance:
+  - System.Object
+  implements:
+  - BattleBitAPI.Addons.CommandHandler.Converters.IConverter{{TPlayer}}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: CommandConverter(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter(Of TPlayer)
+  name.vb: CommandConverter(Of TPlayer)
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.#ctor(BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{`0}},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter{`0}})
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.#ctor(BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{`0}},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter{`0}})
+  id: '#ctor(BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{`0}},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter{`0}})'
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1
+  langs:
+  - csharp
+  - vb
+  name: CommandConverter(IValidator<TPlayer>, IEnumerable<TypeReader<TPlayer>>, ILogger<CommandConverter<TPlayer>>)
+  nameWithType: CommandConverter<TPlayer>.CommandConverter(IValidator<TPlayer>, IEnumerable<TypeReader<TPlayer>>, ILogger<CommandConverter<TPlayer>>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter<TPlayer>.CommandConverter(BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>, System.Collections.Generic.IEnumerable<BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<TPlayer>>, Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter<TPlayer>>)
+  type: Constructor
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters
+  syntax:
+    content: public CommandConverter(IValidator<TPlayer> validator, IEnumerable<TypeReader<TPlayer>> typeReaders, ILogger<CommandConverter<TPlayer>> logger)
+    parameters:
+    - id: validator
+      type: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}
+    - id: typeReaders
+      type: System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{{TPlayer}}}
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1}
+    content.vb: Public Sub New(validator As IValidator(Of TPlayer), typeReaders As IEnumerable(Of TypeReader(Of TPlayer)), logger As ILogger(Of CommandConverter(Of TPlayer)))
+  overload: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.#ctor*
+  nameWithType.vb: CommandConverter(Of TPlayer).New(IValidator(Of TPlayer), IEnumerable(Of TypeReader(Of TPlayer)), ILogger(Of CommandConverter(Of TPlayer)))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter(Of TPlayer).New(BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer), System.Collections.Generic.IEnumerable(Of BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of TPlayer)), Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter(Of TPlayer)))
+  name.vb: New(IValidator(Of TPlayer), IEnumerable(Of TypeReader(Of TPlayer)), ILogger(Of CommandConverter(Of TPlayer)))
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  id: TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1
+  langs:
+  - csharp
+  - vb
+  name: TryConvertParameters(List<string>, Command, Context<TPlayer>, out List<object?>)
+  nameWithType: CommandConverter<TPlayer>.TryConvertParameters(List<string>, Command, Context<TPlayer>, out List<object?>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter<TPlayer>.TryConvertParameters(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>, out System.Collections.Generic.List<object?>)
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters
+  example: []
+  syntax:
+    content: public Result TryConvertParameters(List<string> commandParameters, Command command, Context<TPlayer> context, out List<object?> convertedParameters)
+    parameters:
+    - id: commandParameters
+      type: System.Collections.Generic.List{System.String}
+    - id: command
+      type: BattleBitAPI.Addons.CommandHandler.Common.Command
+    - id: context
+      type: BattleBitAPI.Addons.CommandHandler.Common.Context{{TPlayer}}
+    - id: convertedParameters
+      type: System.Collections.Generic.List{System.Object}
+    return:
+      type: BattleBitAPI.Addons.CommandHandler.Converters.Result
+    content.vb: Public Function TryConvertParameters(commandParameters As List(Of String), command As Command, context As Context(Of TPlayer), convertedParameters As List(Of Object)) As Result
+  overload: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.TryConvertParameters*
+  implements:
+  - BattleBitAPI.Addons.CommandHandler.Converters.IConverter{{TPlayer}}.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{{TPlayer}},System.Collections.Generic.List{System.Object}@)
+  nameWithType.vb: CommandConverter(Of TPlayer).TryConvertParameters(List(Of String), Command, Context(Of TPlayer), List(Of Object))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter(Of TPlayer).TryConvertParameters(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer), System.Collections.Generic.List(Of Object))
+  name.vb: TryConvertParameters(List(Of String), Command, Context(Of TPlayer), List(Of Object))
+references:
+- uid: BattleBitAPI.Addons.CommandHandler.Converters
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Converters
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.CommandHandler.Converters
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Converters
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters
+    name: Converters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters
+    name: Converters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter{{TPlayer}}
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.IConverter{`0}
+  parent: BattleBitAPI.Addons.CommandHandler.Converters
+  definition: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1
+  href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html
+  name: IConverter<TPlayer>
+  nameWithType: IConverter<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.IConverter<TPlayer>
+  nameWithType.vb: IConverter(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.IConverter(Of TPlayer)
+  name.vb: IConverter(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1
+    name: IConverter
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1
+    name: IConverter
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html
+  name: IConverter<TPlayer>
+  nameWithType: IConverter<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.IConverter<TPlayer>
+  nameWithType.vb: IConverter(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.IConverter(Of TPlayer)
+  name.vb: IConverter(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1
+    name: IConverter
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1
+    name: IConverter
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.#ctor
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter-1.html#BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.#ctor(BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{`0}},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter{`0}})
+  name: CommandConverter
+  nameWithType: CommandConverter<TPlayer>.CommandConverter
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter<TPlayer>.CommandConverter
+  nameWithType.vb: CommandConverter(Of TPlayer).New
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter(Of TPlayer).New
+  name.vb: New
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}
+  parent: BattleBitAPI.Addons.CommandHandler.Validations
+  definition: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  name: IValidator<TPlayer>
+  nameWithType: IValidator<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>
+  nameWithType.vb: IValidator(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer)
+  name.vb: IValidator(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+    name: IValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+    name: IValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{{TPlayer}}}
+  commentId: T:System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{`0}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TypeReader<TPlayer>>
+  nameWithType: IEnumerable<TypeReader<TPlayer>>
+  fullName: System.Collections.Generic.IEnumerable<BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<TPlayer>>
+  nameWithType.vb: IEnumerable(Of TypeReader(Of TPlayer))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of TPlayer))
+  name.vb: IEnumerable(Of TypeReader(Of TPlayer))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+    name: TypeReader
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+    name: TypeReader
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<CommandConverter<TPlayer>>
+  nameWithType: ILogger<CommandConverter<TPlayer>>
+  fullName: Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter<TPlayer>>
+  nameWithType.vb: ILogger(Of CommandConverter(Of TPlayer))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter(Of TPlayer))
+  name.vb: ILogger(Of CommandConverter(Of TPlayer))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1
+    name: CommandConverter
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1
+    name: CommandConverter
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  name: IValidator<TPlayer>
+  nameWithType: IValidator<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>
+  nameWithType.vb: IValidator(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer)
+  name.vb: IValidator(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+    name: IValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+    name: IValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Validations
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Validations
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.CommandHandler.Validations
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Validations
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations
+    name: Validations
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations
+    name: Validations
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.html
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.TryConvertParameters*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.TryConvertParameters
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter-1.html#BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  name: TryConvertParameters
+  nameWithType: CommandConverter<TPlayer>.TryConvertParameters
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter<TPlayer>.TryConvertParameters
+  nameWithType.vb: CommandConverter(Of TPlayer).TryConvertParameters
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter(Of TPlayer).TryConvertParameters
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter{{TPlayer}}.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{{TPlayer}},System.Collections.Generic.List{System.Object}@)
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.IConverter{`0}.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.IConverter{{TPlayer}}
+  definition: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter{-0}.html#BattleBitAPI.Addons.CommandHandler.Converters.IConverter{`0}.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  name: TryConvertParameters(List<string>, Command, Context<TPlayer>, out List<object>)
+  nameWithType: IConverter<TPlayer>.TryConvertParameters(List<string>, Command, Context<TPlayer>, out List<object>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.IConverter<TPlayer>.TryConvertParameters(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>, out System.Collections.Generic.List<object>)
+  nameWithType.vb: IConverter(Of TPlayer).TryConvertParameters(List(Of String), Command, Context(Of TPlayer), List(Of Object))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.IConverter(Of TPlayer).TryConvertParameters(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer), System.Collections.Generic.List(Of Object))
+  name.vb: TryConvertParameters(List(Of String), Command, Context(Of TPlayer), List(Of Object))
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter{`0}.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+    name: TryConvertParameters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter{-0}.html#BattleBitAPI.Addons.CommandHandler.Converters.IConverter{`0}.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter{`0}.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+    name: TryConvertParameters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter{-0}.html#BattleBitAPI.Addons.CommandHandler.Converters.IConverter{`0}.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Command
+  parent: BattleBitAPI.Addons.CommandHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  name: Command
+  nameWithType: Command
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context{{TPlayer}}
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Context{`0}
+  parent: BattleBitAPI.Addons.CommandHandler.Common
+  definition: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  name: Context<TPlayer>
+  nameWithType: Context<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>
+  nameWithType.vb: Context(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer)
+  name.vb: Context(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: System.Collections.Generic.List{System.Object}
+  commentId: T:System.Collections.Generic.List{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<object>
+  nameWithType: List<object>
+  fullName: System.Collections.Generic.List<object>
+  nameWithType.vb: List(Of Object)
+  fullName.vb: System.Collections.Generic.List(Of Object)
+  name.vb: List(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.Result
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.Result
+  parent: BattleBitAPI.Addons.CommandHandler.Converters
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.Result.html
+  name: Result
+  nameWithType: Result
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.Result
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html#BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  name: TryConvertParameters(List<string>, Command, Context<TPlayer>, out List<object>)
+  nameWithType: IConverter<TPlayer>.TryConvertParameters(List<string>, Command, Context<TPlayer>, out List<object>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.IConverter<TPlayer>.TryConvertParameters(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>, out System.Collections.Generic.List<object>)
+  nameWithType.vb: IConverter(Of TPlayer).TryConvertParameters(List(Of String), Command, Context(Of TPlayer), List(Of Object))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.IConverter(Of TPlayer).TryConvertParameters(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer), System.Collections.Generic.List(Of Object))
+  name.vb: TryConvertParameters(List(Of String), Command, Context(Of TPlayer), List(Of Object))
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+    name: TryConvertParameters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html#BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+    name: TryConvertParameters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html#BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context{`0},System.Collections.Generic.List{System.Object}@)
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Common
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.CommandHandler.Common
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Common
+  fullName: BattleBitAPI.Addons.CommandHandler.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.html
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  name: Context<TPlayer>
+  nameWithType: Context<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>
+  nameWithType.vb: Context(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer)
+  name.vb: Context(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )

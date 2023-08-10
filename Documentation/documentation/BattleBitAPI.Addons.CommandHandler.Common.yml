@@ -1,0 +1,214 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.CommandHandler.Common
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Common
+  id: BattleBitAPI.Addons.CommandHandler.Common
+  children:
+  - BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
+  - BattleBitAPI.Addons.CommandHandler.Common.Command
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
+  - BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  - BattleBitAPI.Addons.CommandHandler.Common.IContext`1
+  langs:
+  - csharp
+  - vb
+  name: BattleBitAPI.Addons.CommandHandler.Common
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Common
+  fullName: BattleBitAPI.Addons.CommandHandler.Common
+  type: Namespace
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+references:
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute-1.html
+  name: CheckerAttribute<TPlayer>
+  nameWithType: CheckerAttribute<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute<TPlayer>
+  nameWithType.vb: CheckerAttribute(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute(Of TPlayer)
+  name.vb: CheckerAttribute(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
+    name: CheckerAttribute
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
+    name: CheckerAttribute
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Command
+  parent: BattleBitAPI.Addons.CommandHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  name: Command
+  nameWithType: Command
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute
+  parent: BattleBitAPI.Addons.CommandHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute.html
+  name: CommandAttribute
+  nameWithType: CommandAttribute
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
+  parent: BattleBitAPI.Addons.CommandHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html
+  name: CommandHandlerSettings
+  nameWithType: CommandHandlerSettings
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html
+  name: CommandModule<TPlayer>
+  nameWithType: CommandModule<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule<TPlayer>
+  nameWithType.vb: CommandModule(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule(Of TPlayer)
+  name.vb: CommandModule(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
+    name: CommandModule
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
+    name: CommandModule
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute.html
+  name: CommandParameterAttribute
+  nameWithType: CommandParameterAttribute
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  name: Context<TPlayer>
+  nameWithType: Context<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>
+  nameWithType.vb: Context(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer)
+  name.vb: Context(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Common.IContext`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.IContext`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.IContext-1.html
+  name: IContext<TPlayer>
+  nameWithType: IContext<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.IContext<TPlayer>
+  nameWithType.vb: IContext(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.IContext(Of TPlayer)
+  name.vb: IContext(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.IContext`1
+    name: IContext
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.IContext-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.IContext`1
+    name: IContext
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.IContext-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Common
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.CommandHandler.Common
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Common
+  fullName: BattleBitAPI.Addons.CommandHandler.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.html

@@ -1,0 +1,573 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
+  id: PlayerSteamIdTypeReader
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  children:
+  - BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.#ctor
+  - BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: PlayerSteamIdTypeReader
+  nameWithType: PlayerSteamIdTypeReader
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
+  type: Class
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  syntax:
+    content: 'public class PlayerSteamIdTypeReader : TypeReader<Player>'
+    content.vb: Public Class PlayerSteamIdTypeReader Inherits TypeReader(Of Player)
+  inheritance:
+  - System.Object
+  - BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}
+  inheritedMembers:
+  - BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.Context
+  - BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.Type
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.#ctor
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.#ctor
+  id: '#ctor'
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
+  langs:
+  - csharp
+  - vb
+  name: PlayerSteamIdTypeReader()
+  nameWithType: PlayerSteamIdTypeReader.PlayerSteamIdTypeReader()
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.PlayerSteamIdTypeReader()
+  type: Constructor
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  syntax:
+    content: public PlayerSteamIdTypeReader()
+    content.vb: Public Sub New()
+  overload: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.#ctor*
+  nameWithType.vb: PlayerSteamIdTypeReader.New()
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.New()
+  name.vb: New()
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType(System.Object)
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType(System.Object)
+  id: ChangeType(System.Object)
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
+  langs:
+  - csharp
+  - vb
+  name: ChangeType(object)
+  nameWithType: PlayerSteamIdTypeReader.ChangeType(object)
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType(object)
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  example: []
+  syntax:
+    content: public override Player? ChangeType(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: BattleBitAPI.Player
+    content.vb: Public Overrides Function ChangeType(obj As Object) As Player
+  overridden: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.ChangeType(System.Object)
+  overload: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType*
+  nameWithType.vb: PlayerSteamIdTypeReader.ChangeType(Object)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType(Object)
+  name.vb: ChangeType(Object)
+references:
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters
+    name: Converters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+    name: TypeReaders
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters
+    name: Converters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+    name: TypeReaders
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
+  definition: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
+  name: TypeReader<Player>
+  nameWithType: TypeReader<Player>
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<BattleBitAPI.Player>
+  nameWithType.vb: TypeReader(Of Player)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of BattleBitAPI.Player)
+  name.vb: TypeReader(Of Player)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+    name: TypeReader
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
+  - name: <
+  - uid: BattleBitAPI.Player
+    name: Player
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+    name: TypeReader
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleBitAPI.Player
+    name: Player
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.Context
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.Context
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}
+  definition: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.Context
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.Context
+  name: Context
+  nameWithType: TypeReader<Player>.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<BattleBitAPI.Player>.Context
+  nameWithType.vb: TypeReader(Of Player).Context
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of BattleBitAPI.Player).Context
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.Type
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.Type
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}
+  definition: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.Type
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.Type
+  name: Type
+  nameWithType: TypeReader<Player>.Type
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<BattleBitAPI.Player>.Type
+  nameWithType.vb: TypeReader(Of Player).Type
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of BattleBitAPI.Player).Type
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
+  name: TypeReader<TPlayer>
+  nameWithType: TypeReader<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<TPlayer>
+  nameWithType.vb: TypeReader(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of TPlayer)
+  name.vb: TypeReader(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+    name: TypeReader
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+    name: TypeReader
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.Context
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.Context
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.Context
+  name: Context
+  nameWithType: TypeReader<TPlayer>.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<TPlayer>.Context
+  nameWithType.vb: TypeReader(Of TPlayer).Context
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of TPlayer).Context
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.Type
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.Type
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.Type
+  name: Type
+  nameWithType: TypeReader<TPlayer>.Type
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<TPlayer>.Type
+  nameWithType.vb: TypeReader(Of TPlayer).Type
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of TPlayer).Type
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.#ctor
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.#ctor
+  name: PlayerSteamIdTypeReader
+  nameWithType: PlayerSteamIdTypeReader.PlayerSteamIdTypeReader
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.PlayerSteamIdTypeReader
+  nameWithType.vb: PlayerSteamIdTypeReader.New
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.New
+  name.vb: New
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.ChangeType(System.Object)
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.ChangeType(System.Object)
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}
+  definition: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.ChangeType(System.Object)
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.ChangeType(System.Object)
+  name: ChangeType(object)
+  nameWithType: TypeReader<Player>.ChangeType(object)
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<BattleBitAPI.Player>.ChangeType(object)
+  nameWithType.vb: TypeReader(Of Player).ChangeType(Object)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of BattleBitAPI.Player).ChangeType(Object)
+  name.vb: ChangeType(Object)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.ChangeType(System.Object)
+    name: ChangeType
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.ChangeType(System.Object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.ChangeType(System.Object)
+    name: ChangeType
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader{BattleBitAPI.Player}.ChangeType(System.Object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType(System.Object)
+  name: ChangeType
+  nameWithType: PlayerSteamIdTypeReader.ChangeType
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType
+- uid: BattleBitAPI.Player
+  commentId: T:BattleBitAPI.Player
+  parent: BattleBitAPI
+  isExternal: true
+  name: Player
+  nameWithType: Player
+  fullName: BattleBitAPI.Player
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.ChangeType(System.Object)
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.ChangeType(System.Object)
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.ChangeType(System.Object)
+  name: ChangeType(object)
+  nameWithType: TypeReader<TPlayer>.ChangeType(object)
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<TPlayer>.ChangeType(object)
+  nameWithType.vb: TypeReader(Of TPlayer).ChangeType(Object)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of TPlayer).ChangeType(Object)
+  name.vb: ChangeType(Object)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.ChangeType(System.Object)
+    name: ChangeType
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.ChangeType(System.Object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.ChangeType(System.Object)
+    name: ChangeType
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html#BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1.ChangeType(System.Object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: BattleBitAPI
+  commentId: N:BattleBitAPI
+  isExternal: true
+  name: BattleBitAPI
+  nameWithType: BattleBitAPI
+  fullName: BattleBitAPI

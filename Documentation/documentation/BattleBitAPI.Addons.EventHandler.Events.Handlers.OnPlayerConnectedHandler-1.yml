@@ -1,0 +1,870 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+  id: OnPlayerConnectedHandler`1
+  parent: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  children:
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.#ctor(BattleBitAPI.Server.ServerListener{`0})
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.HandleAsync(`0)
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.Subscribe
+  - BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.UnSubscribe
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerConnectedHandler<TPlayer>
+  nameWithType: OnPlayerConnectedHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>
+  type: Class
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  syntax:
+    content: 'public abstract class OnPlayerConnectedHandler<TPlayer> : EventHandler<TPlayer>, IEventHandler<TPlayer> where TPlayer : Player'
+    typeParameters:
+    - id: TPlayer
+    content.vb: Public MustInherit Class OnPlayerConnectedHandler(Of TPlayer As Player) Inherits EventHandler(Of TPlayer) Implements IEventHandler(Of TPlayer)
+  inheritance:
+  - System.Object
+  - BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}
+  implements:
+  - BattleBitAPI.Addons.EventHandler.Events.IEventHandler{{TPlayer}}
+  inheritedMembers:
+  - BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}.ServerListener
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer)
+  name.vb: OnPlayerConnectedHandler(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.#ctor(BattleBitAPI.Server.ServerListener{`0})
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.#ctor(BattleBitAPI.Server.ServerListener{`0})
+  id: '#ctor(BattleBitAPI.Server.ServerListener{`0})'
+  parent: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerConnectedHandler(ServerListener<TPlayer>)
+  nameWithType: OnPlayerConnectedHandler<TPlayer>.OnPlayerConnectedHandler(ServerListener<TPlayer>)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>.OnPlayerConnectedHandler(BattleBitAPI.Server.ServerListener<TPlayer>)
+  type: Constructor
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  syntax:
+    content: protected OnPlayerConnectedHandler(ServerListener<TPlayer> serverListener)
+    parameters:
+    - id: serverListener
+      type: BattleBitAPI.Server.ServerListener{{TPlayer}}
+    content.vb: Protected Sub New(serverListener As ServerListener(Of TPlayer))
+  overload: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.#ctor*
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer).New(ServerListener(Of TPlayer))
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer).New(BattleBitAPI.Server.ServerListener(Of TPlayer))
+  name.vb: New(ServerListener(Of TPlayer))
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.HandleAsync(`0)
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.HandleAsync(`0)
+  id: HandleAsync(`0)
+  parent: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+  langs:
+  - csharp
+  - vb
+  name: HandleAsync(TPlayer)
+  nameWithType: OnPlayerConnectedHandler<TPlayer>.HandleAsync(TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>.HandleAsync(TPlayer)
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  syntax:
+    content: protected abstract Task HandleAsync(TPlayer arg)
+    parameters:
+    - id: arg
+      type: '{TPlayer}'
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected MustOverride Function HandleAsync(arg As TPlayer) As Task
+  overload: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.HandleAsync*
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer).HandleAsync(TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer).HandleAsync(TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.Subscribe
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.Subscribe
+  id: Subscribe
+  parent: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+  langs:
+  - csharp
+  - vb
+  name: Subscribe()
+  nameWithType: OnPlayerConnectedHandler<TPlayer>.Subscribe()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>.Subscribe()
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  example: []
+  syntax:
+    content: public override void Subscribe()
+    content.vb: Public Overrides Sub Subscribe()
+  overridden: BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}.Subscribe
+  overload: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.Subscribe*
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer).Subscribe()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer).Subscribe()
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.UnSubscribe
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.UnSubscribe
+  id: UnSubscribe
+  parent: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
+  langs:
+  - csharp
+  - vb
+  name: UnSubscribe()
+  nameWithType: OnPlayerConnectedHandler<TPlayer>.UnSubscribe()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>.UnSubscribe()
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  example: []
+  syntax:
+    content: public override void UnSubscribe()
+    content.vb: Public Overrides Sub UnSubscribe()
+  overridden: BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}.UnSubscribe
+  overload: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.UnSubscribe*
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer).UnSubscribe()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer).UnSubscribe()
+references:
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  commentId: N:BattleBitAPI.Addons.EventHandler.Events.Handlers
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  nameWithType: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events
+    name: Events
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers
+    name: Handlers
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events
+    name: Events
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers
+    name: Handlers
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.Handlers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}
+  parent: BattleBitAPI.Addons.EventHandler.Events
+  definition: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html
+  name: EventHandler<TPlayer>
+  nameWithType: EventHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandler<TPlayer>
+  nameWithType.vb: EventHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandler(Of TPlayer)
+  name.vb: EventHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler{{TPlayer}}
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.IEventHandler{`0}
+  parent: BattleBitAPI.Addons.EventHandler.Events
+  definition: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+  href: BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html
+  name: IEventHandler<TPlayer>
+  nameWithType: IEventHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.IEventHandler<TPlayer>
+  nameWithType.vb: IEventHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.IEventHandler(Of TPlayer)
+  name.vb: IEventHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+    name: IEventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+    name: IEventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}.ServerListener
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.ServerListener
+  parent: BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}
+  definition: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.ServerListener
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandler{-0}.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.ServerListener
+  name: ServerListener
+  nameWithType: EventHandler<TPlayer>.ServerListener
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandler<TPlayer>.ServerListener
+  nameWithType.vb: EventHandler(Of TPlayer).ServerListener
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandler(Of TPlayer).ServerListener
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html
+  name: EventHandler<TPlayer>
+  nameWithType: EventHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandler<TPlayer>
+  nameWithType.vb: EventHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandler(Of TPlayer)
+  name.vb: EventHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events
+  commentId: N:BattleBitAPI.Addons.EventHandler.Events
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.EventHandler.Events
+  nameWithType: BattleBitAPI.Addons.EventHandler.Events
+  fullName: BattleBitAPI.Addons.EventHandler.Events
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events
+    name: Events
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events
+    name: Events
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.html
+- uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html
+  name: IEventHandler<TPlayer>
+  nameWithType: IEventHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.IEventHandler<TPlayer>
+  nameWithType.vb: IEventHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.IEventHandler(Of TPlayer)
+  name.vb: IEventHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+    name: IEventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+    name: IEventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.ServerListener
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.ServerListener
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.ServerListener
+  name: ServerListener
+  nameWithType: EventHandler<TPlayer>.ServerListener
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandler<TPlayer>.ServerListener
+  nameWithType.vb: EventHandler(Of TPlayer).ServerListener
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandler(Of TPlayer).ServerListener
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.#ctor
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.#ctor(BattleBitAPI.Server.ServerListener{`0})
+  name: OnPlayerConnectedHandler
+  nameWithType: OnPlayerConnectedHandler<TPlayer>.OnPlayerConnectedHandler
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>.OnPlayerConnectedHandler
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer).New
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer).New
+  name.vb: New
+- uid: BattleBitAPI.Server.ServerListener{{TPlayer}}
+  commentId: T:BattleBitAPI.Server.ServerListener{`0}
+  parent: BattleBitAPI.Server
+  definition: BattleBitAPI.Server.ServerListener`1
+  name: ServerListener<TPlayer>
+  nameWithType: ServerListener<TPlayer>
+  fullName: BattleBitAPI.Server.ServerListener<TPlayer>
+  nameWithType.vb: ServerListener(Of TPlayer)
+  fullName.vb: BattleBitAPI.Server.ServerListener(Of TPlayer)
+  name.vb: ServerListener(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Server.ServerListener`1
+    name: ServerListener
+    isExternal: true
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Server.ServerListener`1
+    name: ServerListener
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Server.ServerListener`1
+  commentId: T:BattleBitAPI.Server.ServerListener`1
+  isExternal: true
+  name: ServerListener<TPlayer>
+  nameWithType: ServerListener<TPlayer>
+  fullName: BattleBitAPI.Server.ServerListener<TPlayer>
+  nameWithType.vb: ServerListener(Of TPlayer)
+  fullName.vb: BattleBitAPI.Server.ServerListener(Of TPlayer)
+  name.vb: ServerListener(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Server.ServerListener`1
+    name: ServerListener
+    isExternal: true
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Server.ServerListener`1
+    name: ServerListener
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Server
+  commentId: N:BattleBitAPI.Server
+  isExternal: true
+  name: BattleBitAPI.Server
+  nameWithType: BattleBitAPI.Server
+  fullName: BattleBitAPI.Server
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+  - name: .
+  - uid: BattleBitAPI.Server
+    name: Server
+    isExternal: true
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+  - name: .
+  - uid: BattleBitAPI.Server
+    name: Server
+    isExternal: true
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.HandleAsync*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.HandleAsync
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.HandleAsync(`0)
+  name: HandleAsync
+  nameWithType: OnPlayerConnectedHandler<TPlayer>.HandleAsync
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>.HandleAsync
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer).HandleAsync
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer).HandleAsync
+- uid: '{TPlayer}'
+  commentId: '!:TPlayer'
+  definition: TPlayer
+  name: TPlayer
+  nameWithType: TPlayer
+  fullName: TPlayer
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: TPlayer
+  name: TPlayer
+  nameWithType: TPlayer
+  fullName: TPlayer
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}.Subscribe
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.Subscribe
+  parent: BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}
+  definition: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.Subscribe
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandler{-0}.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.Subscribe
+  name: Subscribe()
+  nameWithType: EventHandler<TPlayer>.Subscribe()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandler<TPlayer>.Subscribe()
+  nameWithType.vb: EventHandler(Of TPlayer).Subscribe()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandler(Of TPlayer).Subscribe()
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.Subscribe
+    name: Subscribe
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler{-0}.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.Subscribe
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.Subscribe
+    name: Subscribe
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler{-0}.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.Subscribe
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.Subscribe*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.Subscribe
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.Subscribe
+  name: Subscribe
+  nameWithType: OnPlayerConnectedHandler<TPlayer>.Subscribe
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>.Subscribe
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer).Subscribe
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer).Subscribe
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.Subscribe
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.Subscribe
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.Subscribe
+  name: Subscribe()
+  nameWithType: EventHandler<TPlayer>.Subscribe()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandler<TPlayer>.Subscribe()
+  nameWithType.vb: EventHandler(Of TPlayer).Subscribe()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandler(Of TPlayer).Subscribe()
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.Subscribe
+    name: Subscribe
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.Subscribe
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.Subscribe
+    name: Subscribe
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.Subscribe
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}.UnSubscribe
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.UnSubscribe
+  parent: BattleBitAPI.Addons.EventHandler.Events.EventHandler{{TPlayer}}
+  definition: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.UnSubscribe
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandler{-0}.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.UnSubscribe
+  name: UnSubscribe()
+  nameWithType: EventHandler<TPlayer>.UnSubscribe()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandler<TPlayer>.UnSubscribe()
+  nameWithType.vb: EventHandler(Of TPlayer).UnSubscribe()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandler(Of TPlayer).UnSubscribe()
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.UnSubscribe
+    name: UnSubscribe
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler{-0}.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.UnSubscribe
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.UnSubscribe
+    name: UnSubscribe
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler{-0}.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler{`0}.UnSubscribe
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.UnSubscribe*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.UnSubscribe
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1.UnSubscribe
+  name: UnSubscribe
+  nameWithType: OnPlayerConnectedHandler<TPlayer>.UnSubscribe
+  fullName: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler<TPlayer>.UnSubscribe
+  nameWithType.vb: OnPlayerConnectedHandler(Of TPlayer).UnSubscribe
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler(Of TPlayer).UnSubscribe
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.UnSubscribe
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.UnSubscribe
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.UnSubscribe
+  name: UnSubscribe()
+  nameWithType: EventHandler<TPlayer>.UnSubscribe()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandler<TPlayer>.UnSubscribe()
+  nameWithType.vb: EventHandler(Of TPlayer).UnSubscribe()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandler(Of TPlayer).UnSubscribe()
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.UnSubscribe
+    name: UnSubscribe
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.UnSubscribe
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.UnSubscribe
+    name: UnSubscribe
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html#BattleBitAPI.Addons.EventHandler.Events.EventHandler`1.UnSubscribe
+  - name: (
+  - name: )

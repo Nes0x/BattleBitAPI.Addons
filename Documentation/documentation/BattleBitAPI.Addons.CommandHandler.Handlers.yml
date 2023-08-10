@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Handlers
+  id: BattleBitAPI.Addons.CommandHandler.Handlers
+  children:
+  - BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService`1
+  - BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler`1
+  - BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService`1
+  langs:
+  - csharp
+  - vb
+  name: BattleBitAPI.Addons.CommandHandler.Handlers
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Handlers
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers
+  type: Namespace
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+references:
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService-1.html
+  name: CommandHandlerActivatorService<TPlayer>
+  nameWithType: CommandHandlerActivatorService<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService<TPlayer>
+  nameWithType.vb: CommandHandlerActivatorService(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService(Of TPlayer)
+  name.vb: CommandHandlerActivatorService(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService`1
+    name: CommandHandlerActivatorService
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService`1
+    name: CommandHandlerActivatorService
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler-1.html
+  name: IMessageHandler<TPlayer>
+  nameWithType: IMessageHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler<TPlayer>
+  nameWithType.vb: IMessageHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler(Of TPlayer)
+  name.vb: IMessageHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler`1
+    name: IMessageHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler`1
+    name: IMessageHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService-1.html
+  name: MessageHandlerService<TPlayer>
+  nameWithType: MessageHandlerService<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService<TPlayer>
+  nameWithType.vb: MessageHandlerService(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService(Of TPlayer)
+  name.vb: MessageHandlerService(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService`1
+    name: MessageHandlerService
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService`1
+    name: MessageHandlerService
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )

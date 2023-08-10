@@ -1,0 +1,133 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.Result
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.Result
+  id: Result
+  parent: BattleBitAPI.Addons.CommandHandler.Converters
+  children:
+  - BattleBitAPI.Addons.CommandHandler.Converters.Result.Checker
+  - BattleBitAPI.Addons.CommandHandler.Converters.Result.Error
+  - BattleBitAPI.Addons.CommandHandler.Converters.Result.Success
+  langs:
+  - csharp
+  - vb
+  name: Result
+  nameWithType: Result
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.Result
+  type: Enum
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters
+  syntax:
+    content: public enum Result
+    content.vb: Public Enum Result
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.Result.Success
+  commentId: F:BattleBitAPI.Addons.CommandHandler.Converters.Result.Success
+  id: Success
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.Result
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: Result.Success
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.Result.Success
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters
+  syntax:
+    content: Success = 0
+    return:
+      type: BattleBitAPI.Addons.CommandHandler.Converters.Result
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.Result.Error
+  commentId: F:BattleBitAPI.Addons.CommandHandler.Converters.Result.Error
+  id: Error
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.Result
+  langs:
+  - csharp
+  - vb
+  name: Error
+  nameWithType: Result.Error
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.Result.Error
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters
+  syntax:
+    content: Error = 1
+    return:
+      type: BattleBitAPI.Addons.CommandHandler.Converters.Result
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.Result.Checker
+  commentId: F:BattleBitAPI.Addons.CommandHandler.Converters.Result.Checker
+  id: Checker
+  parent: BattleBitAPI.Addons.CommandHandler.Converters.Result
+  langs:
+  - csharp
+  - vb
+  name: Checker
+  nameWithType: Result.Checker
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.Result.Checker
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Converters
+  syntax:
+    content: Checker = 2
+    return:
+      type: BattleBitAPI.Addons.CommandHandler.Converters.Result
+references:
+- uid: BattleBitAPI.Addons.CommandHandler.Converters
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Converters
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.CommandHandler.Converters
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Converters
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters
+    name: Converters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters
+    name: Converters
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Converters.html
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.Result
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.Result
+  parent: BattleBitAPI.Addons.CommandHandler.Converters
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Converters.Result.html
+  name: Result
+  nameWithType: Result
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.Result

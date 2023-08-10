@@ -1,0 +1,45 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.CommandHandler.Modules
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Modules
+  id: BattleBitAPI.Addons.CommandHandler.Modules
+  children:
+  - BattleBitAPI.Addons.CommandHandler.Modules.HelpModule`1
+  langs:
+  - csharp
+  - vb
+  name: BattleBitAPI.Addons.CommandHandler.Modules
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Modules
+  fullName: BattleBitAPI.Addons.CommandHandler.Modules
+  type: Namespace
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+references:
+- uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Modules.HelpModule`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule-1.html
+  name: HelpModule<TPlayer>
+  nameWithType: HelpModule<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule<TPlayer>
+  nameWithType.vb: HelpModule(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule(Of TPlayer)
+  name.vb: HelpModule(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule`1
+    name: HelpModule
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule`1
+    name: HelpModule
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )

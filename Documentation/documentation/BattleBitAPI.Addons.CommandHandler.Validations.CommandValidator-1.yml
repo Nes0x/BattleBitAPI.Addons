@@ -1,0 +1,1374 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
+  id: CommandValidator`1
+  parent: BattleBitAPI.Addons.CommandHandler.Validations
+  children:
+  - BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.#ctor(Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator{`0}})
+  - BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  - BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  - BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  langs:
+  - csharp
+  - vb
+  name: CommandValidator<TPlayer>
+  nameWithType: CommandValidator<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>
+  type: Class
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Validations
+  syntax:
+    content: 'public class CommandValidator<TPlayer> : IValidator<TPlayer> where TPlayer : Player'
+    typeParameters:
+    - id: TPlayer
+    content.vb: Public Class CommandValidator(Of TPlayer As Player) Implements IValidator(Of TPlayer)
+  inheritance:
+  - System.Object
+  implements:
+  - BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  nameWithType.vb: CommandValidator(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer)
+  name.vb: CommandValidator(Of TPlayer)
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.#ctor(Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator{`0}})
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.#ctor(Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator{`0}})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator{`0}})'
+  parent: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
+  langs:
+  - csharp
+  - vb
+  name: CommandValidator(ILogger<CommandValidator<TPlayer>>)
+  nameWithType: CommandValidator<TPlayer>.CommandValidator(ILogger<CommandValidator<TPlayer>>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>.CommandValidator(Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>>)
+  type: Constructor
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Validations
+  syntax:
+    content: public CommandValidator(ILogger<CommandValidator<TPlayer>> logger)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1}
+    content.vb: Public Sub New(logger As ILogger(Of CommandValidator(Of TPlayer)))
+  overload: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.#ctor*
+  nameWithType.vb: CommandValidator(Of TPlayer).New(ILogger(Of CommandValidator(Of TPlayer)))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer).New(Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer)))
+  name.vb: New(ILogger(Of CommandValidator(Of TPlayer)))
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  id: ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  parent: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
+  langs:
+  - csharp
+  - vb
+  name: ValidateParametersCount(List<string>, Command, out int)
+  nameWithType: CommandValidator<TPlayer>.ValidateParametersCount(List<string>, Command, out int)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>.ValidateParametersCount(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, out int)
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Validations
+  example: []
+  syntax:
+    content: public bool ValidateParametersCount(List<string> commandParameters, Command command, out int finalMethodParameters)
+    parameters:
+    - id: commandParameters
+      type: System.Collections.Generic.List{System.String}
+    - id: command
+      type: BattleBitAPI.Addons.CommandHandler.Common.Command
+    - id: finalMethodParameters
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function ValidateParametersCount(commandParameters As List(Of String), command As Command, finalMethodParameters As Integer) As Boolean
+  overload: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateParametersCount*
+  implements:
+  - BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  nameWithType.vb: CommandValidator(Of TPlayer).ValidateParametersCount(List(Of String), Command, Integer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer).ValidateParametersCount(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, Integer)
+  name.vb: ValidateParametersCount(List(Of String), Command, Integer)
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  id: ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  parent: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
+  langs:
+  - csharp
+  - vb
+  name: ValidateCheckers(IEnumerable<Attribute>, Context<TPlayer>)
+  nameWithType: CommandValidator<TPlayer>.ValidateCheckers(IEnumerable<Attribute>, Context<TPlayer>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>.ValidateCheckers(System.Collections.Generic.IEnumerable<System.Attribute>, BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>)
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Validations
+  example: []
+  syntax:
+    content: public bool ValidateCheckers(IEnumerable<Attribute> attributes, Context<TPlayer> context)
+    parameters:
+    - id: attributes
+      type: System.Collections.Generic.IEnumerable{System.Attribute}
+    - id: context
+      type: BattleBitAPI.Addons.CommandHandler.Common.Context{{TPlayer}}
+    return:
+      type: System.Boolean
+    content.vb: Public Function ValidateCheckers(attributes As IEnumerable(Of Attribute), context As Context(Of TPlayer)) As Boolean
+  overload: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateCheckers*
+  implements:
+  - BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{{TPlayer}})
+  nameWithType.vb: CommandValidator(Of TPlayer).ValidateCheckers(IEnumerable(Of Attribute), Context(Of TPlayer))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer).ValidateCheckers(System.Collections.Generic.IEnumerable(Of System.Attribute), BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer))
+  name.vb: ValidateCheckers(IEnumerable(Of Attribute), Context(Of TPlayer))
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  id: ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  parent: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
+  langs:
+  - csharp
+  - vb
+  name: ValidateUniqueCommand(Command, List<Command>)
+  nameWithType: CommandValidator<TPlayer>.ValidateUniqueCommand(Command, List<Command>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List<BattleBitAPI.Addons.CommandHandler.Common.Command>)
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Validations
+  example: []
+  syntax:
+    content: public bool ValidateUniqueCommand(Command commandToCheck, List<Command> commands)
+    parameters:
+    - id: commandToCheck
+      type: BattleBitAPI.Addons.CommandHandler.Common.Command
+    - id: commands
+      type: System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command}
+    return:
+      type: System.Boolean
+    content.vb: Public Function ValidateUniqueCommand(commandToCheck As Command, commands As List(Of Command)) As Boolean
+  overload: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateUniqueCommand*
+  implements:
+  - BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  nameWithType.vb: CommandValidator(Of TPlayer).ValidateUniqueCommand(Command, List(Of Command))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer).ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List(Of BattleBitAPI.Addons.CommandHandler.Common.Command))
+  name.vb: ValidateUniqueCommand(Command, List(Of Command))
+references:
+- uid: BattleBitAPI.Addons.CommandHandler.Validations
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Validations
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.CommandHandler.Validations
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Validations
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations
+    name: Validations
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations
+    name: Validations
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}
+  parent: BattleBitAPI.Addons.CommandHandler.Validations
+  definition: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  name: IValidator<TPlayer>
+  nameWithType: IValidator<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>
+  nameWithType.vb: IValidator(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer)
+  name.vb: IValidator(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+    name: IValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+    name: IValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  name: IValidator<TPlayer>
+  nameWithType: IValidator<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>
+  nameWithType.vb: IValidator(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer)
+  name.vb: IValidator(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+    name: IValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+    name: IValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.#ctor
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.#ctor(Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator{`0}})
+  name: CommandValidator
+  nameWithType: CommandValidator<TPlayer>.CommandValidator
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>.CommandValidator
+  nameWithType.vb: CommandValidator(Of TPlayer).New
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer).New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<CommandValidator<TPlayer>>
+  nameWithType: ILogger<CommandValidator<TPlayer>>
+  fullName: Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>>
+  nameWithType.vb: ILogger(Of CommandValidator(Of TPlayer))
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer))
+  name.vb: ILogger(Of CommandValidator(Of TPlayer))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
+    name: CommandValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
+    name: CommandValidator
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateParametersCount*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateParametersCount
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  name: ValidateParametersCount
+  nameWithType: CommandValidator<TPlayer>.ValidateParametersCount
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>.ValidateParametersCount
+  nameWithType.vb: CommandValidator(Of TPlayer).ValidateParametersCount
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer).ValidateParametersCount
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  parent: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}
+  definition: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{-0}.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  name: ValidateParametersCount(List<string>, Command, out int)
+  nameWithType: IValidator<TPlayer>.ValidateParametersCount(List<string>, Command, out int)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>.ValidateParametersCount(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, out int)
+  nameWithType.vb: IValidator(Of TPlayer).ValidateParametersCount(List(Of String), Command, Integer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer).ValidateParametersCount(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, Integer)
+  name.vb: ValidateParametersCount(List(Of String), Command, Integer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+    name: ValidateParametersCount
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{-0}.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+    name: ValidateParametersCount
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{-0}.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Command
+  parent: BattleBitAPI.Addons.CommandHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  name: Command
+  nameWithType: Command
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  name: ValidateParametersCount(List<string>, Command, out int)
+  nameWithType: IValidator<TPlayer>.ValidateParametersCount(List<string>, Command, out int)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>.ValidateParametersCount(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, out int)
+  nameWithType.vb: IValidator(Of TPlayer).ValidateParametersCount(List(Of String), Command, Integer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer).ValidateParametersCount(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, Integer)
+  name.vb: ValidateParametersCount(List(Of String), Command, Integer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+    name: ValidateParametersCount
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+    name: ValidateParametersCount
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  - name: (
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: BattleBitAPI.Addons.CommandHandler.Common
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.CommandHandler.Common
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Common
+  fullName: BattleBitAPI.Addons.CommandHandler.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.html
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateCheckers*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateCheckers
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  name: ValidateCheckers
+  nameWithType: CommandValidator<TPlayer>.ValidateCheckers
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>.ValidateCheckers
+  nameWithType.vb: CommandValidator(Of TPlayer).ValidateCheckers
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer).ValidateCheckers
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{{TPlayer}})
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  parent: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}
+  definition: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{-0}.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  name: ValidateCheckers(IEnumerable<Attribute>, Context<TPlayer>)
+  nameWithType: IValidator<TPlayer>.ValidateCheckers(IEnumerable<Attribute>, Context<TPlayer>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>.ValidateCheckers(System.Collections.Generic.IEnumerable<System.Attribute>, BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>)
+  nameWithType.vb: IValidator(Of TPlayer).ValidateCheckers(IEnumerable(Of Attribute), Context(Of TPlayer))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer).ValidateCheckers(System.Collections.Generic.IEnumerable(Of System.Attribute), BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer))
+  name.vb: ValidateCheckers(IEnumerable(Of Attribute), Context(Of TPlayer))
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+    name: ValidateCheckers
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{-0}.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+    name: ValidateCheckers
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{-0}.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.Attribute}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Attribute}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Attribute>
+  nameWithType: IEnumerable<Attribute>
+  fullName: System.Collections.Generic.IEnumerable<System.Attribute>
+  nameWithType.vb: IEnumerable(Of Attribute)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Attribute)
+  name.vb: IEnumerable(Of Attribute)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context{{TPlayer}}
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Context{`0}
+  parent: BattleBitAPI.Addons.CommandHandler.Common
+  definition: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  name: Context<TPlayer>
+  nameWithType: Context<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>
+  nameWithType.vb: Context(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer)
+  name.vb: Context(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  name: ValidateCheckers(IEnumerable<Attribute>, Context<TPlayer>)
+  nameWithType: IValidator<TPlayer>.ValidateCheckers(IEnumerable<Attribute>, Context<TPlayer>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>.ValidateCheckers(System.Collections.Generic.IEnumerable<System.Attribute>, BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>)
+  nameWithType.vb: IValidator(Of TPlayer).ValidateCheckers(IEnumerable(Of Attribute), Context(Of TPlayer))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer).ValidateCheckers(System.Collections.Generic.IEnumerable(Of System.Attribute), BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer))
+  name.vb: ValidateCheckers(IEnumerable(Of Attribute), Context(Of TPlayer))
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+    name: ValidateCheckers
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+    name: ValidateCheckers
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context{`0})
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Attribute
+    name: Attribute
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.attribute
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  name: Context<TPlayer>
+  nameWithType: Context<TPlayer>
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>
+  nameWithType.vb: Context(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer)
+  name.vb: Context(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
+    name: Context
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateUniqueCommand*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateUniqueCommand
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  name: ValidateUniqueCommand
+  nameWithType: CommandValidator<TPlayer>.ValidateUniqueCommand
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>.ValidateUniqueCommand
+  nameWithType.vb: CommandValidator(Of TPlayer).ValidateUniqueCommand
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer).ValidateUniqueCommand
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  parent: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{{TPlayer}}
+  definition: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{-0}.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  name: ValidateUniqueCommand(Command, List<Command>)
+  nameWithType: IValidator<TPlayer>.ValidateUniqueCommand(Command, List<Command>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List<BattleBitAPI.Addons.CommandHandler.Common.Command>)
+  nameWithType.vb: IValidator(Of TPlayer).ValidateUniqueCommand(Command, List(Of Command))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer).ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List(Of BattleBitAPI.Addons.CommandHandler.Common.Command))
+  name.vb: ValidateUniqueCommand(Command, List(Of Command))
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+    name: ValidateUniqueCommand
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{-0}.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  - name: (
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+    name: ValidateUniqueCommand
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator{-0}.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator{`0}.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  - name: (
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command}
+  commentId: T:System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Command>
+  nameWithType: List<Command>
+  fullName: System.Collections.Generic.List<BattleBitAPI.Addons.CommandHandler.Common.Command>
+  nameWithType.vb: List(Of Command)
+  fullName.vb: System.Collections.Generic.List(Of BattleBitAPI.Addons.CommandHandler.Common.Command)
+  name.vb: List(Of Command)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: )
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  name: ValidateUniqueCommand(Command, List<Command>)
+  nameWithType: IValidator<TPlayer>.ValidateUniqueCommand(Command, List<Command>)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List<BattleBitAPI.Addons.CommandHandler.Common.Command>)
+  nameWithType.vb: IValidator(Of TPlayer).ValidateUniqueCommand(Command, List(Of Command))
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer).ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List(Of BattleBitAPI.Addons.CommandHandler.Common.Command))
+  name.vb: ValidateUniqueCommand(Command, List(Of Command))
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+    name: ValidateUniqueCommand
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  - name: (
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+    name: ValidateUniqueCommand
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html#BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  - name: (
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
+    name: Command
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Common.Command.html
+  - name: )
+  - name: )

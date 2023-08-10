@@ -1,0 +1,45 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.Common
+  commentId: N:BattleBitAPI.Addons.Common
+  id: BattleBitAPI.Addons.Common
+  children:
+  - BattleBitAPI.Addons.Common.ApiService`1
+  langs:
+  - csharp
+  - vb
+  name: BattleBitAPI.Addons.Common
+  nameWithType: BattleBitAPI.Addons.Common
+  fullName: BattleBitAPI.Addons.Common
+  type: Namespace
+  assemblies:
+  - BattleBitAPI.Addons.Common
+references:
+- uid: BattleBitAPI.Addons.Common.ApiService`1
+  commentId: T:BattleBitAPI.Addons.Common.ApiService`1
+  isExternal: true
+  href: BattleBitAPI.Addons.Common.ApiService-1.html
+  name: ApiService<TPlayer>
+  nameWithType: ApiService<TPlayer>
+  fullName: BattleBitAPI.Addons.Common.ApiService<TPlayer>
+  nameWithType.vb: ApiService(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.Common.ApiService(Of TPlayer)
+  name.vb: ApiService(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.Common.ApiService`1
+    name: ApiService
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.ApiService-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.Common.ApiService`1
+    name: ApiService
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.ApiService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )

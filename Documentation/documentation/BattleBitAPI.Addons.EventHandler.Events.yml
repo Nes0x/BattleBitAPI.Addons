@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.EventHandler.Events
+  commentId: N:BattleBitAPI.Addons.EventHandler.Events
+  id: BattleBitAPI.Addons.EventHandler.Events
+  children:
+  - BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService`1
+  - BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+  - BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+  langs:
+  - csharp
+  - vb
+  name: BattleBitAPI.Addons.EventHandler.Events
+  nameWithType: BattleBitAPI.Addons.EventHandler.Events
+  fullName: BattleBitAPI.Addons.EventHandler.Events
+  type: Namespace
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+references:
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html
+  name: EventHandler<TPlayer>
+  nameWithType: EventHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandler<TPlayer>
+  nameWithType.vb: EventHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandler(Of TPlayer)
+  name.vb: EventHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService-1.html
+  name: EventHandlerActivatorService<TPlayer>
+  nameWithType: EventHandlerActivatorService<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService<TPlayer>
+  nameWithType.vb: EventHandlerActivatorService(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService(Of TPlayer)
+  name.vb: EventHandlerActivatorService(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService`1
+    name: EventHandlerActivatorService
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService`1
+    name: EventHandlerActivatorService
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html
+  name: IEventHandler<TPlayer>
+  nameWithType: IEventHandler<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Events.IEventHandler<TPlayer>
+  nameWithType.vb: IEventHandler(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.IEventHandler(Of TPlayer)
+  name.vb: IEventHandler(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+    name: IEventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
+    name: IEventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.IEventHandler-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )

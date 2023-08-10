@@ -1,0 +1,24 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.EventHandler.Extensions
+  commentId: N:BattleBitAPI.Addons.EventHandler.Extensions
+  id: BattleBitAPI.Addons.EventHandler.Extensions
+  children:
+  - BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: BattleBitAPI.Addons.EventHandler.Extensions
+  nameWithType: BattleBitAPI.Addons.EventHandler.Extensions
+  fullName: BattleBitAPI.Addons.EventHandler.Extensions
+  type: Namespace
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+references:
+- uid: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions
+  commentId: T:BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.html
+  name: HostBuilderExtensions
+  nameWithType: HostBuilderExtensions
+  fullName: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions

@@ -1,16 +1,19 @@
-# BattleBitAPI.Addons
-
-Unofficial addons for [BattleBitAPI](https://github.com/MrOkiDoki/BattleBit-Community-Server-API) project created by [MrOkiDoki](https://github.com/MrOkiDoki)
+Unofficial addons for the [BattleBitAPI](https://github.com/MrOkiDoki/BattleBit-Community-Server-API) project created by [MrOkiDoki](https://github.com/MrOkiDoki)
 
 The BattleBitAPI.Addons.EventHandler project is inspired by the NetCord.Addons project created by [csmir](https://github.com/csmir).
 
+# Requirements
+- At least .NET 7
+- Microsoft.Extensions.Hosting package
+
 # BattleBitAPI.Addons.EventHandler 
-It's adding better managment for handling events - by creating class which deriving from appropriate class.
+Introducing a better management for handling events.
 
 # BattleBitAPI.Addons.CommandHandler
-It's adding new way of creating commands.
+Introducing a new way of creating commands.
 
 # BattleBitAPI.Addons.Common 
-It's adding some helpers for both projects.
+This project provides various helper functions for both projects.
 
-Examples of usage (for both - EventHandler, CommandHandler) this library are available in BattleBit.Addons.Examples. It's require using Microsoft.Extensions.Hosting and at least .net 7.
+# BattleBitAPI.Addons.Examples
+Usage examples for EventHandler and CommandHandler libraries.

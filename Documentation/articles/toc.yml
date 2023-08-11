@@ -3,10 +3,16 @@
 - name: Command Handler
   items:
     - name: First steps
-      href: command_handler/commandhandler.md
+      href: command_handler/first_steps.md
     - name: TypeReaders
-      href: command_handler/typereaders.md
+      href: command_handler/type_readers.md
     - name: Parameters
       href: command_handler/parameters.md
     - name: Command Groups
-      href: command_handler/commandgroups.md
+      href: command_handler/command_groups.md
+- name: Event Handler
+  items:
+    - name: First steps
+      href: event_handler/first_steps.md
+- name: Dependency Injection
+  href: dependency_injection.md

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> </title>
+      <title>Checker </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" ">
+      <meta name="title" content="Checker ">
       
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
@@ -72,7 +72,58 @@
         </div>
 
         <article data-uid="">
+<h1 id="checker">Checker</h1>
 
+<p>This is precondition, you can check any statement and allow execute command.</p>
+<p>To create checker you must derive from Checker class and override RunCommand method.</p>
+<pre><code class="lang-csharp">public class AdminChecker : CheckerAttribute&lt;Player&gt;
+{
+    //You can also use Context in checkers
+    public override bool RunCommand()
+    {
+        return Context.Player.SteamID == 25242738782;
+    }
+}
+</code></pre>
+<p>You can apply checker for all module commands or for single command.</p>
+<pre><code class="lang-csharp">//If you set checker on class range, then all of commands will have that checker
+[AdminChecker]
+public class AdminModule : CommandModule&lt;Player&gt;
+{
+    [Command(Name = &quot;kill&quot;, Description = &quot;Kill player.&quot;)]
+    public Task HandleKill(Player target)
+    {
+        if (target is not null) target.Kill();
+        return Task.CompletedTask;
+    }
+    
+    [Command(Name = &quot;kick&quot;)]
+    public Task HandleKick(Player target, string reason)
+    {
+        if (target is not null) target.Kick(reason);
+        return Task.CompletedTask;
+    }
+}
+</code></pre>
+<pre><code class="lang-csharp">public class AdminModule : CommandModule&lt;Player&gt;
+{
+    [Command(Name = &quot;kill&quot;, Description = &quot;Kill player.&quot;)]
+    [AdminChecker]
+    //If you set checker on method range, then only this command will be checked
+    public Task HandleKill(Player target)
+    {
+        if (target is not null) target.Kill();
+        return Task.CompletedTask;
+    }
+    
+    [Command(Name = &quot;kick&quot;)]
+    public Task HandleKick(Player target, string reason)
+    {
+        if (target is not null) target.Kick(reason);
+        return Task.CompletedTask;
+    }
+}
+</code></pre>
 </article>
 
         <div class="contribution d-print-none">

@@ -85,7 +85,7 @@ public Task HandleKick(Player target, string reason = &quot;example&quot;)
 </code></pre>
 <p>You can get information from command by using Context</p>
 <pre><code class="lang-csharp">[Command(Name = &quot;kick&quot;)]
-public Task HandleKick(Player target, string reason = &quot;example&quot;)
+public Task HandleKick(Player target, string reason)
 {
     Console.WriteLine($&quot;{Context.Player} {Context.ChatChannel} {Context.GameServer}&quot;);
     if (target is not null) target.Kick(reason);
@@ -94,7 +94,7 @@ public Task HandleKick(Player target, string reason = &quot;example&quot;)
 </code></pre>
 <p>You can specify parameters name in default help command by <code>[CommandParameter]</code></p>
 <pre><code class="lang-csharp">[Command(Name = &quot;kick&quot;)]
-public Task HandleKick(Player target, string reason)
+public Task HandleKick([CommandParameter(Name = &quot;gracz&quot;)]Player target, string reason)
 {
     if (target is not null) target.Kick(reason);
     return Task.CompletedTask;

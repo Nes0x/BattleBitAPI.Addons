@@ -6,6 +6,8 @@ on:
       - '**.csproj'
       - '**.sln'
       - '**.json'
+      - 'Documentation/**.md'
+      - 'Documentation/**.yml'
   workflow_dispatch:
 
 jobs:

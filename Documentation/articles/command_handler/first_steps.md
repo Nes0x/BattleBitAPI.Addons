@@ -24,7 +24,7 @@ You can create multiple commands in one class
 public class AdminModule : CommandModule<Player>
 {
     //usage - .kill steamIdPlayer
-    //For usage Player parameter in method you must add TypeReaders
+    //For usage Player parameter in command method you must add TypeReaders
     [Command(Name = "kill", Description = "Kill player.")]
     public Task HandleKill(Player target)
     {

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Type Readers </title>
+      <title> </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Type Readers ">
+      <meta name="title" content=" ">
       
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
@@ -15,7 +15,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/type_readers.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/checker.md/#L1">
   </head>
 
   <script type="module">
@@ -72,48 +72,11 @@
         </div>
 
         <article data-uid="">
-<h1 id="type-readers">Type Readers</h1>
 
-<p>This thing is responsible for handling custom parameters in command.</p>
-<p>If you want to use default custom type readers or you create own type reader, you can add them like that:</p>
-<pre><code class="lang-csharp">var host = Host.CreateDefaultBuilder(args);
-//In generic use your Player type, in parameters pass port and IPAddress.
-host.AddServerListener&lt;Player&gt;(2000)
-    //In generic use same Player type as in ServerListener.
-    //In parameters add CommandHandlerSettings and create change properties if you want.
-     .AddCommandHandler&lt;Player&gt;(new CommandHandlerSettings
-    {
-        CommandRegex = &quot;.&quot;
-    })
-    //In generic use same Player type as in ServerListener.
-    .AddTypeReaders&lt;Player&gt;();
-var app = host.Build();
-await app.RunAsync();
-</code></pre>
-<h1 id="custom-type-reader">Custom type reader</h1>
-<p>You can create own type reader by deriving from TypeReader class.</p>
-<p>Also you can make multiply type readers for one type.</p>
-<p>For example:</p>
-<pre><code class="lang-csharp">//Generic is your Player type.
-public class PlayerNickTypeReader : TypeReader&lt;Player&gt;
-{
-    //You need to specify the type in the constructor to be handled as custom.
-    public PlayerNickTypeReader() : base(typeof(Player))
-    {
-    }
-
-    //You can use Context in this method.
-    //In returning type you must use type which you definied in the constructor.
-    public override Player? ChangeType(object obj)
-    {
-        return Context.GameServer.GetAllPlayers().FirstOrDefault(p =&gt; p.Name == obj.ToString());
-    }
-}
-</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/type_readers.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/checker.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

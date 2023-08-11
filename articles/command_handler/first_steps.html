@@ -81,7 +81,7 @@
 <pre><code class="lang-csharp">var host = Host.CreateDefaultBuilder(args);
 //In generic use your Player type, in parameters pass port and IPAddress.
 host.AddServerListener&lt;Player&gt;(2000)
-    //In generic use same type Player type as in ServerListener.
+    //In generic use same Player type as in ServerListener.
     //In parameters add CommandHandlerSettings and create change properties if you want.
      .AddCommandHandler&lt;Player&gt;(new CommandHandlerSettings
     {
@@ -92,10 +92,11 @@ await app.RunAsync();
 </code></pre>
 <h1 id="first-module">First module</h1>
 <p>You can create multiple commands in one class</p>
-<pre><code class="lang-csharp">//Generic type must be same as you typed in host
+<pre><code class="lang-csharp">//Generic type must be same as you typed in host.
 public class AdminModule : CommandModule&lt;Player&gt;
 {
     //usage - .kill steamIdPlayer
+    //For usage Player parameter in method you must add TypeReaders
     [Command(Name = &quot;kill&quot;, Description = &quot;Kill player.&quot;)]
     public Task HandleKill(Player target)
     {

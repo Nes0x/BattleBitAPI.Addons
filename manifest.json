@@ -15,6 +15,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "articles/command_handler/checker.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/command_handler/checker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "articles/command_handler/command_groups.md",
       "output": {
         ".html": {

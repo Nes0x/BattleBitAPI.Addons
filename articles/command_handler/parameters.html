@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> </title>
+      <title>Parameters </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" ">
+      <meta name="title" content="Parameters ">
       
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
@@ -72,7 +72,34 @@
         </div>
 
         <article data-uid="">
+<h1 id="parameters">Parameters</h1>
 
+<p>You can make command which has default parameter value</p>
+<pre><code class="lang-csharp">//use - .kick steamIdPlayer myReason or .kick steamIdPlayer
+[Command(Name = &quot;kick&quot;)]
+public Task HandleKick(Player target, string reason = &quot;example&quot;)
+{
+    if (target is not null) target.Kick(reason);
+    return Task.CompletedTask;
+}
+</code></pre>
+<p>You can get information from command by using Context</p>
+<pre><code class="lang-csharp">[Command(Name = &quot;kick&quot;)]
+public Task HandleKick(Player target, string reason = &quot;example&quot;)
+{
+    Console.WriteLine($&quot;{Context.Player} {Context.ChatChannel} {Context.GameServer}&quot;);
+    if (target is not null) target.Kick(reason);
+    return Task.CompletedTask;
+}
+</code></pre>
+<p>You can specify parameters name in default help command by <code>[CommandParameter]</code></p>
+<pre><code class="lang-csharp">[Command(Name = &quot;kick&quot;)]
+public Task HandleKick([CommandParameter(Name = &quot;gracz&quot;)]Player target, string reason = &quot;example&quot;)
+{
+    if (target is not null) target.Kick(reason);
+    return Task.CompletedTask;
+}
+</code></pre>
 </article>
 
         <div class="contribution d-print-none">

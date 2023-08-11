@@ -3,10 +3,10 @@
 - name: Command Handler
   items:
     - name: First steps
-      href: commandhandler.md
+      href: command_handler/commandhandler.md
     - name: TypeReaders
-      href: typereaders.md
+      href: command_handler/typereaders.md
     - name: Parameters
-      href: parameters.md
+      href: command_handler/parameters.md
     - name: Command Groups
-      href: commandgroups.md
+      href: command_handler/commandgroups.md

@@ -4,15 +4,3 @@ The BattleBitAPI.Addons.EventHandler project is inspired by the NetCord.Addons p
 
 # Documentation
 [Click](https://nes0x.github.io/BattleBitAPI.Addons/)
-
-# BattleBitAPI.Addons.EventHandler 
-Introducing a better management for handling events.
-
-# BattleBitAPI.Addons.CommandHandler
-Introducing a new way of creating commands.
-
-# BattleBitAPI.Addons.Common 
-This project provides various helper functions for both projects.
-
-# BattleBitAPI.Addons.Examples
-Usage examples for EventHandler and CommandHandler libraries.

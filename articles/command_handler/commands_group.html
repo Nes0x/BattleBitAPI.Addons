@@ -74,7 +74,26 @@
         <article data-uid="">
 <h1 id="commands-group">Commands Group</h1>
 
-<p>You can create one base command and subcommands to it</p>
+<p>You can create one base command and subcommands.</p>
+<pre><code class="lang-csharp">[Command(Name = &quot;warn&quot;)]
+public class WarnModule : CommandModule&lt;Player&gt;
+{
+
+    [Command(Name = &quot;add&quot;)]
+    //usage - .warn add steamIdPlayer reason
+    public Task HandleAdd(Player target, string reason)
+    {
+        return Task.CompletedTask;
+    }
+    
+    [Command(Name = &quot;remove&quot;)]
+    //usage - .warn remove steamIdPlayer reason
+    public Task HandleRemove(Player target, string reason)
+    {
+        return Task.CompletedTask;
+    }
+}
+</code></pre>
 </article>
 
         <div class="contribution d-print-none">

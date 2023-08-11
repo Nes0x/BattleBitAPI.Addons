@@ -15,20 +15,20 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/command_handler/commandgroups.md",
+      "source_relative_path": "articles/command_handler/command_groups.md",
       "output": {
         ".html": {
-          "relative_path": "articles/command_handler/commandgroups.html"
+          "relative_path": "articles/command_handler/command_groups.html"
         }
       },
       "version": ""
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/command_handler/commandhandler.md",
+      "source_relative_path": "articles/command_handler/first_steps.md",
       "output": {
         ".html": {
-          "relative_path": "articles/command_handler/commandhandler.html"
+          "relative_path": "articles/command_handler/first_steps.html"
         }
       },
       "version": ""
@@ -45,10 +45,30 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/command_handler/typereaders.md",
+      "source_relative_path": "articles/command_handler/type_readers.md",
       "output": {
         ".html": {
-          "relative_path": "articles/command_handler/typereaders.html"
+          "relative_path": "articles/command_handler/type_readers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/dependency_injection.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/dependency_injection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/event_handler/first_steps.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/event_handler/first_steps.html"
         }
       },
       "version": ""

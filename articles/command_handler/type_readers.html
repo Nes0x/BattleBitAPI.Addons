@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Command Handler </title>
+      <title> </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Command Handler ">
+      <meta name="title" content=" ">
       
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
@@ -15,7 +15,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/commandhandler.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/type_readers.md/#L1">
   </head>
 
   <script type="module">
@@ -72,50 +72,11 @@
         </div>
 
         <article data-uid="">
-<h1 id="command-handler">Command Handler</h1>
 
-<ul>
-<li>You must add package <code>BattleBitAPI.Addons.CommandHandler</code></li>
-</ul>
-<p>Add CommandHandler to created host</p>
-<pre><code class="lang-csharp">var host = Host.CreateDefaultBuilder(args);
-//In generic use your Player type, in parameters pass port and IPAddress.
-host.AddServerListener&lt;Player&gt;(2000)
-    //In generic use same type Player type as in ServerListener.
-    //In parameters add CommandHandlerSettings and create change properties if you want.
-     .AddCommandHandler&lt;Player&gt;(new CommandHandlerSettings
-    {
-        CommandRegex = &quot;.&quot;
-    });
-var app = host.Build();
-await app.RunAsync();
-</code></pre>
-<h1 id="first-module">First module</h1>
-<p>You can create multiple commands in one class</p>
-<pre><code class="lang-csharp">//Generic type must be same as you typed in host
-public class AdminModule : CommandModule&lt;Player&gt;
-{
-    //usage - .kill steamIdPlayer
-    [Command(Name = &quot;kill&quot;, Description = &quot;Kill player.&quot;)]
-    public Task HandleKill(Player target)
-    {
-        if (target is not null) target.Kill();
-        return Task.CompletedTask;
-    }
-    
-    //usage - .kick steamIdPlayer reason
-    [Command(Name = &quot;kick&quot;)]
-    public Task HandleKick(Player target, string reason)
-    {
-        if (target is not null) target.Kick(reason);
-        return Task.CompletedTask;
-    }
-}
-</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/commandhandler.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/type_readers.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

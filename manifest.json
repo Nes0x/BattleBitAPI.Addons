@@ -25,10 +25,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/command_handler/command_groups.md",
+      "source_relative_path": "articles/command_handler/commands_group.md",
       "output": {
         ".html": {
-          "relative_path": "articles/command_handler/command_groups.html"
+          "relative_path": "articles/command_handler/commands_group.html"
         }
       },
       "version": ""

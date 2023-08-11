@@ -91,8 +91,11 @@ var app = host.Build();
 await app.RunAsync();
 </code></pre>
 <h1 id="first-module">First module</h1>
-<p>You can create multiple commands in one class</p>
+<p>To create commands you must derive from CommandModule class</p>
+<p>You can create multiple commands in one class.
+Commands can be with same name, but must have inner parameters count or</p>
 <pre><code class="lang-csharp">//Generic type must be same as you typed in host.
+//You can 
 public class AdminModule : CommandModule&lt;Player&gt;
 {
     //usage - .kill steamIdPlayer

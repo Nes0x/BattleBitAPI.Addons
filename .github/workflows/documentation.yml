@@ -2,10 +2,6 @@ name: Deploy documentation
 on:
   push:
     paths:
-      - '**.cs'
-      - '**.csproj'
-      - '**.sln'
-      - '**.json'
       - 'Documentation/**.md'
       - 'Documentation/**.yml'
   workflow_dispatch:

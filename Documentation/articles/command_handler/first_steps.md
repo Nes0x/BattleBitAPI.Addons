@@ -17,10 +17,15 @@ await app.RunAsync();
 ```
 
 # First module
-You can create multiple commands in one class
+
+To create commands you must derive from CommandModule class
+
+You can create multiple commands in one class. 
+Commands can be with same name, but must have inner parameters count or
 
 ```csharp
 //Generic type must be same as you typed in host.
+//You can 
 public class AdminModule : CommandModule<Player>
 {
     //usage - .kill steamIdPlayer

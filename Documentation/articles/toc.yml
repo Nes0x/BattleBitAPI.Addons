@@ -10,8 +10,8 @@
       href: command_handler/type_readers.md
     - name: Checker
       href: command_handler/checker.md
-    - name: Command Groups
-      href: command_handler/command_groups.md
+    - name: Commands Group
+      href: command_handler/commands_group.md
 - name: Event Handler
   items:
     - name: First steps

@@ -1,3 +1,12 @@
-- name: Requirements
-  href: requirements.md
-
+- name: Beginning
+  href: beginning.md
+- name: Command Handler
+  items:
+    - name: First steps
+      href: commandhandler.md
+    - name: TypeReaders
+      href: typereaders.md
+    - name: Parameters
+      href: parameters.md
+    - name: Command Groups
+      href: commandgroups.md

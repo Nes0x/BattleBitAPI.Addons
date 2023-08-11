@@ -96,7 +96,7 @@ await app.RunAsync();
 public class AdminModule : CommandModule&lt;Player&gt;
 {
     //usage - .kill steamIdPlayer
-    //For usage Player parameter in method you must add TypeReaders
+    //For usage Player parameter in command method you must add TypeReaders
     [Command(Name = &quot;kill&quot;, Description = &quot;Kill player.&quot;)]
     public Task HandleKill(Player target)
     {

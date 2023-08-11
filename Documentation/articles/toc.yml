@@ -4,10 +4,12 @@
   items:
     - name: First steps
       href: command_handler/first_steps.md
-    - name: TypeReaders
-      href: command_handler/type_readers.md
     - name: Parameters
       href: command_handler/parameters.md
+    - name: Type Readers
+      href: command_handler/type_readers.md
+    - name: Checker
+      href: command_handler/checker.md
     - name: Command Groups
       href: command_handler/command_groups.md
 - name: Event Handler

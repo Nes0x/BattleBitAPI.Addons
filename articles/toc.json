@@ -1,2 +1,2 @@
 
-{"items":[{"name":"Requirements","href":"requirements.html","topicHref":"requirements.html"}]}
+{"items":[{"name":"Beginning","href":"beginning.html","topicHref":"beginning.html"},{"name":"Command Handler","items":[{"name":"First steps","href":"commandhandler.md","topicHref":"commandhandler.md"},{"name":"TypeReaders","href":"typereaders.md","topicHref":"typereaders.md"},{"name":"Parameters","href":"parameters.md","topicHref":"parameters.md"},{"name":"Command Groups","href":"commandgroups.md","topicHref":"commandgroups.md"}]}]}

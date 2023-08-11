@@ -5,15 +5,58 @@
   "files": [
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/requirements.md",
+      "source_relative_path": "articles/beginning.md",
       "output": {
         ".html": {
-          "relative_path": "articles/requirements.html"
+          "relative_path": "articles/beginning.html"
         }
       },
       "version": ""
     },
     {
+      "type": "Conceptual",
+      "source_relative_path": "articles/command_handler/commandgroups.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/command_handler/commandgroups.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/command_handler/commandhandler.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/command_handler/commandhandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/command_handler/parameters.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/command_handler/parameters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/command_handler/typereaders.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/command_handler/typereaders.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Toc",
       "source_relative_path": "articles/toc.yml",
       "output": {

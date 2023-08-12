@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> </title>
+      <title>Dependecy Injection </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" ">
+      <meta name="title" content="Dependecy Injection ">
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
@@ -72,7 +72,59 @@
         </div>
 
         <article data-uid="">
+<h1 id="dependecy-injection">Dependecy Injection</h1>
 
+<p>You can create own service and use it in all comman modules, events, checkers, type readers.</p>
+<pre><code class="lang-csharp">public class ConfigService
+{
+    public ulong AdminId { get; init; }
+
+    public static ConfigService Create()
+    {
+        return JsonSerializer.Deserialize&lt;ConfigService&gt;(File.ReadAllText(&quot;appsettings.json&quot;));
+    }
+}
+</code></pre>
+<pre><code class="lang-csharp">var host = Host.CreateDefaultBuilder(args);
+host.AddServerListener&lt;Player&gt;(2000)
+    .AddTypeReaders&lt;Player&gt;()
+    .AddEventHandler&lt;Player&gt;()
+    .AddCommandHandler&lt;Player&gt;(new CommandHandlerSettings
+    {
+        CommandRegex = &quot;.&quot;
+    }).ConfigureServices((_, services) =&gt; { services.AddSingleton(ConfigService.Create()); });
+
+var app = host.Build();
+await app.RunAsync();
+</code></pre>
+<pre><code class="lang-csharp">public class AdminChecker : CheckerAttribute&lt;Player&gt;
+{
+    public override bool RunCommand()
+    {
+        var config = Context.ServiceProvider.GetRequiredService&lt;ConfigService&gt;();
+        return Context.Player.SteamID == config.AdminId;
+    }
+}
+</code></pre>
+<pre><code class="lang-csharp">[Command(Name = &quot;warn&quot;)]
+[AdminChecker]
+public class WarnModule : CommandModule&lt;Player&gt;
+{
+    private readonly ConfigService _config;
+
+    public WarnModule(ConfigService config)
+    {
+        _config = config;
+    }
+
+    [Command(Name = &quot;add&quot;)]
+    public Task HandleAdd(Player target, string reason)
+    {
+        Console.WriteLine($&quot;{reason} {Context.ChatChannel} {_config.AdminId}&quot;);
+        return Task.CompletedTask;
+    }
+}
+</code></pre>
 </article>
 
         <div class="contribution d-print-none">

@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title> </title>
+      <title>Event Handler </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content=" ">
+      <meta name="title" content="Event Handler ">
       
       <link rel="icon" href="../../favicon.ico">
       <link rel="stylesheet" href="../../public/docfx.min.css">
@@ -72,7 +72,32 @@
         </div>
 
         <article data-uid="">
+<h1 id="event-handler">Event Handler</h1>
 
+<p>To start, you must add EventHandler to host.</p>
+<pre><code class="lang-csharp">var host = Host.CreateDefaultBuilder(args);
+host.AddServerListener&lt;Player&gt;(2000)
+    //In generic use same Player type as in ServerListener.
+    .AddEventHandler&lt;Player&gt;();
+var app = host.Build();
+await app.RunAsync();
+</code></pre>
+<p>After that, you can create class which listening to event</p>
+<pre><code class="lang-csharp">//In generic use same Player type as in ServerListener, EventHandler.
+public class OnPlayerConnected : OnPlayerConnectedHandler&lt;Player&gt;
+{
+    public OnPlayerConnected(ServerListener&lt;Player&gt; serverListener) : base(serverListener)
+    {
+    }
+
+    protected override Task Handle(Player arg)
+    {
+        //do anything
+        throw new NotImplementedException();
+    }
+}
+</code></pre>
+<p>List of all available events: <a href="https://nes0x.github.io/BattleBitAPI.Addons/documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.html">click</a></p>
 </article>
 
         <div class="contribution d-print-none">

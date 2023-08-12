@@ -1,4 +1,5 @@
 # Event Handler 
+- You must add package `BattleBitAPI.Addons.EventHandler`
 
 To start, you must add EventHandler to host.
 

@@ -25,7 +25,6 @@ Commands can be with same name, but must have inner parameters count or types.
 
 ```csharp
 //Generic type must be same as you typed in host.
-//You can 
 public class AdminModule : CommandModule<Player>
 {
     //usage - .kill steamIdPlayer

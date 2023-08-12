@@ -21,7 +21,7 @@ await app.RunAsync();
 To create commands you must derive from CommandModule class
 
 You can create multiple commands in one class. 
-Commands can be with same name, but must have inner parameters count or
+Commands can be with same name, but must have inner parameters count or types.
 
 ```csharp
 //Generic type must be same as you typed in host.

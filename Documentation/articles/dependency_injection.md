@@ -1,6 +1,6 @@
 # Dependecy Injection
 
-You can create own service and use it in all comman modules, events, checkers, type readers.
+You can create own service and use it in all command modules, events, checkers and type readers.
 
 ```csharp
 public class ConfigService

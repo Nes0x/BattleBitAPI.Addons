@@ -1,5 +1,5 @@
 ﻿using BattleBitAPI.Addons.Common.Extensions;
-using BattleBitAPI.Addons.EventHandler.Events;
+using BattleBitAPI.Addons.EventHandler.Common;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
@@ -8,7 +8,7 @@ namespace BattleBitAPI.Addons.EventHandler.Extensions;
 public static class HostBuilderExtensions
 {
     /// <summary>
-    /// Adds all event handlers from assembly to services and ServerListener
+    ///     Adds all event handlers from assembly to services and ServerListener
     /// </summary>
     /// <typeparam name="TPlayer">Your player type</typeparam>
     public static IHostBuilder AddEventHandler<TPlayer>(this IHostBuilder hostBuilder) where TPlayer : Player
@@ -16,7 +16,7 @@ public static class HostBuilderExtensions
         var assembly = hostBuilder.GetAssembly();
         var types = assembly.GetTypes();
         var playerType = typeof(TPlayer);
-        var targetType = typeof(IEventHandler<>).MakeGenericType(playerType);
+        var targetType = typeof(EventModule<>).MakeGenericType(playerType);
 
         hostBuilder.ConfigureServices(services =>
         {

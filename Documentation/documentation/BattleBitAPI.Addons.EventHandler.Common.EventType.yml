@@ -1,0 +1,456 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventType
+  id: EventType
+  parent: BattleBitAPI.Addons.EventHandler.Common
+  children:
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnAPlayerKilledAnotherPlayer
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnected
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnecting
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerDisconnected
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerTick
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnGetPlayerStats
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedRole
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedTeam
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerConnected
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDied
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDisconnected
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerJoinedASquad
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerLeftSquad
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerReported
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerRequestingToChangeRole
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawned
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawning
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerTypedMessage
+  - BattleBitAPI.Addons.EventHandler.Common.EventType.OnSavePlayerStats
+  langs:
+  - csharp
+  - vb
+  name: EventType
+  nameWithType: EventType
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType
+  type: Enum
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: public enum EventType
+    content.vb: Public Enum EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnAPlayerKilledAnotherPlayer
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnAPlayerKilledAnotherPlayer
+  id: OnAPlayerKilledAnotherPlayer
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnAPlayerKilledAnotherPlayer
+  nameWithType: EventType.OnAPlayerKilledAnotherPlayer
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnAPlayerKilledAnotherPlayer
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnAPlayerKilledAnotherPlayer = 0
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnected
+  id: OnGameServerConnected
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnGameServerConnected
+  nameWithType: EventType.OnGameServerConnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnected
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnGameServerConnected = 1
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnecting
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnecting
+  id: OnGameServerConnecting
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnGameServerConnecting
+  nameWithType: EventType.OnGameServerConnecting
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnecting
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnGameServerConnecting = 2
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerDisconnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerDisconnected
+  id: OnGameServerDisconnected
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnGameServerDisconnected
+  nameWithType: EventType.OnGameServerDisconnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerDisconnected
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnGameServerDisconnected = 3
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
+  id: OnGameServerReconnected
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnGameServerReconnected
+  nameWithType: EventType.OnGameServerReconnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnGameServerReconnected = 4
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerTick
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerTick
+  id: OnGameServerTick
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnGameServerTick
+  nameWithType: EventType.OnGameServerTick
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerTick
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnGameServerTick = 5
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGetPlayerStats
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGetPlayerStats
+  id: OnGetPlayerStats
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnGetPlayerStats
+  nameWithType: EventType.OnGetPlayerStats
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGetPlayerStats
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnGetPlayerStats = 6
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedRole
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedRole
+  id: OnPlayerChangedRole
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerChangedRole
+  nameWithType: EventType.OnPlayerChangedRole
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedRole
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerChangedRole = 7
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedTeam
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedTeam
+  id: OnPlayerChangedTeam
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerChangedTeam
+  nameWithType: EventType.OnPlayerChangedTeam
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedTeam
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerChangedTeam = 8
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerConnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerConnected
+  id: OnPlayerConnected
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerConnected
+  nameWithType: EventType.OnPlayerConnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerConnected
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerConnected = 9
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDied
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDied
+  id: OnPlayerDied
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerDied
+  nameWithType: EventType.OnPlayerDied
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDied
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerDied = 10
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDisconnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDisconnected
+  id: OnPlayerDisconnected
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerDisconnected
+  nameWithType: EventType.OnPlayerDisconnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDisconnected
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerDisconnected = 11
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerJoinedASquad
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerJoinedASquad
+  id: OnPlayerJoinedASquad
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerJoinedASquad
+  nameWithType: EventType.OnPlayerJoinedASquad
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerJoinedASquad
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerJoinedASquad = 12
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerLeftSquad
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerLeftSquad
+  id: OnPlayerLeftSquad
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerLeftSquad
+  nameWithType: EventType.OnPlayerLeftSquad
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerLeftSquad
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerLeftSquad = 13
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerReported
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerReported
+  id: OnPlayerReported
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerReported
+  nameWithType: EventType.OnPlayerReported
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerReported
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerReported = 14
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerRequestingToChangeRole
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerRequestingToChangeRole
+  id: OnPlayerRequestingToChangeRole
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerRequestingToChangeRole
+  nameWithType: EventType.OnPlayerRequestingToChangeRole
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerRequestingToChangeRole
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerRequestingToChangeRole = 15
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawned
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawned
+  id: OnPlayerSpawned
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerSpawned
+  nameWithType: EventType.OnPlayerSpawned
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawned
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerSpawned = 16
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawning
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawning
+  id: OnPlayerSpawning
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerSpawning
+  nameWithType: EventType.OnPlayerSpawning
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawning
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerSpawning = 17
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerTypedMessage
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerTypedMessage
+  id: OnPlayerTypedMessage
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerTypedMessage
+  nameWithType: EventType.OnPlayerTypedMessage
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerTypedMessage
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnPlayerTypedMessage = 18
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnSavePlayerStats
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnSavePlayerStats
+  id: OnSavePlayerStats
+  parent: BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: OnSavePlayerStats
+  nameWithType: EventType.OnSavePlayerStats
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnSavePlayerStats
+  type: Field
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Common
+  syntax:
+    content: OnSavePlayerStats = 19
+    return:
+      type: BattleBitAPI.Addons.EventHandler.Common.EventType
+references:
+- uid: BattleBitAPI.Addons.EventHandler.Common
+  commentId: N:BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.EventHandler.Common
+  nameWithType: BattleBitAPI.Addons.EventHandler.Common
+  fullName: BattleBitAPI.Addons.EventHandler.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.html
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventType
+  parent: BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Common.EventType.html
+  name: EventType
+  nameWithType: EventType
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType

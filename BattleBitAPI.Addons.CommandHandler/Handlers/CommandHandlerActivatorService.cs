@@ -9,12 +9,12 @@ namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 
 public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPlayer : Player
 {
+    public static readonly List<CommandModule<TPlayer>> CommandModules = new();
     private readonly IEnumerable<CommandModule<TPlayer>> _commandModules;
     private readonly List<Func<TPlayer, ChatChannel, string, Task>> _handlers;
     private readonly IMessageHandler<TPlayer> _messageHandler;
     private readonly ServerListener<TPlayer> _serverListener;
     private readonly IValidator<TPlayer> _validator;
-    public static List<CommandModule<TPlayer>> CommandModules = new();
 
     public CommandHandlerActivatorService(IEnumerable<CommandModule<TPlayer>> commandModules,
         IMessageHandler<TPlayer> messageHandler, ServerListener<TPlayer> serverListener, IValidator<TPlayer> validator)
@@ -40,7 +40,6 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
                 _serverListener.OnPlayerTypedMessage += handler;
             }
         }
-      
 
         return Task.CompletedTask;
     }

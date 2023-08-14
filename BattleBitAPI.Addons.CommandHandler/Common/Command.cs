@@ -4,9 +4,9 @@ namespace BattleBitAPI.Addons.CommandHandler.Common;
 
 public class Command
 {
-    public required string CommandName { get; init; }
-    public required string CommandDescription { get; init; }
-    public required MethodInfo MethodInfo { get; init; }
-    public required ParameterInfo[] Parameters { get; init; }
-    public required int RemoveParameters { get; init; }
+    internal string CommandName { get; init; }
+    internal string CommandDescription { get; init; }
+    internal MethodInfo MethodInfo { get; init; }
+    internal ParameterInfo[] Parameters { get; init; }
+    internal int RemoveParameters { get; init; }
 }

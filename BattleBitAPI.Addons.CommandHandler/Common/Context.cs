@@ -3,10 +3,10 @@ using BattleBitAPI.Server;
 
 namespace BattleBitAPI.Addons.CommandHandler.Common;
 
-public class Context<TPlayer> : IContext<TPlayer> where TPlayer : Player
+public class Context<TPlayer> where TPlayer : Player
 {
-    public required TPlayer Player { get; init; }
-    public required ChatChannel ChatChannel { get; init; }
-    public required GameServer GameServer { get; init; }
-    public required IServiceProvider ServiceProvider { get; init; }
+    public TPlayer Player { get; internal init; }
+    public ChatChannel ChatChannel { get; internal init; }
+    public GameServer GameServer { get; internal init; }
+    public IServiceProvider ServiceProvider { get; internal init; }
 }

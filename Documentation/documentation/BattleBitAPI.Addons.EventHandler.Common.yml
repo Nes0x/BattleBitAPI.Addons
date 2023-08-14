@@ -1,0 +1,117 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.EventHandler.Common
+  commentId: N:BattleBitAPI.Addons.EventHandler.Common
+  id: BattleBitAPI.Addons.EventHandler.Common
+  children:
+  - BattleBitAPI.Addons.EventHandler.Common.Event
+  - BattleBitAPI.Addons.EventHandler.Common.EventAttribute
+  - BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+  - BattleBitAPI.Addons.EventHandler.Common.EventType
+  langs:
+  - csharp
+  - vb
+  name: BattleBitAPI.Addons.EventHandler.Common
+  nameWithType: BattleBitAPI.Addons.EventHandler.Common
+  fullName: BattleBitAPI.Addons.EventHandler.Common
+  type: Namespace
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+references:
+- uid: BattleBitAPI.Addons.EventHandler.Common.Event
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.Event
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Common.Event.html
+  name: Event
+  nameWithType: Event
+  fullName: BattleBitAPI.Addons.EventHandler.Common.Event
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventAttribute
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventAttribute
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.html
+  name: EventAttribute
+  nameWithType: EventAttribute
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventAttribute
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html
+  name: EventModule<TPlayer>
+  nameWithType: EventModule<TPlayer>
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventModule<TPlayer>
+  nameWithType.vb: EventModule(Of TPlayer)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Common.EventModule(Of TPlayer)
+  name.vb: EventModule(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+    name: EventModule
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+    name: EventModule
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventType
+  parent: BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Common.EventType.html
+  name: EventType
+  nameWithType: EventType
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common
+  commentId: N:BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.EventHandler.Common
+  nameWithType: BattleBitAPI.Addons.EventHandler.Common
+  fullName: BattleBitAPI.Addons.EventHandler.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.html

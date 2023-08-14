@@ -1244,6 +1244,290 @@ references:
   commentId: Overload:BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssembly
   fullName: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssembly
   nameWithType: HostingExtensions.GetAssembly
+- uid: BattleBitAPI.Addons.EventHandler
+  name: BattleBitAPI.Addons.EventHandler
+  href: documentation/BattleBitAPI.Addons.EventHandler.html
+  commentId: N:BattleBitAPI.Addons.EventHandler
+  fullName: BattleBitAPI.Addons.EventHandler
+  nameWithType: BattleBitAPI.Addons.EventHandler
+- uid: BattleBitAPI.Addons.EventHandler.Common
+  name: BattleBitAPI.Addons.EventHandler.Common
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.html
+  commentId: N:BattleBitAPI.Addons.EventHandler.Common
+  fullName: BattleBitAPI.Addons.EventHandler.Common
+  nameWithType: BattleBitAPI.Addons.EventHandler.Common
+- uid: BattleBitAPI.Addons.EventHandler.Common.Event
+  name: Event
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.Event.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.Event
+  fullName: BattleBitAPI.Addons.EventHandler.Common.Event
+  nameWithType: Event
+- uid: BattleBitAPI.Addons.EventHandler.Common.Event.#ctor
+  name: Event()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.Event.html#BattleBitAPI_Addons_EventHandler_Common_Event__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Common.Event.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Common.Event.Event()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Common.Event.New()
+  nameWithType: Event.Event()
+  nameWithType.vb: Event.New()
+- uid: BattleBitAPI.Addons.EventHandler.Common.Event.#ctor*
+  name: Event
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.Event.html#BattleBitAPI_Addons_EventHandler_Common_Event__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Common.Event.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Common.Event.Event
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Common.Event.New
+  nameWithType: Event.Event
+  nameWithType.vb: Event.New
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventAttribute
+  name: EventAttribute
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventAttribute.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventAttribute
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventAttribute
+  nameWithType: EventAttribute
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.#ctor
+  name: EventAttribute()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventAttribute.html#BattleBitAPI_Addons_EventHandler_Common_EventAttribute__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Common.EventAttribute.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.EventAttribute()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.New()
+  nameWithType: EventAttribute.EventAttribute()
+  nameWithType.vb: EventAttribute.New()
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.#ctor*
+  name: EventAttribute
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventAttribute.html#BattleBitAPI_Addons_EventHandler_Common_EventAttribute__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Common.EventAttribute.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.EventAttribute
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.New
+  nameWithType: EventAttribute.EventAttribute
+  nameWithType.vb: EventAttribute.New
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.EventType
+  name: EventType
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventAttribute.html#BattleBitAPI_Addons_EventHandler_Common_EventAttribute_EventType
+  commentId: P:BattleBitAPI.Addons.EventHandler.Common.EventAttribute.EventType
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.EventType
+  nameWithType: EventAttribute.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.EventType*
+  name: EventType
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventAttribute.html#BattleBitAPI_Addons_EventHandler_Common_EventAttribute_EventType_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Common.EventAttribute.EventType
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventAttribute.EventType
+  nameWithType: EventAttribute.EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+  name: EventModule<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+  name.vb: EventModule(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventModule<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Common.EventModule(Of TPlayer)
+  nameWithType: EventModule<TPlayer>
+  nameWithType.vb: EventModule(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1.#ctor
+  name: EventModule()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html#BattleBitAPI_Addons_EventHandler_Common_EventModule_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Common.EventModule`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventModule<TPlayer>.EventModule()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Common.EventModule(Of TPlayer).New()
+  nameWithType: EventModule<TPlayer>.EventModule()
+  nameWithType.vb: EventModule(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1.#ctor*
+  name: EventModule
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html#BattleBitAPI_Addons_EventHandler_Common_EventModule_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Common.EventModule`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventModule<TPlayer>.EventModule
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Common.EventModule(Of TPlayer).New
+  nameWithType: EventModule<TPlayer>.EventModule
+  nameWithType.vb: EventModule(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType
+  name: EventType
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventType
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType
+  nameWithType: EventType
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnAPlayerKilledAnotherPlayer
+  name: OnAPlayerKilledAnotherPlayer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnAPlayerKilledAnotherPlayer
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnAPlayerKilledAnotherPlayer
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnAPlayerKilledAnotherPlayer
+  nameWithType: EventType.OnAPlayerKilledAnotherPlayer
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnected
+  name: OnGameServerConnected
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerConnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnected
+  nameWithType: EventType.OnGameServerConnected
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnecting
+  name: OnGameServerConnecting
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerConnecting
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnecting
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerConnecting
+  nameWithType: EventType.OnGameServerConnecting
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerDisconnected
+  name: OnGameServerDisconnected
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerDisconnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerDisconnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerDisconnected
+  nameWithType: EventType.OnGameServerDisconnected
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
+  name: OnGameServerReconnected
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerReconnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
+  nameWithType: EventType.OnGameServerReconnected
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerTick
+  name: OnGameServerTick
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerTick
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerTick
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerTick
+  nameWithType: EventType.OnGameServerTick
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGetPlayerStats
+  name: OnGetPlayerStats
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnGetPlayerStats
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGetPlayerStats
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGetPlayerStats
+  nameWithType: EventType.OnGetPlayerStats
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedRole
+  name: OnPlayerChangedRole
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerChangedRole
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedRole
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedRole
+  nameWithType: EventType.OnPlayerChangedRole
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedTeam
+  name: OnPlayerChangedTeam
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerChangedTeam
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedTeam
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerChangedTeam
+  nameWithType: EventType.OnPlayerChangedTeam
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerConnected
+  name: OnPlayerConnected
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerConnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerConnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerConnected
+  nameWithType: EventType.OnPlayerConnected
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDied
+  name: OnPlayerDied
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerDied
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDied
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDied
+  nameWithType: EventType.OnPlayerDied
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDisconnected
+  name: OnPlayerDisconnected
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerDisconnected
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDisconnected
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerDisconnected
+  nameWithType: EventType.OnPlayerDisconnected
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerJoinedASquad
+  name: OnPlayerJoinedASquad
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerJoinedASquad
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerJoinedASquad
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerJoinedASquad
+  nameWithType: EventType.OnPlayerJoinedASquad
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerLeftSquad
+  name: OnPlayerLeftSquad
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerLeftSquad
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerLeftSquad
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerLeftSquad
+  nameWithType: EventType.OnPlayerLeftSquad
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerReported
+  name: OnPlayerReported
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerReported
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerReported
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerReported
+  nameWithType: EventType.OnPlayerReported
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerRequestingToChangeRole
+  name: OnPlayerRequestingToChangeRole
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerRequestingToChangeRole
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerRequestingToChangeRole
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerRequestingToChangeRole
+  nameWithType: EventType.OnPlayerRequestingToChangeRole
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawned
+  name: OnPlayerSpawned
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerSpawned
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawned
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawned
+  nameWithType: EventType.OnPlayerSpawned
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawning
+  name: OnPlayerSpawning
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerSpawning
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawning
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerSpawning
+  nameWithType: EventType.OnPlayerSpawning
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerTypedMessage
+  name: OnPlayerTypedMessage
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerTypedMessage
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerTypedMessage
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerTypedMessage
+  nameWithType: EventType.OnPlayerTypedMessage
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnSavePlayerStats
+  name: OnSavePlayerStats
+  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnSavePlayerStats
+  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnSavePlayerStats
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnSavePlayerStats
+  nameWithType: EventType.OnSavePlayerStats
+- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1
+  name: EventHandlerActivatorService<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1
+  name.vb: EventHandlerActivatorService(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer)
+  nameWithType: EventHandlerActivatorService<TPlayer>
+  nameWithType.vb: EventHandlerActivatorService(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.#ctor(BattleBitAPI.Server.ServerListener{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.EventHandler.Common.EventModule{`0}})
+  name: EventHandlerActivatorService(ServerListener<TPlayer>, IEnumerable<EventModule<TPlayer>>)
+  href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html#BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_1__ctor_BattleBitAPI_Server_ServerListener__0__System_Collections_Generic_IEnumerable_BattleBitAPI_Addons_EventHandler_Common_EventModule__0___
+  commentId: M:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.#ctor(BattleBitAPI.Server.ServerListener{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.EventHandler.Common.EventModule{`0}})
+  name.vb: New(ServerListener(Of TPlayer), IEnumerable(Of EventModule(Of TPlayer)))
+  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>.EventHandlerActivatorService(BattleBitAPI.Server.ServerListener<TPlayer>, System.Collections.Generic.IEnumerable<BattleBitAPI.Addons.EventHandler.Common.EventModule<TPlayer>>)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer).New(BattleBitAPI.Server.ServerListener(Of TPlayer), System.Collections.Generic.IEnumerable(Of BattleBitAPI.Addons.EventHandler.Common.EventModule(Of TPlayer)))
+  nameWithType: EventHandlerActivatorService<TPlayer>.EventHandlerActivatorService(ServerListener<TPlayer>, IEnumerable<EventModule<TPlayer>>)
+  nameWithType.vb: EventHandlerActivatorService(Of TPlayer).New(ServerListener(Of TPlayer), IEnumerable(Of EventModule(Of TPlayer)))
+- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.#ctor*
+  name: EventHandlerActivatorService
+  href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html#BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>.EventHandlerActivatorService
+  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer).New
+  nameWithType: EventHandlerActivatorService<TPlayer>.EventHandlerActivatorService
+  nameWithType.vb: EventHandlerActivatorService(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.StartAsync(System.Threading.CancellationToken)
+  name: StartAsync(CancellationToken)
+  href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html#BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_1_StartAsync_System_Threading_CancellationToken_
+  commentId: M:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.StartAsync(System.Threading.CancellationToken)
+  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>.StartAsync(System.Threading.CancellationToken)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer).StartAsync(System.Threading.CancellationToken)
+  nameWithType: EventHandlerActivatorService<TPlayer>.StartAsync(CancellationToken)
+  nameWithType.vb: EventHandlerActivatorService(Of TPlayer).StartAsync(CancellationToken)
+- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.StartAsync*
+  name: StartAsync
+  href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html#BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_1_StartAsync_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.StartAsync
+  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>.StartAsync
+  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer).StartAsync
+  nameWithType: EventHandlerActivatorService<TPlayer>.StartAsync
+  nameWithType.vb: EventHandlerActivatorService(Of TPlayer).StartAsync
+- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.StopAsync(System.Threading.CancellationToken)
+  name: StopAsync(CancellationToken)
+  href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html#BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_1_StopAsync_System_Threading_CancellationToken_
+  commentId: M:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.StopAsync(System.Threading.CancellationToken)
+  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>.StopAsync(System.Threading.CancellationToken)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer).StopAsync(System.Threading.CancellationToken)
+  nameWithType: EventHandlerActivatorService<TPlayer>.StopAsync(CancellationToken)
+  nameWithType.vb: EventHandlerActivatorService(Of TPlayer).StopAsync(CancellationToken)
+- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.StopAsync*
+  name: StopAsync
+  href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html#BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_1_StopAsync_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.StopAsync
+  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>.StopAsync
+  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer).StopAsync
+  nameWithType: EventHandlerActivatorService<TPlayer>.StopAsync
+  nameWithType.vb: EventHandlerActivatorService(Of TPlayer).StopAsync
 - uid: BattleBitAPI.Addons.EventHandler.Events
   name: BattleBitAPI.Addons.EventHandler.Events
   href: documentation/BattleBitAPI.Addons.EventHandler.Events.html
@@ -2952,6 +3236,1081 @@ references:
   fullName.vb: BattleBitAPI.Addons.EventHandler.Events.IEventHandler(Of TPlayer).UnSubscribe
   nameWithType: IEventHandler<TPlayer>.UnSubscribe
   nameWithType.vb: IEventHandler(Of TPlayer).UnSubscribe
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1
+  name: OnAPlayerKilledAnotherPlayerArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1
+  name.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer)
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.#ctor
+  name: OnAPlayerKilledAnotherPlayerArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.OnAPlayerKilledAnotherPlayerArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).New()
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.OnAPlayerKilledAnotherPlayerArgs()
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.#ctor*
+  name: OnAPlayerKilledAnotherPlayerArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.OnAPlayerKilledAnotherPlayerArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).New
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.OnAPlayerKilledAnotherPlayerArgs
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Killer
+  name: Killer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_Killer
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Killer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Killer
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Killer
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Killer
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Killer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Killer*
+  name: Killer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_Killer_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Killer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Killer
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Killer
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Killer
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Killer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.KillerPosition
+  name: KillerPosition
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_KillerPosition
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.KillerPosition
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.KillerPosition
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).KillerPosition
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.KillerPosition
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).KillerPosition
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.KillerPosition*
+  name: KillerPosition
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_KillerPosition_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.KillerPosition
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.KillerPosition
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).KillerPosition
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.KillerPosition
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).KillerPosition
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Tool
+  name: Tool
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_Tool
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Tool
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Tool
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Tool
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Tool
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Tool
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Tool*
+  name: Tool
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_Tool_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Tool
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Tool
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Tool
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Tool
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Tool
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Victim
+  name: Victim
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_Victim
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Victim
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Victim
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Victim
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Victim
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Victim
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Victim*
+  name: Victim
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_Victim_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.Victim
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Victim
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Victim
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.Victim
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).Victim
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.VictimPosition
+  name: VictimPosition
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_VictimPosition
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.VictimPosition
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.VictimPosition
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).VictimPosition
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.VictimPosition
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).VictimPosition
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.VictimPosition*
+  name: VictimPosition
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnAPlayerKilledAnotherPlayerArgs_1_VictimPosition_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1.VictimPosition
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs<TPlayer>.VictimPosition
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).VictimPosition
+  nameWithType: OnAPlayerKilledAnotherPlayerArgs<TPlayer>.VictimPosition
+  nameWithType.vb: OnAPlayerKilledAnotherPlayerArgs(Of TPlayer).VictimPosition
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs
+  name: OnGameServerConnectedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs
+  nameWithType: OnGameServerConnectedArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.#ctor
+  name: OnGameServerConnectedArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerConnectedArgs__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.OnGameServerConnectedArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.New()
+  nameWithType: OnGameServerConnectedArgs.OnGameServerConnectedArgs()
+  nameWithType.vb: OnGameServerConnectedArgs.New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.#ctor*
+  name: OnGameServerConnectedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerConnectedArgs__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.OnGameServerConnectedArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.New
+  nameWithType: OnGameServerConnectedArgs.OnGameServerConnectedArgs
+  nameWithType.vb: OnGameServerConnectedArgs.New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.GameServer
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerConnectedArgs_GameServer
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.GameServer
+  nameWithType: OnGameServerConnectedArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.GameServer*
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerConnectedArgs_GameServer_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.GameServer
+  nameWithType: OnGameServerConnectedArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs
+  name: OnGameServerConnectingArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs
+  nameWithType: OnGameServerConnectingArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.#ctor
+  name: OnGameServerConnectingArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerConnectingArgs__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.OnGameServerConnectingArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.New()
+  nameWithType: OnGameServerConnectingArgs.OnGameServerConnectingArgs()
+  nameWithType.vb: OnGameServerConnectingArgs.New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.#ctor*
+  name: OnGameServerConnectingArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerConnectingArgs__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.OnGameServerConnectingArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.New
+  nameWithType: OnGameServerConnectingArgs.OnGameServerConnectingArgs
+  nameWithType.vb: OnGameServerConnectingArgs.New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
+  name: IPAddress
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerConnectingArgs_IPAddress
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
+  nameWithType: OnGameServerConnectingArgs.IPAddress
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress*
+  name: IPAddress
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerConnectingArgs_IPAddress_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
+  nameWithType: OnGameServerConnectingArgs.IPAddress
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs
+  name: OnGameServerDisconnectedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs
+  nameWithType: OnGameServerDisconnectedArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.#ctor
+  name: OnGameServerDisconnectedArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerDisconnectedArgs__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.OnGameServerDisconnectedArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.New()
+  nameWithType: OnGameServerDisconnectedArgs.OnGameServerDisconnectedArgs()
+  nameWithType.vb: OnGameServerDisconnectedArgs.New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.#ctor*
+  name: OnGameServerDisconnectedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerDisconnectedArgs__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.OnGameServerDisconnectedArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.New
+  nameWithType: OnGameServerDisconnectedArgs.OnGameServerDisconnectedArgs
+  nameWithType.vb: OnGameServerDisconnectedArgs.New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.GameServer
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerDisconnectedArgs_GameServer
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.GameServer
+  nameWithType: OnGameServerDisconnectedArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.GameServer*
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerDisconnectedArgs_GameServer_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.GameServer
+  nameWithType: OnGameServerDisconnectedArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+  name: OnGameServerReconnectedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+  nameWithType: OnGameServerReconnectedArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
+  name: OnGameServerReconnectedArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.OnGameServerReconnectedArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.New()
+  nameWithType: OnGameServerReconnectedArgs.OnGameServerReconnectedArgs()
+  nameWithType.vb: OnGameServerReconnectedArgs.New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor*
+  name: OnGameServerReconnectedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.OnGameServerReconnectedArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.New
+  nameWithType: OnGameServerReconnectedArgs.OnGameServerReconnectedArgs
+  nameWithType.vb: OnGameServerReconnectedArgs.New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs_GameServer
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+  nameWithType: OnGameServerReconnectedArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer*
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs_GameServer_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+  nameWithType: OnGameServerReconnectedArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs
+  name: OnGameServerTickArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs
+  nameWithType: OnGameServerTickArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.#ctor
+  name: OnGameServerTickArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerTickArgs__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.OnGameServerTickArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.New()
+  nameWithType: OnGameServerTickArgs.OnGameServerTickArgs()
+  nameWithType.vb: OnGameServerTickArgs.New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.#ctor*
+  name: OnGameServerTickArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerTickArgs__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.OnGameServerTickArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.New
+  nameWithType: OnGameServerTickArgs.OnGameServerTickArgs
+  nameWithType.vb: OnGameServerTickArgs.New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.GameServer
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerTickArgs_GameServer
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.GameServer
+  nameWithType: OnGameServerTickArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.GameServer*
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGameServerTickArgs_GameServer_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.GameServer
+  nameWithType: OnGameServerTickArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs
+  name: OnGetPlayerStatsArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs
+  nameWithType: OnGetPlayerStatsArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.#ctor
+  name: OnGetPlayerStatsArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGetPlayerStatsArgs__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.OnGetPlayerStatsArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.New()
+  nameWithType: OnGetPlayerStatsArgs.OnGetPlayerStatsArgs()
+  nameWithType.vb: OnGetPlayerStatsArgs.New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.#ctor*
+  name: OnGetPlayerStatsArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGetPlayerStatsArgs__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.OnGetPlayerStatsArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.New
+  nameWithType: OnGetPlayerStatsArgs.OnGetPlayerStatsArgs
+  nameWithType.vb: OnGetPlayerStatsArgs.New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.PlayerStats
+  name: PlayerStats
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGetPlayerStatsArgs_PlayerStats
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.PlayerStats
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.PlayerStats
+  nameWithType: OnGetPlayerStatsArgs.PlayerStats
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.PlayerStats*
+  name: PlayerStats
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGetPlayerStatsArgs_PlayerStats_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.PlayerStats
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.PlayerStats
+  nameWithType: OnGetPlayerStatsArgs.PlayerStats
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.SteamId
+  name: SteamId
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGetPlayerStatsArgs_SteamId
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.SteamId
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.SteamId
+  nameWithType: OnGetPlayerStatsArgs.SteamId
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.SteamId*
+  name: SteamId
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnGetPlayerStatsArgs_SteamId_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.SteamId
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.SteamId
+  nameWithType: OnGetPlayerStatsArgs.SteamId
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1
+  name: OnPlayerChangedRoleArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1
+  name.vb: OnPlayerChangedRoleArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs(Of TPlayer)
+  nameWithType: OnPlayerChangedRoleArgs<TPlayer>
+  nameWithType.vb: OnPlayerChangedRoleArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.#ctor
+  name: OnPlayerChangedRoleArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedRoleArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs<TPlayer>.OnPlayerChangedRoleArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs(Of TPlayer).New()
+  nameWithType: OnPlayerChangedRoleArgs<TPlayer>.OnPlayerChangedRoleArgs()
+  nameWithType.vb: OnPlayerChangedRoleArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.#ctor*
+  name: OnPlayerChangedRoleArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedRoleArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs<TPlayer>.OnPlayerChangedRoleArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs(Of TPlayer).New
+  nameWithType: OnPlayerChangedRoleArgs<TPlayer>.OnPlayerChangedRoleArgs
+  nameWithType.vb: OnPlayerChangedRoleArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.GameRole
+  name: GameRole
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedRoleArgs_1_GameRole
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.GameRole
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs<TPlayer>.GameRole
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs(Of TPlayer).GameRole
+  nameWithType: OnPlayerChangedRoleArgs<TPlayer>.GameRole
+  nameWithType.vb: OnPlayerChangedRoleArgs(Of TPlayer).GameRole
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.GameRole*
+  name: GameRole
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedRoleArgs_1_GameRole_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.GameRole
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs<TPlayer>.GameRole
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs(Of TPlayer).GameRole
+  nameWithType: OnPlayerChangedRoleArgs<TPlayer>.GameRole
+  nameWithType.vb: OnPlayerChangedRoleArgs(Of TPlayer).GameRole
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedRoleArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs(Of TPlayer).Player
+  nameWithType: OnPlayerChangedRoleArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerChangedRoleArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedRoleArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs(Of TPlayer).Player
+  nameWithType: OnPlayerChangedRoleArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerChangedRoleArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1
+  name: OnPlayerChangedTeamArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1
+  name.vb: OnPlayerChangedTeamArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs(Of TPlayer)
+  nameWithType: OnPlayerChangedTeamArgs<TPlayer>
+  nameWithType.vb: OnPlayerChangedTeamArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.#ctor
+  name: OnPlayerChangedTeamArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedTeamArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs<TPlayer>.OnPlayerChangedTeamArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs(Of TPlayer).New()
+  nameWithType: OnPlayerChangedTeamArgs<TPlayer>.OnPlayerChangedTeamArgs()
+  nameWithType.vb: OnPlayerChangedTeamArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.#ctor*
+  name: OnPlayerChangedTeamArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedTeamArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs<TPlayer>.OnPlayerChangedTeamArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs(Of TPlayer).New
+  nameWithType: OnPlayerChangedTeamArgs<TPlayer>.OnPlayerChangedTeamArgs
+  nameWithType.vb: OnPlayerChangedTeamArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedTeamArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs(Of TPlayer).Player
+  nameWithType: OnPlayerChangedTeamArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerChangedTeamArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedTeamArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs(Of TPlayer).Player
+  nameWithType: OnPlayerChangedTeamArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerChangedTeamArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.Team
+  name: Team
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedTeamArgs_1_Team
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.Team
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs<TPlayer>.Team
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs(Of TPlayer).Team
+  nameWithType: OnPlayerChangedTeamArgs<TPlayer>.Team
+  nameWithType.vb: OnPlayerChangedTeamArgs(Of TPlayer).Team
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.Team*
+  name: Team
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerChangedTeamArgs_1_Team_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1.Team
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs<TPlayer>.Team
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs(Of TPlayer).Team
+  nameWithType: OnPlayerChangedTeamArgs<TPlayer>.Team
+  nameWithType.vb: OnPlayerChangedTeamArgs(Of TPlayer).Team
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1
+  name: OnPlayerConnectedArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1
+  name.vb: OnPlayerConnectedArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs(Of TPlayer)
+  nameWithType: OnPlayerConnectedArgs<TPlayer>
+  nameWithType.vb: OnPlayerConnectedArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1.#ctor
+  name: OnPlayerConnectedArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerConnectedArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs<TPlayer>.OnPlayerConnectedArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs(Of TPlayer).New()
+  nameWithType: OnPlayerConnectedArgs<TPlayer>.OnPlayerConnectedArgs()
+  nameWithType.vb: OnPlayerConnectedArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1.#ctor*
+  name: OnPlayerConnectedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerConnectedArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs<TPlayer>.OnPlayerConnectedArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs(Of TPlayer).New
+  nameWithType: OnPlayerConnectedArgs<TPlayer>.OnPlayerConnectedArgs
+  nameWithType.vb: OnPlayerConnectedArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerConnectedArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs(Of TPlayer).Player
+  nameWithType: OnPlayerConnectedArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerConnectedArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerConnectedArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs(Of TPlayer).Player
+  nameWithType: OnPlayerConnectedArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerConnectedArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1
+  name: OnPlayerDiedArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1
+  name.vb: OnPlayerDiedArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs(Of TPlayer)
+  nameWithType: OnPlayerDiedArgs<TPlayer>
+  nameWithType.vb: OnPlayerDiedArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1.#ctor
+  name: OnPlayerDiedArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerDiedArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs<TPlayer>.OnPlayerDiedArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs(Of TPlayer).New()
+  nameWithType: OnPlayerDiedArgs<TPlayer>.OnPlayerDiedArgs()
+  nameWithType.vb: OnPlayerDiedArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1.#ctor*
+  name: OnPlayerDiedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerDiedArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs<TPlayer>.OnPlayerDiedArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs(Of TPlayer).New
+  nameWithType: OnPlayerDiedArgs<TPlayer>.OnPlayerDiedArgs
+  nameWithType.vb: OnPlayerDiedArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerDiedArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs(Of TPlayer).Player
+  nameWithType: OnPlayerDiedArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerDiedArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerDiedArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs(Of TPlayer).Player
+  nameWithType: OnPlayerDiedArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerDiedArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1
+  name: OnPlayerDisconnectedArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1
+  name.vb: OnPlayerDisconnectedArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs(Of TPlayer)
+  nameWithType: OnPlayerDisconnectedArgs<TPlayer>
+  nameWithType.vb: OnPlayerDisconnectedArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1.#ctor
+  name: OnPlayerDisconnectedArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerDisconnectedArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs<TPlayer>.OnPlayerDisconnectedArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs(Of TPlayer).New()
+  nameWithType: OnPlayerDisconnectedArgs<TPlayer>.OnPlayerDisconnectedArgs()
+  nameWithType.vb: OnPlayerDisconnectedArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1.#ctor*
+  name: OnPlayerDisconnectedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerDisconnectedArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs<TPlayer>.OnPlayerDisconnectedArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs(Of TPlayer).New
+  nameWithType: OnPlayerDisconnectedArgs<TPlayer>.OnPlayerDisconnectedArgs
+  nameWithType.vb: OnPlayerDisconnectedArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerDisconnectedArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs(Of TPlayer).Player
+  nameWithType: OnPlayerDisconnectedArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerDisconnectedArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerDisconnectedArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs(Of TPlayer).Player
+  nameWithType: OnPlayerDisconnectedArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerDisconnectedArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1
+  name: OnPlayerJoinedASquadArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1
+  name.vb: OnPlayerJoinedASquadArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs(Of TPlayer)
+  nameWithType: OnPlayerJoinedASquadArgs<TPlayer>
+  nameWithType.vb: OnPlayerJoinedASquadArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.#ctor
+  name: OnPlayerJoinedASquadArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoinedASquadArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs<TPlayer>.OnPlayerJoinedASquadArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs(Of TPlayer).New()
+  nameWithType: OnPlayerJoinedASquadArgs<TPlayer>.OnPlayerJoinedASquadArgs()
+  nameWithType.vb: OnPlayerJoinedASquadArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.#ctor*
+  name: OnPlayerJoinedASquadArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoinedASquadArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs<TPlayer>.OnPlayerJoinedASquadArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs(Of TPlayer).New
+  nameWithType: OnPlayerJoinedASquadArgs<TPlayer>.OnPlayerJoinedASquadArgs
+  nameWithType.vb: OnPlayerJoinedASquadArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoinedASquadArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs(Of TPlayer).Player
+  nameWithType: OnPlayerJoinedASquadArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerJoinedASquadArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoinedASquadArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs(Of TPlayer).Player
+  nameWithType: OnPlayerJoinedASquadArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerJoinedASquadArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.Squads
+  name: Squads
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoinedASquadArgs_1_Squads
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.Squads
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs<TPlayer>.Squads
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs(Of TPlayer).Squads
+  nameWithType: OnPlayerJoinedASquadArgs<TPlayer>.Squads
+  nameWithType.vb: OnPlayerJoinedASquadArgs(Of TPlayer).Squads
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.Squads*
+  name: Squads
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoinedASquadArgs_1_Squads_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1.Squads
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs<TPlayer>.Squads
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs(Of TPlayer).Squads
+  nameWithType: OnPlayerJoinedASquadArgs<TPlayer>.Squads
+  nameWithType.vb: OnPlayerJoinedASquadArgs(Of TPlayer).Squads
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1
+  name: OnPlayerLeftSquadArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1
+  name.vb: OnPlayerLeftSquadArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs(Of TPlayer)
+  nameWithType: OnPlayerLeftSquadArgs<TPlayer>
+  nameWithType.vb: OnPlayerLeftSquadArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.#ctor
+  name: OnPlayerLeftSquadArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerLeftSquadArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs<TPlayer>.OnPlayerLeftSquadArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs(Of TPlayer).New()
+  nameWithType: OnPlayerLeftSquadArgs<TPlayer>.OnPlayerLeftSquadArgs()
+  nameWithType.vb: OnPlayerLeftSquadArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.#ctor*
+  name: OnPlayerLeftSquadArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerLeftSquadArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs<TPlayer>.OnPlayerLeftSquadArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs(Of TPlayer).New
+  nameWithType: OnPlayerLeftSquadArgs<TPlayer>.OnPlayerLeftSquadArgs
+  nameWithType.vb: OnPlayerLeftSquadArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerLeftSquadArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs(Of TPlayer).Player
+  nameWithType: OnPlayerLeftSquadArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerLeftSquadArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerLeftSquadArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs(Of TPlayer).Player
+  nameWithType: OnPlayerLeftSquadArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerLeftSquadArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.Squads
+  name: Squads
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerLeftSquadArgs_1_Squads
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.Squads
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs<TPlayer>.Squads
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs(Of TPlayer).Squads
+  nameWithType: OnPlayerLeftSquadArgs<TPlayer>.Squads
+  nameWithType.vb: OnPlayerLeftSquadArgs(Of TPlayer).Squads
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.Squads*
+  name: Squads
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerLeftSquadArgs_1_Squads_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1.Squads
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs<TPlayer>.Squads
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs(Of TPlayer).Squads
+  nameWithType: OnPlayerLeftSquadArgs<TPlayer>.Squads
+  nameWithType.vb: OnPlayerLeftSquadArgs(Of TPlayer).Squads
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1
+  name: OnPlayerReportedArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1
+  name.vb: OnPlayerReportedArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer)
+  nameWithType: OnPlayerReportedArgs<TPlayer>
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.#ctor
+  name: OnPlayerReportedArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.OnPlayerReportedArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).New()
+  nameWithType: OnPlayerReportedArgs<TPlayer>.OnPlayerReportedArgs()
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.#ctor*
+  name: OnPlayerReportedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.OnPlayerReportedArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).New
+  nameWithType: OnPlayerReportedArgs<TPlayer>.OnPlayerReportedArgs
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Details
+  name: Details
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1_Details
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Details
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.Details
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).Details
+  nameWithType: OnPlayerReportedArgs<TPlayer>.Details
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).Details
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Details*
+  name: Details
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1_Details_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Details
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.Details
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).Details
+  nameWithType: OnPlayerReportedArgs<TPlayer>.Details
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).Details
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.ReportReason
+  name: ReportReason
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1_ReportReason
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.ReportReason
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.ReportReason
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).ReportReason
+  nameWithType: OnPlayerReportedArgs<TPlayer>.ReportReason
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).ReportReason
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.ReportReason*
+  name: ReportReason
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1_ReportReason_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.ReportReason
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.ReportReason
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).ReportReason
+  nameWithType: OnPlayerReportedArgs<TPlayer>.ReportReason
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).ReportReason
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Reported
+  name: Reported
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1_Reported
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Reported
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.Reported
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).Reported
+  nameWithType: OnPlayerReportedArgs<TPlayer>.Reported
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).Reported
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Reported*
+  name: Reported
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1_Reported_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Reported
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.Reported
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).Reported
+  nameWithType: OnPlayerReportedArgs<TPlayer>.Reported
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).Reported
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Reporter
+  name: Reporter
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1_Reporter
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Reporter
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.Reporter
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).Reporter
+  nameWithType: OnPlayerReportedArgs<TPlayer>.Reporter
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).Reporter
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Reporter*
+  name: Reporter
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerReportedArgs_1_Reporter_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1.Reporter
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs<TPlayer>.Reporter
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs(Of TPlayer).Reporter
+  nameWithType: OnPlayerReportedArgs<TPlayer>.Reporter
+  nameWithType.vb: OnPlayerReportedArgs(Of TPlayer).Reporter
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1
+  name: OnPlayerRequestingToChangeRoleArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1
+  name.vb: OnPlayerRequestingToChangeRoleArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs(Of TPlayer)
+  nameWithType: OnPlayerRequestingToChangeRoleArgs<TPlayer>
+  nameWithType.vb: OnPlayerRequestingToChangeRoleArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.#ctor
+  name: OnPlayerRequestingToChangeRoleArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerRequestingToChangeRoleArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs<TPlayer>.OnPlayerRequestingToChangeRoleArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs(Of TPlayer).New()
+  nameWithType: OnPlayerRequestingToChangeRoleArgs<TPlayer>.OnPlayerRequestingToChangeRoleArgs()
+  nameWithType.vb: OnPlayerRequestingToChangeRoleArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.#ctor*
+  name: OnPlayerRequestingToChangeRoleArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerRequestingToChangeRoleArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs<TPlayer>.OnPlayerRequestingToChangeRoleArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs(Of TPlayer).New
+  nameWithType: OnPlayerRequestingToChangeRoleArgs<TPlayer>.OnPlayerRequestingToChangeRoleArgs
+  nameWithType.vb: OnPlayerRequestingToChangeRoleArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.GameRole
+  name: GameRole
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerRequestingToChangeRoleArgs_1_GameRole
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.GameRole
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs<TPlayer>.GameRole
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs(Of TPlayer).GameRole
+  nameWithType: OnPlayerRequestingToChangeRoleArgs<TPlayer>.GameRole
+  nameWithType.vb: OnPlayerRequestingToChangeRoleArgs(Of TPlayer).GameRole
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.GameRole*
+  name: GameRole
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerRequestingToChangeRoleArgs_1_GameRole_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.GameRole
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs<TPlayer>.GameRole
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs(Of TPlayer).GameRole
+  nameWithType: OnPlayerRequestingToChangeRoleArgs<TPlayer>.GameRole
+  nameWithType.vb: OnPlayerRequestingToChangeRoleArgs(Of TPlayer).GameRole
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerRequestingToChangeRoleArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs(Of TPlayer).Player
+  nameWithType: OnPlayerRequestingToChangeRoleArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerRequestingToChangeRoleArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerRequestingToChangeRoleArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs(Of TPlayer).Player
+  nameWithType: OnPlayerRequestingToChangeRoleArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerRequestingToChangeRoleArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1
+  name: OnPlayerSpawnedArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1
+  name.vb: OnPlayerSpawnedArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs(Of TPlayer)
+  nameWithType: OnPlayerSpawnedArgs<TPlayer>
+  nameWithType.vb: OnPlayerSpawnedArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1.#ctor
+  name: OnPlayerSpawnedArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawnedArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs<TPlayer>.OnPlayerSpawnedArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs(Of TPlayer).New()
+  nameWithType: OnPlayerSpawnedArgs<TPlayer>.OnPlayerSpawnedArgs()
+  nameWithType.vb: OnPlayerSpawnedArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1.#ctor*
+  name: OnPlayerSpawnedArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawnedArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs<TPlayer>.OnPlayerSpawnedArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs(Of TPlayer).New
+  nameWithType: OnPlayerSpawnedArgs<TPlayer>.OnPlayerSpawnedArgs
+  nameWithType.vb: OnPlayerSpawnedArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawnedArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs(Of TPlayer).Player
+  nameWithType: OnPlayerSpawnedArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerSpawnedArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawnedArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs(Of TPlayer).Player
+  nameWithType: OnPlayerSpawnedArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerSpawnedArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1
+  name: OnPlayerSpawningArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1
+  name.vb: OnPlayerSpawningArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs(Of TPlayer)
+  nameWithType: OnPlayerSpawningArgs<TPlayer>
+  nameWithType.vb: OnPlayerSpawningArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.#ctor
+  name: OnPlayerSpawningArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawningArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs<TPlayer>.OnPlayerSpawningArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs(Of TPlayer).New()
+  nameWithType: OnPlayerSpawningArgs<TPlayer>.OnPlayerSpawningArgs()
+  nameWithType.vb: OnPlayerSpawningArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.#ctor*
+  name: OnPlayerSpawningArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawningArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs<TPlayer>.OnPlayerSpawningArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs(Of TPlayer).New
+  nameWithType: OnPlayerSpawningArgs<TPlayer>.OnPlayerSpawningArgs
+  nameWithType.vb: OnPlayerSpawningArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawningArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs(Of TPlayer).Player
+  nameWithType: OnPlayerSpawningArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerSpawningArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawningArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs(Of TPlayer).Player
+  nameWithType: OnPlayerSpawningArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerSpawningArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.PlayerSpawnRequest
+  name: PlayerSpawnRequest
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawningArgs_1_PlayerSpawnRequest
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.PlayerSpawnRequest
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs<TPlayer>.PlayerSpawnRequest
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs(Of TPlayer).PlayerSpawnRequest
+  nameWithType: OnPlayerSpawningArgs<TPlayer>.PlayerSpawnRequest
+  nameWithType.vb: OnPlayerSpawningArgs(Of TPlayer).PlayerSpawnRequest
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.PlayerSpawnRequest*
+  name: PlayerSpawnRequest
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerSpawningArgs_1_PlayerSpawnRequest_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1.PlayerSpawnRequest
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs<TPlayer>.PlayerSpawnRequest
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs(Of TPlayer).PlayerSpawnRequest
+  nameWithType: OnPlayerSpawningArgs<TPlayer>.PlayerSpawnRequest
+  nameWithType.vb: OnPlayerSpawningArgs(Of TPlayer).PlayerSpawnRequest
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1
+  name: OnPlayerTypedMessageArgs<TPlayer>
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1
+  name.vb: OnPlayerTypedMessageArgs(Of TPlayer)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs<TPlayer>
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs(Of TPlayer)
+  nameWithType: OnPlayerTypedMessageArgs<TPlayer>
+  nameWithType.vb: OnPlayerTypedMessageArgs(Of TPlayer)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.#ctor
+  name: OnPlayerTypedMessageArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_1__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs<TPlayer>.OnPlayerTypedMessageArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs(Of TPlayer).New()
+  nameWithType: OnPlayerTypedMessageArgs<TPlayer>.OnPlayerTypedMessageArgs()
+  nameWithType.vb: OnPlayerTypedMessageArgs(Of TPlayer).New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.#ctor*
+  name: OnPlayerTypedMessageArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_1__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs<TPlayer>.OnPlayerTypedMessageArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs(Of TPlayer).New
+  nameWithType: OnPlayerTypedMessageArgs<TPlayer>.OnPlayerTypedMessageArgs
+  nameWithType.vb: OnPlayerTypedMessageArgs(Of TPlayer).New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.ChatChannel
+  name: ChatChannel
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_1_ChatChannel
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.ChatChannel
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs<TPlayer>.ChatChannel
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs(Of TPlayer).ChatChannel
+  nameWithType: OnPlayerTypedMessageArgs<TPlayer>.ChatChannel
+  nameWithType.vb: OnPlayerTypedMessageArgs(Of TPlayer).ChatChannel
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.ChatChannel*
+  name: ChatChannel
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_1_ChatChannel_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.ChatChannel
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs<TPlayer>.ChatChannel
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs(Of TPlayer).ChatChannel
+  nameWithType: OnPlayerTypedMessageArgs<TPlayer>.ChatChannel
+  nameWithType.vb: OnPlayerTypedMessageArgs(Of TPlayer).ChatChannel
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.Content
+  name: Content
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_1_Content
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.Content
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs<TPlayer>.Content
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs(Of TPlayer).Content
+  nameWithType: OnPlayerTypedMessageArgs<TPlayer>.Content
+  nameWithType.vb: OnPlayerTypedMessageArgs(Of TPlayer).Content
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.Content*
+  name: Content
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_1_Content_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.Content
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs<TPlayer>.Content
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs(Of TPlayer).Content
+  nameWithType: OnPlayerTypedMessageArgs<TPlayer>.Content
+  nameWithType.vb: OnPlayerTypedMessageArgs(Of TPlayer).Content
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_1_Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs(Of TPlayer).Player
+  nameWithType: OnPlayerTypedMessageArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerTypedMessageArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_1_Player_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs<TPlayer>.Player
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs(Of TPlayer).Player
+  nameWithType: OnPlayerTypedMessageArgs<TPlayer>.Player
+  nameWithType.vb: OnPlayerTypedMessageArgs(Of TPlayer).Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
+  name: OnSavePlayerStatsArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
+  nameWithType: OnSavePlayerStatsArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor
+  name: OnSavePlayerStatsArgs()
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs__ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.OnSavePlayerStatsArgs()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.New()
+  nameWithType: OnSavePlayerStatsArgs.OnSavePlayerStatsArgs()
+  nameWithType.vb: OnSavePlayerStatsArgs.New()
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor*
+  name: OnSavePlayerStatsArgs
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs__ctor_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.OnSavePlayerStatsArgs
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.New
+  nameWithType: OnSavePlayerStatsArgs.OnSavePlayerStatsArgs
+  nameWithType.vb: OnSavePlayerStatsArgs.New
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
+  name: PlayerStats
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_PlayerStats
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
+  nameWithType: OnSavePlayerStatsArgs.PlayerStats
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats*
+  name: PlayerStats
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_PlayerStats_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
+  nameWithType: OnSavePlayerStatsArgs.PlayerStats
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
+  name: SteamId
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_SteamId
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
+  nameWithType: OnSavePlayerStatsArgs.SteamId
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId*
+  name: SteamId
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_SteamId_
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
+  nameWithType: OnSavePlayerStatsArgs.SteamId
 - uid: BattleBitAPI.Addons.EventHandler.Extensions
   name: BattleBitAPI.Addons.EventHandler.Extensions
   href: documentation/BattleBitAPI.Addons.EventHandler.Extensions.html

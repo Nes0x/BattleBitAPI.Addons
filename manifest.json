@@ -408,6 +408,66 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.Event.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.Event.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.EventAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.EventAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.EventModule-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.EventHandler-1.yml",
       "output": {
         ".html": {
@@ -648,6 +708,206 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Events.yml",
       "output": {
         ".html": {
@@ -672,6 +932,16 @@
       "output": {
         ".html": {
           "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.EventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.EventHandler.html"
         }
       },
       "version": ""

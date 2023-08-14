@@ -90,66 +90,6 @@ references:
   fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.Command.New
   nameWithType: Command.Command
   nameWithType.vb: Command.New
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.CommandDescription
-  name: CommandDescription
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_CommandDescription
-  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.Command.CommandDescription
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.CommandDescription
-  nameWithType: Command.CommandDescription
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.CommandDescription*
-  name: CommandDescription
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_CommandDescription_
-  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Command.CommandDescription
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.CommandDescription
-  nameWithType: Command.CommandDescription
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.CommandName
-  name: CommandName
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_CommandName
-  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.Command.CommandName
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.CommandName
-  nameWithType: Command.CommandName
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.CommandName*
-  name: CommandName
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_CommandName_
-  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Command.CommandName
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.CommandName
-  nameWithType: Command.CommandName
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.MethodInfo
-  name: MethodInfo
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_MethodInfo
-  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.Command.MethodInfo
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.MethodInfo
-  nameWithType: Command.MethodInfo
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.MethodInfo*
-  name: MethodInfo
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_MethodInfo_
-  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Command.MethodInfo
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.MethodInfo
-  nameWithType: Command.MethodInfo
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.Parameters
-  name: Parameters
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_Parameters
-  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.Command.Parameters
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.Parameters
-  nameWithType: Command.Parameters
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.Parameters*
-  name: Parameters
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_Parameters_
-  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Command.Parameters
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.Parameters
-  nameWithType: Command.Parameters
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.RemoveParameters
-  name: RemoveParameters
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_RemoveParameters
-  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.Command.RemoveParameters
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.RemoveParameters
-  nameWithType: Command.RemoveParameters
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Command.RemoveParameters*
-  name: RemoveParameters
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.html#BattleBitAPI_Addons_CommandHandler_Common_Command_RemoveParameters_
-  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Command.RemoveParameters
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Command.RemoveParameters
-  nameWithType: Command.RemoveParameters
 - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute
   name: CommandAttribute
   href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute.html
@@ -297,22 +237,6 @@ references:
   fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule(Of TPlayer).New
   nameWithType: CommandModule<TPlayer>.CommandModule
   nameWithType.vb: CommandModule(Of TPlayer).New
-- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1.Commands
-  name: Commands
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html#BattleBitAPI_Addons_CommandHandler_Common_CommandModule_1_Commands
-  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1.Commands
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule<TPlayer>.Commands
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule(Of TPlayer).Commands
-  nameWithType: CommandModule<TPlayer>.Commands
-  nameWithType.vb: CommandModule(Of TPlayer).Commands
-- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1.Commands*
-  name: Commands
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html#BattleBitAPI_Addons_CommandHandler_Common_CommandModule_1_Commands_
-  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1.Commands
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule<TPlayer>.Commands
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule(Of TPlayer).Commands
-  nameWithType: CommandModule<TPlayer>.Commands
-  nameWithType.vb: CommandModule(Of TPlayer).Commands
 - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1.Context
   name: Context
   href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html#BattleBitAPI_Addons_CommandHandler_Common_CommandModule_1_Context

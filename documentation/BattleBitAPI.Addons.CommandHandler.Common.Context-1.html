@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Context&lt;TPlayer&gt; : IContext&lt;TPlayer&gt; where TPlayer : Player</code></pre>
+    <pre><code class="lang-csharp hljs">public class Context&lt;TPlayer&gt; where TPlayer : Player</code></pre>
   </div>
 
 
@@ -110,12 +110,6 @@
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="BattleBitAPI.Addons.CommandHandler.Common.IContext-1.html">IContext</a>&lt;TPlayer&gt;</div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist derived">
@@ -194,7 +188,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required ChatChannel ChatChannel { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ChatChannel ChatChannel { get; }</code></pre>
   </div>
 
 
@@ -225,7 +219,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required GameServer GameServer { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public GameServer GameServer { get; }</code></pre>
   </div>
 
 
@@ -256,7 +250,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required TPlayer Player { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public TPlayer Player { get; }</code></pre>
   </div>
 
 
@@ -287,7 +281,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required IServiceProvider ServiceProvider { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IServiceProvider ServiceProvider { get; }</code></pre>
   </div>
 
 

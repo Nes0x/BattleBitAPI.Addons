@@ -85,22 +85,19 @@ host.AddServerListener&lt;Player&gt;(2000)
 var app = host.Build();
 await app.RunAsync();
 </code></pre>
-<p>After that, you can create class which listening to event</p>
+<p>After that, you can create class which listening to events</p>
 <pre><code class="lang-csharp">//In generic use same Player type as in ServerListener, EventHandler.
-public class OnPlayerConnected : OnPlayerConnectedHandler&lt;Player&gt;
+public class OnPlayer : EventModule&lt;Player&gt;
 {
-    public OnPlayerConnected(ServerListener&lt;Player&gt; serverListener) : base(serverListener)
+    //Parameter must be same as EventType. 
+    [Event(EventType = EventType.OnPlayerConnected)]
+    public Task HandleOnPlayerConnected(OnPlayerConnectedArgs&lt;Player&gt; args)
     {
-    }
-
-    protected override Task Handle(Player arg)
-    {
-        //do anything
-        throw new NotImplementedException();
+        return Task.CompletedTask;
     }
 }
 </code></pre>
-<p>List of all available events: <a href="https://nes0x.github.io/BattleBitAPI.Addons/documentation/BattleBitAPI.Addons.EventHandler.Events.Handlers.html">click</a></p>
+<p>List of all available events: <a href="https://nes0x.github.io/BattleBitAPI.Addons/documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html">click</a></p>
 </article>
 
         <div class="contribution d-print-none">

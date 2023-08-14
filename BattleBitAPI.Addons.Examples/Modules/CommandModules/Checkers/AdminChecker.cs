@@ -2,7 +2,7 @@
 using BattleBitAPI.Addons.Examples.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BattleBitAPI.Addons.Examples.Modules.Checkers;
+namespace BattleBitAPI.Addons.Examples.Modules.CommandModules.Checkers;
 
 public class AdminChecker : CheckerAttribute<Player>
 {

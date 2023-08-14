@@ -27,7 +27,6 @@ items:
   - BattleBitAPI.Addons.CommandHandler.Common.CommandModule{{TPlayer}}
   inheritedMembers:
   - BattleBitAPI.Addons.CommandHandler.Common.CommandModule{{TPlayer}}.Context
-  - BattleBitAPI.Addons.CommandHandler.Common.CommandModule{{TPlayer}}.Commands
   - System.Object.GetType
   - System.Object.MemberwiseClone
   - System.Object.ToString
@@ -196,16 +195,6 @@ references:
   fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule<TPlayer>.Context
   nameWithType.vb: CommandModule(Of TPlayer).Context
   fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule(Of TPlayer).Context
-- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule{{TPlayer}}.Commands
-  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandModule{`0}.Commands
-  parent: BattleBitAPI.Addons.CommandHandler.Common.CommandModule{{TPlayer}}
-  definition: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1.Commands
-  href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule{-0}.html#BattleBitAPI.Addons.CommandHandler.Common.CommandModule{`0}.Commands
-  name: Commands
-  nameWithType: CommandModule<TPlayer>.Commands
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule<TPlayer>.Commands
-  nameWithType.vb: CommandModule(Of TPlayer).Commands
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule(Of TPlayer).Commands
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -516,15 +505,6 @@ references:
   fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule<TPlayer>.Context
   nameWithType.vb: CommandModule(Of TPlayer).Context
   fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule(Of TPlayer).Context
-- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1.Commands
-  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1.Commands
-  isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html#BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1.Commands
-  name: Commands
-  nameWithType: CommandModule<TPlayer>.Commands
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule<TPlayer>.Commands
-  nameWithType.vb: CommandModule(Of TPlayer).Commands
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule(Of TPlayer).Commands
 - uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule`1.#ctor*
   commentId: Overload:BattleBitAPI.Addons.CommandHandler.Modules.HelpModule`1.#ctor
   isExternal: true

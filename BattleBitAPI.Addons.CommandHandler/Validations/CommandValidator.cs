@@ -61,15 +61,14 @@ public class CommandValidator<TPlayer> : IValidator<TPlayer> where TPlayer : Pla
     {
         if (commands.Count == 0) return true;
         foreach (var command in commands)
-        {
             if (commandToCheck.CommandName == command.CommandName &&
-                commandToCheck.Parameters.Length == command.Parameters.Length && !commandToCheck.Parameters.Except(command.Parameters).Any())
+                commandToCheck.Parameters.Length == command.Parameters.Length &&
+                !commandToCheck.Parameters.Except(command.Parameters).Any())
             {
                 _logger.LogError(
                     $"You cannot have more commands with same name and parameters count with same types. Currently registered is {command.MethodInfo.Name}.");
                 return false;
             }
-        }
 
 
         return true;

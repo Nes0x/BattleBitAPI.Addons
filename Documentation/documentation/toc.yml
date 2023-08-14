@@ -17,8 +17,6 @@ items:
     name: CommandParameterAttribute
   - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
     name: Context<TPlayer>
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.IContext`1
-    name: IContext<TPlayer>
 - uid: BattleBitAPI.Addons.CommandHandler.Converters
   name: BattleBitAPI.Addons.CommandHandler.Converters
   items:
@@ -71,58 +69,65 @@ items:
   items:
   - uid: BattleBitAPI.Addons.Common.Extensions.HostingExtensions
     name: HostingExtensions
+- uid: BattleBitAPI.Addons.EventHandler
+  name: BattleBitAPI.Addons.EventHandler
+  items:
+  - uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1
+    name: EventHandlerActivatorService<TPlayer>
+- uid: BattleBitAPI.Addons.EventHandler.Common
+  name: BattleBitAPI.Addons.EventHandler.Common
+  items:
+  - uid: BattleBitAPI.Addons.EventHandler.Common.Event
+    name: Event
+  - uid: BattleBitAPI.Addons.EventHandler.Common.EventAttribute
+    name: EventAttribute
+  - uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+    name: EventModule<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Common.EventType
+    name: EventType
 - uid: BattleBitAPI.Addons.EventHandler.Events
   name: BattleBitAPI.Addons.EventHandler.Events
   items:
-  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandlerActivatorService`1
-    name: EventHandlerActivatorService<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.EventHandler`1
-    name: EventHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.IEventHandler`1
-    name: IEventHandler<TPlayer>
-- uid: BattleBitAPI.Addons.EventHandler.Events.Handlers
-  name: BattleBitAPI.Addons.EventHandler.Events.Handlers
-  items:
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnAPlayerKilledAnotherPlayerHandler`1
-    name: OnAPlayerKilledAnotherPlayerHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectedHandler`1
-    name: OnGameServerConnectedHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerConnectingHandler`1
-    name: OnGameServerConnectingHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerDisconnectedHandler`1
-    name: OnGameServerDisconnectedHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerReconnectedHandler`1
-    name: OnGameServerReconnectedHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGameServerTickHandler`1
-    name: OnGameServerTickHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnGetPlayerStatsHandler`1
-    name: OnGetPlayerStatsHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedRoleHandler`1
-    name: OnPlayerChangedRoleHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerChangedTeamHandler`1
-    name: OnPlayerChangedTeamHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerConnectedHandler`1
-    name: OnPlayerConnectedHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDiedHandler`1
-    name: OnPlayerDiedHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerDisconnectedHandler`1
-    name: OnPlayerDisconnectedHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerJoinedASquadHandler`1
-    name: OnPlayerJoinedASquadHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerLeftSquadHandler`1
-    name: OnPlayerLeftSquadHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerReportedHandler`1
-    name: OnPlayerReportedHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerRequestingToChangeRoleHandler`1
-    name: OnPlayerRequestingToChangeRoleHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawnedHandler`1
-    name: OnPlayerSpawnedHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerSpawningHandler`1
-    name: OnPlayerSpawningHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnPlayerTypedMessageHandler`1
-    name: OnPlayerTypedMessageHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.EventHandler.Events.Handlers.OnSavePlayerStatsHandler`1
-    name: OnSavePlayerStatsHandler<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerKilledAnotherPlayerArgs`1
+    name: OnAPlayerKilledAnotherPlayerArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectedArgs
+    name: OnGameServerConnectedArgs
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs
+    name: OnGameServerConnectingArgs
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs
+    name: OnGameServerDisconnectedArgs
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+    name: OnGameServerReconnectedArgs
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerTickArgs
+    name: OnGameServerTickArgs
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnGetPlayerStatsArgs
+    name: OnGetPlayerStatsArgs
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedRoleArgs`1
+    name: OnPlayerChangedRoleArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerChangedTeamArgs`1
+    name: OnPlayerChangedTeamArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerConnectedArgs`1
+    name: OnPlayerConnectedArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDiedArgs`1
+    name: OnPlayerDiedArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerDisconnectedArgs`1
+    name: OnPlayerDisconnectedArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedASquadArgs`1
+    name: OnPlayerJoinedASquadArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadArgs`1
+    name: OnPlayerLeftSquadArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedArgs`1
+    name: OnPlayerReportedArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerRequestingToChangeRoleArgs`1
+    name: OnPlayerRequestingToChangeRoleArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawnedArgs`1
+    name: OnPlayerSpawnedArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerSpawningArgs`1
+    name: OnPlayerSpawningArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs`1
+    name: OnPlayerTypedMessageArgs<TPlayer>
+  - uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
+    name: OnSavePlayerStatsArgs
 - uid: BattleBitAPI.Addons.EventHandler.Extensions
   name: BattleBitAPI.Addons.EventHandler.Extensions
   items:

@@ -13,7 +13,7 @@ namespace BattleBitAPI.Addons.CommandHandler.Extensions;
 public static class HostingExtensions
 {
     /// <summary>
-    /// Adds all commands from assembly to services and ServerListener
+    ///     Adds all commands from assembly to services and ServerListener
     /// </summary>
     /// <param name="commandHandlerSettings">Your settings for command handling</param>
     /// <typeparam name="TPlayer">Your player type</typeparam>
@@ -28,11 +28,10 @@ public static class HostingExtensions
         {
             foreach (var type in types)
                 if (type.IsAssignableTo(targetType) && !type.IsAbstract)
-                {
                     services.AddSingleton(targetType, type);
-                }
 
-            if (commandHandlerSettings.DefaultHelpCommand) services.AddSingleton(targetType, typeof(HelpModule<TPlayer>));
+            if (commandHandlerSettings.DefaultHelpCommand)
+                services.AddSingleton(targetType, typeof(HelpModule<TPlayer>));
             services.AddSingleton<CommandHandlerSettings>(_ => commandHandlerSettings);
             services.AddSingleton<IMessageHandler<TPlayer>, MessageHandlerService<TPlayer>>();
             services.AddSingleton<IValidator<TPlayer>, CommandValidator<TPlayer>>();
@@ -44,7 +43,7 @@ public static class HostingExtensions
     }
 
     /// <summary>
-    /// Adds all TypeReaders from assemblies to services
+    ///     Adds all TypeReaders from assemblies to services
     /// </summary>
     /// <typeparam name="TPlayer">Your player type</typeparam>
     public static IHostBuilder AddTypeReaders<TPlayer>(this IHostBuilder hostBuilder) where TPlayer : Player

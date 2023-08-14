@@ -1,8 +1,8 @@
 ﻿using BattleBitAPI.Addons.CommandHandler.Common;
-using BattleBitAPI.Addons.Examples.Modules.Checkers;
+using BattleBitAPI.Addons.Examples.Modules.CommandModules.Checkers;
 using BattleBitAPI.Addons.Examples.Services;
 
-namespace BattleBitAPI.Addons.Examples.Modules;
+namespace BattleBitAPI.Addons.Examples.Modules.CommandModules;
 
 [Command(Name = "warn")]
 [AdminChecker]
@@ -21,14 +21,14 @@ public class WarnModule : CommandModule<Player>
         Console.WriteLine($"{reason} {Context.ChatChannel} {_config.AdminId}");
         return Task.CompletedTask;
     }
-    
+
     [Command(Name = "add")]
-    public Task HandleAdd([CommandParameter(Name = "gracz")]ulong target, string reason)
+    public Task HandleAdd([CommandParameter(Name = "gracz")] ulong target, string reason)
     {
         Console.WriteLine($"{reason} {target} {Context.ChatChannel} {_config.AdminId}");
         return Task.CompletedTask;
     }
-    
+
     [Command(Name = "remove")]
     public Task HandleRemove(Player target, string reason)
     {

@@ -26,10 +26,8 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
     {
         if (!content.StartsWith(
                 $"{_commandHandlerSettings.CommandRegex.ToLower()}{command.CommandName.ToLower()}"))
-        {
             return Task.CompletedTask;
-        }
-        
+
         if (player is null)
         {
             _logger.LogError("The player is null.");
@@ -64,6 +62,7 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
                     _logger.LogError(e.Message, e);
                     message = e.Message;
                 }
+
                 break;
             }
             case Result.Error:

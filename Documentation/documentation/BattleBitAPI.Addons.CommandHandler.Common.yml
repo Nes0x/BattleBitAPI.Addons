@@ -11,7 +11,6 @@ items:
   - BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
   - BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
   - BattleBitAPI.Addons.CommandHandler.Common.Context`1
-  - BattleBitAPI.Addons.CommandHandler.Common.IContext`1
   langs:
   - csharp
   - vb
@@ -132,34 +131,6 @@ references:
     name: Context
     isExternal: true
     href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
-- uid: BattleBitAPI.Addons.CommandHandler.Common.IContext`1
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.IContext`1
-  isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Common.IContext-1.html
-  name: IContext<TPlayer>
-  nameWithType: IContext<TPlayer>
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.IContext<TPlayer>
-  nameWithType.vb: IContext(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.IContext(Of TPlayer)
-  name.vb: IContext(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.IContext`1
-    name: IContext
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.IContext-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.IContext`1
-    name: IContext
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.IContext-1.html
   - name: (
   - name: Of
   - name: " "

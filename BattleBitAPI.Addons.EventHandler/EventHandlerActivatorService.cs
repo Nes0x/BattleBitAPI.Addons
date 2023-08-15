@@ -4,6 +4,7 @@ using BattleBitAPI.Addons.EventHandler.Events;
 using BattleBitAPI.Common;
 using BattleBitAPI.Server;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.EventHandler;
 
@@ -11,17 +12,37 @@ public class EventHandlerActivatorService<TPlayer> : IHostedService where TPlaye
 {
     private readonly IEnumerable<EventModule<TPlayer>> _eventModules;
     private readonly ServerListener<TPlayer> _serverListener;
+    private readonly ILogger<EventHandlerActivatorService<TPlayer>> _logger;
 
     public EventHandlerActivatorService(ServerListener<TPlayer> serverListener,
-        IEnumerable<EventModule<TPlayer>> eventModules)
+        IEnumerable<EventModule<TPlayer>> eventModules, ILogger<EventHandlerActivatorService<TPlayer>> logger)
     {
         _serverListener = serverListener;
         _eventModules = eventModules;
+        _logger = logger;
     }
 
     public Task StartAsync(CancellationToken cancellationToken)
     {
         ModifyEventModules();
+        try
+        {
+            RegisterEvents();
+        }
+        catch (Exception e)
+        {
+            _logger.LogError($"Your event implementation threw an exception. Class name {e.InnerException.TargetSite.DeclaringType.Name}.", e);
+        }
+        return Task.CompletedTask;
+    }
+
+    public Task StopAsync(CancellationToken cancellationToken)
+    {
+        return Task.CompletedTask;
+    }
+
+    private void RegisterEvents()
+    {
         foreach (var eventModule in _eventModules)
         foreach (var @event in eventModule.Events)
             switch (@event.EventType)
@@ -284,22 +305,15 @@ public class EventHandlerActivatorService<TPlayer> : IHostedService where TPlaye
                     };
                     break;
             }
-
-        return Task.CompletedTask;
     }
-
-    public Task StopAsync(CancellationToken cancellationToken)
-    {
-        return Task.CompletedTask;
-    }
-
+ 
     private void ModifyEventModules()
     {
         foreach (var eventModule in _eventModules)
         {
             var events = eventModule.GetType().GetMethods()
                 .Where(m => m.GetCustomAttributes(typeof(EventAttribute), false).Length > 0)
-                .Select(m => new Event { MethodInfo = m, EventType = m.GetCustomAttribute<EventAttribute>().EventType })
+                .Select(m => new Event { MethodInfo = m, EventType = m.GetCustomAttribute<EventAttribute>()!.EventType })
                 .ToList();
             eventModule.Events = events;
         }

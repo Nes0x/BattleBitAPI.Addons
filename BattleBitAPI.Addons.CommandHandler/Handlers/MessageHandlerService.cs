@@ -1,21 +1,23 @@
-﻿using BattleBitAPI.Addons.CommandHandler.Converters;
+﻿using BattleBitAPI.Addons.CommandHandler.Common;
+using BattleBitAPI.Addons.CommandHandler.Converters;
 using BattleBitAPI.Addons.Common;
 using BattleBitAPI.Common;
 using Microsoft.Extensions.Logging;
 
-namespace BattleBitAPI.Addons.CommandHandler.Common;
+namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 
 public class MessageHandlerService : AddonGameServer
 {
-    private readonly CommandModule _commandModule;
     private readonly Command _command;
     private readonly CommandHandlerSettings _commandHandlerSettings;
+    private readonly CommandModule _commandModule;
     private readonly IConverter _converter;
     private readonly ILogger<MessageHandlerService> _logger;
     private readonly IServiceProvider _provider;
 
     public MessageHandlerService(CommandHandlerSettings commandHandlerSettings,
-        IConverter converter, ILogger<MessageHandlerService> logger, IServiceProvider provider, CommandModule commandModule, Command command)
+        IConverter converter, ILogger<MessageHandlerService> logger, IServiceProvider provider,
+        CommandModule commandModule, Command command)
     {
         _commandHandlerSettings = commandHandlerSettings;
         _converter = converter;
@@ -41,7 +43,7 @@ public class MessageHandlerService : AddonGameServer
         {
             Player = player,
             ChatChannel = channel,
-            // GameServer = player.GameServer,
+            GameServer = player.GameServer,
             ServiceProvider = _provider
         };
 

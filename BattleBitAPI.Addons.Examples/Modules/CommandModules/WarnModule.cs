@@ -3,6 +3,7 @@ using BattleBitAPI.Addons.Examples.Services;
 
 namespace BattleBitAPI.Addons.Examples.Modules.CommandModules;
 
+[Command(Name = "warn")]
 public class WarnModule : CommandModule
 {
     private readonly ConfigService _config;

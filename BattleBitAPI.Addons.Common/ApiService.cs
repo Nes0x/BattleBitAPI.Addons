@@ -4,7 +4,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace BattleBitAPI.Addons.Common;
 
-public class ApiService : IHostedService 
+public class ApiService : IHostedService
 {
     private readonly IPAddress _ipAddress;
     private readonly int _port;

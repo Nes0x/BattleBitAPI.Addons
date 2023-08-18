@@ -3,7 +3,6 @@ using BattleBitAPI.Addons.CommandHandler.Common;
 using BattleBitAPI.Addons.CommandHandler.Converters;
 using BattleBitAPI.Addons.CommandHandler.Validations;
 using BattleBitAPI.Addons.Common;
-using BattleBitAPI.Common;
 using BattleBitAPI.Server;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -13,17 +12,19 @@ namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 public class CommandHandlerActivatorService : IHostedService
 {
     public static readonly List<CommandModule> CommandModules = new();
-    private readonly IEnumerable<CommandModule> _commandModules;
-    private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
     private readonly CommandHandlerSettings _commandHandlerSettings;
+    private readonly IEnumerable<CommandModule> _commandModules;
     private readonly IConverter _converter;
-    private readonly IValidator _validator;
+    private readonly List<Func<MessageHandlerService>> _handlers;
     private readonly ILogger<MessageHandlerService> _logger;
     private readonly IServiceProvider _provider;
-    private readonly List<Func<MessageHandlerService>> _handlers;
+    private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
+    private readonly IValidator _validator;
 
     public CommandHandlerActivatorService(IEnumerable<CommandModule> commandModules,
-        IValidator validator, ServerListener<AddonPlayer, AddonGameServer> serverListener, CommandHandlerSettings commandHandlerSettings, IConverter converter, ILogger<MessageHandlerService> logger, IServiceProvider provider)
+        IValidator validator, ServerListener<AddonPlayer, AddonGameServer> serverListener,
+        CommandHandlerSettings commandHandlerSettings, IConverter converter, ILogger<MessageHandlerService> logger,
+        IServiceProvider provider)
     {
         _commandModules = commandModules;
         _validator = validator;

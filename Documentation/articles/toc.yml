@@ -8,8 +8,8 @@
       href: command_handler/parameters.md
     - name: Type Readers
       href: command_handler/type_readers.md
-    - name: Checker
-      href: command_handler/checker.md
+    - name: Checkers
+      href: command_handler/checkers.md
     - name: Commands Group
       href: command_handler/commands_group.md
 - name: Event Handler

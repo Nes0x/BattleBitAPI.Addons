@@ -36,14 +36,14 @@ public class MessageHandlerService : AddonGameServer
         if (player is null)
         {
             _logger.LogError("The player is null.");
-            return Task.FromResult(false);
+            return Task.FromResult(true);
         }
 
         var context = new Context
         {
             Player = player,
             ChatChannel = channel,
-            GameServer = player.GameServer,
+            // GameServer = player.GameServer,
             ServiceProvider = _provider
         };
 
@@ -52,7 +52,6 @@ public class MessageHandlerService : AddonGameServer
         var result = _converter.TryConvertParameters(parametersFromCommand,
             _command,
             context, out var convertedParameters);
-        string message = null;
         switch (result)
         {
             case Result.Success:
@@ -60,26 +59,24 @@ public class MessageHandlerService : AddonGameServer
                 _commandModule.Context = context;
                 try
                 {
-                    _command.MethodInfo.Invoke(_commandModule, convertedParameters.ToArray());
+                    var commandResult = (Task<bool>)_command.MethodInfo.Invoke(_commandModule, convertedParameters.ToArray())!;
+                    return Task.FromResult(commandResult.Result);
                 }
                 catch (Exception e)
                 {
-                    _logger.LogError(e.Message, e);
-                    message = e.Message;
+                    var message = e.Message;
+                    _logger.LogError(message, e);
+                    player.Message(message);
+                    return Task.FromResult(_commandHandlerSettings.ShowCommandOnChatWhenError);
                 }
-
-                break;
             }
             case Result.Error:
-                message = _commandHandlerSettings.ErrorCallback;
-                break;
+                player.Message(_commandHandlerSettings.ErrorCallback);
+                return Task.FromResult(_commandHandlerSettings.ShowCommandOnChatWhenError);
             case Result.Checker:
-                message = _commandHandlerSettings.CheckerCallback;
-                break;
+                player.Message(_commandHandlerSettings.CheckerCallback);
+                return Task.FromResult(_commandHandlerSettings.ShowCommandOnChatWhenChecker);
         }
-
-        if (message is not null) player.Message(message);
-
-        return Task.FromResult(true);
+        return Task.FromResult(_commandHandlerSettings.ShowCommandOnChat);
     }
 }

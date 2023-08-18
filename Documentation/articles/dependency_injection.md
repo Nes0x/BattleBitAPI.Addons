@@ -16,10 +16,10 @@ public class ConfigService
 
 ```csharp
 var host = Host.CreateDefaultBuilder(args);
-host.AddServerListener<Player>(2000)
-    .AddTypeReaders<Player>()
-    .AddEventHandler<Player>()
-    .AddCommandHandler<Player>(new CommandHandlerSettings
+host.AddServerListener(2000)
+    .AddTypeReaders()
+    .AddEventHandler()
+    .AddCommandHandler(new CommandHandlerSettings
     {
         CommandRegex = "."
     }).ConfigureServices((_, services) => { services.AddSingleton(ConfigService.Create()); });
@@ -29,7 +29,7 @@ await app.RunAsync();
 ```
 
 ```csharp
-public class AdminChecker : CheckerAttribute<Player>
+public class AdminChecker : CheckerAttribute
 {
     public override bool RunCommand()
     {
@@ -42,7 +42,7 @@ public class AdminChecker : CheckerAttribute<Player>
 ```csharp
 [Command(Name = "warn")]
 [AdminChecker]
-public class WarnModule : CommandModule<Player>
+public class WarnModule : CommandModule
 {
     private readonly ConfigService _config;
 
@@ -52,9 +52,9 @@ public class WarnModule : CommandModule<Player>
     }
 
     [Command(Name = "add")]
-    public Task HandleAdd(Player target, string reason)
+    public Task<bool> HandleAdd(AddonPlayer target, string reason)
     {
-        Console.WriteLine($"{reason} {Context.ChatChannel} {_config.AdminId}");
+        Console.WriteLine($"{_config.AdminId}");
         return Task.CompletedTask;
     }
 }

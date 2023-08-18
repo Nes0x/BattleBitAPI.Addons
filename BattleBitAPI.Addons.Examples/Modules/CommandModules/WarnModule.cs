@@ -1,9 +1,12 @@
 ﻿using BattleBitAPI.Addons.CommandHandler.Common;
+using BattleBitAPI.Addons.Common;
+using BattleBitAPI.Addons.Examples.Modules.CommandModules.Checkers;
 using BattleBitAPI.Addons.Examples.Services;
 
 namespace BattleBitAPI.Addons.Examples.Modules.CommandModules;
 
 [Command(Name = "warn")]
+[AdminChecker]
 public class WarnModule : CommandModule
 {
     private readonly ConfigService _config;
@@ -14,9 +17,9 @@ public class WarnModule : CommandModule
     }
 
     [Command(Name = "add")]
-    public Task HandleAdd(string target, string reason)
+    public Task<bool> HandleAdd(AddonPlayer target, string reason)
     {
         Console.WriteLine($"{reason} {Context.ChatChannel} {_config.AdminId}");
-        return Task.CompletedTask;
+        return Task.FromResult(true);
     }
 }

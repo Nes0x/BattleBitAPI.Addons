@@ -6,16 +6,13 @@ If you want to use default custom type readers or you create own type reader, yo
 
 ```csharp
 var host = Host.CreateDefaultBuilder(args);
-//In generic use your Player type, in parameters pass port and IPAddress.
-host.AddServerListener<Player>(2000)
-    //In generic use same Player type as in ServerListener.
-    //In parameters add CommandHandlerSettings and create change properties if you want.
-     .AddCommandHandler<Player>(new CommandHandlerSettings
+host.AddServerListener(2000)
+    //In parameters add CommandHandlerSettings and change properties if you want.
+     .AddCommandHandler(new CommandHandlerSettings
     {
         CommandRegex = "."
     })
-    //In generic use same Player type as in ServerListener.
-    .AddTypeReaders<Player>();
+    .AddTypeReaders();
 var app = host.Build();
 await app.RunAsync();
 ```
@@ -29,17 +26,16 @@ Also you can make multiply type readers for one type.
 For example: 
 
 ```csharp
-//Generic is your Player type.
-public class PlayerNickTypeReader : TypeReader<Player>
+public class AddonPlayerNickTypeReader : TypeReader
 {
     //You need to specify the type in the constructor to be handled as custom.
-    public PlayerNickTypeReader() : base(typeof(Player))
+    public AddonPlayerNickTypeReader() : base(typeof(AddonPlayer))
     {
     }
 
     //You can use Context in this method.
     //In returning type you must use type which you definied in the constructor.
-    public override Player? ChangeType(object obj)
+    public override AddonPlayer? ChangeType(object obj)
     {
         return Context.GameServer.GetAllPlayers().FirstOrDefault(p => p.Name == obj.ToString());
     }

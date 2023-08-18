@@ -11,4 +11,10 @@ public class CommandHandlerSettings
     public string CommandRegex { get; init; } = "/";
 
     public bool DefaultHelpCommand { get; init; } = true;
+    
+    public bool ShowCommandOnChat { get; init; } = true;
+    
+    public bool ShowCommandOnChatWhenError { get; init; } = true;
+    
+    public bool ShowCommandOnChatWhenChecker { get; init; } = true;
 }

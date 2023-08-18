@@ -5,9 +5,8 @@ To start, you must add EventHandler to host.
 
 ```csharp
 var host = Host.CreateDefaultBuilder(args);
-host.AddServerListener<Player>(2000)
-    //In generic use same Player type as in ServerListener.
-    .AddEventHandler<Player>();
+host.AddServerListener(2000)
+    .AddEventHandler();
 var app = host.Build();
 await app.RunAsync();
 ```
@@ -15,12 +14,11 @@ await app.RunAsync();
 After that, you can create class which listening to events
 
 ```csharp
-//In generic use same Player type as in ServerListener, EventHandler.
-public class OnPlayer : EventModule<Player>
+public class OnPlayer : EventModule
 {
     //Parameter must be same as EventType. 
     [Event(EventType = EventType.OnPlayerConnected)]
-    public Task HandleOnPlayerConnected(OnPlayerConnectedArgs<Player> args)
+    public Task HandleOnPlayerConnected(OnPlayerConnectedArgs args)
     {
         return Task.CompletedTask;
     }

@@ -6,8 +6,7 @@
 First of all create host and add ServerListener
 ```csharp
 var host = Host.CreateDefaultBuilder(args);
-//In generic use your Player type, in parameters pass port and IPAddress.
-host.AddServerListener<Player>(2000)
+host.AddServerListener(2000);
 var app = host.Build();
 await app.RunAsync();
 ```

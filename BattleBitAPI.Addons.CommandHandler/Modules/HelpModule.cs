@@ -14,9 +14,8 @@ public class HelpModule : CommandModule
         _commandHandlerSettings = commandHandlerSettings;
     }
 
-
     [Command(Name = "help")]
-    public Task HandleHelp()
+    public Task<bool> HandleHelp()
     {
         var stringBuilder = new StringBuilder();
         foreach (var commandModule in CommandHandlerActivatorService.CommandModules)
@@ -53,8 +52,7 @@ public class HelpModule : CommandModule
                 stringBuilder.Append('\n');
             });
 
-        Console.WriteLine(stringBuilder.ToString());
-        // Context.Player.Message(stringBuilder.ToString());
-        return Task.CompletedTask;
+        Context.Player.Message(stringBuilder.ToString());
+        return Task.FromResult(_commandHandlerSettings.ShowCommandOnChat);
     }
 }

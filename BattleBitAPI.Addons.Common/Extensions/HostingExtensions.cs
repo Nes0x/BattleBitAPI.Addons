@@ -14,7 +14,6 @@ public static class HostingExtensions
     /// </summary>
     /// <param name="port">Port on which the server is running</param>
     /// <param name="ipAddress">Ip address of server</param>
-    /// <typeparam name="TPlayer">Your player type</typeparam>
     public static IHostBuilder AddServerListener(this IHostBuilder hostBuilder, int port,
         IPAddress ipAddress = null)
     {

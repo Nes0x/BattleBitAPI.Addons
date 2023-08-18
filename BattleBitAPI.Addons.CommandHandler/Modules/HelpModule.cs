@@ -5,7 +5,7 @@ using BattleBitAPI.Addons.CommandHandler.Handlers;
 
 namespace BattleBitAPI.Addons.CommandHandler.Modules;
 
-public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
+public class HelpModule : CommandModule
 {
     private readonly CommandHandlerSettings _commandHandlerSettings;
 
@@ -19,7 +19,7 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
     public Task HandleHelp()
     {
         var stringBuilder = new StringBuilder();
-        foreach (var commandModule in CommandHandlerActivatorService<TPlayer>.CommandModules)
+        foreach (var commandModule in CommandHandlerActivatorService.CommandModules)
             commandModule.Commands.ForEach(command =>
             {
                 var formattedParameters = new StringBuilder();
@@ -53,7 +53,8 @@ public class HelpModule<TPlayer> : CommandModule<TPlayer> where TPlayer : Player
                 stringBuilder.Append('\n');
             });
 
-        Context.Player.Message(stringBuilder.ToString());
+        Console.WriteLine(stringBuilder.ToString());
+        // Context.Player.Message(stringBuilder.ToString());
         return Task.CompletedTask;
     }
 }

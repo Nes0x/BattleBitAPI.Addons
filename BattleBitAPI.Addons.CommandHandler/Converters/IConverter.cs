@@ -2,9 +2,9 @@
 
 namespace BattleBitAPI.Addons.CommandHandler.Converters;
 
-public interface IConverter<TPlayer> where TPlayer : Player
+public interface IConverter
 {
     Result TryConvertParameters(List<string> commandParameters,
-        Command command, Context<TPlayer> context,
+        Command command, Context context,
         out List<object?> convertedParameters);
 }

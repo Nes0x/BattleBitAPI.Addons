@@ -1,7 +1,7 @@
 ﻿namespace BattleBitAPI.Addons.CommandHandler.Common;
 
-public abstract class CommandModule<TPlayer> where TPlayer : Player
+public abstract class CommandModule
 {
-    public Context<TPlayer> Context { get; internal set; }
+    public Context Context { get; internal set; }
     internal List<Command> Commands { get; set; }
 }

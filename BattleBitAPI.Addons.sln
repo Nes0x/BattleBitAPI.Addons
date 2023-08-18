@@ -4,8 +4,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleBitAPI.Addons.Command
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleBitAPI.Addons.Common", "BattleBitAPI.Addons.Common\BattleBitAPI.Addons.Common.csproj", "{0843ADC1-BB7B-45C5-BB58-58F7A3256D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleBitAPI.Addons.EventHandler", "BattleBitAPI.Addons.EventHandler\BattleBitAPI.Addons.EventHandler.csproj", "{D97AB0D9-16FE-4C19-9CEA-9C7BC1C9F8BB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleBitAPI.Addons.Examples", "BattleBitAPI.Addons.Examples\BattleBitAPI.Addons.Examples.csproj", "{32AD4641-21BE-43E5-AD92-F8A147FDBA8C}"
 EndProject
 Global
@@ -22,10 +20,6 @@ Global
 		{0843ADC1-BB7B-45C5-BB58-58F7A3256D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0843ADC1-BB7B-45C5-BB58-58F7A3256D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0843ADC1-BB7B-45C5-BB58-58F7A3256D65}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D97AB0D9-16FE-4C19-9CEA-9C7BC1C9F8BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D97AB0D9-16FE-4C19-9CEA-9C7BC1C9F8BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D97AB0D9-16FE-4C19-9CEA-9C7BC1C9F8BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D97AB0D9-16FE-4C19-9CEA-9C7BC1C9F8BB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{32AD4641-21BE-43E5-AD92-F8A147FDBA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{32AD4641-21BE-43E5-AD92-F8A147FDBA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32AD4641-21BE-43E5-AD92-F8A147FDBA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace BattleBitAPI.Addons.Examples.Modules.CommandModules.Checkers;
 
-public class AdminChecker : CheckerAttribute<Player>
+public class AdminChecker : CheckerAttribute
 {
     public override bool RunCommand()
     {

@@ -2,18 +2,19 @@
 using BattleBitAPI.Addons.CommandHandler.Common;
 using BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders;
 using BattleBitAPI.Addons.CommandHandler.Validations;
+using BattleBitAPI.Addons.Common;
 using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.CommandHandler.Converters;
 
-public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Player
+public class CommandConverter : IConverter
 {
-    private readonly ILogger<CommandConverter<TPlayer>> _logger;
-    private readonly IEnumerable<TypeReader<TPlayer>> _typeReaders;
-    private readonly IValidator<TPlayer> _validator;
+    private readonly ILogger<CommandConverter> _logger;
+    private readonly IEnumerable<TypeReader> _typeReaders;
+    private readonly IValidator _validator;
 
-    public CommandConverter(IValidator<TPlayer> validator, IEnumerable<TypeReader<TPlayer>> typeReaders,
-        ILogger<CommandConverter<TPlayer>> logger)
+    public CommandConverter(IValidator validator, IEnumerable<TypeReader> typeReaders,
+        ILogger<CommandConverter> logger)
     {
         _validator = validator;
         _typeReaders = typeReaders;
@@ -21,7 +22,7 @@ public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Pla
     }
 
     public Result TryConvertParameters(List<string> commandParameters,
-        Command command, Context<TPlayer> context,
+        Command command, Context context,
         out List<object?> convertedParameters)
     {
         convertedParameters = new List<object?>();
@@ -58,15 +59,15 @@ public class CommandConverter<TPlayer> : IConverter<TPlayer> where TPlayer : Pla
     {
         var attributes = new HashSet<Attribute>();
         var attributesFromClass = methodInfo.DeclaringType.GetCustomAttributes()
-            .Where(a => a is CheckerAttribute<TPlayer>);
+            .Where(a => a is CheckerAttribute);
         var attributesFromMethod = methodInfo.GetCustomAttributes()
-            .Where(a => a is CheckerAttribute<TPlayer>);
+            .Where(a => a is CheckerAttribute);
         attributes.UnionWith(attributesFromClass);
         attributes.UnionWith(attributesFromMethod);
         return attributes;
     }
 
-    private bool TryConvertParameter(object value, Type type, Context<TPlayer> context, out object? convertedType)
+    private bool TryConvertParameter(object value, Type type, Context context, out object? convertedType)
     {
         try
         {

@@ -4,13 +4,13 @@ using Microsoft.Extensions.Hosting;
 
 namespace BattleBitAPI.Addons.Common;
 
-public class ApiService<TPlayer> : IHostedService where TPlayer : Player
+public class ApiService : IHostedService 
 {
     private readonly IPAddress _ipAddress;
     private readonly int _port;
-    private readonly ServerListener<TPlayer> _serverListener;
+    private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
 
-    public ApiService(ServerListener<TPlayer> serverListener, IPAddress ipAddress, int port)
+    public ApiService(ServerListener<AddonPlayer, AddonGameServer> serverListener, IPAddress ipAddress, int port)
     {
         _serverListener = serverListener;
         _ipAddress = ipAddress;

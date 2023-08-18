@@ -1,61 +1,64 @@
-﻿using BattleBitAPI.Addons.CommandHandler.Common;
-using BattleBitAPI.Addons.CommandHandler.Converters;
+﻿using BattleBitAPI.Addons.CommandHandler.Converters;
+using BattleBitAPI.Addons.Common;
 using BattleBitAPI.Common;
 using Microsoft.Extensions.Logging;
 
-namespace BattleBitAPI.Addons.CommandHandler.Handlers;
+namespace BattleBitAPI.Addons.CommandHandler.Common;
 
-public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPlayer : Player
+public class MessageHandlerService : AddonGameServer
 {
+    private readonly CommandModule _commandModule;
+    private readonly Command _command;
     private readonly CommandHandlerSettings _commandHandlerSettings;
-    private readonly IConverter<TPlayer> _converter;
-    private readonly ILogger<MessageHandlerService<TPlayer>> _logger;
+    private readonly IConverter _converter;
+    private readonly ILogger<MessageHandlerService> _logger;
     private readonly IServiceProvider _provider;
 
     public MessageHandlerService(CommandHandlerSettings commandHandlerSettings,
-        IConverter<TPlayer> converter, ILogger<MessageHandlerService<TPlayer>> logger, IServiceProvider provider)
+        IConverter converter, ILogger<MessageHandlerService> logger, IServiceProvider provider, CommandModule commandModule, Command command)
     {
         _commandHandlerSettings = commandHandlerSettings;
         _converter = converter;
         _logger = logger;
         _provider = provider;
+        _commandModule = commandModule;
+        _command = command;
     }
 
-    public Task OnPlayerTypedMessage(TPlayer player, ChatChannel chatChannel, string content,
-        CommandModule<TPlayer> commandModule, Command command)
+    public override Task<bool> OnPlayerTypedMessage(AddonPlayer player, ChatChannel channel, string content)
     {
         if (!content.StartsWith(
-                $"{_commandHandlerSettings.CommandRegex.ToLower()}{command.CommandName.ToLower()}"))
-            return Task.CompletedTask;
+                $"{_commandHandlerSettings.CommandRegex.ToLower()}{_command.CommandName.ToLower()}"))
+            return Task.FromResult(true);
 
         if (player is null)
         {
             _logger.LogError("The player is null.");
-            return Task.CompletedTask;
+            return Task.FromResult(false);
         }
 
-        var context = new Context<TPlayer>
+        var context = new Context
         {
             Player = player,
-            ChatChannel = chatChannel,
-            GameServer = player.GameServer,
+            ChatChannel = channel,
+            // GameServer = player.GameServer,
             ServiceProvider = _provider
         };
 
         var parametersFromCommand = content.Split(" ").ToList();
 
         var result = _converter.TryConvertParameters(parametersFromCommand,
-            command,
+            _command,
             context, out var convertedParameters);
         string message = null;
         switch (result)
         {
             case Result.Success:
             {
-                commandModule.Context = context;
+                _commandModule.Context = context;
                 try
                 {
-                    command.MethodInfo.Invoke(commandModule, convertedParameters.ToArray());
+                    _command.MethodInfo.Invoke(_commandModule, convertedParameters.ToArray());
                 }
                 catch (Exception e)
                 {
@@ -75,6 +78,6 @@ public class MessageHandlerService<TPlayer> : IMessageHandler<TPlayer> where TPl
 
         if (message is not null) player.Message(message);
 
-        return Task.CompletedTask;
+        return Task.FromResult(true);
     }
 }

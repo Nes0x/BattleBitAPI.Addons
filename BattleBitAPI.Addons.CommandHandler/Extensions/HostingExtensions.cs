@@ -16,13 +16,12 @@ public static class HostingExtensions
     ///     Adds all commands from assembly to services and ServerListener
     /// </summary>
     /// <param name="commandHandlerSettings">Your settings for command handling</param>
-    /// <typeparam name="TPlayer">Your player type</typeparam>
-    public static IHostBuilder AddCommandHandler<TPlayer>(this IHostBuilder hostBuilder,
-        CommandHandlerSettings commandHandlerSettings) where TPlayer : Player
+    public static IHostBuilder AddCommandHandler(this IHostBuilder hostBuilder,
+        CommandHandlerSettings commandHandlerSettings)
     {
         var assembly = hostBuilder.GetAssembly();
         var types = assembly.GetTypes();
-        var targetType = typeof(CommandModule<TPlayer>);
+        var targetType = typeof(CommandModule);
 
         hostBuilder.ConfigureServices(services =>
         {
@@ -31,12 +30,11 @@ public static class HostingExtensions
                     services.AddSingleton(targetType, type);
 
             if (commandHandlerSettings.DefaultHelpCommand)
-                services.AddSingleton(targetType, typeof(HelpModule<TPlayer>));
+                services.AddSingleton(targetType, typeof(HelpModule));
             services.AddSingleton<CommandHandlerSettings>(_ => commandHandlerSettings);
-            services.AddSingleton<IMessageHandler<TPlayer>, MessageHandlerService<TPlayer>>();
-            services.AddSingleton<IValidator<TPlayer>, CommandValidator<TPlayer>>();
-            services.AddSingleton<IConverter<TPlayer>, CommandConverter<TPlayer>>();
-            services.AddHostedService<CommandHandlerActivatorService<TPlayer>>();
+            services.AddSingleton<IValidator, CommandValidator>();
+            services.AddSingleton<IConverter, CommandConverter>();
+            services.AddHostedService<CommandHandlerActivatorService>();
         });
 
         return hostBuilder;
@@ -45,11 +43,10 @@ public static class HostingExtensions
     /// <summary>
     ///     Adds all TypeReaders from assemblies to services
     /// </summary>
-    /// <typeparam name="TPlayer">Your player type</typeparam>
-    public static IHostBuilder AddTypeReaders<TPlayer>(this IHostBuilder hostBuilder) where TPlayer : Player
+    public static IHostBuilder AddTypeReaders(this IHostBuilder hostBuilder)
     {
         var assemblies = hostBuilder.GetAssemblies();
-        var targetType = typeof(TypeReader<TPlayer>);
+        var targetType = typeof(TypeReader);
         foreach (var assembly in assemblies)
         {
             var types = assembly.GetTypes();

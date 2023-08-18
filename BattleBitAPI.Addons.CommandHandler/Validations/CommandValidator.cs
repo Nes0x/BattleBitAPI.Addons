@@ -3,11 +3,11 @@ using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.CommandHandler.Validations;
 
-public class CommandValidator<TPlayer> : IValidator<TPlayer> where TPlayer : Player
+public class CommandValidator : IValidator
 {
-    private readonly ILogger<CommandValidator<TPlayer>> _logger;
+    private readonly ILogger<CommandValidator> _logger;
 
-    public CommandValidator(ILogger<CommandValidator<TPlayer>> logger)
+    public CommandValidator(ILogger<CommandValidator> logger)
     {
         _logger = logger;
     }
@@ -40,9 +40,9 @@ public class CommandValidator<TPlayer> : IValidator<TPlayer> where TPlayer : Pla
         return false;
     }
 
-    public bool ValidateCheckers(IEnumerable<Attribute> attributes, Context<TPlayer> context)
+    public bool ValidateCheckers(IEnumerable<Attribute> attributes, Context context)
     {
-        foreach (var attribute in attributes.Select(a => (CheckerAttribute<TPlayer>)a))
+        foreach (var attribute in attributes.Select(a => (CheckerAttribute)a))
             try
             {
                 attribute.Context = context;

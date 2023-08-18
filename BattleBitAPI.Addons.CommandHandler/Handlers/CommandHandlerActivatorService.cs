@@ -1,29 +1,38 @@
 ﻿using System.Reflection;
 using BattleBitAPI.Addons.CommandHandler.Common;
+using BattleBitAPI.Addons.CommandHandler.Converters;
 using BattleBitAPI.Addons.CommandHandler.Validations;
+using BattleBitAPI.Addons.Common;
 using BattleBitAPI.Common;
 using BattleBitAPI.Server;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 
-public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPlayer : Player
+public class CommandHandlerActivatorService : IHostedService
 {
-    public static readonly List<CommandModule<TPlayer>> CommandModules = new();
-    private readonly IEnumerable<CommandModule<TPlayer>> _commandModules;
-    private readonly List<Func<TPlayer, ChatChannel, string, Task>> _handlers;
-    private readonly IMessageHandler<TPlayer> _messageHandler;
-    private readonly ServerListener<TPlayer> _serverListener;
-    private readonly IValidator<TPlayer> _validator;
+    public static readonly List<CommandModule> CommandModules = new();
+    private readonly IEnumerable<CommandModule> _commandModules;
+    private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
+    private readonly CommandHandlerSettings _commandHandlerSettings;
+    private readonly IConverter _converter;
+    private readonly IValidator _validator;
+    private readonly ILogger<MessageHandlerService> _logger;
+    private readonly IServiceProvider _provider;
+    private readonly List<Func<MessageHandlerService>> _handlers;
 
-    public CommandHandlerActivatorService(IEnumerable<CommandModule<TPlayer>> commandModules,
-        IMessageHandler<TPlayer> messageHandler, ServerListener<TPlayer> serverListener, IValidator<TPlayer> validator)
+    public CommandHandlerActivatorService(IEnumerable<CommandModule> commandModules,
+        IValidator validator, ServerListener<AddonPlayer, AddonGameServer> serverListener, CommandHandlerSettings commandHandlerSettings, IConverter converter, ILogger<MessageHandlerService> logger, IServiceProvider provider)
     {
         _commandModules = commandModules;
-        _messageHandler = messageHandler;
-        _handlers = new List<Func<TPlayer, ChatChannel, string, Task>>();
-        _serverListener = serverListener;
         _validator = validator;
+        _serverListener = serverListener;
+        _commandHandlerSettings = commandHandlerSettings;
+        _converter = converter;
+        _logger = logger;
+        _provider = provider;
+        _handlers = new List<Func<MessageHandlerService>>();
     }
 
     public Task StartAsync(CancellationToken cancellationToken)
@@ -34,10 +43,10 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
             CommandModules.Add(commandModule);
             foreach (var command in commandModule.Commands)
             {
-                Func<TPlayer, ChatChannel, string, Task> handler = (player, channel, content) =>
-                    _messageHandler.OnPlayerTypedMessage(player, channel, content.Trim(), commandModule, command);
+                var handler = () => new MessageHandlerService(_commandHandlerSettings, _converter, _logger, _provider,
+                    commandModule, command);
                 _handlers.Add(handler);
-                _serverListener.OnPlayerTypedMessage += handler;
+                _serverListener.OnCreatingGameServerInstance += handler;
             }
         }
 
@@ -46,9 +55,8 @@ public class CommandHandlerActivatorService<TPlayer> : IHostedService where TPla
 
     public Task StopAsync(CancellationToken cancellationToken)
     {
-        foreach (var handler in _handlers) _serverListener.OnPlayerTypedMessage -= handler;
+        foreach (var handler in _handlers) _serverListener.OnCreatingGameServerInstance -= handler;
         _handlers.Clear();
-
         return Task.CompletedTask;
     }
 

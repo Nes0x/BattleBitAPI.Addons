@@ -15,17 +15,17 @@ public static class HostingExtensions
     /// <param name="port">Port on which the server is running</param>
     /// <param name="ipAddress">Ip address of server</param>
     /// <typeparam name="TPlayer">Your player type</typeparam>
-    public static IHostBuilder AddServerListener<TPlayer>(this IHostBuilder hostBuilder, int port,
-        IPAddress ipAddress = null) where TPlayer : Player
+    public static IHostBuilder AddServerListener(this IHostBuilder hostBuilder, int port,
+        IPAddress ipAddress = null)
     {
         ipAddress ??= IPAddress.Loopback;
         hostBuilder.ConfigureServices(services =>
         {
-            services.TryAddSingleton<ServerListener<TPlayer>>();
-            services.AddHostedService<ApiService<TPlayer>>(provider =>
+            services.TryAddSingleton<ServerListener<AddonPlayer, AddonGameServer>>();
+            services.AddHostedService<ApiService>(provider =>
             {
-                var serverListener = provider.GetRequiredService<ServerListener<TPlayer>>();
-                return new ApiService<TPlayer>(serverListener, ipAddress, port);
+                var serverListener = provider.GetRequiredService<ServerListener<AddonPlayer, AddonGameServer>>();
+                return new ApiService(serverListener, ipAddress, port);
             });
         });
         return hostBuilder;

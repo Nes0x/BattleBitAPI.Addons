@@ -15,7 +15,7 @@
       
       
       
-      <meta name="docfx:docurl" content="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/checker.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/checkers.md/#L1">
   </head>
 
   <script type="module">
@@ -76,9 +76,9 @@
 
 <p>This is precondition, you can check any statement and allow execute command.</p>
 <p>To create checker you must derive from Checker class and override RunCommand method.</p>
-<pre><code class="lang-csharp">public class AdminChecker : CheckerAttribute&lt;Player&gt;
+<pre><code class="lang-csharp">public class AdminChecker : CheckerAttribute
 {
-    //You can also use Context in checkers
+    //You can also use Context in checkers.
     public override bool RunCommand()
     {
         return Context.Player.SteamID == 25242738782;
@@ -86,48 +86,48 @@
 }
 </code></pre>
 <p>You can apply checker for all module commands or for single command.</p>
-<pre><code class="lang-csharp">//If you set checker on class range, then all of commands will have that checker
+<pre><code class="lang-csharp">//If you set checker on class range, then all of commands will have that checker.
 [AdminChecker]
-public class AdminModule : CommandModule&lt;Player&gt;
+public class AdminModule : CommandModule
 {
     [Command(Name = &quot;kill&quot;, Description = &quot;Kill player.&quot;)]
-    public Task HandleKill(Player target)
+    public Task&lt;bool&gt; HandleKill(AddonPlayer target)
     {
         if (target is not null) target.Kill();
-        return Task.CompletedTask;
+        return Task.FromResult(true);
     }
     
     [Command(Name = &quot;kick&quot;)]
-    public Task HandleKick(Player target, string reason)
+    public Task&lt;bool&gt; HandleKick(AddonPlayer target, string reason)
     {
         if (target is not null) target.Kick(reason);
-        return Task.CompletedTask;
+        return Task.FromResult(true);
     }
 }
 </code></pre>
-<pre><code class="lang-csharp">public class AdminModule : CommandModule&lt;Player&gt;
+<pre><code class="lang-csharp">public class AdminModule : CommandModule
 {
     [Command(Name = &quot;kill&quot;, Description = &quot;Kill player.&quot;)]
     [AdminChecker]
-    //If you set checker on method range, then only this command will be checked
-    public Task HandleKill(Player target)
+    //If you set checker on method range, then only this command will be checked.
+    public Task&lt;bool&gt; HandleKill(AddonPlayer target)
     {
         if (target is not null) target.Kill();
-        return Task.CompletedTask;
+        return Task.FromResult(true);
     }
     
     [Command(Name = &quot;kick&quot;)]
-    public Task HandleKick(Player target, string reason)
+    public Task&lt;bool&gt; HandleKick(AddonPlayer target, string reason)
     {
         if (target is not null) target.Kick(reason);
-        return Task.CompletedTask;
+        return Task.FromResult(true);
     }
 }
 </code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/checker.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/Nes0x/BattleBitAPI.Addons/blob/master/Documentation/articles/command_handler/checkers.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>

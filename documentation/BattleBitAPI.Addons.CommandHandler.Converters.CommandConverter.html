@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class HostingExtensions
+      <title>Class CommandConverter
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class HostingExtensions
+      <meta name="title" content="Class CommandConverter
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,25 +73,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions">
+        <article data-uid="BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter">
 
 
 
-  <h1 id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions" class="text-break">
-    Class HostingExtensions
+  <h1 id="BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter" data-uid="BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter" class="text-break">
+    Class CommandConverter
   
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BattleBitAPI.html">BattleBitAPI</a>.<a class="xref" href="BattleBitAPI.Addons.html">Addons</a>.<a class="xref" href="BattleBitAPI.Addons.Common.html">Common</a>.<a class="xref" href="BattleBitAPI.Addons.Common.Extensions.html">Extensions</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>BattleBitAPI.Addons.Common.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BattleBitAPI.html">BattleBitAPI</a>.<a class="xref" href="BattleBitAPI.Addons.html">Addons</a>.<a class="xref" href="BattleBitAPI.Addons.CommandHandler.html">CommandHandler</a>.<a class="xref" href="BattleBitAPI.Addons.CommandHandler.Converters.html">Converters</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BattleBitAPI.Addons.CommandHandler.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class HostingExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public class CommandConverter : IConverter</code></pre>
   </div>
 
 
@@ -101,10 +101,16 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">HostingExtensions</span></div>
+      <div><span class="xref">CommandConverter</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BattleBitAPI.Addons.CommandHandler.Converters.IConverter.html">IConverter</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
@@ -138,14 +144,53 @@
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter__ctor_" data-uid="BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.#ctor*"></a>
+
+  <h3 id="BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter__ctor_BattleBitAPI_Addons_CommandHandler_Validations_IValidator_System_Collections_Generic_IEnumerable_BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader__Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter__" data-uid="BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.#ctor(BattleBitAPI.Addons.CommandHandler.Validations.IValidator,System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter})">
+  CommandConverter(IValidator, IEnumerable&lt;TypeReader&gt;, ILogger&lt;CommandConverter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CommandConverter(IValidator validator, IEnumerable&lt;TypeReader&gt; typeReaders, ILogger&lt;CommandConverter&gt; logger)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>validator</code> <a class="xref" href="BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html">IValidator</a></dt>
+    <dd></dd>
+    <dt><code>typeReaders</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html">TypeReader</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.html">CommandConverter</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_AddServerListener_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener*"></a>
+  <a id="BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter_TryConvertParameters_" data-uid="BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.TryConvertParameters*"></a>
 
-  <h3 id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_AddServerListener_Microsoft_Extensions_Hosting_IHostBuilder_System_Int32_System_Net_IPAddress_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)">
-  AddServerListener(IHostBuilder, int, IPAddress)
+  <h3 id="BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter_TryConvertParameters_System_Collections_Generic_List_System_String__BattleBitAPI_Addons_CommandHandler_Common_Command_BattleBitAPI_Addons_CommandHandler_Common_Context_System_Collections_Generic_List_System_Object___" data-uid="BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context,System.Collections.Generic.List{System.Object}@)">
+  TryConvertParameters(List&lt;string&gt;, Command, Context, out List&lt;object?&gt;)
   
   </h3>
 
@@ -153,94 +198,24 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IHostBuilder AddServerListener(this IHostBuilder hostBuilder, int port, IPAddress ipAddress = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public Result TryConvertParameters(List&lt;string&gt; commandParameters, Command command, Context context, out List&lt;object?&gt; convertedParameters)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dt><code>commandParameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd></dd>
-    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dt><code>command</code> <a class="xref" href="BattleBitAPI.Addons.CommandHandler.Common.Command.html">Command</a></dt>
     <dd></dd>
-    <dt><code>ipAddress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipaddress">IPAddress</a></dt>
+    <dt><code>context</code> <a class="xref" href="BattleBitAPI.Addons.CommandHandler.Common.Context.html">Context</a></dt>
+    <dd></dd>
+    <dt><code>convertedParameters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
     <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_GetAssemblies_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssemblies*"></a>
-
-  <h3 id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_GetAssemblies_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssemblies(Microsoft.Extensions.Hosting.IHostBuilder)">
-  GetAssemblies(IHostBuilder)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Assembly[] GetAssemblies(this IHostBuilder hostBuilder)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_GetAssembly_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssembly*"></a>
-
-  <h3 id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_GetAssembly_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssembly(Microsoft.Extensions.Hosting.IHostBuilder)">
-  GetAssembly(IHostBuilder)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Assembly GetAssembly(this IHostBuilder hostBuilder)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
+    <dt><a class="xref" href="BattleBitAPI.Addons.CommandHandler.Converters.Result.html">Result</a></dt>
     <dd></dd>
   </dl>
 

@@ -75,14 +75,13 @@
 <h1 id="beginning">Beginning</h1>
 
 <ul>
-<li>You must have installed <code>Microsoft.Extensions.Hosting 7.0.1</code> in your project</li>
-<li>You must using <code>.NET 7</code> or newer</li>
-<li>You must install <code>BattleBitAPI.Addons.EventHandler</code> or <code>BattleBitAPI.Addons.CommandHandler</code> package from nuget</li>
+<li>You must have installed <code>Microsoft.Extensions.Hosting 7.0.1</code> in your project.</li>
+<li>You must using <code>.NET 7</code> or newer.</li>
+<li>You must install <code>BattleBitAPI.Addons.EventHandler</code> or <code>BattleBitAPI.Addons.CommandHandler</code> package from nuget.</li>
 </ul>
-<p>First of all create host and add ServerListener</p>
+<p>First of all create host and add ServerListener.</p>
 <pre><code class="lang-csharp">var host = Host.CreateDefaultBuilder(args);
-//In generic use your Player type, in parameters pass port and IPAddress.
-host.AddServerListener&lt;Player&gt;(2000)
+host.AddServerListener(2000);
 var app = host.Build();
 await app.RunAsync();
 </code></pre>

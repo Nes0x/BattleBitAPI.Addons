@@ -7,6 +7,54 @@ references:
   commentId: N:BattleBitAPI.Addons.CommandHandler.Common
   fullName: BattleBitAPI.Addons.CommandHandler.Common
   nameWithType: BattleBitAPI.Addons.CommandHandler.Common
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute
+  name: CheckerAttribute
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute
+  nameWithType: CheckerAttribute
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.#ctor
+  name: CheckerAttribute()
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.html#BattleBitAPI_Addons_CommandHandler_Common_CheckerAttribute__ctor
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.CheckerAttribute()
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.New()
+  nameWithType: CheckerAttribute.CheckerAttribute()
+  nameWithType.vb: CheckerAttribute.New()
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.#ctor*
+  name: CheckerAttribute
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.html#BattleBitAPI_Addons_CommandHandler_Common_CheckerAttribute__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.CheckerAttribute
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.New
+  nameWithType: CheckerAttribute.CheckerAttribute
+  nameWithType.vb: CheckerAttribute.New
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.Context
+  name: Context
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.html#BattleBitAPI_Addons_CommandHandler_Common_CheckerAttribute_Context
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.Context
+  nameWithType: CheckerAttribute.Context
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.Context*
+  name: Context
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.html#BattleBitAPI_Addons_CommandHandler_Common_CheckerAttribute_Context_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.Context
+  nameWithType: CheckerAttribute.Context
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.RunCommand
+  name: RunCommand()
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.html#BattleBitAPI_Addons_CommandHandler_Common_CheckerAttribute_RunCommand
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.RunCommand
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.RunCommand()
+  nameWithType: CheckerAttribute.RunCommand()
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.RunCommand*
+  name: RunCommand
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.html#BattleBitAPI_Addons_CommandHandler_Common_CheckerAttribute_RunCommand_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.RunCommand
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.RunCommand
+  nameWithType: CheckerAttribute.RunCommand
 - uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
   name: CheckerAttribute<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute-1.html
@@ -210,6 +258,78 @@ references:
   commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ErrorCallback
   fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ErrorCallback
   nameWithType: CommandHandlerSettings.ErrorCallback
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  name: ShowCommandOnChat
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html#BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_ShowCommandOnChat
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  nameWithType: CommandHandlerSettings.ShowCommandOnChat
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat*
+  name: ShowCommandOnChat
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html#BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_ShowCommandOnChat_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  nameWithType: CommandHandlerSettings.ShowCommandOnChat
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  name: ShowCommandOnChatWhenChecker
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html#BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_ShowCommandOnChatWhenChecker
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  nameWithType: CommandHandlerSettings.ShowCommandOnChatWhenChecker
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker*
+  name: ShowCommandOnChatWhenChecker
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html#BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_ShowCommandOnChatWhenChecker_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  nameWithType: CommandHandlerSettings.ShowCommandOnChatWhenChecker
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  name: ShowCommandOnChatWhenError
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html#BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_ShowCommandOnChatWhenError
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  nameWithType: CommandHandlerSettings.ShowCommandOnChatWhenError
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError*
+  name: ShowCommandOnChatWhenError
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html#BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_ShowCommandOnChatWhenError_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  nameWithType: CommandHandlerSettings.ShowCommandOnChatWhenError
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule
+  name: CommandModule
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandModule
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule
+  nameWithType: CommandModule
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor
+  name: CommandModule()
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html#BattleBitAPI_Addons_CommandHandler_Common_CommandModule__ctor
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.CommandModule()
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.New()
+  nameWithType: CommandModule.CommandModule()
+  nameWithType.vb: CommandModule.New()
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor*
+  name: CommandModule
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html#BattleBitAPI_Addons_CommandHandler_Common_CommandModule__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.CommandModule
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.New
+  nameWithType: CommandModule.CommandModule
+  nameWithType.vb: CommandModule.New
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+  name: Context
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html#BattleBitAPI_Addons_CommandHandler_Common_CommandModule_Context
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+  nameWithType: CommandModule.Context
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context*
+  name: Context
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html#BattleBitAPI_Addons_CommandHandler_Common_CommandModule_Context_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+  nameWithType: CommandModule.Context
 - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
   name: CommandModule<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html
@@ -289,6 +409,78 @@ references:
   commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute.Name
   fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute.Name
   nameWithType: CommandParameterAttribute.Name
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context
+  name: Context
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context
+  nameWithType: Context
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.#ctor
+  name: Context()
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context__ctor
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Common.Context.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.Context()
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.Context.New()
+  nameWithType: Context.Context()
+  nameWithType.vb: Context.New()
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.#ctor*
+  name: Context
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Context.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.Context
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.Context.New
+  nameWithType: Context.Context
+  nameWithType.vb: Context.New
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.ChatChannel
+  name: ChatChannel
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context_ChatChannel
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.Context.ChatChannel
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.ChatChannel
+  nameWithType: Context.ChatChannel
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.ChatChannel*
+  name: ChatChannel
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context_ChatChannel_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Context.ChatChannel
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.ChatChannel
+  nameWithType: Context.ChatChannel
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.GameServer
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context_GameServer
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.Context.GameServer
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.GameServer
+  nameWithType: Context.GameServer
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.GameServer*
+  name: GameServer
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context_GameServer_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Context.GameServer
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.GameServer
+  nameWithType: Context.GameServer
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.Player
+  name: Player
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context_Player
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.Context.Player
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.Player
+  nameWithType: Context.Player
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.Player*
+  name: Player
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context_Player_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Context.Player
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.Player
+  nameWithType: Context.Player
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.ServiceProvider
+  name: ServiceProvider
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context_ServiceProvider
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.Context.ServiceProvider
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.ServiceProvider
+  nameWithType: Context.ServiceProvider
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context.ServiceProvider*
+  name: ServiceProvider
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html#BattleBitAPI_Addons_CommandHandler_Common_Context_ServiceProvider_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.Context.ServiceProvider
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context.ServiceProvider
+  nameWithType: Context.ServiceProvider
 - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
   name: Context<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
@@ -459,6 +651,45 @@ references:
   commentId: N:BattleBitAPI.Addons.CommandHandler.Converters
   fullName: BattleBitAPI.Addons.CommandHandler.Converters
   nameWithType: BattleBitAPI.Addons.CommandHandler.Converters
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter
+  name: CommandConverter
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter
+  nameWithType: CommandConverter
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.#ctor(BattleBitAPI.Addons.CommandHandler.Validations.IValidator,System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter})
+  name: CommandConverter(IValidator, IEnumerable<TypeReader>, ILogger<CommandConverter>)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.html#BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter__ctor_BattleBitAPI_Addons_CommandHandler_Validations_IValidator_System_Collections_Generic_IEnumerable_BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader__Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter__
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.#ctor(BattleBitAPI.Addons.CommandHandler.Validations.IValidator,System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter})
+  name.vb: New(IValidator, IEnumerable(Of TypeReader), ILogger(Of CommandConverter))
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.CommandConverter(BattleBitAPI.Addons.CommandHandler.Validations.IValidator, System.Collections.Generic.IEnumerable<BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader>, Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter>)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.New(BattleBitAPI.Addons.CommandHandler.Validations.IValidator, System.Collections.Generic.IEnumerable(Of BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader), Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter))
+  nameWithType: CommandConverter.CommandConverter(IValidator, IEnumerable<TypeReader>, ILogger<CommandConverter>)
+  nameWithType.vb: CommandConverter.New(IValidator, IEnumerable(Of TypeReader), ILogger(Of CommandConverter))
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.#ctor*
+  name: CommandConverter
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.html#BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.CommandConverter
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.New
+  nameWithType: CommandConverter.CommandConverter
+  nameWithType.vb: CommandConverter.New
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context,System.Collections.Generic.List{System.Object}@)
+  name: TryConvertParameters(List<string>, Command, Context, out List<object?>)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.html#BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter_TryConvertParameters_System_Collections_Generic_List_System_String__BattleBitAPI_Addons_CommandHandler_Common_Command_BattleBitAPI_Addons_CommandHandler_Common_Context_System_Collections_Generic_List_System_Object___
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context,System.Collections.Generic.List{System.Object}@)
+  name.vb: TryConvertParameters(List(Of String), Command, Context, List(Of Object))
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.TryConvertParameters(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context, out System.Collections.Generic.List<object?>)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.TryConvertParameters(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context, System.Collections.Generic.List(Of Object))
+  nameWithType: CommandConverter.TryConvertParameters(List<string>, Command, Context, out List<object?>)
+  nameWithType.vb: CommandConverter.TryConvertParameters(List(Of String), Command, Context, List(Of Object))
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.TryConvertParameters*
+  name: TryConvertParameters
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.html#BattleBitAPI_Addons_CommandHandler_Converters_CommandConverter_TryConvertParameters_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.TryConvertParameters
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.TryConvertParameters
+  nameWithType: CommandConverter.TryConvertParameters
 - uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1
   name: CommandConverter<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter-1.html
@@ -503,6 +734,27 @@ references:
   fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter(Of TPlayer).TryConvertParameters
   nameWithType: CommandConverter<TPlayer>.TryConvertParameters
   nameWithType.vb: CommandConverter(Of TPlayer).TryConvertParameters
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter
+  name: IConverter
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.IConverter
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.IConverter
+  nameWithType: IConverter
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context,System.Collections.Generic.List{System.Object}@)
+  name: TryConvertParameters(List<string>, Command, Context, out List<object?>)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter.html#BattleBitAPI_Addons_CommandHandler_Converters_IConverter_TryConvertParameters_System_Collections_Generic_List_System_String__BattleBitAPI_Addons_CommandHandler_Common_Command_BattleBitAPI_Addons_CommandHandler_Common_Context_System_Collections_Generic_List_System_Object___
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.IConverter.TryConvertParameters(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,BattleBitAPI.Addons.CommandHandler.Common.Context,System.Collections.Generic.List{System.Object}@)
+  name.vb: TryConvertParameters(List(Of String), Command, Context, List(Of Object))
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.IConverter.TryConvertParameters(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context, out System.Collections.Generic.List<object?>)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.IConverter.TryConvertParameters(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, BattleBitAPI.Addons.CommandHandler.Common.Context, System.Collections.Generic.List(Of Object))
+  nameWithType: IConverter.TryConvertParameters(List<string>, Command, Context, out List<object?>)
+  nameWithType.vb: IConverter.TryConvertParameters(List(Of String), Command, Context, List(Of Object))
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter.TryConvertParameters*
+  name: TryConvertParameters
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter.html#BattleBitAPI_Addons_CommandHandler_Converters_IConverter_TryConvertParameters_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.IConverter.TryConvertParameters
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.IConverter.TryConvertParameters
+  nameWithType: IConverter.TryConvertParameters
 - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1
   name: IConverter<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html
@@ -598,6 +850,69 @@ references:
   commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType
   fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.ChangeType
   nameWithType: PlayerSteamIdTypeReader.ChangeType
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader
+  name: TypeReader
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader
+  nameWithType: TypeReader
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.#ctor(System.Type)
+  name: TypeReader(Type)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html#BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader__ctor_System_Type_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.#ctor(System.Type)
+  name.vb: New(Type)
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.TypeReader(System.Type)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.New(System.Type)
+  nameWithType: TypeReader.TypeReader(Type)
+  nameWithType.vb: TypeReader.New(Type)
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.#ctor*
+  name: TypeReader
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html#BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.TypeReader
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.New
+  nameWithType: TypeReader.TypeReader
+  nameWithType.vb: TypeReader.New
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.ChangeType(System.Object)
+  name: ChangeType(object)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html#BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader_ChangeType_System_Object_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.ChangeType(System.Object)
+  name.vb: ChangeType(Object)
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.ChangeType(object)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.ChangeType(Object)
+  nameWithType: TypeReader.ChangeType(object)
+  nameWithType.vb: TypeReader.ChangeType(Object)
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.ChangeType*
+  name: ChangeType
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html#BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader_ChangeType_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.ChangeType
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.ChangeType
+  nameWithType: TypeReader.ChangeType
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Context
+  name: Context
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html#BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader_Context
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Context
+  nameWithType: TypeReader.Context
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Context*
+  name: Context
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html#BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader_Context_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Context
+  nameWithType: TypeReader.Context
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Type
+  name: Type
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html#BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader_Type
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Type
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Type
+  nameWithType: TypeReader.Type
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Type*
+  name: Type
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html#BattleBitAPI_Addons_CommandHandler_Converters_TypeReaders_TypeReader_Type_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Type
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.Type
+  nameWithType: TypeReader.Type
 - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
   name: TypeReader<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
@@ -686,42 +1001,90 @@ references:
   commentId: T:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions
   fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions
   nameWithType: HostingExtensions
+- uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler(Microsoft.Extensions.Hosting.IHostBuilder,BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
+  name: AddCommandHandler(IHostBuilder, CommandHandlerSettings)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.html#BattleBitAPI_Addons_CommandHandler_Extensions_HostingExtensions_AddCommandHandler_Microsoft_Extensions_Hosting_IHostBuilder_BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler(Microsoft.Extensions.Hosting.IHostBuilder,BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
+  fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler(Microsoft.Extensions.Hosting.IHostBuilder, BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
+  nameWithType: HostingExtensions.AddCommandHandler(IHostBuilder, CommandHandlerSettings)
 - uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler*
   name: AddCommandHandler
   href: documentation/BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.html#BattleBitAPI_Addons_CommandHandler_Extensions_HostingExtensions_AddCommandHandler_
   commentId: Overload:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler
   fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler
   nameWithType: HostingExtensions.AddCommandHandler
-- uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler``1(Microsoft.Extensions.Hosting.IHostBuilder,BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  name: AddCommandHandler<TPlayer>(IHostBuilder, CommandHandlerSettings)
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.html#BattleBitAPI_Addons_CommandHandler_Extensions_HostingExtensions_AddCommandHandler__1_Microsoft_Extensions_Hosting_IHostBuilder_BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_
-  commentId: M:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler``1(Microsoft.Extensions.Hosting.IHostBuilder,BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  name.vb: AddCommandHandler(Of TPlayer)(IHostBuilder, CommandHandlerSettings)
-  fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler<TPlayer>(Microsoft.Extensions.Hosting.IHostBuilder, BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler(Of TPlayer)(Microsoft.Extensions.Hosting.IHostBuilder, BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  nameWithType: HostingExtensions.AddCommandHandler<TPlayer>(IHostBuilder, CommandHandlerSettings)
-  nameWithType.vb: HostingExtensions.AddCommandHandler(Of TPlayer)(IHostBuilder, CommandHandlerSettings)
+- uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: AddTypeReaders(IHostBuilder)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.html#BattleBitAPI_Addons_CommandHandler_Extensions_HostingExtensions_AddTypeReaders_Microsoft_Extensions_Hosting_IHostBuilder_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders(Microsoft.Extensions.Hosting.IHostBuilder)
+  fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders(Microsoft.Extensions.Hosting.IHostBuilder)
+  nameWithType: HostingExtensions.AddTypeReaders(IHostBuilder)
 - uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders*
   name: AddTypeReaders
   href: documentation/BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.html#BattleBitAPI_Addons_CommandHandler_Extensions_HostingExtensions_AddTypeReaders_
   commentId: Overload:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders
   fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders
   nameWithType: HostingExtensions.AddTypeReaders
-- uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders``1(Microsoft.Extensions.Hosting.IHostBuilder)
-  name: AddTypeReaders<TPlayer>(IHostBuilder)
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.html#BattleBitAPI_Addons_CommandHandler_Extensions_HostingExtensions_AddTypeReaders__1_Microsoft_Extensions_Hosting_IHostBuilder_
-  commentId: M:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders``1(Microsoft.Extensions.Hosting.IHostBuilder)
-  name.vb: AddTypeReaders(Of TPlayer)(IHostBuilder)
-  fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders<TPlayer>(Microsoft.Extensions.Hosting.IHostBuilder)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders(Of TPlayer)(Microsoft.Extensions.Hosting.IHostBuilder)
-  nameWithType: HostingExtensions.AddTypeReaders<TPlayer>(IHostBuilder)
-  nameWithType.vb: HostingExtensions.AddTypeReaders(Of TPlayer)(IHostBuilder)
 - uid: BattleBitAPI.Addons.CommandHandler.Handlers
   name: BattleBitAPI.Addons.CommandHandler.Handlers
   href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.html
   commentId: N:BattleBitAPI.Addons.CommandHandler.Handlers
   fullName: BattleBitAPI.Addons.CommandHandler.Handlers
   nameWithType: BattleBitAPI.Addons.CommandHandler.Handlers
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService
+  name: CommandHandlerActivatorService
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService
+  nameWithType: CommandHandlerActivatorService
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Common.CommandModule},BattleBitAPI.Addons.CommandHandler.Validations.IValidator,BattleBitAPI.Server.ServerListener{BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonGameServer},BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService},System.IServiceProvider)
+  name: CommandHandlerActivatorService(IEnumerable<CommandModule>, IValidator, ServerListener<AddonPlayer, AddonGameServer>, CommandHandlerSettings, IConverter, ILogger<MessageHandlerService>, IServiceProvider)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService__ctor_System_Collections_Generic_IEnumerable_BattleBitAPI_Addons_CommandHandler_Common_CommandModule__BattleBitAPI_Addons_CommandHandler_Validations_IValidator_BattleBitAPI_Server_ServerListener_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Addons_Common_AddonGameServer__BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_BattleBitAPI_Addons_CommandHandler_Converters_IConverter_Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService__System_IServiceProvider_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Common.CommandModule},BattleBitAPI.Addons.CommandHandler.Validations.IValidator,BattleBitAPI.Server.ServerListener{BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonGameServer},BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService},System.IServiceProvider)
+  name.vb: New(IEnumerable(Of CommandModule), IValidator, ServerListener(Of AddonPlayer, AddonGameServer), CommandHandlerSettings, IConverter, ILogger(Of MessageHandlerService), IServiceProvider)
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.CommandHandlerActivatorService(System.Collections.Generic.IEnumerable<BattleBitAPI.Addons.CommandHandler.Common.CommandModule>, BattleBitAPI.Addons.CommandHandler.Validations.IValidator, BattleBitAPI.Server.ServerListener<BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonGameServer>, BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService>, System.IServiceProvider)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.New(System.Collections.Generic.IEnumerable(Of BattleBitAPI.Addons.CommandHandler.Common.CommandModule), BattleBitAPI.Addons.CommandHandler.Validations.IValidator, BattleBitAPI.Server.ServerListener(Of BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonGameServer), BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService), System.IServiceProvider)
+  nameWithType: CommandHandlerActivatorService.CommandHandlerActivatorService(IEnumerable<CommandModule>, IValidator, ServerListener<AddonPlayer, AddonGameServer>, CommandHandlerSettings, IConverter, ILogger<MessageHandlerService>, IServiceProvider)
+  nameWithType.vb: CommandHandlerActivatorService.New(IEnumerable(Of CommandModule), IValidator, ServerListener(Of AddonPlayer, AddonGameServer), CommandHandlerSettings, IConverter, ILogger(Of MessageHandlerService), IServiceProvider)
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.#ctor*
+  name: CommandHandlerActivatorService
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.CommandHandlerActivatorService
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.New
+  nameWithType: CommandHandlerActivatorService.CommandHandlerActivatorService
+  nameWithType.vb: CommandHandlerActivatorService.New
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.CommandModules
+  name: CommandModules
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService_CommandModules
+  commentId: F:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.CommandModules
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.CommandModules
+  nameWithType: CommandHandlerActivatorService.CommandModules
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
+  name: StartAsync(CancellationToken)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService_StartAsync_System_Threading_CancellationToken_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StartAsync(System.Threading.CancellationToken)
+  nameWithType: CommandHandlerActivatorService.StartAsync(CancellationToken)
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StartAsync*
+  name: StartAsync
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService_StartAsync_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StartAsync
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StartAsync
+  nameWithType: CommandHandlerActivatorService.StartAsync
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
+  name: StopAsync(CancellationToken)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService_StopAsync_System_Threading_CancellationToken_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StopAsync(System.Threading.CancellationToken)
+  nameWithType: CommandHandlerActivatorService.StopAsync(CancellationToken)
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StopAsync*
+  name: StopAsync
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService_StopAsync_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StopAsync
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.StopAsync
+  nameWithType: CommandHandlerActivatorService.StopAsync
 - uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService`1
   name: CommandHandlerActivatorService<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService-1.html
@@ -815,6 +1178,45 @@ references:
   fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler(Of TPlayer).OnPlayerTypedMessage
   nameWithType: IMessageHandler<TPlayer>.OnPlayerTypedMessage
   nameWithType.vb: IMessageHandler(Of TPlayer).OnPlayerTypedMessage
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService
+  name: MessageHandlerService
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService
+  nameWithType: MessageHandlerService
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.#ctor(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService},System.IServiceProvider,BattleBitAPI.Addons.CommandHandler.Common.CommandModule,BattleBitAPI.Addons.CommandHandler.Common.Command)
+  name: MessageHandlerService(CommandHandlerSettings, IConverter, ILogger<MessageHandlerService>, IServiceProvider, CommandModule, Command)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.html#BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService__ctor_BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_BattleBitAPI_Addons_CommandHandler_Converters_IConverter_Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService__System_IServiceProvider_BattleBitAPI_Addons_CommandHandler_Common_CommandModule_BattleBitAPI_Addons_CommandHandler_Common_Command_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.#ctor(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService},System.IServiceProvider,BattleBitAPI.Addons.CommandHandler.Common.CommandModule,BattleBitAPI.Addons.CommandHandler.Common.Command)
+  name.vb: New(CommandHandlerSettings, IConverter, ILogger(Of MessageHandlerService), IServiceProvider, CommandModule, Command)
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.MessageHandlerService(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService>, System.IServiceProvider, BattleBitAPI.Addons.CommandHandler.Common.CommandModule, BattleBitAPI.Addons.CommandHandler.Common.Command)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.New(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService), System.IServiceProvider, BattleBitAPI.Addons.CommandHandler.Common.CommandModule, BattleBitAPI.Addons.CommandHandler.Common.Command)
+  nameWithType: MessageHandlerService.MessageHandlerService(CommandHandlerSettings, IConverter, ILogger<MessageHandlerService>, IServiceProvider, CommandModule, Command)
+  nameWithType.vb: MessageHandlerService.New(CommandHandlerSettings, IConverter, ILogger(Of MessageHandlerService), IServiceProvider, CommandModule, Command)
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.#ctor*
+  name: MessageHandlerService
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.html#BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.MessageHandlerService
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.New
+  nameWithType: MessageHandlerService.MessageHandlerService
+  nameWithType.vb: MessageHandlerService.New
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ChatChannel,System.String)
+  name: OnPlayerTypedMessage(AddonPlayer, ChatChannel, string)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.html#BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService_OnPlayerTypedMessage_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Common_ChatChannel_System_String_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ChatChannel,System.String)
+  name.vb: OnPlayerTypedMessage(AddonPlayer, ChatChannel, String)
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ChatChannel, string)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ChatChannel, String)
+  nameWithType: MessageHandlerService.OnPlayerTypedMessage(AddonPlayer, ChatChannel, string)
+  nameWithType.vb: MessageHandlerService.OnPlayerTypedMessage(AddonPlayer, ChatChannel, String)
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage*
+  name: OnPlayerTypedMessage
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.html#BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService_OnPlayerTypedMessage_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage
+  nameWithType: MessageHandlerService.OnPlayerTypedMessage
 - uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService`1
   name: MessageHandlerService<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService-1.html
@@ -865,6 +1267,42 @@ references:
   commentId: N:BattleBitAPI.Addons.CommandHandler.Modules
   fullName: BattleBitAPI.Addons.CommandHandler.Modules
   nameWithType: BattleBitAPI.Addons.CommandHandler.Modules
+- uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule
+  name: HelpModule
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Modules.HelpModule
+  fullName: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule
+  nameWithType: HelpModule
+- uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.#ctor(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
+  name: HelpModule(CommandHandlerSettings)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.html#BattleBitAPI_Addons_CommandHandler_Modules_HelpModule__ctor_BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.#ctor(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
+  name.vb: New(CommandHandlerSettings)
+  fullName: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.HelpModule(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.New(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
+  nameWithType: HelpModule.HelpModule(CommandHandlerSettings)
+  nameWithType.vb: HelpModule.New(CommandHandlerSettings)
+- uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.#ctor*
+  name: HelpModule
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.html#BattleBitAPI_Addons_CommandHandler_Modules_HelpModule__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.HelpModule
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.New
+  nameWithType: HelpModule.HelpModule
+  nameWithType.vb: HelpModule.New
+- uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.HandleHelp
+  name: HandleHelp()
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.html#BattleBitAPI_Addons_CommandHandler_Modules_HelpModule_HandleHelp
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.HandleHelp
+  fullName: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.HandleHelp()
+  nameWithType: HelpModule.HandleHelp()
+- uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.HandleHelp*
+  name: HandleHelp
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.html#BattleBitAPI_Addons_CommandHandler_Modules_HelpModule_HandleHelp_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.HandleHelp
+  fullName: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.HandleHelp
+  nameWithType: HelpModule.HandleHelp
 - uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule`1
   name: HelpModule<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule-1.html
@@ -914,6 +1352,75 @@ references:
   commentId: N:BattleBitAPI.Addons.CommandHandler.Validations
   fullName: BattleBitAPI.Addons.CommandHandler.Validations
   nameWithType: BattleBitAPI.Addons.CommandHandler.Validations
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator
+  name: CommandValidator
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator
+  nameWithType: CommandValidator
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.#ctor(Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator})
+  name: CommandValidator(ILogger<CommandValidator>)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_CommandValidator__ctor_Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_CommandHandler_Validations_CommandValidator__
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.#ctor(Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator})
+  name.vb: New(ILogger(Of CommandValidator))
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.CommandValidator(Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator>)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.New(Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator))
+  nameWithType: CommandValidator.CommandValidator(ILogger<CommandValidator>)
+  nameWithType.vb: CommandValidator.New(ILogger(Of CommandValidator))
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.#ctor*
+  name: CommandValidator
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_CommandValidator__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.CommandValidator
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.New
+  nameWithType: CommandValidator.CommandValidator
+  nameWithType.vb: CommandValidator.New
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context)
+  name: ValidateCheckers(IEnumerable<Attribute>, Context)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_CommandValidator_ValidateCheckers_System_Collections_Generic_IEnumerable_System_Attribute__BattleBitAPI_Addons_CommandHandler_Common_Context_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context)
+  name.vb: ValidateCheckers(IEnumerable(Of Attribute), Context)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateCheckers(System.Collections.Generic.IEnumerable<System.Attribute>, BattleBitAPI.Addons.CommandHandler.Common.Context)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateCheckers(System.Collections.Generic.IEnumerable(Of System.Attribute), BattleBitAPI.Addons.CommandHandler.Common.Context)
+  nameWithType: CommandValidator.ValidateCheckers(IEnumerable<Attribute>, Context)
+  nameWithType.vb: CommandValidator.ValidateCheckers(IEnumerable(Of Attribute), Context)
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateCheckers*
+  name: ValidateCheckers
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_CommandValidator_ValidateCheckers_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateCheckers
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateCheckers
+  nameWithType: CommandValidator.ValidateCheckers
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  name: ValidateParametersCount(List<string>, Command, out int)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_CommandValidator_ValidateParametersCount_System_Collections_Generic_List_System_String__BattleBitAPI_Addons_CommandHandler_Common_Command_System_Int32__
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  name.vb: ValidateParametersCount(List(Of String), Command, Integer)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateParametersCount(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, out int)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateParametersCount(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, Integer)
+  nameWithType: CommandValidator.ValidateParametersCount(List<string>, Command, out int)
+  nameWithType.vb: CommandValidator.ValidateParametersCount(List(Of String), Command, Integer)
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateParametersCount*
+  name: ValidateParametersCount
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_CommandValidator_ValidateParametersCount_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateParametersCount
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateParametersCount
+  nameWithType: CommandValidator.ValidateParametersCount
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  name: ValidateUniqueCommand(Command, List<Command>)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_CommandValidator_ValidateUniqueCommand_BattleBitAPI_Addons_CommandHandler_Common_Command_System_Collections_Generic_List_BattleBitAPI_Addons_CommandHandler_Common_Command__
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  name.vb: ValidateUniqueCommand(Command, List(Of Command))
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List<BattleBitAPI.Addons.CommandHandler.Common.Command>)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List(Of BattleBitAPI.Addons.CommandHandler.Common.Command))
+  nameWithType: CommandValidator.ValidateUniqueCommand(Command, List<Command>)
+  nameWithType.vb: CommandValidator.ValidateUniqueCommand(Command, List(Of Command))
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateUniqueCommand*
+  name: ValidateUniqueCommand
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_CommandValidator_ValidateUniqueCommand_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateUniqueCommand
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.ValidateUniqueCommand
+  nameWithType: CommandValidator.ValidateUniqueCommand
 - uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
   name: CommandValidator<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html
@@ -992,6 +1499,57 @@ references:
   fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer).ValidateUniqueCommand
   nameWithType: CommandValidator<TPlayer>.ValidateUniqueCommand
   nameWithType.vb: CommandValidator(Of TPlayer).ValidateUniqueCommand
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator
+  name: IValidator
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.IValidator
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator
+  nameWithType: IValidator
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context)
+  name: ValidateCheckers(IEnumerable<Attribute>, Context)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_IValidator_ValidateCheckers_System_Collections_Generic_IEnumerable_System_Attribute__BattleBitAPI_Addons_CommandHandler_Common_Context_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateCheckers(System.Collections.Generic.IEnumerable{System.Attribute},BattleBitAPI.Addons.CommandHandler.Common.Context)
+  name.vb: ValidateCheckers(IEnumerable(Of Attribute), Context)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateCheckers(System.Collections.Generic.IEnumerable<System.Attribute>, BattleBitAPI.Addons.CommandHandler.Common.Context)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateCheckers(System.Collections.Generic.IEnumerable(Of System.Attribute), BattleBitAPI.Addons.CommandHandler.Common.Context)
+  nameWithType: IValidator.ValidateCheckers(IEnumerable<Attribute>, Context)
+  nameWithType.vb: IValidator.ValidateCheckers(IEnumerable(Of Attribute), Context)
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateCheckers*
+  name: ValidateCheckers
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_IValidator_ValidateCheckers_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateCheckers
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateCheckers
+  nameWithType: IValidator.ValidateCheckers
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  name: ValidateParametersCount(List<string>, Command, out int)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_IValidator_ValidateParametersCount_System_Collections_Generic_List_System_String__BattleBitAPI_Addons_CommandHandler_Common_Command_System_Int32__
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateParametersCount(System.Collections.Generic.List{System.String},BattleBitAPI.Addons.CommandHandler.Common.Command,System.Int32@)
+  name.vb: ValidateParametersCount(List(Of String), Command, Integer)
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateParametersCount(System.Collections.Generic.List<string>, BattleBitAPI.Addons.CommandHandler.Common.Command, out int)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateParametersCount(System.Collections.Generic.List(Of String), BattleBitAPI.Addons.CommandHandler.Common.Command, Integer)
+  nameWithType: IValidator.ValidateParametersCount(List<string>, Command, out int)
+  nameWithType.vb: IValidator.ValidateParametersCount(List(Of String), Command, Integer)
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateParametersCount*
+  name: ValidateParametersCount
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_IValidator_ValidateParametersCount_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateParametersCount
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateParametersCount
+  nameWithType: IValidator.ValidateParametersCount
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  name: ValidateUniqueCommand(Command, List<Command>)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_IValidator_ValidateUniqueCommand_BattleBitAPI_Addons_CommandHandler_Common_Command_System_Collections_Generic_List_BattleBitAPI_Addons_CommandHandler_Common_Command__
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command,System.Collections.Generic.List{BattleBitAPI.Addons.CommandHandler.Common.Command})
+  name.vb: ValidateUniqueCommand(Command, List(Of Command))
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List<BattleBitAPI.Addons.CommandHandler.Common.Command>)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateUniqueCommand(BattleBitAPI.Addons.CommandHandler.Common.Command, System.Collections.Generic.List(Of BattleBitAPI.Addons.CommandHandler.Common.Command))
+  nameWithType: IValidator.ValidateUniqueCommand(Command, List<Command>)
+  nameWithType.vb: IValidator.ValidateUniqueCommand(Command, List(Of Command))
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateUniqueCommand*
+  name: ValidateUniqueCommand
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html#BattleBitAPI_Addons_CommandHandler_Validations_IValidator_ValidateUniqueCommand_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateUniqueCommand
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.ValidateUniqueCommand
+  nameWithType: IValidator.ValidateUniqueCommand
 - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
   name: IValidator<TPlayer>
   href: documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
@@ -1058,6 +1616,102 @@ references:
   commentId: N:BattleBitAPI.Addons.Common
   fullName: BattleBitAPI.Addons.Common
   nameWithType: BattleBitAPI.Addons.Common
+- uid: BattleBitAPI.Addons.Common.AddonGameServer
+  name: AddonGameServer
+  href: documentation/BattleBitAPI.Addons.Common.AddonGameServer.html
+  commentId: T:BattleBitAPI.Addons.Common.AddonGameServer
+  fullName: BattleBitAPI.Addons.Common.AddonGameServer
+  nameWithType: AddonGameServer
+- uid: BattleBitAPI.Addons.Common.AddonGameServer.#ctor
+  name: AddonGameServer()
+  href: documentation/BattleBitAPI.Addons.Common.AddonGameServer.html#BattleBitAPI_Addons_Common_AddonGameServer__ctor
+  commentId: M:BattleBitAPI.Addons.Common.AddonGameServer.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.Common.AddonGameServer.AddonGameServer()
+  fullName.vb: BattleBitAPI.Addons.Common.AddonGameServer.New()
+  nameWithType: AddonGameServer.AddonGameServer()
+  nameWithType.vb: AddonGameServer.New()
+- uid: BattleBitAPI.Addons.Common.AddonGameServer.#ctor*
+  name: AddonGameServer
+  href: documentation/BattleBitAPI.Addons.Common.AddonGameServer.html#BattleBitAPI_Addons_Common_AddonGameServer__ctor_
+  commentId: Overload:BattleBitAPI.Addons.Common.AddonGameServer.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.Common.AddonGameServer.AddonGameServer
+  fullName.vb: BattleBitAPI.Addons.Common.AddonGameServer.New
+  nameWithType: AddonGameServer.AddonGameServer
+  nameWithType.vb: AddonGameServer.New
+- uid: BattleBitAPI.Addons.Common.AddonPlayer
+  name: AddonPlayer
+  href: documentation/BattleBitAPI.Addons.Common.AddonPlayer.html
+  commentId: T:BattleBitAPI.Addons.Common.AddonPlayer
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer
+  nameWithType: AddonPlayer
+- uid: BattleBitAPI.Addons.Common.AddonPlayer.#ctor
+  name: AddonPlayer()
+  href: documentation/BattleBitAPI.Addons.Common.AddonPlayer.html#BattleBitAPI_Addons_Common_AddonPlayer__ctor
+  commentId: M:BattleBitAPI.Addons.Common.AddonPlayer.#ctor
+  name.vb: New()
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer.AddonPlayer()
+  fullName.vb: BattleBitAPI.Addons.Common.AddonPlayer.New()
+  nameWithType: AddonPlayer.AddonPlayer()
+  nameWithType.vb: AddonPlayer.New()
+- uid: BattleBitAPI.Addons.Common.AddonPlayer.#ctor*
+  name: AddonPlayer
+  href: documentation/BattleBitAPI.Addons.Common.AddonPlayer.html#BattleBitAPI_Addons_Common_AddonPlayer__ctor_
+  commentId: Overload:BattleBitAPI.Addons.Common.AddonPlayer.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer.AddonPlayer
+  fullName.vb: BattleBitAPI.Addons.Common.AddonPlayer.New
+  nameWithType: AddonPlayer.AddonPlayer
+  nameWithType.vb: AddonPlayer.New
+- uid: BattleBitAPI.Addons.Common.ApiService
+  name: ApiService
+  href: documentation/BattleBitAPI.Addons.Common.ApiService.html
+  commentId: T:BattleBitAPI.Addons.Common.ApiService
+  fullName: BattleBitAPI.Addons.Common.ApiService
+  nameWithType: ApiService
+- uid: BattleBitAPI.Addons.Common.ApiService.#ctor(BattleBitAPI.Server.ServerListener{BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonGameServer},System.Net.IPAddress,System.Int32)
+  name: ApiService(ServerListener<AddonPlayer, AddonGameServer>, IPAddress, int)
+  href: documentation/BattleBitAPI.Addons.Common.ApiService.html#BattleBitAPI_Addons_Common_ApiService__ctor_BattleBitAPI_Server_ServerListener_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Addons_Common_AddonGameServer__System_Net_IPAddress_System_Int32_
+  commentId: M:BattleBitAPI.Addons.Common.ApiService.#ctor(BattleBitAPI.Server.ServerListener{BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonGameServer},System.Net.IPAddress,System.Int32)
+  name.vb: New(ServerListener(Of AddonPlayer, AddonGameServer), IPAddress, Integer)
+  fullName: BattleBitAPI.Addons.Common.ApiService.ApiService(BattleBitAPI.Server.ServerListener<BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonGameServer>, System.Net.IPAddress, int)
+  fullName.vb: BattleBitAPI.Addons.Common.ApiService.New(BattleBitAPI.Server.ServerListener(Of BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonGameServer), System.Net.IPAddress, Integer)
+  nameWithType: ApiService.ApiService(ServerListener<AddonPlayer, AddonGameServer>, IPAddress, int)
+  nameWithType.vb: ApiService.New(ServerListener(Of AddonPlayer, AddonGameServer), IPAddress, Integer)
+- uid: BattleBitAPI.Addons.Common.ApiService.#ctor*
+  name: ApiService
+  href: documentation/BattleBitAPI.Addons.Common.ApiService.html#BattleBitAPI_Addons_Common_ApiService__ctor_
+  commentId: Overload:BattleBitAPI.Addons.Common.ApiService.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.Common.ApiService.ApiService
+  fullName.vb: BattleBitAPI.Addons.Common.ApiService.New
+  nameWithType: ApiService.ApiService
+  nameWithType.vb: ApiService.New
+- uid: BattleBitAPI.Addons.Common.ApiService.StartAsync(System.Threading.CancellationToken)
+  name: StartAsync(CancellationToken)
+  href: documentation/BattleBitAPI.Addons.Common.ApiService.html#BattleBitAPI_Addons_Common_ApiService_StartAsync_System_Threading_CancellationToken_
+  commentId: M:BattleBitAPI.Addons.Common.ApiService.StartAsync(System.Threading.CancellationToken)
+  fullName: BattleBitAPI.Addons.Common.ApiService.StartAsync(System.Threading.CancellationToken)
+  nameWithType: ApiService.StartAsync(CancellationToken)
+- uid: BattleBitAPI.Addons.Common.ApiService.StartAsync*
+  name: StartAsync
+  href: documentation/BattleBitAPI.Addons.Common.ApiService.html#BattleBitAPI_Addons_Common_ApiService_StartAsync_
+  commentId: Overload:BattleBitAPI.Addons.Common.ApiService.StartAsync
+  fullName: BattleBitAPI.Addons.Common.ApiService.StartAsync
+  nameWithType: ApiService.StartAsync
+- uid: BattleBitAPI.Addons.Common.ApiService.StopAsync(System.Threading.CancellationToken)
+  name: StopAsync(CancellationToken)
+  href: documentation/BattleBitAPI.Addons.Common.ApiService.html#BattleBitAPI_Addons_Common_ApiService_StopAsync_System_Threading_CancellationToken_
+  commentId: M:BattleBitAPI.Addons.Common.ApiService.StopAsync(System.Threading.CancellationToken)
+  fullName: BattleBitAPI.Addons.Common.ApiService.StopAsync(System.Threading.CancellationToken)
+  nameWithType: ApiService.StopAsync(CancellationToken)
+- uid: BattleBitAPI.Addons.Common.ApiService.StopAsync*
+  name: StopAsync
+  href: documentation/BattleBitAPI.Addons.Common.ApiService.html#BattleBitAPI_Addons_Common_ApiService_StopAsync_
+  commentId: Overload:BattleBitAPI.Addons.Common.ApiService.StopAsync
+  fullName: BattleBitAPI.Addons.Common.ApiService.StopAsync
+  nameWithType: ApiService.StopAsync
 - uid: BattleBitAPI.Addons.Common.ApiService`1
   name: ApiService<TPlayer>
   href: documentation/BattleBitAPI.Addons.Common.ApiService-1.html
@@ -1129,21 +1783,21 @@ references:
   commentId: T:BattleBitAPI.Addons.Common.Extensions.HostingExtensions
   fullName: BattleBitAPI.Addons.Common.Extensions.HostingExtensions
   nameWithType: HostingExtensions
+- uid: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
+  name: AddServerListener(IHostBuilder, int, IPAddress)
+  href: documentation/BattleBitAPI.Addons.Common.Extensions.HostingExtensions.html#BattleBitAPI_Addons_Common_Extensions_HostingExtensions_AddServerListener_Microsoft_Extensions_Hosting_IHostBuilder_System_Int32_System_Net_IPAddress_
+  commentId: M:BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
+  name.vb: AddServerListener(IHostBuilder, Integer, IPAddress)
+  fullName: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder, int, System.Net.IPAddress)
+  fullName.vb: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder, Integer, System.Net.IPAddress)
+  nameWithType: HostingExtensions.AddServerListener(IHostBuilder, int, IPAddress)
+  nameWithType.vb: HostingExtensions.AddServerListener(IHostBuilder, Integer, IPAddress)
 - uid: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener*
   name: AddServerListener
   href: documentation/BattleBitAPI.Addons.Common.Extensions.HostingExtensions.html#BattleBitAPI_Addons_Common_Extensions_HostingExtensions_AddServerListener_
   commentId: Overload:BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener
   fullName: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener
   nameWithType: HostingExtensions.AddServerListener
-- uid: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
-  name: AddServerListener<TPlayer>(IHostBuilder, int, IPAddress)
-  href: documentation/BattleBitAPI.Addons.Common.Extensions.HostingExtensions.html#BattleBitAPI_Addons_Common_Extensions_HostingExtensions_AddServerListener__1_Microsoft_Extensions_Hosting_IHostBuilder_System_Int32_System_Net_IPAddress_
-  commentId: M:BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
-  name.vb: AddServerListener(Of TPlayer)(IHostBuilder, Integer, IPAddress)
-  fullName: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener<TPlayer>(Microsoft.Extensions.Hosting.IHostBuilder, int, System.Net.IPAddress)
-  fullName.vb: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Of TPlayer)(Microsoft.Extensions.Hosting.IHostBuilder, Integer, System.Net.IPAddress)
-  nameWithType: HostingExtensions.AddServerListener<TPlayer>(IHostBuilder, int, IPAddress)
-  nameWithType.vb: HostingExtensions.AddServerListener(Of TPlayer)(IHostBuilder, Integer, IPAddress)
 - uid: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssemblies(Microsoft.Extensions.Hosting.IHostBuilder)
   name: GetAssemblies(IHostBuilder)
   href: documentation/BattleBitAPI.Addons.Common.Extensions.HostingExtensions.html#BattleBitAPI_Addons_Common_Extensions_HostingExtensions_GetAssemblies_Microsoft_Extensions_Hosting_IHostBuilder_
@@ -1402,15 +2056,15 @@ references:
   fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer)
   nameWithType: EventHandlerActivatorService<TPlayer>
   nameWithType.vb: EventHandlerActivatorService(Of TPlayer)
-- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.#ctor(BattleBitAPI.Server.ServerListener{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.EventHandler.Common.EventModule{`0}})
-  name: EventHandlerActivatorService(ServerListener<TPlayer>, IEnumerable<EventModule<TPlayer>>)
-  href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html#BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_1__ctor_BattleBitAPI_Server_ServerListener__0__System_Collections_Generic_IEnumerable_BattleBitAPI_Addons_EventHandler_Common_EventModule__0___
-  commentId: M:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.#ctor(BattleBitAPI.Server.ServerListener{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.EventHandler.Common.EventModule{`0}})
-  name.vb: New(ServerListener(Of TPlayer), IEnumerable(Of EventModule(Of TPlayer)))
-  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>.EventHandlerActivatorService(BattleBitAPI.Server.ServerListener<TPlayer>, System.Collections.Generic.IEnumerable<BattleBitAPI.Addons.EventHandler.Common.EventModule<TPlayer>>)
-  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer).New(BattleBitAPI.Server.ServerListener(Of TPlayer), System.Collections.Generic.IEnumerable(Of BattleBitAPI.Addons.EventHandler.Common.EventModule(Of TPlayer)))
-  nameWithType: EventHandlerActivatorService<TPlayer>.EventHandlerActivatorService(ServerListener<TPlayer>, IEnumerable<EventModule<TPlayer>>)
-  nameWithType.vb: EventHandlerActivatorService(Of TPlayer).New(ServerListener(Of TPlayer), IEnumerable(Of EventModule(Of TPlayer)))
+- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.#ctor(BattleBitAPI.Server.ServerListener{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.EventHandler.Common.EventModule{`0}},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService{`0}})
+  name: EventHandlerActivatorService(ServerListener<TPlayer>, IEnumerable<EventModule<TPlayer>>, ILogger<EventHandlerActivatorService<TPlayer>>)
+  href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html#BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_1__ctor_BattleBitAPI_Server_ServerListener__0__System_Collections_Generic_IEnumerable_BattleBitAPI_Addons_EventHandler_Common_EventModule__0___Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService__0___
+  commentId: M:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.#ctor(BattleBitAPI.Server.ServerListener{`0},System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.EventHandler.Common.EventModule{`0}},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService{`0}})
+  name.vb: New(ServerListener(Of TPlayer), IEnumerable(Of EventModule(Of TPlayer)), ILogger(Of EventHandlerActivatorService(Of TPlayer)))
+  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>.EventHandlerActivatorService(BattleBitAPI.Server.ServerListener<TPlayer>, System.Collections.Generic.IEnumerable<BattleBitAPI.Addons.EventHandler.Common.EventModule<TPlayer>>, Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>>)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer).New(BattleBitAPI.Server.ServerListener(Of TPlayer), System.Collections.Generic.IEnumerable(Of BattleBitAPI.Addons.EventHandler.Common.EventModule(Of TPlayer)), Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer)))
+  nameWithType: EventHandlerActivatorService<TPlayer>.EventHandlerActivatorService(ServerListener<TPlayer>, IEnumerable<EventModule<TPlayer>>, ILogger<EventHandlerActivatorService<TPlayer>>)
+  nameWithType.vb: EventHandlerActivatorService(Of TPlayer).New(ServerListener(Of TPlayer), IEnumerable(Of EventModule(Of TPlayer)), ILogger(Of EventHandlerActivatorService(Of TPlayer)))
 - uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1.#ctor*
   name: EventHandlerActivatorService
   href: documentation/BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html#BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_1__ctor_

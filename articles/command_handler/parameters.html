@@ -74,38 +74,38 @@
         <article data-uid="">
 <h1 id="parameters">Parameters</h1>
 
-<p>You can make command which has default parameter value</p>
+<p>You can make command which has default parameter value.</p>
 <pre><code class="lang-csharp">//usage - .kick steamIdPlayer myReason or .kick steamIdPlayer
 [Command(Name = &quot;kick&quot;)]
-public Task HandleKick(Player target, string reason = &quot;example&quot;)
+public Task&lt;bool&gt; HandleKick(AddonPlayer target, string reason = &quot;example&quot;)
 {
     if (target is not null) target.Kick(reason);
-    return Task.CompletedTask;
+    return Task.FromResult(true);
 }
 </code></pre>
-<p>You can get information from command by using Context</p>
+<p>You can get information from command by using Context.</p>
 <pre><code class="lang-csharp">[Command(Name = &quot;kick&quot;)]
-public Task HandleKick(Player target, string reason)
+public Task&lt;bool&gt; HandleKick(AddonPlayer target, string reason)
 {
     Console.WriteLine($&quot;{Context.Player} {Context.ChatChannel} {Context.GameServer}&quot;);
     if (target is not null) target.Kick(reason);
-    return Task.CompletedTask;
+    return Task.FromResult(true);
 }
 </code></pre>
-<p>You can specify parameters name in default help command by <code>[CommandParameter]</code></p>
+<p>You can specify parameters name in default help command by <code>[CommandParameter]</code>.</p>
 <pre><code class="lang-csharp">[Command(Name = &quot;kick&quot;)]
-public Task HandleKick([CommandParameter(Name = &quot;gracz&quot;)]Player target, string reason)
+public Task&lt;bool&gt; HandleKick([CommandParameter(Name = &quot;gracz&quot;)]AddonPlayer target, string reason)
 {
     if (target is not null) target.Kick(reason);
-    return Task.CompletedTask;
+    return Task.FromResult(true);
 }
 </code></pre>
 <p>You can add description command which will be displayed in default help command</p>
 <pre><code class="lang-csharp">[Command(Name = &quot;kick&quot;, Description = &quot;Kick player from the server.&quot;)]
-public Task HandleKick(Player target, string reason)
+public Task&lt;bool&gt; HandleKick(AddonPlayer target, string reason)
 {
     if (target is not null) target.Kick(reason);
-    return Task.CompletedTask;
+    return Task.FromResult(true);
 }
 </code></pre>
 </article>

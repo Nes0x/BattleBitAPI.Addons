@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class HostingExtensions
+      <title>Class CommandModule
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class HostingExtensions
+      <meta name="title" content="Class CommandModule
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,25 +73,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions">
+        <article data-uid="BattleBitAPI.Addons.CommandHandler.Common.CommandModule">
 
 
 
-  <h1 id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions" class="text-break">
-    Class HostingExtensions
+  <h1 id="BattleBitAPI_Addons_CommandHandler_Common_CommandModule" data-uid="BattleBitAPI.Addons.CommandHandler.Common.CommandModule" class="text-break">
+    Class CommandModule
   
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BattleBitAPI.html">BattleBitAPI</a>.<a class="xref" href="BattleBitAPI.Addons.html">Addons</a>.<a class="xref" href="BattleBitAPI.Addons.Common.html">Common</a>.<a class="xref" href="BattleBitAPI.Addons.Common.Extensions.html">Extensions</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>BattleBitAPI.Addons.Common.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BattleBitAPI.html">BattleBitAPI</a>.<a class="xref" href="BattleBitAPI.Addons.html">Addons</a>.<a class="xref" href="BattleBitAPI.Addons.CommandHandler.html">CommandHandler</a>.<a class="xref" href="BattleBitAPI.Addons.CommandHandler.Common.html">Common</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BattleBitAPI.Addons.CommandHandler.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class HostingExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class CommandModule</code></pre>
   </div>
 
 
@@ -101,11 +101,17 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">HostingExtensions</span></div>
+      <div><span class="xref">CommandModule</span></div>
     </dd>
   </dl>
 
 
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.html">HelpModule</a></div>
+    </dd>
+  </dl>
 
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
@@ -138,14 +144,14 @@
 
 
 
-  <h2 class="section" id="methods">Methods
+  <h2 class="section" id="constructors">Constructors
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_AddServerListener_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener*"></a>
+  <a id="BattleBitAPI_Addons_CommandHandler_Common_CommandModule__ctor_" data-uid="BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor*"></a>
 
-  <h3 id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_AddServerListener_Microsoft_Extensions_Hosting_IHostBuilder_System_Int32_System_Net_IPAddress_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)">
-  AddServerListener(IHostBuilder, int, IPAddress)
+  <h3 id="BattleBitAPI_Addons_CommandHandler_Common_CommandModule__ctor" data-uid="BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor">
+  CommandModule()
   
   </h3>
 
@@ -153,24 +159,9 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static IHostBuilder AddServerListener(this IHostBuilder hostBuilder, int port, IPAddress ipAddress = null)</code></pre>
+    <pre><code class="lang-csharp hljs">protected CommandModule()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
-    <dd></dd>
-    <dt><code>port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
-    <dt><code>ipAddress</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipaddress">IPAddress</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -182,10 +173,15 @@
 
 
 
-  <a id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_GetAssemblies_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssemblies*"></a>
 
-  <h3 id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_GetAssemblies_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssemblies(Microsoft.Extensions.Hosting.IHostBuilder)">
-  GetAssemblies(IHostBuilder)
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BattleBitAPI_Addons_CommandHandler_Common_CommandModule_Context_" data-uid="BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context*"></a>
+
+  <h3 id="BattleBitAPI_Addons_CommandHandler_Common_CommandModule_Context" data-uid="BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context">
+  Context
   
   </h3>
 
@@ -193,59 +189,18 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Assembly[] GetAssemblies(this IHostBuilder hostBuilder)</code></pre>
+    <pre><code class="lang-csharp hljs">public Context Context { get; }</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
+    <dt><a class="xref" href="BattleBitAPI.Addons.CommandHandler.Common.Context.html">Context</a></dt>
     <dd></dd>
   </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a>[]</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_GetAssembly_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssembly*"></a>
-
-  <h3 id="BattleBitAPI_Addons_Common_Extensions_HostingExtensions_GetAssembly_Microsoft_Extensions_Hosting_IHostBuilder_" data-uid="BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssembly(Microsoft.Extensions.Hosting.IHostBuilder)">
-  GetAssembly(IHostBuilder)
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Assembly GetAssembly(this IHostBuilder hostBuilder)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>hostBuilder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.assembly">Assembly</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
 
 
 

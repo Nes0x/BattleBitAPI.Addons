@@ -15,10 +15,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/command_handler/checker.md",
+      "source_relative_path": "articles/command_handler/checkers.md",
       "output": {
         ".html": {
-          "relative_path": "articles/command_handler/checker.html"
+          "relative_path": "articles/command_handler/checkers.html"
         }
       },
       "version": ""
@@ -108,6 +108,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.Command.yml",
       "output": {
         ".html": {
@@ -148,6 +158,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute.yml",
       "output": {
         ".html": {
@@ -162,6 +182,16 @@
       "output": {
         ".html": {
           "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.Context-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Common.Context.html"
         }
       },
       "version": ""
@@ -198,10 +228,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.yml",
       "output": {
         ".html": {
           "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.IConverter.html"
         }
       },
       "version": ""
@@ -232,6 +282,16 @@
       "output": {
         ".html": {
           "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html"
         }
       },
       "version": ""
@@ -288,6 +348,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler-1.yml",
       "output": {
         ".html": {
@@ -302,6 +372,16 @@
       "output": {
         ".html": {
           "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.html"
         }
       },
       "version": ""
@@ -328,6 +408,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Modules.HelpModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Modules.yml",
       "output": {
         ".html": {
@@ -348,10 +438,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.yml",
       "output": {
         ".html": {
           "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html"
         }
       },
       "version": ""
@@ -368,10 +478,40 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.Common.AddonGameServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.Common.AddonGameServer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.Common.AddonPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.Common.AddonPlayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.Common.ApiService-1.yml",
       "output": {
         ".html": {
           "relative_path": "documentation/BattleBitAPI.Addons.Common.ApiService-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.Common.ApiService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.Common.ApiService.html"
         }
       },
       "version": ""

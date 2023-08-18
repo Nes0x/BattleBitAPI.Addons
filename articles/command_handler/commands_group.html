@@ -76,21 +76,21 @@
 
 <p>You can create one base command and subcommands.</p>
 <pre><code class="lang-csharp">[Command(Name = &quot;warn&quot;)]
-public class WarnModule : CommandModule&lt;Player&gt;
+public class WarnModule : CommandModule
 {
 
     [Command(Name = &quot;add&quot;)]
     //usage - .warn add steamIdPlayer reason
-    public Task HandleAdd(Player target, string reason)
+    public Task&lt;bool&gt; HandleAdd(AddonPlayer target, string reason)
     {
-        return Task.CompletedTask;
+        return Task.FromResult(true);
     }
     
     [Command(Name = &quot;remove&quot;)]
     //usage - .warn remove steamIdPlayer reason
-    public Task HandleRemove(Player target, string reason)
+    public Task&lt;bool&gt; HandleRemove(AddonPlayer target, string reason)
     {
-        return Task.CompletedTask;
+        return Task.FromResult(true);
     }
 }
 </code></pre>

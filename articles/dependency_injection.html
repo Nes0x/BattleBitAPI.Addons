@@ -86,10 +86,10 @@
 }
 </code></pre>
 <pre><code class="lang-csharp">var host = Host.CreateDefaultBuilder(args);
-host.AddServerListener&lt;Player&gt;(2000)
-    .AddTypeReaders&lt;Player&gt;()
-    .AddEventHandler&lt;Player&gt;()
-    .AddCommandHandler&lt;Player&gt;(new CommandHandlerSettings
+host.AddServerListener(2000)
+    .AddTypeReaders()
+    .AddEventHandler()
+    .AddCommandHandler(new CommandHandlerSettings
     {
         CommandRegex = &quot;.&quot;
     }).ConfigureServices((_, services) =&gt; { services.AddSingleton(ConfigService.Create()); });
@@ -97,7 +97,7 @@ host.AddServerListener&lt;Player&gt;(2000)
 var app = host.Build();
 await app.RunAsync();
 </code></pre>
-<pre><code class="lang-csharp">public class AdminChecker : CheckerAttribute&lt;Player&gt;
+<pre><code class="lang-csharp">public class AdminChecker : CheckerAttribute
 {
     public override bool RunCommand()
     {
@@ -108,7 +108,7 @@ await app.RunAsync();
 </code></pre>
 <pre><code class="lang-csharp">[Command(Name = &quot;warn&quot;)]
 [AdminChecker]
-public class WarnModule : CommandModule&lt;Player&gt;
+public class WarnModule : CommandModule
 {
     private readonly ConfigService _config;
 
@@ -118,9 +118,9 @@ public class WarnModule : CommandModule&lt;Player&gt;
     }
 
     [Command(Name = &quot;add&quot;)]
-    public Task HandleAdd(Player target, string reason)
+    public Task&lt;bool&gt; HandleAdd(AddonPlayer target, string reason)
     {
-        Console.WriteLine($&quot;{reason} {Context.ChatChannel} {_config.AdminId}&quot;);
+        Console.WriteLine($&quot;{_config.AdminId}&quot;);
         return Task.CompletedTask;
     }
 }

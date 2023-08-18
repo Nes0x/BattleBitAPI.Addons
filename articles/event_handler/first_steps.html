@@ -75,23 +75,21 @@
 <h1 id="event-handler">Event Handler</h1>
 
 <ul>
-<li>You must add package <code>BattleBitAPI.Addons.EventHandler</code></li>
+<li>You must add package <code>BattleBitAPI.Addons.EventHandler</code>.</li>
 </ul>
 <p>To start, you must add EventHandler to host.</p>
 <pre><code class="lang-csharp">var host = Host.CreateDefaultBuilder(args);
-host.AddServerListener&lt;Player&gt;(2000)
-    //In generic use same Player type as in ServerListener.
-    .AddEventHandler&lt;Player&gt;();
+host.AddServerListener(2000)
+    .AddEventHandler();
 var app = host.Build();
 await app.RunAsync();
 </code></pre>
-<p>After that, you can create class which listening to events</p>
-<pre><code class="lang-csharp">//In generic use same Player type as in ServerListener, EventHandler.
-public class OnPlayer : EventModule&lt;Player&gt;
+<p>After that, you can create class which listening to events.</p>
+<pre><code class="lang-csharp">public class OnPlayer : EventModule
 {
     //Parameter must be same as EventType. 
     [Event(EventType = EventType.OnPlayerConnected)]
-    public Task HandleOnPlayerConnected(OnPlayerConnectedArgs&lt;Player&gt; args)
+    public Task HandleOnPlayerConnected(OnPlayerConnectedArgs args)
     {
         return Task.CompletedTask;
     }

@@ -10,6 +10,9 @@ items:
   - BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.CommandRegex
   - BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.DefaultHelpCommand
   - BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ErrorCallback
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
   langs:
   - csharp
   - vb
@@ -138,6 +141,69 @@ items:
       type: System.Boolean
     content.vb: Public Property DefaultHelpCommand As Boolean
   overload: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.DefaultHelpCommand*
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  id: ShowCommandOnChat
+  parent: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
+  langs:
+  - csharp
+  - vb
+  name: ShowCommandOnChat
+  nameWithType: CommandHandlerSettings.ShowCommandOnChat
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  type: Property
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Common
+  syntax:
+    content: public bool ShowCommandOnChat { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ShowCommandOnChat As Boolean
+  overload: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat*
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  id: ShowCommandOnChatWhenError
+  parent: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
+  langs:
+  - csharp
+  - vb
+  name: ShowCommandOnChatWhenError
+  nameWithType: CommandHandlerSettings.ShowCommandOnChatWhenError
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  type: Property
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Common
+  syntax:
+    content: public bool ShowCommandOnChatWhenError { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ShowCommandOnChatWhenError As Boolean
+  overload: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError*
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  id: ShowCommandOnChatWhenChecker
+  parent: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
+  langs:
+  - csharp
+  - vb
+  name: ShowCommandOnChatWhenChecker
+  nameWithType: CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  type: Property
+  assemblies:
+  - BattleBitAPI.Addons.CommandHandler
+  namespace: BattleBitAPI.Addons.CommandHandler.Common
+  syntax:
+    content: public bool ShowCommandOnChatWhenChecker { get; init; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property ShowCommandOnChatWhenChecker As Boolean
+  overload: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker*
 references:
 - uid: BattleBitAPI.Addons.CommandHandler.Common
   commentId: N:BattleBitAPI.Addons.CommandHandler.Common
@@ -483,3 +549,24 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html#BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+  name: ShowCommandOnChat
+  nameWithType: CommandHandlerSettings.ShowCommandOnChat
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChat
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html#BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+  name: ShowCommandOnChatWhenError
+  nameWithType: CommandHandlerSettings.ShowCommandOnChatWhenError
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenError
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  isExternal: true
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html#BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  name: ShowCommandOnChatWhenChecker
+  nameWithType: CommandHandlerSettings.ShowCommandOnChatWhenChecker
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.ShowCommandOnChatWhenChecker

@@ -4,8 +4,7 @@ items:
   commentId: N:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
   id: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
   children:
-  - BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
-  - BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
+  - BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader
   langs:
   - csharp
   - vb
@@ -16,38 +15,10 @@ items:
   assemblies:
   - BattleBitAPI.Addons.CommandHandler
 references:
-- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
+- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader
   isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader.html
-  name: PlayerSteamIdTypeReader
-  nameWithType: PlayerSteamIdTypeReader
-  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
-- uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
-  isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
-  name: TypeReader<TPlayer>
-  nameWithType: TypeReader<TPlayer>
-  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader<TPlayer>
-  nameWithType.vb: TypeReader(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader(Of TPlayer)
-  name.vb: TypeReader(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
-    name: TypeReader
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
-    name: TypeReader
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
+  href: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader.html
+  name: TypeReader
+  nameWithType: TypeReader
+  fullName: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader

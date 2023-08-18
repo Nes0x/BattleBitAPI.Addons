@@ -4,8 +4,8 @@ items:
   commentId: N:BattleBitAPI.Addons.CommandHandler.Validations
   id: BattleBitAPI.Addons.CommandHandler.Validations
   children:
-  - BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
-  - BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+  - BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator
+  - BattleBitAPI.Addons.CommandHandler.Validations.IValidator
   langs:
   - csharp
   - vb
@@ -16,59 +16,65 @@ items:
   assemblies:
   - BattleBitAPI.Addons.CommandHandler
 references:
-- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator
   isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html
-  name: CommandValidator<TPlayer>
-  nameWithType: CommandValidator<TPlayer>
-  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator<TPlayer>
-  nameWithType.vb: CommandValidator(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator(Of TPlayer)
-  name.vb: CommandValidator(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
-    name: CommandValidator
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
-    name: CommandValidator
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
-- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
+  href: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator.html
+  name: CommandValidator
+  nameWithType: CommandValidator
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator
+- uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Validations.IValidator
+  parent: BattleBitAPI.Addons.CommandHandler.Validations
   isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
-  name: IValidator<TPlayer>
-  nameWithType: IValidator<TPlayer>
-  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator<TPlayer>
-  nameWithType.vb: IValidator(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Validations.IValidator(Of TPlayer)
-  name.vb: IValidator(Of TPlayer)
+  href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator.html
+  name: IValidator
+  nameWithType: IValidator
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations.IValidator
+- uid: BattleBitAPI.Addons.CommandHandler.Validations
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Validations
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.CommandHandler.Validations
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Validations
+  fullName: BattleBitAPI.Addons.CommandHandler.Validations
   spec.csharp:
-  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
-    name: IValidator
+  - uid: BattleBitAPI
+    name: BattleBitAPI
     isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations
+    name: Validations
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.html
   spec.vb:
-  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
-    name: IValidator
+  - uid: BattleBitAPI
+    name: BattleBitAPI
     isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Validations.IValidator-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler
+    name: CommandHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations
+    name: Validations
+    isExternal: true
+    href: BattleBitAPI.Addons.CommandHandler.Validations.html

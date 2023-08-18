@@ -1,27 +1,29 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions
-  id: HostingExtensions
-  parent: BattleBitAPI.Addons.CommandHandler.Extensions
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandModule
+  id: CommandModule
+  parent: BattleBitAPI.Addons.CommandHandler.Common
   children:
-  - BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler(Microsoft.Extensions.Hosting.IHostBuilder,BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  - BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders(Microsoft.Extensions.Hosting.IHostBuilder)
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
   langs:
   - csharp
   - vb
-  name: HostingExtensions
-  nameWithType: HostingExtensions
-  fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions
+  name: CommandModule
+  nameWithType: CommandModule
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule
   type: Class
   assemblies:
   - BattleBitAPI.Addons.CommandHandler
-  namespace: BattleBitAPI.Addons.CommandHandler.Extensions
+  namespace: BattleBitAPI.Addons.CommandHandler.Common
   syntax:
-    content: public static class HostingExtensions
-    content.vb: Public Module HostingExtensions
+    content: public abstract class CommandModule
+    content.vb: Public MustInherit Class CommandModule
   inheritance:
   - System.Object
+  derivedClasses:
+  - BattleBitAPI.Addons.CommandHandler.Modules.HelpModule
   inheritedMembers:
   - System.Object.GetType
   - System.Object.MemberwiseClone
@@ -30,64 +32,56 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler(Microsoft.Extensions.Hosting.IHostBuilder,BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  commentId: M:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler(Microsoft.Extensions.Hosting.IHostBuilder,BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  id: AddCommandHandler(Microsoft.Extensions.Hosting.IHostBuilder,BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  isExtensionMethod: true
-  parent: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor
+  id: '#ctor'
+  parent: BattleBitAPI.Addons.CommandHandler.Common.CommandModule
   langs:
   - csharp
   - vb
-  name: AddCommandHandler(IHostBuilder, CommandHandlerSettings)
-  nameWithType: HostingExtensions.AddCommandHandler(IHostBuilder, CommandHandlerSettings)
-  fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler(Microsoft.Extensions.Hosting.IHostBuilder, BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  type: Method
+  name: CommandModule()
+  nameWithType: CommandModule.CommandModule()
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.CommandModule()
+  type: Constructor
   assemblies:
   - BattleBitAPI.Addons.CommandHandler
-  namespace: BattleBitAPI.Addons.CommandHandler.Extensions
+  namespace: BattleBitAPI.Addons.CommandHandler.Common
   syntax:
-    content: public static IHostBuilder AddCommandHandler(this IHostBuilder hostBuilder, CommandHandlerSettings commandHandlerSettings)
-    parameters:
-    - id: hostBuilder
-      type: Microsoft.Extensions.Hosting.IHostBuilder
-    - id: commandHandlerSettings
-      type: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
-    return:
-      type: Microsoft.Extensions.Hosting.IHostBuilder
-    content.vb: Public Shared Function AddCommandHandler(hostBuilder As IHostBuilder, commandHandlerSettings As CommandHandlerSettings) As IHostBuilder
-  overload: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler*
-- uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders(Microsoft.Extensions.Hosting.IHostBuilder)
-  commentId: M:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders(Microsoft.Extensions.Hosting.IHostBuilder)
-  id: AddTypeReaders(Microsoft.Extensions.Hosting.IHostBuilder)
-  isExtensionMethod: true
-  parent: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions
+    content: protected CommandModule()
+    content.vb: Protected Sub New()
+  overload: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor*
+  nameWithType.vb: CommandModule.New()
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.New()
+  name.vb: New()
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+  commentId: P:BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+  id: Context
+  parent: BattleBitAPI.Addons.CommandHandler.Common.CommandModule
   langs:
   - csharp
   - vb
-  name: AddTypeReaders(IHostBuilder)
-  nameWithType: HostingExtensions.AddTypeReaders(IHostBuilder)
-  fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders(Microsoft.Extensions.Hosting.IHostBuilder)
-  type: Method
+  name: Context
+  nameWithType: CommandModule.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+  type: Property
   assemblies:
   - BattleBitAPI.Addons.CommandHandler
-  namespace: BattleBitAPI.Addons.CommandHandler.Extensions
+  namespace: BattleBitAPI.Addons.CommandHandler.Common
   syntax:
-    content: public static IHostBuilder AddTypeReaders(this IHostBuilder hostBuilder)
-    parameters:
-    - id: hostBuilder
-      type: Microsoft.Extensions.Hosting.IHostBuilder
+    content: public Context Context { get; }
+    parameters: []
     return:
-      type: Microsoft.Extensions.Hosting.IHostBuilder
-    content.vb: Public Shared Function AddTypeReaders(hostBuilder As IHostBuilder) As IHostBuilder
-  overload: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders*
+      type: BattleBitAPI.Addons.CommandHandler.Common.Context
+    content.vb: Public ReadOnly Property Context As Context
+  overload: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context*
 references:
-- uid: BattleBitAPI.Addons.CommandHandler.Extensions
-  commentId: N:BattleBitAPI.Addons.CommandHandler.Extensions
+- uid: BattleBitAPI.Addons.CommandHandler.Common
+  commentId: N:BattleBitAPI.Addons.CommandHandler.Common
   isExternal: true
   href: BattleBitAPI.html
-  name: BattleBitAPI.Addons.CommandHandler.Extensions
-  nameWithType: BattleBitAPI.Addons.CommandHandler.Extensions
-  fullName: BattleBitAPI.Addons.CommandHandler.Extensions
+  name: BattleBitAPI.Addons.CommandHandler.Common
+  nameWithType: BattleBitAPI.Addons.CommandHandler.Common
+  fullName: BattleBitAPI.Addons.CommandHandler.Common
   spec.csharp:
   - uid: BattleBitAPI
     name: BattleBitAPI
@@ -104,10 +98,10 @@ references:
     isExternal: true
     href: BattleBitAPI.Addons.CommandHandler.html
   - name: .
-  - uid: BattleBitAPI.Addons.CommandHandler.Extensions
-    name: Extensions
+  - uid: BattleBitAPI.Addons.CommandHandler.Common
+    name: Common
     isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Extensions.html
+    href: BattleBitAPI.Addons.CommandHandler.Common.html
   spec.vb:
   - uid: BattleBitAPI
     name: BattleBitAPI
@@ -124,10 +118,10 @@ references:
     isExternal: true
     href: BattleBitAPI.Addons.CommandHandler.html
   - name: .
-  - uid: BattleBitAPI.Addons.CommandHandler.Extensions
-    name: Extensions
+  - uid: BattleBitAPI.Addons.CommandHandler.Common
+    name: Common
     isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Extensions.html
+    href: BattleBitAPI.Addons.CommandHandler.Common.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -365,117 +359,28 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler*
-  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor
   isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.html#BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler(Microsoft.Extensions.Hosting.IHostBuilder,BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings)
-  name: AddCommandHandler
-  nameWithType: HostingExtensions.AddCommandHandler
-  fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddCommandHandler
-- uid: Microsoft.Extensions.Hosting.IHostBuilder
-  commentId: T:Microsoft.Extensions.Hosting.IHostBuilder
-  parent: Microsoft.Extensions.Hosting
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html#BattleBitAPI.Addons.CommandHandler.Common.CommandModule.#ctor
+  name: CommandModule
+  nameWithType: CommandModule.CommandModule
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.CommandModule
+  nameWithType.vb: CommandModule.New
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.New
+  name.vb: New
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context*
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
-  name: IHostBuilder
-  nameWithType: IHostBuilder
-  fullName: Microsoft.Extensions.Hosting.IHostBuilder
-- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html#BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+  name: Context
+  nameWithType: CommandModule.Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.Context
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Context
   parent: BattleBitAPI.Addons.CommandHandler.Common
   isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html
-  name: CommandHandlerSettings
-  nameWithType: CommandHandlerSettings
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
-- uid: Microsoft.Extensions.Hosting
-  commentId: N:Microsoft.Extensions.Hosting
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft
-  name: Microsoft.Extensions.Hosting
-  nameWithType: Microsoft.Extensions.Hosting
-  fullName: Microsoft.Extensions.Hosting
-  spec.csharp:
-  - uid: Microsoft
-    name: Microsoft
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft
-  - name: .
-  - uid: Microsoft.Extensions
-    name: Extensions
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
-  - name: .
-  - uid: Microsoft.Extensions.Hosting
-    name: Hosting
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
-  spec.vb:
-  - uid: Microsoft
-    name: Microsoft
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft
-  - name: .
-  - uid: Microsoft.Extensions
-    name: Extensions
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
-  - name: .
-  - uid: Microsoft.Extensions.Hosting
-    name: Hosting
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
-- uid: BattleBitAPI.Addons.CommandHandler.Common
-  commentId: N:BattleBitAPI.Addons.CommandHandler.Common
-  isExternal: true
-  href: BattleBitAPI.html
-  name: BattleBitAPI.Addons.CommandHandler.Common
-  nameWithType: BattleBitAPI.Addons.CommandHandler.Common
-  fullName: BattleBitAPI.Addons.CommandHandler.Common
-  spec.csharp:
-  - uid: BattleBitAPI
-    name: BattleBitAPI
-    isExternal: true
-    href: BattleBitAPI.html
-  - name: .
-  - uid: BattleBitAPI.Addons
-    name: Addons
-    isExternal: true
-    href: BattleBitAPI.Addons.html
-  - name: .
-  - uid: BattleBitAPI.Addons.CommandHandler
-    name: CommandHandler
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.html
-  - name: .
-  - uid: BattleBitAPI.Addons.CommandHandler.Common
-    name: Common
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.html
-  spec.vb:
-  - uid: BattleBitAPI
-    name: BattleBitAPI
-    isExternal: true
-    href: BattleBitAPI.html
-  - name: .
-  - uid: BattleBitAPI.Addons
-    name: Addons
-    isExternal: true
-    href: BattleBitAPI.Addons.html
-  - name: .
-  - uid: BattleBitAPI.Addons.CommandHandler
-    name: CommandHandler
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.html
-  - name: .
-  - uid: BattleBitAPI.Addons.CommandHandler.Common
-    name: Common
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.html
-- uid: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders*
-  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders
-  isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.html#BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders(Microsoft.Extensions.Hosting.IHostBuilder)
-  name: AddTypeReaders
-  nameWithType: HostingExtensions.AddTypeReaders
-  fullName: BattleBitAPI.Addons.CommandHandler.Extensions.HostingExtensions.AddTypeReaders
+  href: BattleBitAPI.Addons.CommandHandler.Common.Context.html
+  name: Context
+  nameWithType: Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context

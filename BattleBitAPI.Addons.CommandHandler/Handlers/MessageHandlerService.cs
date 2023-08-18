@@ -43,7 +43,7 @@ public class MessageHandlerService : AddonGameServer
         {
             Player = player,
             ChatChannel = channel,
-            // GameServer = player.GameServer,
+            GameServer = player.GameServer,
             ServiceProvider = _provider
         };
 

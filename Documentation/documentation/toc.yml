@@ -3,36 +3,34 @@ items:
 - uid: BattleBitAPI.Addons.CommandHandler.Common
   name: BattleBitAPI.Addons.CommandHandler.Common
   items:
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
-    name: CheckerAttribute<TPlayer>
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute
+    name: CheckerAttribute
   - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
     name: Command
   - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute
     name: CommandAttribute
   - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
     name: CommandHandlerSettings
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
-    name: CommandModule<TPlayer>
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule
+    name: CommandModule
   - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
     name: CommandParameterAttribute
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
-    name: Context<TPlayer>
+  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context
+    name: Context
 - uid: BattleBitAPI.Addons.CommandHandler.Converters
   name: BattleBitAPI.Addons.CommandHandler.Converters
   items:
-  - uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter`1
-    name: CommandConverter<TPlayer>
-  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter`1
-    name: IConverter<TPlayer>
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.CommandConverter
+    name: CommandConverter
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.IConverter
+    name: IConverter
   - uid: BattleBitAPI.Addons.CommandHandler.Converters.Result
     name: Result
 - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
   name: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders
   items:
-  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.PlayerSteamIdTypeReader
-    name: PlayerSteamIdTypeReader
-  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader`1
-    name: TypeReader<TPlayer>
+  - uid: BattleBitAPI.Addons.CommandHandler.Converters.TypeReaders.TypeReader
+    name: TypeReader
 - uid: BattleBitAPI.Addons.CommandHandler.Extensions
   name: BattleBitAPI.Addons.CommandHandler.Extensions
   items:
@@ -41,29 +39,31 @@ items:
 - uid: BattleBitAPI.Addons.CommandHandler.Handlers
   name: BattleBitAPI.Addons.CommandHandler.Handlers
   items:
-  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService`1
-    name: CommandHandlerActivatorService<TPlayer>
-  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler`1
-    name: IMessageHandler<TPlayer>
-  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService`1
-    name: MessageHandlerService<TPlayer>
+  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService
+    name: CommandHandlerActivatorService
+  - uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService
+    name: MessageHandlerService
 - uid: BattleBitAPI.Addons.CommandHandler.Modules
   name: BattleBitAPI.Addons.CommandHandler.Modules
   items:
-  - uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule`1
-    name: HelpModule<TPlayer>
+  - uid: BattleBitAPI.Addons.CommandHandler.Modules.HelpModule
+    name: HelpModule
 - uid: BattleBitAPI.Addons.CommandHandler.Validations
   name: BattleBitAPI.Addons.CommandHandler.Validations
   items:
-  - uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator`1
-    name: CommandValidator<TPlayer>
-  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator`1
-    name: IValidator<TPlayer>
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.CommandValidator
+    name: CommandValidator
+  - uid: BattleBitAPI.Addons.CommandHandler.Validations.IValidator
+    name: IValidator
 - uid: BattleBitAPI.Addons.Common
   name: BattleBitAPI.Addons.Common
   items:
-  - uid: BattleBitAPI.Addons.Common.ApiService`1
-    name: ApiService<TPlayer>
+  - uid: BattleBitAPI.Addons.Common.AddonGameServer
+    name: AddonGameServer
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+  - uid: BattleBitAPI.Addons.Common.ApiService
+    name: ApiService
 - uid: BattleBitAPI.Addons.Common.Extensions
   name: BattleBitAPI.Addons.Common.Extensions
   items:

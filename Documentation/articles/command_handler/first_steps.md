@@ -1,5 +1,5 @@
 ﻿# Command Handler
-- You must add package `BattleBitAPI.Addons.CommandHandler`
+- You must add package `BattleBitAPI.Addons.CommandHandler`.
 
 Add CommandHandler to created host.
 ```csharp

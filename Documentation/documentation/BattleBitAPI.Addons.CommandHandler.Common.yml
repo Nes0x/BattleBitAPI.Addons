@@ -4,13 +4,13 @@ items:
   commentId: N:BattleBitAPI.Addons.CommandHandler.Common
   id: BattleBitAPI.Addons.CommandHandler.Common
   children:
-  - BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
+  - BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute
   - BattleBitAPI.Addons.CommandHandler.Common.Command
   - BattleBitAPI.Addons.CommandHandler.Common.CommandAttribute
   - BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
-  - BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
+  - BattleBitAPI.Addons.CommandHandler.Common.CommandModule
   - BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
-  - BattleBitAPI.Addons.CommandHandler.Common.Context`1
+  - BattleBitAPI.Addons.CommandHandler.Common.Context
   langs:
   - csharp
   - vb
@@ -21,34 +21,13 @@ items:
   assemblies:
   - BattleBitAPI.Addons.CommandHandler
 references:
-- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute
   isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute-1.html
-  name: CheckerAttribute<TPlayer>
-  nameWithType: CheckerAttribute<TPlayer>
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute<TPlayer>
-  nameWithType.vb: CheckerAttribute(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute(Of TPlayer)
-  name.vb: CheckerAttribute(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
-    name: CheckerAttribute
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute`1
-    name: CheckerAttribute
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
+  href: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute.html
+  name: CheckerAttribute
+  nameWithType: CheckerAttribute
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CheckerAttribute
 - uid: BattleBitAPI.Addons.CommandHandler.Common.Command
   commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Command
   parent: BattleBitAPI.Addons.CommandHandler.Common
@@ -73,34 +52,14 @@ references:
   name: CommandHandlerSettings
   nameWithType: CommandHandlerSettings
   fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings
-- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
+- uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandModule
+  parent: BattleBitAPI.Addons.CommandHandler.Common
   isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html
-  name: CommandModule<TPlayer>
-  nameWithType: CommandModule<TPlayer>
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule<TPlayer>
-  nameWithType.vb: CommandModule(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.CommandModule(Of TPlayer)
-  name.vb: CommandModule(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
-    name: CommandModule
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandModule`1
-    name: CommandModule
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
+  href: BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html
+  name: CommandModule
+  nameWithType: CommandModule
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandModule
 - uid: BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
   commentId: T:BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
   isExternal: true
@@ -108,34 +67,14 @@ references:
   name: CommandParameterAttribute
   nameWithType: CommandParameterAttribute
   fullName: BattleBitAPI.Addons.CommandHandler.Common.CommandParameterAttribute
-- uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
-  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Context`1
+- uid: BattleBitAPI.Addons.CommandHandler.Common.Context
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Common.Context
+  parent: BattleBitAPI.Addons.CommandHandler.Common
   isExternal: true
-  href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
-  name: Context<TPlayer>
-  nameWithType: Context<TPlayer>
-  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context<TPlayer>
-  nameWithType.vb: Context(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Common.Context(Of TPlayer)
-  name.vb: Context(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
-    name: Context
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Addons.CommandHandler.Common.Context`1
-    name: Context
-    isExternal: true
-    href: BattleBitAPI.Addons.CommandHandler.Common.Context-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
+  href: BattleBitAPI.Addons.CommandHandler.Common.Context.html
+  name: Context
+  nameWithType: Context
+  fullName: BattleBitAPI.Addons.CommandHandler.Common.Context
 - uid: BattleBitAPI.Addons.CommandHandler.Common
   commentId: N:BattleBitAPI.Addons.CommandHandler.Common
   isExternal: true

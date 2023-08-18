@@ -1,0 +1,3200 @@
+### YamlMime:ManagedReference
+items:
+- uid: BattleBitAPI.Addons.Common.AddonPlayer
+  commentId: T:BattleBitAPI.Addons.Common.AddonPlayer
+  id: AddonPlayer
+  parent: BattleBitAPI.Addons.Common
+  children:
+  - BattleBitAPI.Addons.Common.AddonPlayer.#ctor
+  langs:
+  - csharp
+  - vb
+  name: AddonPlayer
+  nameWithType: AddonPlayer
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer
+  type: Class
+  assemblies:
+  - BattleBitAPI.Addons.Common
+  namespace: BattleBitAPI.Addons.Common
+  syntax:
+    content: 'public class AddonPlayer : Player<AddonPlayer>'
+    content.vb: Public Class AddonPlayer Inherits Player(Of AddonPlayer)
+  inheritance:
+  - System.Object
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  inheritedMembers:
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnCreated
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnConnected
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnSpawned
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDowned
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnGivenUp
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedByAnotherPlayer
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedAnotherPlayer
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDied
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedTeam
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedRole(BattleBitAPI.Common.GameRole)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnJoinedSquad(BattleBitAPI.Common.Squads)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnLeftSquad(BattleBitAPI.Common.Squads)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kick(System.String)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kill
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam(BattleBitAPI.Common.Team)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.KickFromSquad
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.JoinSquad(BattleBitAPI.Common.Squads)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.DisbandTheSquad
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.PromoteToSquadLeader
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.WarnPlayer(System.String)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String,System.Single)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetNewRole(BattleBitAPI.Common.GameRole)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Teleport(System.Numerics.Vector3)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHP(System.Single)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.GiveDamage(System.Single)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Heal(System.Single)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetLightGadget(System.String,System.Int32,System.Boolean)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetThrowable(System.String,System.Int32,System.Boolean)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetInstance(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Internal)
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ToString
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SteamID
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Name
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IP
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.GameServer
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Role
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Team
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Squad
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.InSquad
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.PingMs
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.HP
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsAlive
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsUp
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsDown
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsDead
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Position
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.StandingState
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.LeaningState
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.CurrentLoadoutIndex
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.InVehicle
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsBleeding
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.CurrentLoadout
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.CurrentWearings
+  - BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Modifications
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: BattleBitAPI.Addons.Common.AddonPlayer.#ctor
+  commentId: M:BattleBitAPI.Addons.Common.AddonPlayer.#ctor
+  id: '#ctor'
+  parent: BattleBitAPI.Addons.Common.AddonPlayer
+  langs:
+  - csharp
+  - vb
+  name: AddonPlayer()
+  nameWithType: AddonPlayer.AddonPlayer()
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer.AddonPlayer()
+  type: Constructor
+  assemblies:
+  - BattleBitAPI.Addons.Common
+  namespace: BattleBitAPI.Addons.Common
+  syntax:
+    content: public AddonPlayer()
+    content.vb: Public Sub New()
+  overload: BattleBitAPI.Addons.Common.AddonPlayer.#ctor*
+  nameWithType.vb: AddonPlayer.New()
+  fullName.vb: BattleBitAPI.Addons.Common.AddonPlayer.New()
+  name.vb: New()
+references:
+- uid: BattleBitAPI.Addons.Common
+  commentId: N:BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.Common
+  nameWithType: BattleBitAPI.Addons.Common
+  fullName: BattleBitAPI.Addons.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  commentId: T:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  parent: BattleBitAPI
+  definition: BattleBitAPI.Player`1
+  href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  name: Player<AddonPlayer>
+  nameWithType: Player<AddonPlayer>
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>
+  nameWithType.vb: Player(Of AddonPlayer)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer)
+  name.vb: Player(Of AddonPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1
+    name: Player
+    isExternal: true
+  - name: <
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Player`1
+    name: Player
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnCreated
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnCreated
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnCreated
+  name: OnCreated()
+  nameWithType: Player<AddonPlayer>.OnCreated()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnCreated()
+  nameWithType.vb: Player(Of AddonPlayer).OnCreated()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnCreated()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnCreated
+    name: OnCreated
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnCreated
+    name: OnCreated
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnConnected
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnConnected
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnConnected
+  name: OnConnected()
+  nameWithType: Player<AddonPlayer>.OnConnected()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnConnected()
+  nameWithType.vb: Player(Of AddonPlayer).OnConnected()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnConnected()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnConnected
+    name: OnConnected
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnConnected
+    name: OnConnected
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnSpawned
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnSpawned
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnSpawned
+  name: OnSpawned()
+  nameWithType: Player<AddonPlayer>.OnSpawned()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnSpawned()
+  nameWithType.vb: Player(Of AddonPlayer).OnSpawned()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnSpawned()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnSpawned
+    name: OnSpawned
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnSpawned
+    name: OnSpawned
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDowned
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDowned
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnDowned
+  name: OnDowned()
+  nameWithType: Player<AddonPlayer>.OnDowned()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnDowned()
+  nameWithType.vb: Player(Of AddonPlayer).OnDowned()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnDowned()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDowned
+    name: OnDowned
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDowned
+    name: OnDowned
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnGivenUp
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnGivenUp
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnGivenUp
+  name: OnGivenUp()
+  nameWithType: Player<AddonPlayer>.OnGivenUp()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnGivenUp()
+  nameWithType.vb: Player(Of AddonPlayer).OnGivenUp()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnGivenUp()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnGivenUp
+    name: OnGivenUp
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnGivenUp
+    name: OnGivenUp
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedByAnotherPlayer
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedByAnotherPlayer
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnRevivedByAnotherPlayer
+  name: OnRevivedByAnotherPlayer()
+  nameWithType: Player<AddonPlayer>.OnRevivedByAnotherPlayer()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnRevivedByAnotherPlayer()
+  nameWithType.vb: Player(Of AddonPlayer).OnRevivedByAnotherPlayer()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnRevivedByAnotherPlayer()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedByAnotherPlayer
+    name: OnRevivedByAnotherPlayer
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedByAnotherPlayer
+    name: OnRevivedByAnotherPlayer
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedAnotherPlayer
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedAnotherPlayer
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnRevivedAnotherPlayer
+  name: OnRevivedAnotherPlayer()
+  nameWithType: Player<AddonPlayer>.OnRevivedAnotherPlayer()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnRevivedAnotherPlayer()
+  nameWithType.vb: Player(Of AddonPlayer).OnRevivedAnotherPlayer()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnRevivedAnotherPlayer()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedAnotherPlayer
+    name: OnRevivedAnotherPlayer
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnRevivedAnotherPlayer
+    name: OnRevivedAnotherPlayer
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDied
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDied
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnDied
+  name: OnDied()
+  nameWithType: Player<AddonPlayer>.OnDied()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnDied()
+  nameWithType.vb: Player(Of AddonPlayer).OnDied()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnDied()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDied
+    name: OnDied
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDied
+    name: OnDied
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedTeam
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedTeam
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnChangedTeam
+  name: OnChangedTeam()
+  nameWithType: Player<AddonPlayer>.OnChangedTeam()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnChangedTeam()
+  nameWithType.vb: Player(Of AddonPlayer).OnChangedTeam()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnChangedTeam()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedTeam
+    name: OnChangedTeam
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedTeam
+    name: OnChangedTeam
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedRole(BattleBitAPI.Common.GameRole)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedRole(BattleBitAPI.Common.GameRole)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnChangedRole(BattleBitAPI.Common.GameRole)
+  name: OnChangedRole(GameRole)
+  nameWithType: Player<AddonPlayer>.OnChangedRole(GameRole)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnChangedRole(BattleBitAPI.Common.GameRole)
+  nameWithType.vb: Player(Of AddonPlayer).OnChangedRole(GameRole)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnChangedRole(BattleBitAPI.Common.GameRole)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedRole(BattleBitAPI.Common.GameRole)
+    name: OnChangedRole
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.GameRole
+    name: GameRole
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnChangedRole(BattleBitAPI.Common.GameRole)
+    name: OnChangedRole
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.GameRole
+    name: GameRole
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnJoinedSquad(BattleBitAPI.Common.Squads)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnJoinedSquad(BattleBitAPI.Common.Squads)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnJoinedSquad(BattleBitAPI.Common.Squads)
+  name: OnJoinedSquad(Squads)
+  nameWithType: Player<AddonPlayer>.OnJoinedSquad(Squads)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnJoinedSquad(BattleBitAPI.Common.Squads)
+  nameWithType.vb: Player(Of AddonPlayer).OnJoinedSquad(Squads)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnJoinedSquad(BattleBitAPI.Common.Squads)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnJoinedSquad(BattleBitAPI.Common.Squads)
+    name: OnJoinedSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnJoinedSquad(BattleBitAPI.Common.Squads)
+    name: OnJoinedSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnLeftSquad(BattleBitAPI.Common.Squads)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnLeftSquad(BattleBitAPI.Common.Squads)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnLeftSquad(BattleBitAPI.Common.Squads)
+  name: OnLeftSquad(Squads)
+  nameWithType: Player<AddonPlayer>.OnLeftSquad(Squads)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnLeftSquad(BattleBitAPI.Common.Squads)
+  nameWithType.vb: Player(Of AddonPlayer).OnLeftSquad(Squads)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnLeftSquad(BattleBitAPI.Common.Squads)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnLeftSquad(BattleBitAPI.Common.Squads)
+    name: OnLeftSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnLeftSquad(BattleBitAPI.Common.Squads)
+    name: OnLeftSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.OnDisconnected
+  name: OnDisconnected()
+  nameWithType: Player<AddonPlayer>.OnDisconnected()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.OnDisconnected()
+  nameWithType.vb: Player(Of AddonPlayer).OnDisconnected()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).OnDisconnected()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+    name: OnDisconnected
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+    name: OnDisconnected
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kick(System.String)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kick(System.String)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Kick(System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Kick(string)
+  nameWithType: Player<AddonPlayer>.Kick(string)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Kick(string)
+  nameWithType.vb: Player(Of AddonPlayer).Kick(String)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Kick(String)
+  name.vb: Kick(String)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kick(System.String)
+    name: Kick
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kick(System.String)
+    name: Kick
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kill
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kill
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Kill
+  name: Kill()
+  nameWithType: Player<AddonPlayer>.Kill()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Kill()
+  nameWithType.vb: Player(Of AddonPlayer).Kill()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Kill()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kill
+    name: Kill
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Kill
+    name: Kill
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.ChangeTeam
+  name: ChangeTeam()
+  nameWithType: Player<AddonPlayer>.ChangeTeam()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.ChangeTeam()
+  nameWithType.vb: Player(Of AddonPlayer).ChangeTeam()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).ChangeTeam()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam
+    name: ChangeTeam
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam
+    name: ChangeTeam
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam(BattleBitAPI.Common.Team)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam(BattleBitAPI.Common.Team)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.ChangeTeam(BattleBitAPI.Common.Team)
+  name: ChangeTeam(Team)
+  nameWithType: Player<AddonPlayer>.ChangeTeam(Team)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.ChangeTeam(BattleBitAPI.Common.Team)
+  nameWithType.vb: Player(Of AddonPlayer).ChangeTeam(Team)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).ChangeTeam(BattleBitAPI.Common.Team)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam(BattleBitAPI.Common.Team)
+    name: ChangeTeam
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Team
+    name: Team
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ChangeTeam(BattleBitAPI.Common.Team)
+    name: ChangeTeam
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Team
+    name: Team
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.KickFromSquad
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.KickFromSquad
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.KickFromSquad
+  name: KickFromSquad()
+  nameWithType: Player<AddonPlayer>.KickFromSquad()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.KickFromSquad()
+  nameWithType.vb: Player(Of AddonPlayer).KickFromSquad()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).KickFromSquad()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.KickFromSquad
+    name: KickFromSquad
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.KickFromSquad
+    name: KickFromSquad
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.JoinSquad(BattleBitAPI.Common.Squads)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.JoinSquad(BattleBitAPI.Common.Squads)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.JoinSquad(BattleBitAPI.Common.Squads)
+  name: JoinSquad(Squads)
+  nameWithType: Player<AddonPlayer>.JoinSquad(Squads)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.JoinSquad(BattleBitAPI.Common.Squads)
+  nameWithType.vb: Player(Of AddonPlayer).JoinSquad(Squads)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).JoinSquad(BattleBitAPI.Common.Squads)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.JoinSquad(BattleBitAPI.Common.Squads)
+    name: JoinSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.JoinSquad(BattleBitAPI.Common.Squads)
+    name: JoinSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.DisbandTheSquad
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.DisbandTheSquad
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.DisbandTheSquad
+  name: DisbandTheSquad()
+  nameWithType: Player<AddonPlayer>.DisbandTheSquad()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.DisbandTheSquad()
+  nameWithType.vb: Player(Of AddonPlayer).DisbandTheSquad()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).DisbandTheSquad()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.DisbandTheSquad
+    name: DisbandTheSquad
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.DisbandTheSquad
+    name: DisbandTheSquad
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.PromoteToSquadLeader
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.PromoteToSquadLeader
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.PromoteToSquadLeader
+  name: PromoteToSquadLeader()
+  nameWithType: Player<AddonPlayer>.PromoteToSquadLeader()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.PromoteToSquadLeader()
+  nameWithType.vb: Player(Of AddonPlayer).PromoteToSquadLeader()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).PromoteToSquadLeader()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.PromoteToSquadLeader
+    name: PromoteToSquadLeader
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.PromoteToSquadLeader
+    name: PromoteToSquadLeader
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.WarnPlayer(System.String)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.WarnPlayer(System.String)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.WarnPlayer(System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: WarnPlayer(string)
+  nameWithType: Player<AddonPlayer>.WarnPlayer(string)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.WarnPlayer(string)
+  nameWithType.vb: Player(Of AddonPlayer).WarnPlayer(String)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).WarnPlayer(String)
+  name.vb: WarnPlayer(String)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.WarnPlayer(System.String)
+    name: WarnPlayer
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.WarnPlayer(System.String)
+    name: WarnPlayer
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Message(System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Message(string)
+  nameWithType: Player<AddonPlayer>.Message(string)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Message(string)
+  nameWithType.vb: Player(Of AddonPlayer).Message(String)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Message(String)
+  name.vb: Message(String)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String)
+    name: Message
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String)
+    name: Message
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String,System.Single)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String,System.Single)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Message(System.String,System.Single)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Message(string, float)
+  nameWithType: Player<AddonPlayer>.Message(string, float)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Message(string, float)
+  nameWithType.vb: Player(Of AddonPlayer).Message(String, Single)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Message(String, Single)
+  name.vb: Message(String, Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String,System.Single)
+    name: Message
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Message(System.String,System.Single)
+    name: Message
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetNewRole(BattleBitAPI.Common.GameRole)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetNewRole(BattleBitAPI.Common.GameRole)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SetNewRole(BattleBitAPI.Common.GameRole)
+  name: SetNewRole(GameRole)
+  nameWithType: Player<AddonPlayer>.SetNewRole(GameRole)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SetNewRole(BattleBitAPI.Common.GameRole)
+  nameWithType.vb: Player(Of AddonPlayer).SetNewRole(GameRole)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SetNewRole(BattleBitAPI.Common.GameRole)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetNewRole(BattleBitAPI.Common.GameRole)
+    name: SetNewRole
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.GameRole
+    name: GameRole
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetNewRole(BattleBitAPI.Common.GameRole)
+    name: SetNewRole
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.GameRole
+    name: GameRole
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Teleport(System.Numerics.Vector3)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Teleport(System.Numerics.Vector3)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Teleport(System.Numerics.Vector3)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  name: Teleport(Vector3)
+  nameWithType: Player<AddonPlayer>.Teleport(Vector3)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Teleport(System.Numerics.Vector3)
+  nameWithType.vb: Player(Of AddonPlayer).Teleport(Vector3)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Teleport(System.Numerics.Vector3)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Teleport(System.Numerics.Vector3)
+    name: Teleport
+    isExternal: true
+  - name: (
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Teleport(System.Numerics.Vector3)
+    name: Teleport
+    isExternal: true
+  - name: (
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  name: SpawnPlayer(PlayerLoadout, PlayerWearings, Vector3, Vector3, PlayerStand, float)
+  nameWithType: Player<AddonPlayer>.SpawnPlayer(PlayerLoadout, PlayerWearings, Vector3, Vector3, PlayerStand, float)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout, BattleBitAPI.Common.PlayerWearings, System.Numerics.Vector3, System.Numerics.Vector3, BattleBitAPI.Common.PlayerStand, float)
+  nameWithType.vb: Player(Of AddonPlayer).SpawnPlayer(PlayerLoadout, PlayerWearings, Vector3, Vector3, PlayerStand, Single)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SpawnPlayer(BattleBitAPI.Common.PlayerLoadout, BattleBitAPI.Common.PlayerWearings, System.Numerics.Vector3, System.Numerics.Vector3, BattleBitAPI.Common.PlayerStand, Single)
+  name.vb: SpawnPlayer(PlayerLoadout, PlayerWearings, Vector3, Vector3, PlayerStand, Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+    name: SpawnPlayer
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.PlayerLoadout
+    name: PlayerLoadout
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.PlayerWearings
+    name: PlayerWearings
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: ','
+  - name: " "
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.PlayerStand
+    name: PlayerStand
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+    name: SpawnPlayer
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.PlayerLoadout
+    name: PlayerLoadout
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.PlayerWearings
+    name: PlayerWearings
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: ','
+  - name: " "
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.PlayerStand
+    name: PlayerStand
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHP(System.Single)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHP(System.Single)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SetHP(System.Single)
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: SetHP(float)
+  nameWithType: Player<AddonPlayer>.SetHP(float)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SetHP(float)
+  nameWithType.vb: Player(Of AddonPlayer).SetHP(Single)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SetHP(Single)
+  name.vb: SetHP(Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHP(System.Single)
+    name: SetHP
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHP(System.Single)
+    name: SetHP
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.GiveDamage(System.Single)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.GiveDamage(System.Single)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.GiveDamage(System.Single)
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: GiveDamage(float)
+  nameWithType: Player<AddonPlayer>.GiveDamage(float)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.GiveDamage(float)
+  nameWithType.vb: Player(Of AddonPlayer).GiveDamage(Single)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).GiveDamage(Single)
+  name.vb: GiveDamage(Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.GiveDamage(System.Single)
+    name: GiveDamage
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.GiveDamage(System.Single)
+    name: GiveDamage
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Heal(System.Single)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Heal(System.Single)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Heal(System.Single)
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Heal(float)
+  nameWithType: Player<AddonPlayer>.Heal(float)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Heal(float)
+  nameWithType.vb: Player(Of AddonPlayer).Heal(Single)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Heal(Single)
+  name.vb: Heal(Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Heal(System.Single)
+    name: Heal
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Heal(System.Single)
+    name: Heal
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: SetPrimaryWeapon(WeaponItem, int, bool)
+  nameWithType: Player<AddonPlayer>.SetPrimaryWeapon(WeaponItem, int, bool)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem, int, bool)
+  nameWithType.vb: Player(Of AddonPlayer).SetPrimaryWeapon(WeaponItem, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem, Integer, Boolean)
+  name.vb: SetPrimaryWeapon(WeaponItem, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+    name: SetPrimaryWeapon
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.WeaponItem
+    name: WeaponItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+    name: SetPrimaryWeapon
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.WeaponItem
+    name: WeaponItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: SetSecondaryWeapon(WeaponItem, int, bool)
+  nameWithType: Player<AddonPlayer>.SetSecondaryWeapon(WeaponItem, int, bool)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem, int, bool)
+  nameWithType.vb: Player(Of AddonPlayer).SetSecondaryWeapon(WeaponItem, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem, Integer, Boolean)
+  name.vb: SetSecondaryWeapon(WeaponItem, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+    name: SetSecondaryWeapon
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.WeaponItem
+    name: WeaponItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+    name: SetSecondaryWeapon
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.WeaponItem
+    name: WeaponItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetFirstAidGadget(string, int, bool)
+  nameWithType: Player<AddonPlayer>.SetFirstAidGadget(string, int, bool)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SetFirstAidGadget(string, int, bool)
+  nameWithType.vb: Player(Of AddonPlayer).SetFirstAidGadget(String, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SetFirstAidGadget(String, Integer, Boolean)
+  name.vb: SetFirstAidGadget(String, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+    name: SetFirstAidGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+    name: SetFirstAidGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetLightGadget(System.String,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetLightGadget(System.String,System.Int32,System.Boolean)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SetLightGadget(System.String,System.Int32,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetLightGadget(string, int, bool)
+  nameWithType: Player<AddonPlayer>.SetLightGadget(string, int, bool)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SetLightGadget(string, int, bool)
+  nameWithType.vb: Player(Of AddonPlayer).SetLightGadget(String, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SetLightGadget(String, Integer, Boolean)
+  name.vb: SetLightGadget(String, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetLightGadget(System.String,System.Int32,System.Boolean)
+    name: SetLightGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetLightGadget(System.String,System.Int32,System.Boolean)
+    name: SetLightGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetHeavyGadget(string, int, bool)
+  nameWithType: Player<AddonPlayer>.SetHeavyGadget(string, int, bool)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SetHeavyGadget(string, int, bool)
+  nameWithType.vb: Player(Of AddonPlayer).SetHeavyGadget(String, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SetHeavyGadget(String, Integer, Boolean)
+  name.vb: SetHeavyGadget(String, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+    name: SetHeavyGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+    name: SetHeavyGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetThrowable(System.String,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetThrowable(System.String,System.Int32,System.Boolean)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SetThrowable(System.String,System.Int32,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetThrowable(string, int, bool)
+  nameWithType: Player<AddonPlayer>.SetThrowable(string, int, bool)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SetThrowable(string, int, bool)
+  nameWithType.vb: Player(Of AddonPlayer).SetThrowable(String, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SetThrowable(String, Integer, Boolean)
+  name.vb: SetThrowable(String, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetThrowable(System.String,System.Int32,System.Boolean)
+    name: SetThrowable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetThrowable(System.String,System.Int32,System.Boolean)
+    name: SetThrowable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetInstance(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Internal)
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetInstance(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Internal)
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SetInstance(`0,BattleBitAPI.Player{`0}.Internal)
+  href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  name: SetInstance(AddonPlayer, Internal)
+  nameWithType: Player<AddonPlayer>.SetInstance(AddonPlayer, Player<AddonPlayer>.Internal)
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SetInstance(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Internal)
+  nameWithType.vb: Player(Of AddonPlayer).SetInstance(AddonPlayer, Player(Of AddonPlayer).Internal)
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SetInstance(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Internal)
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetInstance(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Internal)
+    name: SetInstance
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Internal
+    name: Internal
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SetInstance(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Internal)
+    name: SetInstance
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Internal
+    name: Internal
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ToString
+  commentId: M:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ToString
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.ToString
+  name: ToString()
+  nameWithType: Player<AddonPlayer>.ToString()
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.ToString()
+  nameWithType.vb: Player(Of AddonPlayer).ToString()
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).ToString()
+  spec.csharp:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SteamID
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.SteamID
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.SteamID
+  name: SteamID
+  nameWithType: Player<AddonPlayer>.SteamID
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.SteamID
+  nameWithType.vb: Player(Of AddonPlayer).SteamID
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).SteamID
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Name
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Name
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Name
+  name: Name
+  nameWithType: Player<AddonPlayer>.Name
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Name
+  nameWithType.vb: Player(Of AddonPlayer).Name
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Name
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IP
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IP
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.IP
+  name: IP
+  nameWithType: Player<AddonPlayer>.IP
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.IP
+  nameWithType.vb: Player(Of AddonPlayer).IP
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).IP
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.GameServer
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.GameServer
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.GameServer
+  name: GameServer
+  nameWithType: Player<AddonPlayer>.GameServer
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.GameServer
+  nameWithType.vb: Player(Of AddonPlayer).GameServer
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).GameServer
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Role
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Role
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Role
+  name: Role
+  nameWithType: Player<AddonPlayer>.Role
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Role
+  nameWithType.vb: Player(Of AddonPlayer).Role
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Role
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Team
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Team
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Team
+  name: Team
+  nameWithType: Player<AddonPlayer>.Team
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Team
+  nameWithType.vb: Player(Of AddonPlayer).Team
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Team
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Squad
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Squad
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Squad
+  name: Squad
+  nameWithType: Player<AddonPlayer>.Squad
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Squad
+  nameWithType.vb: Player(Of AddonPlayer).Squad
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Squad
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.InSquad
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.InSquad
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.InSquad
+  name: InSquad
+  nameWithType: Player<AddonPlayer>.InSquad
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.InSquad
+  nameWithType.vb: Player(Of AddonPlayer).InSquad
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).InSquad
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.PingMs
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.PingMs
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.PingMs
+  name: PingMs
+  nameWithType: Player<AddonPlayer>.PingMs
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.PingMs
+  nameWithType.vb: Player(Of AddonPlayer).PingMs
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).PingMs
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.HP
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.HP
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.HP
+  name: HP
+  nameWithType: Player<AddonPlayer>.HP
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.HP
+  nameWithType.vb: Player(Of AddonPlayer).HP
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).HP
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsAlive
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsAlive
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.IsAlive
+  name: IsAlive
+  nameWithType: Player<AddonPlayer>.IsAlive
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.IsAlive
+  nameWithType.vb: Player(Of AddonPlayer).IsAlive
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).IsAlive
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsUp
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsUp
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.IsUp
+  name: IsUp
+  nameWithType: Player<AddonPlayer>.IsUp
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.IsUp
+  nameWithType.vb: Player(Of AddonPlayer).IsUp
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).IsUp
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsDown
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsDown
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.IsDown
+  name: IsDown
+  nameWithType: Player<AddonPlayer>.IsDown
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.IsDown
+  nameWithType.vb: Player(Of AddonPlayer).IsDown
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).IsDown
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsDead
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsDead
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.IsDead
+  name: IsDead
+  nameWithType: Player<AddonPlayer>.IsDead
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.IsDead
+  nameWithType.vb: Player(Of AddonPlayer).IsDead
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).IsDead
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Position
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Position
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Position
+  name: Position
+  nameWithType: Player<AddonPlayer>.Position
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Position
+  nameWithType.vb: Player(Of AddonPlayer).Position
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Position
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.StandingState
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.StandingState
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.StandingState
+  name: StandingState
+  nameWithType: Player<AddonPlayer>.StandingState
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.StandingState
+  nameWithType.vb: Player(Of AddonPlayer).StandingState
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).StandingState
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.LeaningState
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.LeaningState
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.LeaningState
+  name: LeaningState
+  nameWithType: Player<AddonPlayer>.LeaningState
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.LeaningState
+  nameWithType.vb: Player(Of AddonPlayer).LeaningState
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).LeaningState
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.CurrentLoadoutIndex
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.CurrentLoadoutIndex
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.CurrentLoadoutIndex
+  name: CurrentLoadoutIndex
+  nameWithType: Player<AddonPlayer>.CurrentLoadoutIndex
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.CurrentLoadoutIndex
+  nameWithType.vb: Player(Of AddonPlayer).CurrentLoadoutIndex
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).CurrentLoadoutIndex
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.InVehicle
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.InVehicle
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.InVehicle
+  name: InVehicle
+  nameWithType: Player<AddonPlayer>.InVehicle
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.InVehicle
+  nameWithType.vb: Player(Of AddonPlayer).InVehicle
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).InVehicle
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsBleeding
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.IsBleeding
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.IsBleeding
+  name: IsBleeding
+  nameWithType: Player<AddonPlayer>.IsBleeding
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.IsBleeding
+  nameWithType.vb: Player(Of AddonPlayer).IsBleeding
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).IsBleeding
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.CurrentLoadout
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.CurrentLoadout
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.CurrentLoadout
+  name: CurrentLoadout
+  nameWithType: Player<AddonPlayer>.CurrentLoadout
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.CurrentLoadout
+  nameWithType.vb: Player(Of AddonPlayer).CurrentLoadout
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).CurrentLoadout
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.CurrentWearings
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.CurrentWearings
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.CurrentWearings
+  name: CurrentWearings
+  nameWithType: Player<AddonPlayer>.CurrentWearings
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.CurrentWearings
+  nameWithType.vb: Player(Of AddonPlayer).CurrentWearings
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).CurrentWearings
+- uid: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Modifications
+  commentId: P:BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}.Modifications
+  parent: BattleBitAPI.Player{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Player`1.Modifications
+  name: Modifications
+  nameWithType: Player<AddonPlayer>.Modifications
+  fullName: BattleBitAPI.Player<BattleBitAPI.Addons.Common.AddonPlayer>.Modifications
+  nameWithType.vb: Player(Of AddonPlayer).Modifications
+  fullName.vb: BattleBitAPI.Player(Of BattleBitAPI.Addons.Common.AddonPlayer).Modifications
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BattleBitAPI.Player`1
+  commentId: T:BattleBitAPI.Player`1
+  isExternal: true
+  name: Player<TPlayer>
+  nameWithType: Player<TPlayer>
+  fullName: BattleBitAPI.Player<TPlayer>
+  nameWithType.vb: Player(Of TPlayer)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer)
+  name.vb: Player(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1
+    name: Player
+    isExternal: true
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Player`1
+    name: Player
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
+- uid: BattleBitAPI
+  commentId: N:BattleBitAPI
+  isExternal: true
+  name: BattleBitAPI
+  nameWithType: BattleBitAPI
+  fullName: BattleBitAPI
+- uid: BattleBitAPI.Player`1.OnCreated
+  commentId: M:BattleBitAPI.Player`1.OnCreated
+  isExternal: true
+  name: OnCreated()
+  nameWithType: Player<TPlayer>.OnCreated()
+  fullName: BattleBitAPI.Player<TPlayer>.OnCreated()
+  nameWithType.vb: Player(Of TPlayer).OnCreated()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnCreated()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnCreated
+    name: OnCreated
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnCreated
+    name: OnCreated
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.OnConnected
+  commentId: M:BattleBitAPI.Player`1.OnConnected
+  isExternal: true
+  name: OnConnected()
+  nameWithType: Player<TPlayer>.OnConnected()
+  fullName: BattleBitAPI.Player<TPlayer>.OnConnected()
+  nameWithType.vb: Player(Of TPlayer).OnConnected()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnConnected()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnConnected
+    name: OnConnected
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnConnected
+    name: OnConnected
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.OnSpawned
+  commentId: M:BattleBitAPI.Player`1.OnSpawned
+  isExternal: true
+  name: OnSpawned()
+  nameWithType: Player<TPlayer>.OnSpawned()
+  fullName: BattleBitAPI.Player<TPlayer>.OnSpawned()
+  nameWithType.vb: Player(Of TPlayer).OnSpawned()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnSpawned()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnSpawned
+    name: OnSpawned
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnSpawned
+    name: OnSpawned
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.OnDowned
+  commentId: M:BattleBitAPI.Player`1.OnDowned
+  isExternal: true
+  name: OnDowned()
+  nameWithType: Player<TPlayer>.OnDowned()
+  fullName: BattleBitAPI.Player<TPlayer>.OnDowned()
+  nameWithType.vb: Player(Of TPlayer).OnDowned()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnDowned()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnDowned
+    name: OnDowned
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnDowned
+    name: OnDowned
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.OnGivenUp
+  commentId: M:BattleBitAPI.Player`1.OnGivenUp
+  isExternal: true
+  name: OnGivenUp()
+  nameWithType: Player<TPlayer>.OnGivenUp()
+  fullName: BattleBitAPI.Player<TPlayer>.OnGivenUp()
+  nameWithType.vb: Player(Of TPlayer).OnGivenUp()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnGivenUp()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnGivenUp
+    name: OnGivenUp
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnGivenUp
+    name: OnGivenUp
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.OnRevivedByAnotherPlayer
+  commentId: M:BattleBitAPI.Player`1.OnRevivedByAnotherPlayer
+  isExternal: true
+  name: OnRevivedByAnotherPlayer()
+  nameWithType: Player<TPlayer>.OnRevivedByAnotherPlayer()
+  fullName: BattleBitAPI.Player<TPlayer>.OnRevivedByAnotherPlayer()
+  nameWithType.vb: Player(Of TPlayer).OnRevivedByAnotherPlayer()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnRevivedByAnotherPlayer()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnRevivedByAnotherPlayer
+    name: OnRevivedByAnotherPlayer
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnRevivedByAnotherPlayer
+    name: OnRevivedByAnotherPlayer
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.OnRevivedAnotherPlayer
+  commentId: M:BattleBitAPI.Player`1.OnRevivedAnotherPlayer
+  isExternal: true
+  name: OnRevivedAnotherPlayer()
+  nameWithType: Player<TPlayer>.OnRevivedAnotherPlayer()
+  fullName: BattleBitAPI.Player<TPlayer>.OnRevivedAnotherPlayer()
+  nameWithType.vb: Player(Of TPlayer).OnRevivedAnotherPlayer()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnRevivedAnotherPlayer()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnRevivedAnotherPlayer
+    name: OnRevivedAnotherPlayer
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnRevivedAnotherPlayer
+    name: OnRevivedAnotherPlayer
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.OnDied
+  commentId: M:BattleBitAPI.Player`1.OnDied
+  isExternal: true
+  name: OnDied()
+  nameWithType: Player<TPlayer>.OnDied()
+  fullName: BattleBitAPI.Player<TPlayer>.OnDied()
+  nameWithType.vb: Player(Of TPlayer).OnDied()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnDied()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnDied
+    name: OnDied
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnDied
+    name: OnDied
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.OnChangedTeam
+  commentId: M:BattleBitAPI.Player`1.OnChangedTeam
+  isExternal: true
+  name: OnChangedTeam()
+  nameWithType: Player<TPlayer>.OnChangedTeam()
+  fullName: BattleBitAPI.Player<TPlayer>.OnChangedTeam()
+  nameWithType.vb: Player(Of TPlayer).OnChangedTeam()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnChangedTeam()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnChangedTeam
+    name: OnChangedTeam
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnChangedTeam
+    name: OnChangedTeam
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.OnChangedRole(BattleBitAPI.Common.GameRole)
+  commentId: M:BattleBitAPI.Player`1.OnChangedRole(BattleBitAPI.Common.GameRole)
+  isExternal: true
+  name: OnChangedRole(GameRole)
+  nameWithType: Player<TPlayer>.OnChangedRole(GameRole)
+  fullName: BattleBitAPI.Player<TPlayer>.OnChangedRole(BattleBitAPI.Common.GameRole)
+  nameWithType.vb: Player(Of TPlayer).OnChangedRole(GameRole)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnChangedRole(BattleBitAPI.Common.GameRole)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnChangedRole(BattleBitAPI.Common.GameRole)
+    name: OnChangedRole
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.GameRole
+    name: GameRole
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnChangedRole(BattleBitAPI.Common.GameRole)
+    name: OnChangedRole
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.GameRole
+    name: GameRole
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player`1.OnJoinedSquad(BattleBitAPI.Common.Squads)
+  commentId: M:BattleBitAPI.Player`1.OnJoinedSquad(BattleBitAPI.Common.Squads)
+  isExternal: true
+  name: OnJoinedSquad(Squads)
+  nameWithType: Player<TPlayer>.OnJoinedSquad(Squads)
+  fullName: BattleBitAPI.Player<TPlayer>.OnJoinedSquad(BattleBitAPI.Common.Squads)
+  nameWithType.vb: Player(Of TPlayer).OnJoinedSquad(Squads)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnJoinedSquad(BattleBitAPI.Common.Squads)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnJoinedSquad(BattleBitAPI.Common.Squads)
+    name: OnJoinedSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnJoinedSquad(BattleBitAPI.Common.Squads)
+    name: OnJoinedSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player`1.OnLeftSquad(BattleBitAPI.Common.Squads)
+  commentId: M:BattleBitAPI.Player`1.OnLeftSquad(BattleBitAPI.Common.Squads)
+  isExternal: true
+  name: OnLeftSquad(Squads)
+  nameWithType: Player<TPlayer>.OnLeftSquad(Squads)
+  fullName: BattleBitAPI.Player<TPlayer>.OnLeftSquad(BattleBitAPI.Common.Squads)
+  nameWithType.vb: Player(Of TPlayer).OnLeftSquad(Squads)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnLeftSquad(BattleBitAPI.Common.Squads)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnLeftSquad(BattleBitAPI.Common.Squads)
+    name: OnLeftSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnLeftSquad(BattleBitAPI.Common.Squads)
+    name: OnLeftSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player`1.OnDisconnected
+  commentId: M:BattleBitAPI.Player`1.OnDisconnected
+  isExternal: true
+  name: OnDisconnected()
+  nameWithType: Player<TPlayer>.OnDisconnected()
+  fullName: BattleBitAPI.Player<TPlayer>.OnDisconnected()
+  nameWithType.vb: Player(Of TPlayer).OnDisconnected()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).OnDisconnected()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.OnDisconnected
+    name: OnDisconnected
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.OnDisconnected
+    name: OnDisconnected
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.Kick(System.String)
+  commentId: M:BattleBitAPI.Player`1.Kick(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Kick(string)
+  nameWithType: Player<TPlayer>.Kick(string)
+  fullName: BattleBitAPI.Player<TPlayer>.Kick(string)
+  nameWithType.vb: Player(Of TPlayer).Kick(String)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Kick(String)
+  name.vb: Kick(String)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.Kick(System.String)
+    name: Kick
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.Kick(System.String)
+    name: Kick
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Player`1.Kill
+  commentId: M:BattleBitAPI.Player`1.Kill
+  isExternal: true
+  name: Kill()
+  nameWithType: Player<TPlayer>.Kill()
+  fullName: BattleBitAPI.Player<TPlayer>.Kill()
+  nameWithType.vb: Player(Of TPlayer).Kill()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Kill()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.Kill
+    name: Kill
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.Kill
+    name: Kill
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.ChangeTeam
+  commentId: M:BattleBitAPI.Player`1.ChangeTeam
+  isExternal: true
+  name: ChangeTeam()
+  nameWithType: Player<TPlayer>.ChangeTeam()
+  fullName: BattleBitAPI.Player<TPlayer>.ChangeTeam()
+  nameWithType.vb: Player(Of TPlayer).ChangeTeam()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).ChangeTeam()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.ChangeTeam
+    name: ChangeTeam
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.ChangeTeam
+    name: ChangeTeam
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.ChangeTeam(BattleBitAPI.Common.Team)
+  commentId: M:BattleBitAPI.Player`1.ChangeTeam(BattleBitAPI.Common.Team)
+  isExternal: true
+  name: ChangeTeam(Team)
+  nameWithType: Player<TPlayer>.ChangeTeam(Team)
+  fullName: BattleBitAPI.Player<TPlayer>.ChangeTeam(BattleBitAPI.Common.Team)
+  nameWithType.vb: Player(Of TPlayer).ChangeTeam(Team)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).ChangeTeam(BattleBitAPI.Common.Team)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.ChangeTeam(BattleBitAPI.Common.Team)
+    name: ChangeTeam
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Team
+    name: Team
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.ChangeTeam(BattleBitAPI.Common.Team)
+    name: ChangeTeam
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Team
+    name: Team
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player`1.KickFromSquad
+  commentId: M:BattleBitAPI.Player`1.KickFromSquad
+  isExternal: true
+  name: KickFromSquad()
+  nameWithType: Player<TPlayer>.KickFromSquad()
+  fullName: BattleBitAPI.Player<TPlayer>.KickFromSquad()
+  nameWithType.vb: Player(Of TPlayer).KickFromSquad()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).KickFromSquad()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.KickFromSquad
+    name: KickFromSquad
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.KickFromSquad
+    name: KickFromSquad
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.JoinSquad(BattleBitAPI.Common.Squads)
+  commentId: M:BattleBitAPI.Player`1.JoinSquad(BattleBitAPI.Common.Squads)
+  isExternal: true
+  name: JoinSquad(Squads)
+  nameWithType: Player<TPlayer>.JoinSquad(Squads)
+  fullName: BattleBitAPI.Player<TPlayer>.JoinSquad(BattleBitAPI.Common.Squads)
+  nameWithType.vb: Player(Of TPlayer).JoinSquad(Squads)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).JoinSquad(BattleBitAPI.Common.Squads)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.JoinSquad(BattleBitAPI.Common.Squads)
+    name: JoinSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.JoinSquad(BattleBitAPI.Common.Squads)
+    name: JoinSquad
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.Squads
+    name: Squads
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player`1.DisbandTheSquad
+  commentId: M:BattleBitAPI.Player`1.DisbandTheSquad
+  isExternal: true
+  name: DisbandTheSquad()
+  nameWithType: Player<TPlayer>.DisbandTheSquad()
+  fullName: BattleBitAPI.Player<TPlayer>.DisbandTheSquad()
+  nameWithType.vb: Player(Of TPlayer).DisbandTheSquad()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).DisbandTheSquad()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.DisbandTheSquad
+    name: DisbandTheSquad
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.DisbandTheSquad
+    name: DisbandTheSquad
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.PromoteToSquadLeader
+  commentId: M:BattleBitAPI.Player`1.PromoteToSquadLeader
+  isExternal: true
+  name: PromoteToSquadLeader()
+  nameWithType: Player<TPlayer>.PromoteToSquadLeader()
+  fullName: BattleBitAPI.Player<TPlayer>.PromoteToSquadLeader()
+  nameWithType.vb: Player(Of TPlayer).PromoteToSquadLeader()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).PromoteToSquadLeader()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.PromoteToSquadLeader
+    name: PromoteToSquadLeader
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.PromoteToSquadLeader
+    name: PromoteToSquadLeader
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.WarnPlayer(System.String)
+  commentId: M:BattleBitAPI.Player`1.WarnPlayer(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: WarnPlayer(string)
+  nameWithType: Player<TPlayer>.WarnPlayer(string)
+  fullName: BattleBitAPI.Player<TPlayer>.WarnPlayer(string)
+  nameWithType.vb: Player(Of TPlayer).WarnPlayer(String)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).WarnPlayer(String)
+  name.vb: WarnPlayer(String)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.WarnPlayer(System.String)
+    name: WarnPlayer
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.WarnPlayer(System.String)
+    name: WarnPlayer
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Player`1.Message(System.String)
+  commentId: M:BattleBitAPI.Player`1.Message(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Message(string)
+  nameWithType: Player<TPlayer>.Message(string)
+  fullName: BattleBitAPI.Player<TPlayer>.Message(string)
+  nameWithType.vb: Player(Of TPlayer).Message(String)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Message(String)
+  name.vb: Message(String)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.Message(System.String)
+    name: Message
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.Message(System.String)
+    name: Message
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Player`1.Message(System.String,System.Single)
+  commentId: M:BattleBitAPI.Player`1.Message(System.String,System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Message(string, float)
+  nameWithType: Player<TPlayer>.Message(string, float)
+  fullName: BattleBitAPI.Player<TPlayer>.Message(string, float)
+  nameWithType.vb: Player(Of TPlayer).Message(String, Single)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Message(String, Single)
+  name.vb: Message(String, Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.Message(System.String,System.Single)
+    name: Message
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.Message(System.String,System.Single)
+    name: Message
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player`1.SetNewRole(BattleBitAPI.Common.GameRole)
+  commentId: M:BattleBitAPI.Player`1.SetNewRole(BattleBitAPI.Common.GameRole)
+  isExternal: true
+  name: SetNewRole(GameRole)
+  nameWithType: Player<TPlayer>.SetNewRole(GameRole)
+  fullName: BattleBitAPI.Player<TPlayer>.SetNewRole(BattleBitAPI.Common.GameRole)
+  nameWithType.vb: Player(Of TPlayer).SetNewRole(GameRole)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SetNewRole(BattleBitAPI.Common.GameRole)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SetNewRole(BattleBitAPI.Common.GameRole)
+    name: SetNewRole
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.GameRole
+    name: GameRole
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SetNewRole(BattleBitAPI.Common.GameRole)
+    name: SetNewRole
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.GameRole
+    name: GameRole
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player`1.Teleport(System.Numerics.Vector3)
+  commentId: M:BattleBitAPI.Player`1.Teleport(System.Numerics.Vector3)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  name: Teleport(Vector3)
+  nameWithType: Player<TPlayer>.Teleport(Vector3)
+  fullName: BattleBitAPI.Player<TPlayer>.Teleport(System.Numerics.Vector3)
+  nameWithType.vb: Player(Of TPlayer).Teleport(Vector3)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Teleport(System.Numerics.Vector3)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.Teleport(System.Numerics.Vector3)
+    name: Teleport
+    isExternal: true
+  - name: (
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.Teleport(System.Numerics.Vector3)
+    name: Teleport
+    isExternal: true
+  - name: (
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: )
+- uid: BattleBitAPI.Player`1.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+  commentId: M:BattleBitAPI.Player`1.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  name: SpawnPlayer(PlayerLoadout, PlayerWearings, Vector3, Vector3, PlayerStand, float)
+  nameWithType: Player<TPlayer>.SpawnPlayer(PlayerLoadout, PlayerWearings, Vector3, Vector3, PlayerStand, float)
+  fullName: BattleBitAPI.Player<TPlayer>.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout, BattleBitAPI.Common.PlayerWearings, System.Numerics.Vector3, System.Numerics.Vector3, BattleBitAPI.Common.PlayerStand, float)
+  nameWithType.vb: Player(Of TPlayer).SpawnPlayer(PlayerLoadout, PlayerWearings, Vector3, Vector3, PlayerStand, Single)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SpawnPlayer(BattleBitAPI.Common.PlayerLoadout, BattleBitAPI.Common.PlayerWearings, System.Numerics.Vector3, System.Numerics.Vector3, BattleBitAPI.Common.PlayerStand, Single)
+  name.vb: SpawnPlayer(PlayerLoadout, PlayerWearings, Vector3, Vector3, PlayerStand, Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+    name: SpawnPlayer
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.PlayerLoadout
+    name: PlayerLoadout
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.PlayerWearings
+    name: PlayerWearings
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: ','
+  - name: " "
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.PlayerStand
+    name: PlayerStand
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SpawnPlayer(BattleBitAPI.Common.PlayerLoadout,BattleBitAPI.Common.PlayerWearings,System.Numerics.Vector3,System.Numerics.Vector3,BattleBitAPI.Common.PlayerStand,System.Single)
+    name: SpawnPlayer
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.PlayerLoadout
+    name: PlayerLoadout
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.PlayerWearings
+    name: PlayerWearings
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: ','
+  - name: " "
+  - uid: System.Numerics.Vector3
+    name: Vector3
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics.vector3
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.PlayerStand
+    name: PlayerStand
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player`1.SetHP(System.Single)
+  commentId: M:BattleBitAPI.Player`1.SetHP(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: SetHP(float)
+  nameWithType: Player<TPlayer>.SetHP(float)
+  fullName: BattleBitAPI.Player<TPlayer>.SetHP(float)
+  nameWithType.vb: Player(Of TPlayer).SetHP(Single)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SetHP(Single)
+  name.vb: SetHP(Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SetHP(System.Single)
+    name: SetHP
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SetHP(System.Single)
+    name: SetHP
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player`1.GiveDamage(System.Single)
+  commentId: M:BattleBitAPI.Player`1.GiveDamage(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: GiveDamage(float)
+  nameWithType: Player<TPlayer>.GiveDamage(float)
+  fullName: BattleBitAPI.Player<TPlayer>.GiveDamage(float)
+  nameWithType.vb: Player(Of TPlayer).GiveDamage(Single)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).GiveDamage(Single)
+  name.vb: GiveDamage(Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.GiveDamage(System.Single)
+    name: GiveDamage
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.GiveDamage(System.Single)
+    name: GiveDamage
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player`1.Heal(System.Single)
+  commentId: M:BattleBitAPI.Player`1.Heal(System.Single)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: Heal(float)
+  nameWithType: Player<TPlayer>.Heal(float)
+  fullName: BattleBitAPI.Player<TPlayer>.Heal(float)
+  nameWithType.vb: Player(Of TPlayer).Heal(Single)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Heal(Single)
+  name.vb: Heal(Single)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.Heal(System.Single)
+    name: Heal
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.Heal(System.Single)
+    name: Heal
+    isExternal: true
+  - name: (
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: BattleBitAPI.Player`1.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player`1.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: SetPrimaryWeapon(WeaponItem, int, bool)
+  nameWithType: Player<TPlayer>.SetPrimaryWeapon(WeaponItem, int, bool)
+  fullName: BattleBitAPI.Player<TPlayer>.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem, int, bool)
+  nameWithType.vb: Player(Of TPlayer).SetPrimaryWeapon(WeaponItem, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem, Integer, Boolean)
+  name.vb: SetPrimaryWeapon(WeaponItem, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+    name: SetPrimaryWeapon
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.WeaponItem
+    name: WeaponItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SetPrimaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+    name: SetPrimaryWeapon
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.WeaponItem
+    name: WeaponItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player`1.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player`1.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: SetSecondaryWeapon(WeaponItem, int, bool)
+  nameWithType: Player<TPlayer>.SetSecondaryWeapon(WeaponItem, int, bool)
+  fullName: BattleBitAPI.Player<TPlayer>.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem, int, bool)
+  nameWithType.vb: Player(Of TPlayer).SetSecondaryWeapon(WeaponItem, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem, Integer, Boolean)
+  name.vb: SetSecondaryWeapon(WeaponItem, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+    name: SetSecondaryWeapon
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.WeaponItem
+    name: WeaponItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SetSecondaryWeapon(BattleBitAPI.Common.WeaponItem,System.Int32,System.Boolean)
+    name: SetSecondaryWeapon
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Common.WeaponItem
+    name: WeaponItem
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player`1.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player`1.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetFirstAidGadget(string, int, bool)
+  nameWithType: Player<TPlayer>.SetFirstAidGadget(string, int, bool)
+  fullName: BattleBitAPI.Player<TPlayer>.SetFirstAidGadget(string, int, bool)
+  nameWithType.vb: Player(Of TPlayer).SetFirstAidGadget(String, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SetFirstAidGadget(String, Integer, Boolean)
+  name.vb: SetFirstAidGadget(String, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+    name: SetFirstAidGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SetFirstAidGadget(System.String,System.Int32,System.Boolean)
+    name: SetFirstAidGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player`1.SetLightGadget(System.String,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player`1.SetLightGadget(System.String,System.Int32,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetLightGadget(string, int, bool)
+  nameWithType: Player<TPlayer>.SetLightGadget(string, int, bool)
+  fullName: BattleBitAPI.Player<TPlayer>.SetLightGadget(string, int, bool)
+  nameWithType.vb: Player(Of TPlayer).SetLightGadget(String, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SetLightGadget(String, Integer, Boolean)
+  name.vb: SetLightGadget(String, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SetLightGadget(System.String,System.Int32,System.Boolean)
+    name: SetLightGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SetLightGadget(System.String,System.Int32,System.Boolean)
+    name: SetLightGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player`1.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player`1.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetHeavyGadget(string, int, bool)
+  nameWithType: Player<TPlayer>.SetHeavyGadget(string, int, bool)
+  fullName: BattleBitAPI.Player<TPlayer>.SetHeavyGadget(string, int, bool)
+  nameWithType.vb: Player(Of TPlayer).SetHeavyGadget(String, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SetHeavyGadget(String, Integer, Boolean)
+  name.vb: SetHeavyGadget(String, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+    name: SetHeavyGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SetHeavyGadget(System.String,System.Int32,System.Boolean)
+    name: SetHeavyGadget
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player`1.SetThrowable(System.String,System.Int32,System.Boolean)
+  commentId: M:BattleBitAPI.Player`1.SetThrowable(System.String,System.Int32,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetThrowable(string, int, bool)
+  nameWithType: Player<TPlayer>.SetThrowable(string, int, bool)
+  fullName: BattleBitAPI.Player<TPlayer>.SetThrowable(string, int, bool)
+  nameWithType.vb: Player(Of TPlayer).SetThrowable(String, Integer, Boolean)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SetThrowable(String, Integer, Boolean)
+  name.vb: SetThrowable(String, Integer, Boolean)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SetThrowable(System.String,System.Int32,System.Boolean)
+    name: SetThrowable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SetThrowable(System.String,System.Int32,System.Boolean)
+    name: SetThrowable
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: BattleBitAPI.Player`1.SetInstance(`0,BattleBitAPI.Player{`0}.Internal)
+  commentId: M:BattleBitAPI.Player`1.SetInstance(`0,BattleBitAPI.Player{`0}.Internal)
+  isExternal: true
+  name: SetInstance(TPlayer, Internal)
+  nameWithType: Player<TPlayer>.SetInstance(TPlayer, Player<TPlayer>.Internal)
+  fullName: BattleBitAPI.Player<TPlayer>.SetInstance(TPlayer, BattleBitAPI.Player<TPlayer>.Internal)
+  nameWithType.vb: Player(Of TPlayer).SetInstance(TPlayer, Player(Of TPlayer).Internal)
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SetInstance(TPlayer, BattleBitAPI.Player(Of TPlayer).Internal)
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.SetInstance(`0,BattleBitAPI.Player{`0}.Internal)
+    name: SetInstance
+    isExternal: true
+  - name: (
+  - name: TPlayer
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Player`1.Internal
+    name: Internal
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.SetInstance(`0,BattleBitAPI.Player{`0}.Internal)
+    name: SetInstance
+    isExternal: true
+  - name: (
+  - name: TPlayer
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Player`1.Internal
+    name: Internal
+    isExternal: true
+  - name: )
+- uid: BattleBitAPI.Player`1.ToString
+  commentId: M:BattleBitAPI.Player`1.ToString
+  isExternal: true
+  name: ToString()
+  nameWithType: Player<TPlayer>.ToString()
+  fullName: BattleBitAPI.Player<TPlayer>.ToString()
+  nameWithType.vb: Player(Of TPlayer).ToString()
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).ToString()
+  spec.csharp:
+  - uid: BattleBitAPI.Player`1.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Player`1.ToString
+    name: ToString
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Player`1.SteamID
+  commentId: P:BattleBitAPI.Player`1.SteamID
+  isExternal: true
+  name: SteamID
+  nameWithType: Player<TPlayer>.SteamID
+  fullName: BattleBitAPI.Player<TPlayer>.SteamID
+  nameWithType.vb: Player(Of TPlayer).SteamID
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).SteamID
+- uid: BattleBitAPI.Player`1.Name
+  commentId: P:BattleBitAPI.Player`1.Name
+  isExternal: true
+  name: Name
+  nameWithType: Player<TPlayer>.Name
+  fullName: BattleBitAPI.Player<TPlayer>.Name
+  nameWithType.vb: Player(Of TPlayer).Name
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Name
+- uid: BattleBitAPI.Player`1.IP
+  commentId: P:BattleBitAPI.Player`1.IP
+  isExternal: true
+  name: IP
+  nameWithType: Player<TPlayer>.IP
+  fullName: BattleBitAPI.Player<TPlayer>.IP
+  nameWithType.vb: Player(Of TPlayer).IP
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).IP
+- uid: BattleBitAPI.Player`1.GameServer
+  commentId: P:BattleBitAPI.Player`1.GameServer
+  isExternal: true
+  name: GameServer
+  nameWithType: Player<TPlayer>.GameServer
+  fullName: BattleBitAPI.Player<TPlayer>.GameServer
+  nameWithType.vb: Player(Of TPlayer).GameServer
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).GameServer
+- uid: BattleBitAPI.Player`1.Role
+  commentId: P:BattleBitAPI.Player`1.Role
+  isExternal: true
+  name: Role
+  nameWithType: Player<TPlayer>.Role
+  fullName: BattleBitAPI.Player<TPlayer>.Role
+  nameWithType.vb: Player(Of TPlayer).Role
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Role
+- uid: BattleBitAPI.Player`1.Team
+  commentId: P:BattleBitAPI.Player`1.Team
+  isExternal: true
+  name: Team
+  nameWithType: Player<TPlayer>.Team
+  fullName: BattleBitAPI.Player<TPlayer>.Team
+  nameWithType.vb: Player(Of TPlayer).Team
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Team
+- uid: BattleBitAPI.Player`1.Squad
+  commentId: P:BattleBitAPI.Player`1.Squad
+  isExternal: true
+  name: Squad
+  nameWithType: Player<TPlayer>.Squad
+  fullName: BattleBitAPI.Player<TPlayer>.Squad
+  nameWithType.vb: Player(Of TPlayer).Squad
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Squad
+- uid: BattleBitAPI.Player`1.InSquad
+  commentId: P:BattleBitAPI.Player`1.InSquad
+  isExternal: true
+  name: InSquad
+  nameWithType: Player<TPlayer>.InSquad
+  fullName: BattleBitAPI.Player<TPlayer>.InSquad
+  nameWithType.vb: Player(Of TPlayer).InSquad
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).InSquad
+- uid: BattleBitAPI.Player`1.PingMs
+  commentId: P:BattleBitAPI.Player`1.PingMs
+  isExternal: true
+  name: PingMs
+  nameWithType: Player<TPlayer>.PingMs
+  fullName: BattleBitAPI.Player<TPlayer>.PingMs
+  nameWithType.vb: Player(Of TPlayer).PingMs
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).PingMs
+- uid: BattleBitAPI.Player`1.HP
+  commentId: P:BattleBitAPI.Player`1.HP
+  isExternal: true
+  name: HP
+  nameWithType: Player<TPlayer>.HP
+  fullName: BattleBitAPI.Player<TPlayer>.HP
+  nameWithType.vb: Player(Of TPlayer).HP
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).HP
+- uid: BattleBitAPI.Player`1.IsAlive
+  commentId: P:BattleBitAPI.Player`1.IsAlive
+  isExternal: true
+  name: IsAlive
+  nameWithType: Player<TPlayer>.IsAlive
+  fullName: BattleBitAPI.Player<TPlayer>.IsAlive
+  nameWithType.vb: Player(Of TPlayer).IsAlive
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).IsAlive
+- uid: BattleBitAPI.Player`1.IsUp
+  commentId: P:BattleBitAPI.Player`1.IsUp
+  isExternal: true
+  name: IsUp
+  nameWithType: Player<TPlayer>.IsUp
+  fullName: BattleBitAPI.Player<TPlayer>.IsUp
+  nameWithType.vb: Player(Of TPlayer).IsUp
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).IsUp
+- uid: BattleBitAPI.Player`1.IsDown
+  commentId: P:BattleBitAPI.Player`1.IsDown
+  isExternal: true
+  name: IsDown
+  nameWithType: Player<TPlayer>.IsDown
+  fullName: BattleBitAPI.Player<TPlayer>.IsDown
+  nameWithType.vb: Player(Of TPlayer).IsDown
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).IsDown
+- uid: BattleBitAPI.Player`1.IsDead
+  commentId: P:BattleBitAPI.Player`1.IsDead
+  isExternal: true
+  name: IsDead
+  nameWithType: Player<TPlayer>.IsDead
+  fullName: BattleBitAPI.Player<TPlayer>.IsDead
+  nameWithType.vb: Player(Of TPlayer).IsDead
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).IsDead
+- uid: BattleBitAPI.Player`1.Position
+  commentId: P:BattleBitAPI.Player`1.Position
+  isExternal: true
+  name: Position
+  nameWithType: Player<TPlayer>.Position
+  fullName: BattleBitAPI.Player<TPlayer>.Position
+  nameWithType.vb: Player(Of TPlayer).Position
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Position
+- uid: BattleBitAPI.Player`1.StandingState
+  commentId: P:BattleBitAPI.Player`1.StandingState
+  isExternal: true
+  name: StandingState
+  nameWithType: Player<TPlayer>.StandingState
+  fullName: BattleBitAPI.Player<TPlayer>.StandingState
+  nameWithType.vb: Player(Of TPlayer).StandingState
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).StandingState
+- uid: BattleBitAPI.Player`1.LeaningState
+  commentId: P:BattleBitAPI.Player`1.LeaningState
+  isExternal: true
+  name: LeaningState
+  nameWithType: Player<TPlayer>.LeaningState
+  fullName: BattleBitAPI.Player<TPlayer>.LeaningState
+  nameWithType.vb: Player(Of TPlayer).LeaningState
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).LeaningState
+- uid: BattleBitAPI.Player`1.CurrentLoadoutIndex
+  commentId: P:BattleBitAPI.Player`1.CurrentLoadoutIndex
+  isExternal: true
+  name: CurrentLoadoutIndex
+  nameWithType: Player<TPlayer>.CurrentLoadoutIndex
+  fullName: BattleBitAPI.Player<TPlayer>.CurrentLoadoutIndex
+  nameWithType.vb: Player(Of TPlayer).CurrentLoadoutIndex
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).CurrentLoadoutIndex
+- uid: BattleBitAPI.Player`1.InVehicle
+  commentId: P:BattleBitAPI.Player`1.InVehicle
+  isExternal: true
+  name: InVehicle
+  nameWithType: Player<TPlayer>.InVehicle
+  fullName: BattleBitAPI.Player<TPlayer>.InVehicle
+  nameWithType.vb: Player(Of TPlayer).InVehicle
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).InVehicle
+- uid: BattleBitAPI.Player`1.IsBleeding
+  commentId: P:BattleBitAPI.Player`1.IsBleeding
+  isExternal: true
+  name: IsBleeding
+  nameWithType: Player<TPlayer>.IsBleeding
+  fullName: BattleBitAPI.Player<TPlayer>.IsBleeding
+  nameWithType.vb: Player(Of TPlayer).IsBleeding
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).IsBleeding
+- uid: BattleBitAPI.Player`1.CurrentLoadout
+  commentId: P:BattleBitAPI.Player`1.CurrentLoadout
+  isExternal: true
+  name: CurrentLoadout
+  nameWithType: Player<TPlayer>.CurrentLoadout
+  fullName: BattleBitAPI.Player<TPlayer>.CurrentLoadout
+  nameWithType.vb: Player(Of TPlayer).CurrentLoadout
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).CurrentLoadout
+- uid: BattleBitAPI.Player`1.CurrentWearings
+  commentId: P:BattleBitAPI.Player`1.CurrentWearings
+  isExternal: true
+  name: CurrentWearings
+  nameWithType: Player<TPlayer>.CurrentWearings
+  fullName: BattleBitAPI.Player<TPlayer>.CurrentWearings
+  nameWithType.vb: Player(Of TPlayer).CurrentWearings
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).CurrentWearings
+- uid: BattleBitAPI.Player`1.Modifications
+  commentId: P:BattleBitAPI.Player`1.Modifications
+  isExternal: true
+  name: Modifications
+  nameWithType: Player<TPlayer>.Modifications
+  fullName: BattleBitAPI.Player<TPlayer>.Modifications
+  nameWithType.vb: Player(Of TPlayer).Modifications
+  fullName.vb: BattleBitAPI.Player(Of TPlayer).Modifications
+- uid: BattleBitAPI.Addons.Common.AddonPlayer.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.Common.AddonPlayer.#ctor
+  isExternal: true
+  href: BattleBitAPI.Addons.Common.AddonPlayer.html#BattleBitAPI.Addons.Common.AddonPlayer.#ctor
+  name: AddonPlayer
+  nameWithType: AddonPlayer.AddonPlayer
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer.AddonPlayer
+  nameWithType.vb: AddonPlayer.New
+  fullName.vb: BattleBitAPI.Addons.Common.AddonPlayer.New
+  name.vb: New

@@ -4,7 +4,9 @@ items:
   commentId: N:BattleBitAPI.Addons.Common
   id: BattleBitAPI.Addons.Common
   children:
-  - BattleBitAPI.Addons.Common.ApiService`1
+  - BattleBitAPI.Addons.Common.AddonGameServer
+  - BattleBitAPI.Addons.Common.AddonPlayer
+  - BattleBitAPI.Addons.Common.ApiService
   langs:
   - csharp
   - vb
@@ -15,31 +17,63 @@ items:
   assemblies:
   - BattleBitAPI.Addons.Common
 references:
-- uid: BattleBitAPI.Addons.Common.ApiService`1
-  commentId: T:BattleBitAPI.Addons.Common.ApiService`1
+- uid: BattleBitAPI.Addons.Common.AddonGameServer
+  commentId: T:BattleBitAPI.Addons.Common.AddonGameServer
+  parent: BattleBitAPI.Addons.Common
   isExternal: true
-  href: BattleBitAPI.Addons.Common.ApiService-1.html
-  name: ApiService<TPlayer>
-  nameWithType: ApiService<TPlayer>
-  fullName: BattleBitAPI.Addons.Common.ApiService<TPlayer>
-  nameWithType.vb: ApiService(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.Common.ApiService(Of TPlayer)
-  name.vb: ApiService(Of TPlayer)
+  href: BattleBitAPI.Addons.Common.AddonGameServer.html
+  name: AddonGameServer
+  nameWithType: AddonGameServer
+  fullName: BattleBitAPI.Addons.Common.AddonGameServer
+- uid: BattleBitAPI.Addons.Common.AddonPlayer
+  commentId: T:BattleBitAPI.Addons.Common.AddonPlayer
+  parent: BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  name: AddonPlayer
+  nameWithType: AddonPlayer
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer
+- uid: BattleBitAPI.Addons.Common.ApiService
+  commentId: T:BattleBitAPI.Addons.Common.ApiService
+  isExternal: true
+  href: BattleBitAPI.Addons.Common.ApiService.html
+  name: ApiService
+  nameWithType: ApiService
+  fullName: BattleBitAPI.Addons.Common.ApiService
+- uid: BattleBitAPI.Addons.Common
+  commentId: N:BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.Common
+  nameWithType: BattleBitAPI.Addons.Common
+  fullName: BattleBitAPI.Addons.Common
   spec.csharp:
-  - uid: BattleBitAPI.Addons.Common.ApiService`1
-    name: ApiService
+  - uid: BattleBitAPI
+    name: BattleBitAPI
     isExternal: true
-    href: BattleBitAPI.Addons.Common.ApiService-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html
   spec.vb:
-  - uid: BattleBitAPI.Addons.Common.ApiService`1
-    name: ApiService
+  - uid: BattleBitAPI
+    name: BattleBitAPI
     isExternal: true
-    href: BattleBitAPI.Addons.Common.ApiService-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html

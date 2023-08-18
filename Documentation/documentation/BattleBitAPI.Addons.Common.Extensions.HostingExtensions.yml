@@ -5,7 +5,7 @@ items:
   id: HostingExtensions
   parent: BattleBitAPI.Addons.Common.Extensions
   children:
-  - BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
+  - BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
   - BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssemblies(Microsoft.Extensions.Hosting.IHostBuilder)
   - BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssembly(Microsoft.Extensions.Hosting.IHostBuilder)
   langs:
@@ -31,23 +31,23 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
-  commentId: M:BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
-  id: AddServerListener``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
+- uid: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
+  commentId: M:BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
+  id: AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
   isExtensionMethod: true
   parent: BattleBitAPI.Addons.Common.Extensions.HostingExtensions
   langs:
   - csharp
   - vb
-  name: AddServerListener<TPlayer>(IHostBuilder, int, IPAddress)
-  nameWithType: HostingExtensions.AddServerListener<TPlayer>(IHostBuilder, int, IPAddress)
-  fullName: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener<TPlayer>(Microsoft.Extensions.Hosting.IHostBuilder, int, System.Net.IPAddress)
+  name: AddServerListener(IHostBuilder, int, IPAddress)
+  nameWithType: HostingExtensions.AddServerListener(IHostBuilder, int, IPAddress)
+  fullName: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder, int, System.Net.IPAddress)
   type: Method
   assemblies:
   - BattleBitAPI.Addons.Common
   namespace: BattleBitAPI.Addons.Common.Extensions
   syntax:
-    content: 'public static IHostBuilder AddServerListener<TPlayer>(this IHostBuilder hostBuilder, int port, IPAddress ipAddress = null) where TPlayer : Player'
+    content: public static IHostBuilder AddServerListener(this IHostBuilder hostBuilder, int port, IPAddress ipAddress = null)
     parameters:
     - id: hostBuilder
       type: Microsoft.Extensions.Hosting.IHostBuilder
@@ -55,15 +55,13 @@ items:
       type: System.Int32
     - id: ipAddress
       type: System.Net.IPAddress
-    typeParameters:
-    - id: TPlayer
     return:
       type: Microsoft.Extensions.Hosting.IHostBuilder
-    content.vb: Public Shared Function AddServerListener(Of TPlayer As Player)(hostBuilder As IHostBuilder, port As Integer, ipAddress As IPAddress = Nothing) As IHostBuilder
+    content.vb: Public Shared Function AddServerListener(hostBuilder As IHostBuilder, port As Integer, ipAddress As IPAddress = Nothing) As IHostBuilder
   overload: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener*
-  nameWithType.vb: HostingExtensions.AddServerListener(Of TPlayer)(IHostBuilder, Integer, IPAddress)
-  fullName.vb: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Of TPlayer)(Microsoft.Extensions.Hosting.IHostBuilder, Integer, System.Net.IPAddress)
-  name.vb: AddServerListener(Of TPlayer)(IHostBuilder, Integer, IPAddress)
+  nameWithType.vb: HostingExtensions.AddServerListener(IHostBuilder, Integer, IPAddress)
+  fullName.vb: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder, Integer, System.Net.IPAddress)
+  name.vb: AddServerListener(IHostBuilder, Integer, IPAddress)
 - uid: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssembly(Microsoft.Extensions.Hosting.IHostBuilder)
   commentId: M:BattleBitAPI.Addons.Common.Extensions.HostingExtensions.GetAssembly(Microsoft.Extensions.Hosting.IHostBuilder)
   id: GetAssembly(Microsoft.Extensions.Hosting.IHostBuilder)
@@ -400,7 +398,7 @@ references:
 - uid: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener*
   commentId: Overload:BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener
   isExternal: true
-  href: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.html#BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener``1(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
+  href: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.html#BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener(Microsoft.Extensions.Hosting.IHostBuilder,System.Int32,System.Net.IPAddress)
   name: AddServerListener
   nameWithType: HostingExtensions.AddServerListener
   fullName: BattleBitAPI.Addons.Common.Extensions.HostingExtensions.AddServerListener

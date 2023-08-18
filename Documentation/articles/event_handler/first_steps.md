@@ -1,5 +1,5 @@
 # Event Handler 
-- You must add package `BattleBitAPI.Addons.EventHandler`
+- You must add package `BattleBitAPI.Addons.EventHandler`.
 
 To start, you must add EventHandler to host.
 
@@ -11,7 +11,7 @@ var app = host.Build();
 await app.RunAsync();
 ```
 
-After that, you can create class which listening to events
+After that, you can create class which listening to events.
 
 ```csharp
 public class OnPlayer : EventModule

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Authors>Nes0x</Authors>
+        <PackageProjectUrl>https://github.com/Nes0x/BattleBitAPI.Addons</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
+        <Description>A unofficial library for better event handling.</Description>
+        <LangVersion>11</LangVersion>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>battlebit;battlebitapi.addons;battlebitapi.events</PackageTags>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="communityserverapi" Version="1.0.2" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1"/>
+        <ProjectReference Include="..\BattleBitAPI.Addons.Common\BattleBitAPI.Addons.Common.csproj"/>
+    </ItemGroup>
+
+
+</Project>

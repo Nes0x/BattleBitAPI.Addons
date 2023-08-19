@@ -14,13 +14,12 @@ public class OnPlayerJoiningToServerEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerJoiningToServerArgs()
+            new OnPlayerJoiningToServerArgs
             {
                 SteamId = steamId,
                 PlayerJoiningArguments = args,
                 GameServer = this
             }
-        
         });
     }
 }

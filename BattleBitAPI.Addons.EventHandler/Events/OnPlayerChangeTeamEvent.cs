@@ -14,20 +14,19 @@ public class OnPlayerChangeTeamEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerChangeTeamArgs()
+            new OnPlayerChangeTeamArgs
             {
                 Player = player,
                 Team = team,
                 GameServer = this
             }
-        
         });
     }
 }
 
 public class OnPlayerChangeTeamArgs : IPlayerArgs, IGameServerArgs
 {
+    public required Team Team { get; init; }
     public required AddonGameServer GameServer { get; init; }
     public required AddonPlayer Player { get; init; }
-    public required Team Team { get; init; }
 }

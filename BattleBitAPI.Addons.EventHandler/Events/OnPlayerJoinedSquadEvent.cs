@@ -15,23 +15,20 @@ public class OnPlayerJoinedSquadEvent : EventGameServer
         {
             return (Task)Event.MethodInfo.Invoke(EventModule, new[]
             {
-                new OnPlayerJoinedSquadArgs()
+                new OnPlayerJoinedSquadArgs
                 {
                     Player = player,
                     GameServer = this,
                     Squad = squad
                 }
-        
             });
         }
     }
-
-
 }
 
 public class OnPlayerJoinedSquadArgs : IPlayerArgs, IGameServerArgs
 {
-    public required AddonPlayer Player { get; init; }
-    public required AddonGameServer GameServer { get; init; }
     public required Squads Squad { get; init; }
+    public required AddonGameServer GameServer { get; init; }
+    public required AddonPlayer Player { get; init; }
 }

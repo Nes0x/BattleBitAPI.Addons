@@ -11,10 +11,11 @@ namespace BattleBitAPI.Addons.EventHandler;
 public class EventHandlerActivatorService : IHostedService
 {
     private readonly IEnumerable<EventModule> _eventModules;
-    private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
     private readonly ILogger<EventHandlerActivatorService> _logger;
+    private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
 
-    public EventHandlerActivatorService(IEnumerable<EventModule> eventModules, ServerListener<AddonPlayer, AddonGameServer> serverListener, ILogger<EventHandlerActivatorService> logger)
+    public EventHandlerActivatorService(IEnumerable<EventModule> eventModules,
+        ServerListener<AddonPlayer, AddonGameServer> serverListener, ILogger<EventHandlerActivatorService> logger)
     {
         _eventModules = eventModules;
         _serverListener = serverListener;
@@ -30,8 +31,11 @@ public class EventHandlerActivatorService : IHostedService
         }
         catch (Exception e)
         {
-            _logger.LogError($"Your event implementation threw an exception. Class name {e.InnerException.TargetSite.DeclaringType.Name}.", e);
+            _logger.LogError(
+                $"Your event implementation threw an exception. Class name {e.InnerException.TargetSite.DeclaringType.Name}.",
+                e);
         }
+
         return Task.CompletedTask;
     }
 
@@ -44,14 +48,12 @@ public class EventHandlerActivatorService : IHostedService
     {
         foreach (var eventModule in _eventModules)
         foreach (var @event in eventModule.Events)
-        {
             try
             {
-                var eventGameServer = (EventGameServer)Activator.CreateInstance(Type.GetType($"BattleBitAPI.Addons.EventHandler.Events.{@event.EventType.ToString()}Event"),eventModule, @event);
-                if (eventGameServer is not null)
-                {
-                    _serverListener.OnCreatingGameServerInstance += () => eventGameServer;
-                }
+                var eventGameServer = (EventGameServer)Activator.CreateInstance(
+                    Type.GetType($"BattleBitAPI.Addons.EventHandler.Events.{@event.EventType.ToString()}Event"),
+                    eventModule, @event);
+                if (eventGameServer is not null) _serverListener.OnCreatingGameServerInstance += () => eventGameServer;
             }
             catch (Exception)
             {
@@ -62,7 +64,7 @@ public class EventHandlerActivatorService : IHostedService
                         {
                             return (Task<bool>)@event.MethodInfo.Invoke(eventModule, new[]
                             {
-                                new OnGameServerConnectingArgs()
+                                new OnGameServerConnectingArgs
                                 {
                                     IpAddress = address
                                 }
@@ -70,11 +72,11 @@ public class EventHandlerActivatorService : IHostedService
                         };
                         break;
                     case EventType.OnValidateGameServerToken:
-                        _serverListener.OnValidateGameServerToken += (address, port, token) => 
+                        _serverListener.OnValidateGameServerToken += (address, port, token) =>
                         {
                             return (Task<bool>)@event.MethodInfo.Invoke(eventModule, new[]
                             {
-                                new OnValidateGameServerTokenArgs()
+                                new OnValidateGameServerTokenArgs
                                 {
                                     IpAddress = address,
                                     Port = port,
@@ -84,11 +86,11 @@ public class EventHandlerActivatorService : IHostedService
                         };
                         break;
                     case EventType.OnGameServerConnected:
-                        _serverListener.OnGameServerConnected += server => 
+                        _serverListener.OnGameServerConnected += server =>
                         {
                             return (Task)@event.MethodInfo.Invoke(eventModule, new[]
                             {
-                                new OnGameServerConnectedArgs()
+                                new OnGameServerConnectedArgs
                                 {
                                     GameServer = server
                                 }
@@ -96,11 +98,11 @@ public class EventHandlerActivatorService : IHostedService
                         };
                         break;
                     case EventType.OnGameServerReconnected:
-                        _serverListener.OnGameServerReconnected += server => 
+                        _serverListener.OnGameServerReconnected += server =>
                         {
                             return (Task)@event.MethodInfo.Invoke(eventModule, new[]
                             {
-                                new OnGameServerReconnectedArgs()
+                                new OnGameServerReconnectedArgs
                                 {
                                     GameServer = server
                                 }
@@ -108,11 +110,11 @@ public class EventHandlerActivatorService : IHostedService
                         };
                         break;
                     case EventType.OnGameServerDisconnected:
-                        _serverListener.OnGameServerDisconnected += server => 
+                        _serverListener.OnGameServerDisconnected += server =>
                         {
                             return (Task)@event.MethodInfo.Invoke(eventModule, new[]
                             {
-                                new OnGameServerDisconnectedArgs()
+                                new OnGameServerDisconnectedArgs
                                 {
                                     GameServer = server
                                 }
@@ -133,7 +135,6 @@ public class EventHandlerActivatorService : IHostedService
                         break;
                 }
             }
-        }
     }
 
     private void ModifyEventModules()
@@ -142,7 +143,8 @@ public class EventHandlerActivatorService : IHostedService
         {
             var events = eventModule.GetType().GetMethods()
                 .Where(m => m.GetCustomAttributes(typeof(EventAttribute), false).Length > 0)
-                .Select(m => new Event { MethodInfo = m, EventType = m.GetCustomAttribute<EventAttribute>()!.EventType })
+                .Select(m => new Event
+                    { MethodInfo = m, EventType = m.GetCustomAttribute<EventAttribute>()!.EventType })
                 .ToList();
             eventModule.Events = events;
         }

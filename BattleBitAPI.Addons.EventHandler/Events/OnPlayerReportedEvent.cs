@@ -14,7 +14,7 @@ public class OnPlayerReportedEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerReportedArgs()
+            new OnPlayerReportedArgs
             {
                 From = from,
                 To = to,
@@ -22,11 +22,8 @@ public class OnPlayerReportedEvent : EventGameServer
                 Additional = additional,
                 GameServer = this
             }
-        
         });
     }
-
-
 }
 
 public class OnPlayerReportedArgs : IGameServerArgs

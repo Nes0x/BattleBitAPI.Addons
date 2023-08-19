@@ -13,11 +13,10 @@ public class OnReconnectedEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnReconnectedArgs()
+            new OnReconnectedArgs
             {
                 GameServer = this
             }
-        
         });
     }
 }

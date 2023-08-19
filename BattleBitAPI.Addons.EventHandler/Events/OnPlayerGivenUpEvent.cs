@@ -13,20 +13,17 @@ public class OnPlayerGivenUpEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerGivenUpArgs()
+            new OnPlayerGivenUpArgs
             {
                 Player = player,
                 GameServer = this
             }
-        
         });
     }
-
-
 }
 
 public class OnPlayerGivenUpArgs : IPlayerArgs, IGameServerArgs
 {
-    public required AddonPlayer Player { get; init; }
     public required AddonGameServer GameServer { get; init; }
+    public required AddonPlayer Player { get; init; }
 }

@@ -3,7 +3,6 @@ using BattleBitAPI.Addons.CommandHandler.Common;
 using BattleBitAPI.Addons.CommandHandler.Converters;
 using BattleBitAPI.Addons.CommandHandler.Validations;
 using BattleBitAPI.Addons.Common;
-using BattleBitAPI.Common;
 using BattleBitAPI.Server;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -45,7 +44,8 @@ public class CommandHandlerActivatorService : IHostedService
             CommandModules.Add(commandModule);
             foreach (var command in commandModule.Commands)
             {
-                Func<AddonGameServer> handler = () => new MessageHandlerService(_commandHandlerSettings, _converter, _logger, _provider,
+                Func<AddonGameServer> handler = () => new MessageHandlerService(_commandHandlerSettings, _converter,
+                    _logger, _provider,
                     commandModule, command);
                 _handlers.Add(handler);
                 _serverListener.OnCreatingGameServerInstance += handler;

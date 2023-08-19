@@ -14,13 +14,12 @@ public class OnSavePlayerStatsEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnSavePlayerStatsArgs()
+            new OnSavePlayerStatsArgs
             {
                 SteamId = steamId,
                 PlayerStats = stats,
                 GameServer = this
             }
-        
         });
     }
 }

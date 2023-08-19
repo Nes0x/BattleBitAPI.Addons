@@ -15,18 +15,15 @@ public class OnGameStateChangedEvent : EventGameServer
         {
             return (Task)Event.MethodInfo.Invoke(EventModule, new[]
             {
-                new OnGameStateChangedArgs()
+                new OnGameStateChangedArgs
                 {
                     OldGameState = oldState,
                     NewGameState = newState,
                     GameServer = this
                 }
-        
             });
         }
     }
-
-
 }
 
 public class OnGameStateChangedArgs : IGameServerArgs

@@ -5,8 +5,8 @@ namespace BattleBitAPI.Addons.EventHandler.Events;
 
 public abstract class EventGameServer : AddonGameServer
 {
-    protected readonly EventModule EventModule;
     protected readonly Event Event;
+    protected readonly EventModule EventModule;
 
     public EventGameServer(EventModule eventModule, Event @event)
     {

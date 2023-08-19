@@ -13,19 +13,17 @@ public class OnPlayerSpawnedEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerSpawnedArgs()
+            new OnPlayerSpawnedArgs
             {
                 Player = player,
                 GameServer = this
             }
-        
         });
     }
-
 }
 
 public class OnPlayerSpawnedArgs : IPlayerArgs, IGameServerArgs
 {
-    public required AddonPlayer Player { get; init; }
     public required AddonGameServer GameServer { get; init; }
+    public required AddonPlayer Player { get; init; }
 }

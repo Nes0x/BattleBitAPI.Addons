@@ -1,6 +1,4 @@
-﻿using BattleBitAPI.Addons.Common;
-
-namespace BattleBitAPI.Addons.EventHandler.Common;
+﻿namespace BattleBitAPI.Addons.EventHandler.Common;
 
 public abstract class EventModule
 {

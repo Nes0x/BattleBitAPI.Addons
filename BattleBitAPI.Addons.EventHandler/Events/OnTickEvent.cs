@@ -13,11 +13,10 @@ public class OnTickEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnTickArgs()
+            new OnTickArgs
             {
                 GameServer = this
             }
-        
         });
     }
 }

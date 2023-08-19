@@ -14,14 +14,13 @@ public class OnAPlayerDownedAnotherPlayerEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnAPlayerDownedAnotherPlayerArgs()
+            new OnAPlayerDownedAnotherPlayerArgs
             {
                 PlayerKillArguments = args,
                 GameServer = this
             }
         });
     }
-    
 }
 
 public class OnAPlayerDownedAnotherPlayerArgs : IGameServerArgs

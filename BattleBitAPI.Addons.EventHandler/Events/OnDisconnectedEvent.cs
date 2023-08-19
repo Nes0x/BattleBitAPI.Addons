@@ -13,11 +13,10 @@ public class OnDisconnectedEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnDisconnectedArgs()
+            new OnDisconnectedArgs
             {
                 GameServer = this
             }
-        
         });
     }
 }

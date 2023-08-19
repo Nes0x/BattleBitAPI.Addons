@@ -14,22 +14,21 @@ public class OnPlayerTypedMessageEvent : EventGameServer
     {
         return (Task<bool>)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerTypedMessageArgs()
+            new OnPlayerTypedMessageArgs
             {
                 Player = player,
                 ChatChannel = chatChannel,
                 Message = message,
                 GameServer = this
             }
-        
         });
     }
 }
 
 public class OnPlayerTypedMessageArgs : IPlayerArgs, IGameServerArgs
 {
-    public required AddonPlayer Player { get; init; }
     public required ChatChannel ChatChannel { get; init; }
     public required string Message { get; init; }
     public required AddonGameServer GameServer { get; init; }
+    public required AddonPlayer Player { get; init; }
 }

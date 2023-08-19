@@ -13,15 +13,12 @@ public class OnRoundStartedEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnRoundStartedArgs()
+            new OnRoundStartedArgs
             {
                 GameServer = this
             }
-        
         });
     }
-
-
 }
 
 public class OnRoundStartedArgs : IGameServerArgs

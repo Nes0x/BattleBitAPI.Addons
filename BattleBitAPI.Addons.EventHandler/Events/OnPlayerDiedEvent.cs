@@ -13,12 +13,11 @@ public class OnPlayerDiedEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerDiedArgs()
+            new OnPlayerDiedArgs
             {
                 Player = player,
                 GameServer = this
             }
-        
         });
     }
 }

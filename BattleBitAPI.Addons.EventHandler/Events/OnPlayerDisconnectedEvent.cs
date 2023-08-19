@@ -13,18 +13,17 @@ public class OnPlayerDisconnectedEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerDisconnectedArgs()
+            new OnPlayerDisconnectedArgs
             {
                 Player = player,
                 GameServer = this
             }
-        
         });
     }
 }
 
 public class OnPlayerDisconnectedArgs : IPlayerArgs, IGameServerArgs
 {
-    public required AddonPlayer Player { get; init; }
     public required AddonGameServer GameServer { get; init; }
+    public required AddonPlayer Player { get; init; }
 }

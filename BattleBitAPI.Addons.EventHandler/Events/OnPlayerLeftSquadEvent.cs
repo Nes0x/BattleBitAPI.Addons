@@ -14,22 +14,19 @@ public class OnPlayerLeftSquadEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerLeftSquadArgs()
+            new OnPlayerLeftSquadArgs
             {
                 Player = player,
                 GameServer = this,
                 Squad = squad
             }
-        
         });
     }
-
-
 }
 
 public class OnPlayerLeftSquadArgs : IPlayerArgs, IGameServerArgs
 {
-    public required AddonPlayer Player { get; init; }
-    public required AddonGameServer GameServer { get; init; }
     public required Squads Squad { get; init; }
+    public required AddonGameServer GameServer { get; init; }
+    public required AddonPlayer Player { get; init; }
 }

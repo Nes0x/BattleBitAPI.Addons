@@ -34,5 +34,4 @@ public enum EventType
     OnGameServerDisconnected,
     OnCreatingGameServerInstance,
     OnCreatingPlayerInstance
-    
 }

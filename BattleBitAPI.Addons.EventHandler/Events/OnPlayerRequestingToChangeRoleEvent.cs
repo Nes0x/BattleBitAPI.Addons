@@ -14,20 +14,19 @@ public class OnPlayerRequestingToChangeRoleEvent : EventGameServer
     {
         return (Task<bool>)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerRequestingToChangeRoleArgs()
+            new OnPlayerRequestingToChangeRoleArgs
             {
                 Player = player,
                 GameServer = this,
                 GameRole = requestedRole
             }
-        
         });
     }
 }
 
 public class OnPlayerRequestingToChangeRoleArgs : IPlayerArgs, IGameServerArgs
 {
-    public required AddonPlayer Player { get; init; }
-    public required AddonGameServer GameServer { get; init; }
     public required GameRole GameRole { get; init; }
+    public required AddonGameServer GameServer { get; init; }
+    public required AddonPlayer Player { get; init; }
 }

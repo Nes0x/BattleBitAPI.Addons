@@ -13,11 +13,10 @@ public class OnRoundEndedEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnRoundEndedArgs()
+            new OnRoundEndedArgs
             {
                 GameServer = this
             }
-        
         });
     }
 }

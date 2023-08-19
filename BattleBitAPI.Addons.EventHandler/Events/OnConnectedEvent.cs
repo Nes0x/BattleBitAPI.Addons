@@ -13,11 +13,10 @@ public class OnConnectedEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnConnectedArgs()
+            new OnConnectedArgs
             {
                 GameServer = this
             }
-        
         });
     }
 }

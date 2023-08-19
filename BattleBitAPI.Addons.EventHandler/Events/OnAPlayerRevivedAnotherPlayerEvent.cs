@@ -13,17 +13,14 @@ public class OnAPlayerRevivedAnotherPlayerEvent : EventGameServer
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnAPlayerRevivedAnotherPlayerArgs()
+            new OnAPlayerRevivedAnotherPlayerArgs
             {
                 From = from,
                 To = to,
                 GameServer = this
             }
-        
         });
     }
-
-
 }
 
 public class OnAPlayerRevivedAnotherPlayerArgs : IGameServerArgs

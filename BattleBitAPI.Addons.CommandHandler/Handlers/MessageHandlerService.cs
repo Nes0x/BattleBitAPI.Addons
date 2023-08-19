@@ -59,7 +59,8 @@ public class MessageHandlerService : AddonGameServer
                 _commandModule.Context = context;
                 try
                 {
-                    var commandResult = (Task<bool>)_command.MethodInfo.Invoke(_commandModule, convertedParameters.ToArray())!;
+                    var commandResult =
+                        (Task<bool>)_command.MethodInfo.Invoke(_commandModule, convertedParameters.ToArray())!;
                     return Task.FromResult(commandResult.Result);
                 }
                 catch (Exception e)
@@ -77,6 +78,7 @@ public class MessageHandlerService : AddonGameServer
                 player.Message(_commandHandlerSettings.CheckerCallback);
                 return Task.FromResult(_commandHandlerSettings.ShowCommandOnChatWhenChecker);
         }
+
         return Task.FromResult(_commandHandlerSettings.ShowCommandOnChat);
     }
 }

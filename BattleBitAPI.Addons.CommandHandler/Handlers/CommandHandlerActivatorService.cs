@@ -16,14 +16,14 @@ public class CommandHandlerActivatorService : IHostedService
     private readonly IEnumerable<CommandModule> _commandModules;
     private readonly IConverter _converter;
     private readonly List<Func<AddonGameServer>> _handlers;
-    private readonly ILogger<MessageHandlerService> _logger;
+    private readonly ILogger<MessageEvent> _logger;
     private readonly IServiceProvider _provider;
     private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
     private readonly IValidator _validator;
 
     public CommandHandlerActivatorService(IEnumerable<CommandModule> commandModules,
         IValidator validator, ServerListener<AddonPlayer, AddonGameServer> serverListener,
-        CommandHandlerSettings commandHandlerSettings, IConverter converter, ILogger<MessageHandlerService> logger,
+        CommandHandlerSettings commandHandlerSettings, IConverter converter, ILogger<MessageEvent> logger,
         IServiceProvider provider)
     {
         _commandModules = commandModules;
@@ -44,7 +44,7 @@ public class CommandHandlerActivatorService : IHostedService
             CommandModules.Add(commandModule);
             foreach (var command in commandModule.Commands)
             {
-                Func<AddonGameServer> handler = () => new MessageHandlerService(_commandHandlerSettings, _converter,
+                Func<AddonGameServer> handler = () => new MessageEvent(_commandHandlerSettings, _converter,
                     _logger, _provider,
                     commandModule, command);
                 _handlers.Add(handler);

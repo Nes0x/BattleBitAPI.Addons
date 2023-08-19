@@ -6,17 +6,17 @@ using Microsoft.Extensions.Logging;
 
 namespace BattleBitAPI.Addons.CommandHandler.Handlers;
 
-public class MessageHandlerService : AddonGameServer
+public class MessageEvent : AddonGameServer
 {
     private readonly Command _command;
     private readonly CommandHandlerSettings _commandHandlerSettings;
     private readonly CommandModule _commandModule;
     private readonly IConverter _converter;
-    private readonly ILogger<MessageHandlerService> _logger;
+    private readonly ILogger<MessageEvent> _logger;
     private readonly IServiceProvider _provider;
 
-    public MessageHandlerService(CommandHandlerSettings commandHandlerSettings,
-        IConverter converter, ILogger<MessageHandlerService> logger, IServiceProvider provider,
+    public MessageEvent(CommandHandlerSettings commandHandlerSettings,
+        IConverter converter, ILogger<MessageEvent> logger, IServiceProvider provider,
         CommandModule commandModule, Command command)
     {
         _commandHandlerSettings = commandHandlerSettings;

@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class OnGameServerReconnectedArgs
+      <title>Class OnValidateGameServerTokenArgs
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class OnGameServerReconnectedArgs
+      <meta name="title" content="Class OnValidateGameServerTokenArgs
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,12 +73,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs">
+        <article data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs">
 
 
 
-  <h1 id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs" class="text-break">
-    Class OnGameServerReconnectedArgs
+  <h1 id="BattleBitAPI_Addons_EventHandler_Events_OnValidateGameServerTokenArgs" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs" class="text-break">
+    Class OnValidateGameServerTokenArgs
   
   </h1>
 
@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OnGameServerReconnectedArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public class OnValidateGameServerTokenArgs</code></pre>
   </div>
 
 
@@ -101,7 +101,7 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">OnGameServerReconnectedArgs</span></div>
+      <div><span class="xref">OnValidateGameServerTokenArgs</span></div>
     </dd>
   </dl>
 
@@ -142,10 +142,10 @@
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs__ctor_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnValidateGameServerTokenArgs__ctor_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.#ctor*"></a>
 
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs__ctor" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor">
-  OnGameServerReconnectedArgs()
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnValidateGameServerTokenArgs__ctor" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.#ctor">
+  OnValidateGameServerTokenArgs()
   
   </h3>
 
@@ -153,7 +153,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OnGameServerReconnectedArgs()</code></pre>
+    <pre><code class="lang-csharp hljs">public OnValidateGameServerTokenArgs()</code></pre>
   </div>
 
 
@@ -172,10 +172,10 @@
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs_GameServer_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnValidateGameServerTokenArgs_IpAddress_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress*"></a>
 
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs_GameServer" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer">
-  GameServer
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnValidateGameServerTokenArgs_IpAddress" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress">
+  IpAddress
   
   </h3>
 
@@ -183,7 +183,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required GameServer&lt;AddonPlayer&gt; GameServer { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public required IPAddress IpAddress { get; init; }</code></pre>
   </div>
 
 
@@ -192,7 +192,69 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">GameServer</span>&lt;<a class="xref" href="BattleBitAPI.Addons.Common.AddonPlayer.html">AddonPlayer</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.ipaddress">IPAddress</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnValidateGameServerTokenArgs_Port_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port*"></a>
+
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnValidateGameServerTokenArgs_Port" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port">
+  Port
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required ulong Port { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnValidateGameServerTokenArgs_Token_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token*"></a>
+
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnValidateGameServerTokenArgs_Token" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token">
+  Token
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required string Token { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 

@@ -106,31 +106,43 @@
   <h2 id="fields">Fields
 </h2>
   <dl class="parameters">
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnAPlayerKilledAnotherPlayer"><code>OnAPlayerKilledAnotherPlayer = 0</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnAPlayerDownedAnotherPlayer"><code>OnAPlayerDownedAnotherPlayer = 1</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerConnected"><code>OnGameServerConnected = 1</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnAPlayerRevivedAnotherPlayer"><code>OnAPlayerRevivedAnotherPlayer = 2</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerConnecting"><code>OnGameServerConnecting = 2</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnConnected"><code>OnConnected = 3</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerDisconnected"><code>OnGameServerDisconnected = 3</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnCreatingGameServerInstance"><code>OnCreatingGameServerInstance = 30</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerReconnected"><code>OnGameServerReconnected = 4</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnCreatingPlayerInstance"><code>OnCreatingPlayerInstance = 31</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerTick"><code>OnGameServerTick = 5</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnDisconnected"><code>OnDisconnected = 4</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGetPlayerStats"><code>OnGetPlayerStats = 6</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerConnected"><code>OnGameServerConnected = 27</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerChangedRole"><code>OnPlayerChangedRole = 7</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerConnecting"><code>OnGameServerConnecting = 25</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerChangedTeam"><code>OnPlayerChangedTeam = 8</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerDisconnected"><code>OnGameServerDisconnected = 29</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerConnected"><code>OnPlayerConnected = 9</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerReconnected"><code>OnGameServerReconnected = 28</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerDied"><code>OnPlayerDied = 10</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameStateChanged"><code>OnGameStateChanged = 5</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerDisconnected"><code>OnPlayerDisconnected = 11</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerChangeTeam"><code>OnPlayerChangeTeam = 7</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerJoinedASquad"><code>OnPlayerJoinedASquad = 12</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerChangedRole"><code>OnPlayerChangedRole = 6</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerConnected"><code>OnPlayerConnected = 0</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerDied"><code>OnPlayerDied = 8</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerDisconnected"><code>OnPlayerDisconnected = 9</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerGivenUp"><code>OnPlayerGivenUp = 10</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerJoinSquad"><code>OnPlayerJoinSquad = 11</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerJoiningToServer"><code>OnPlayerJoiningToServer = 12</code></dt>
     <dd></dd>
     <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerLeftSquad"><code>OnPlayerLeftSquad = 13</code></dt>
     <dd></dd>
@@ -138,13 +150,25 @@
     <dd></dd>
     <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerRequestingToChangeRole"><code>OnPlayerRequestingToChangeRole = 15</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerSpawned"><code>OnPlayerSpawned = 16</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerRequestingToChangeTeam"><code>OnPlayerRequestingToChangeTeam = 16</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerSpawning"><code>OnPlayerSpawning = 17</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerSpawned"><code>OnPlayerSpawned = 17</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerTypedMessage"><code>OnPlayerTypedMessage = 18</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerSpawning"><code>OnPlayerSpawning = 18</code></dt>
     <dd></dd>
-    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnSavePlayerStats"><code>OnSavePlayerStats = 19</code></dt>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnPlayerTypedMessage"><code>OnPlayerTypedMessage = 19</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnReconnected"><code>OnReconnected = 20</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnRoundEnded"><code>OnRoundEnded = 21</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnRoundStarted"><code>OnRoundStarted = 22</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnSavePlayerStats"><code>OnSavePlayerStats = 23</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnTick"><code>OnTick = 24</code></dt>
+    <dd></dd>
+    <dt id="BattleBitAPI_Addons_EventHandler_Common_EventType_OnValidateGameServerToken"><code>OnValidateGameServerToken = 26</code></dt>
     <dd></dd>
   </dl>
 

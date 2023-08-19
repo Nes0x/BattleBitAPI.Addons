@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class OnSavePlayerStatsArgs
+      <title>Class EventHandlerActivatorService
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class OnSavePlayerStatsArgs
+      <meta name="title" content="Class EventHandlerActivatorService
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,17 +73,17 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs">
+        <article data-uid="BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService">
 
 
 
-  <h1 id="BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs" class="text-break">
-    Class OnSavePlayerStatsArgs
+  <h1 id="BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService" data-uid="BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService" class="text-break">
+    Class EventHandlerActivatorService
   
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BattleBitAPI.html">BattleBitAPI</a>.<a class="xref" href="BattleBitAPI.Addons.html">Addons</a>.<a class="xref" href="BattleBitAPI.Addons.EventHandler.html">EventHandler</a>.<a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.html">Events</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BattleBitAPI.html">BattleBitAPI</a>.<a class="xref" href="BattleBitAPI.Addons.html">Addons</a>.<a class="xref" href="BattleBitAPI.Addons.EventHandler.html">EventHandler</a></dd></dl>
   <dl><dt>Assembly</dt><dd>BattleBitAPI.Addons.EventHandler.dll</dd></dl>
   </div>
 
@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OnSavePlayerStatsArgs : IGameServerArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public class EventHandlerActivatorService : IHostedService</code></pre>
   </div>
 
 
@@ -101,14 +101,14 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">OnSavePlayerStatsArgs</span></div>
+      <div><span class="xref">EventHandlerActivatorService</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.html">IGameServerArgs</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice">IHostedService</a></div>
     </dd>
   </dl>
 
@@ -148,10 +148,10 @@
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs__ctor_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService__ctor_" data-uid="BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService.#ctor*"></a>
 
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs__ctor" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor">
-  OnSavePlayerStatsArgs()
+  <h3 id="BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService__ctor_System_Collections_Generic_IEnumerable_BattleBitAPI_Addons_EventHandler_Common_EventModule__BattleBitAPI_Server_ServerListener_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Addons_Common_AddonGameServer__Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService__" data-uid="BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.EventHandler.Common.EventModule},BattleBitAPI.Server.ServerListener{BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonGameServer},Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService})">
+  EventHandlerActivatorService(IEnumerable&lt;EventModule&gt;, ServerListener&lt;AddonPlayer, AddonGameServer&gt;, ILogger&lt;EventHandlerActivatorService&gt;)
   
   </h3>
 
@@ -159,9 +159,18 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OnSavePlayerStatsArgs()</code></pre>
+    <pre><code class="lang-csharp hljs">public EventHandlerActivatorService(IEnumerable&lt;EventModule&gt; eventModules, ServerListener&lt;AddonPlayer, AddonGameServer&gt; serverListener, ILogger&lt;EventHandlerActivatorService&gt; logger)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventModules</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="BattleBitAPI.Addons.EventHandler.Common.EventModule.html">EventModule</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>serverListener</code> <span class="xref">ServerListener</span>&lt;<a class="xref" href="BattleBitAPI.Addons.Common.AddonPlayer.html">AddonPlayer</a>, <a class="xref" href="BattleBitAPI.Addons.Common.AddonGameServer.html">AddonGameServer</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService.html">EventHandlerActivatorService</a>&gt;</dt>
+    <dd></dd>
+  </dl>
 
 
 
@@ -174,31 +183,35 @@
 
 
 
-  <h2 class="section" id="properties">Properties
+  <h2 class="section" id="methods">Methods
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_GameServer_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_StartAsync_" data-uid="BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService.StartAsync*"></a>
 
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_GameServer" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer">
-  GameServer
+  <h3 id="BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_StartAsync_System_Threading_CancellationToken_" data-uid="BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService.StartAsync(System.Threading.CancellationToken)">
+  StartAsync(CancellationToken)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Triggered when the application host is ready to start the service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required AddonGameServer GameServer { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Task StartAsync(CancellationToken cancellationToken)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="BattleBitAPI.Addons.Common.AddonGameServer.html">AddonGameServer</a></dt>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Indicates that the start process has been aborted.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd></dd>
   </dl>
 
@@ -209,60 +222,39 @@
 
 
 
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_PlayerStats_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats*"></a>
 
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_PlayerStats" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats">
-  PlayerStats
+
+
+  <a id="BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_StopAsync_" data-uid="BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService.StopAsync*"></a>
+
+  <h3 id="BattleBitAPI_Addons_EventHandler_EventHandlerActivatorService_StopAsync_System_Threading_CancellationToken_" data-uid="BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService.StopAsync(System.Threading.CancellationToken)">
+  StopAsync(CancellationToken)
   
   </h3>
 
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Triggered when the application host is performing a graceful shutdown.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required PlayerStats PlayerStats { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Task StopAsync(CancellationToken cancellationToken)</code></pre>
   </div>
 
-
-
-
-
-  <h4 class="section">Property Value</h4>
+  <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><span class="xref">PlayerStats</span></dt>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>Indicates that the shutdown process should no longer be graceful.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd></dd>
   </dl>
 
 
 
-
-
-
-
-
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_SteamId_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId*"></a>
-
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnSavePlayerStatsArgs_SteamId" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId">
-  SteamId
-  
-  </h3>
-
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required ulong SteamId { get; init; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
-    <dd></dd>
-  </dl>
 
 
 

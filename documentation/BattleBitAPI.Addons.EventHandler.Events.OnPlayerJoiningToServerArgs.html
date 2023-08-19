@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class OnGameServerReconnectedArgs
+      <title>Class OnPlayerJoiningToServerArgs
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class OnGameServerReconnectedArgs
+      <meta name="title" content="Class OnPlayerJoiningToServerArgs
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,12 +73,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs">
+        <article data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs">
 
 
 
-  <h1 id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs" class="text-break">
-    Class OnGameServerReconnectedArgs
+  <h1 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoiningToServerArgs" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs" class="text-break">
+    Class OnPlayerJoiningToServerArgs
   
   </h1>
 
@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OnGameServerReconnectedArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public class OnPlayerJoiningToServerArgs : IGameServerArgs</code></pre>
   </div>
 
 
@@ -101,10 +101,16 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">OnGameServerReconnectedArgs</span></div>
+      <div><span class="xref">OnPlayerJoiningToServerArgs</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.html">IGameServerArgs</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
@@ -142,10 +148,10 @@
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs__ctor_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoiningToServerArgs__ctor_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs.#ctor*"></a>
 
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs__ctor" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor">
-  OnGameServerReconnectedArgs()
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoiningToServerArgs__ctor" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs.#ctor">
+  OnPlayerJoiningToServerArgs()
   
   </h3>
 
@@ -153,7 +159,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OnGameServerReconnectedArgs()</code></pre>
+    <pre><code class="lang-csharp hljs">public OnPlayerJoiningToServerArgs()</code></pre>
   </div>
 
 
@@ -172,9 +178,9 @@
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs_GameServer_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoiningToServerArgs_GameServer_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs.GameServer*"></a>
 
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs_GameServer" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer">
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoiningToServerArgs_GameServer" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs.GameServer">
   GameServer
   
   </h3>
@@ -183,7 +189,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required GameServer&lt;AddonPlayer&gt; GameServer { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public required AddonGameServer GameServer { get; init; }</code></pre>
   </div>
 
 
@@ -192,7 +198,69 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">GameServer</span>&lt;<a class="xref" href="BattleBitAPI.Addons.Common.AddonPlayer.html">AddonPlayer</a>&gt;</dt>
+    <dt><a class="xref" href="BattleBitAPI.Addons.Common.AddonGameServer.html">AddonGameServer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoiningToServerArgs_PlayerJoiningArguments_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs.PlayerJoiningArguments*"></a>
+
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoiningToServerArgs_PlayerJoiningArguments" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs.PlayerJoiningArguments">
+  PlayerJoiningArguments
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required PlayerJoiningArguments PlayerJoiningArguments { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">PlayerJoiningArguments</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoiningToServerArgs_SteamId_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs.SteamId*"></a>
+
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoiningToServerArgs_SteamId" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoiningToServerArgs.SteamId">
+  SteamId
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required ulong SteamId { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
     <dd></dd>
   </dl>
 

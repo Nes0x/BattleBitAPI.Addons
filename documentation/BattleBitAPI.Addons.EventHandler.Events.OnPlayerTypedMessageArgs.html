@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class OnGameServerReconnectedArgs
+      <title>Class OnPlayerTypedMessageArgs
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class OnGameServerReconnectedArgs
+      <meta name="title" content="Class OnPlayerTypedMessageArgs
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,12 +73,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs">
+        <article data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs">
 
 
 
-  <h1 id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs" class="text-break">
-    Class OnGameServerReconnectedArgs
+  <h1 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs" class="text-break">
+    Class OnPlayerTypedMessageArgs
   
   </h1>
 
@@ -91,7 +91,7 @@
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class OnGameServerReconnectedArgs</code></pre>
+    <pre><code class="lang-csharp hljs">public class OnPlayerTypedMessageArgs : IPlayerArgs, IGameServerArgs</code></pre>
   </div>
 
 
@@ -101,10 +101,17 @@
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><span class="xref">OnGameServerReconnectedArgs</span></div>
+      <div><span class="xref">OnPlayerTypedMessageArgs</span></div>
     </dd>
   </dl>
 
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs.html">IPlayerArgs</a></div>
+      <div><a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.html">IGameServerArgs</a></div>
+    </dd>
+  </dl>
 
 
   <dl class="typelist derived">
@@ -142,10 +149,10 @@
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs__ctor_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs__ctor_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.#ctor*"></a>
 
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs__ctor" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor">
-  OnGameServerReconnectedArgs()
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs__ctor" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.#ctor">
+  OnPlayerTypedMessageArgs()
   
   </h3>
 
@@ -153,7 +160,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OnGameServerReconnectedArgs()</code></pre>
+    <pre><code class="lang-csharp hljs">public OnPlayerTypedMessageArgs()</code></pre>
   </div>
 
 
@@ -172,10 +179,10 @@
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs_GameServer_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_ChatChannel_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel*"></a>
 
-  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnGameServerReconnectedArgs_GameServer" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer">
-  GameServer
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_ChatChannel" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel">
+  ChatChannel
   
   </h3>
 
@@ -183,7 +190,7 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public required GameServer&lt;AddonPlayer&gt; GameServer { get; init; }</code></pre>
+    <pre><code class="lang-csharp hljs">public required ChatChannel ChatChannel { get; init; }</code></pre>
   </div>
 
 
@@ -192,7 +199,100 @@
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><span class="xref">GameServer</span>&lt;<a class="xref" href="BattleBitAPI.Addons.Common.AddonPlayer.html">AddonPlayer</a>&gt;</dt>
+    <dt><span class="xref">ChatChannel</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_GameServer_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer*"></a>
+
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_GameServer" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer">
+  GameServer
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required AddonGameServer GameServer { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BattleBitAPI.Addons.Common.AddonGameServer.html">AddonGameServer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_Message_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message*"></a>
+
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_Message" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message">
+  Message
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required string Message { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_Player_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player*"></a>
+
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnPlayerTypedMessageArgs_Player" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player">
+  Player
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public required AddonPlayer Player { get; init; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BattleBitAPI.Addons.Common.AddonPlayer.html">AddonPlayer</a></dt>
     <dd></dd>
   </dl>
 

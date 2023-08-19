@@ -2,10 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class MessageHandlerService
+      <title>Class OnRoundStartedEvent
  </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class MessageHandlerService
+      <meta name="title" content="Class OnRoundStartedEvent
  ">
       
       <link rel="icon" href="../favicon.ico">
@@ -73,25 +73,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService">
+        <article data-uid="BattleBitAPI.Addons.EventHandler.Events.OnRoundStartedEvent">
 
 
 
-  <h1 id="BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService" data-uid="BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService" class="text-break">
-    Class MessageHandlerService
+  <h1 id="BattleBitAPI_Addons_EventHandler_Events_OnRoundStartedEvent" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnRoundStartedEvent" class="text-break">
+    Class OnRoundStartedEvent
   
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="BattleBitAPI.html">BattleBitAPI</a>.<a class="xref" href="BattleBitAPI.Addons.html">Addons</a>.<a class="xref" href="BattleBitAPI.Addons.CommandHandler.html">CommandHandler</a>.<a class="xref" href="BattleBitAPI.Addons.CommandHandler.Handlers.html">Handlers</a></dd></dl>
-  <dl><dt>Assembly</dt><dd>BattleBitAPI.Addons.CommandHandler.dll</dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BattleBitAPI.html">BattleBitAPI</a>.<a class="xref" href="BattleBitAPI.Addons.html">Addons</a>.<a class="xref" href="BattleBitAPI.Addons.EventHandler.html">EventHandler</a>.<a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.html">Events</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BattleBitAPI.Addons.EventHandler.dll</dd></dl>
   </div>
 
   <div class="markdown summary"></div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MessageHandlerService : AddonGameServer, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class OnRoundStartedEvent : EventGameServer, IDisposable</code></pre>
   </div>
 
 
@@ -103,7 +103,8 @@
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><span class="xref">GameServer</span>&lt;<a class="xref" href="BattleBitAPI.Addons.Common.AddonPlayer.html">AddonPlayer</a>&gt;</div>
       <div><a class="xref" href="BattleBitAPI.Addons.Common.AddonGameServer.html">AddonGameServer</a></div>
-      <div><span class="xref">MessageHandlerService</span></div>
+      <div><a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html">EventGameServer</a></div>
+      <div><span class="xref">OnRoundStartedEvent</span></div>
     </dd>
   </dl>
 
@@ -118,6 +119,12 @@
   <dl class="typelist derived">
     <dt>Inherited Members</dt>
     <dd>
+    <div>
+      <a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html#BattleBitAPI_Addons_EventHandler_Events_EventGameServer_EventModule">EventGameServer.EventModule</a>
+    </div>
+    <div>
+      <a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html#BattleBitAPI_Addons_EventHandler_Events_EventGameServer_Event">EventGameServer.Event</a>
+    </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.Tick()</span>
     </div>
@@ -141,6 +148,9 @@
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.OnPlayerDisconnected(AddonPlayer)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GameServer&lt;AddonPlayer&gt;.OnPlayerTypedMessage(AddonPlayer, ChatChannel, string)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">GameServer&lt;AddonPlayer&gt;.OnPlayerJoiningToServer(ulong, PlayerJoiningArguments)</a>
@@ -189,9 +199,6 @@
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.OnGameStateChanged(GameState, GameState)</span>
-    </div>
-    <div>
-      <span class="xref">GameServer&lt;AddonPlayer&gt;.OnRoundStarted()</span>
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.OnRoundEnded()</span>
@@ -477,10 +484,10 @@
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService__ctor_" data-uid="BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.#ctor*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnRoundStartedEvent__ctor_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnRoundStartedEvent.#ctor*"></a>
 
-  <h3 id="BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService__ctor_BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_BattleBitAPI_Addons_CommandHandler_Converters_IConverter_Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService__System_IServiceProvider_BattleBitAPI_Addons_CommandHandler_Common_CommandModule_BattleBitAPI_Addons_CommandHandler_Common_Command_" data-uid="BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.#ctor(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService},System.IServiceProvider,BattleBitAPI.Addons.CommandHandler.Common.CommandModule,BattleBitAPI.Addons.CommandHandler.Common.Command)">
-  MessageHandlerService(CommandHandlerSettings, IConverter, ILogger&lt;MessageHandlerService&gt;, IServiceProvider, CommandModule, Command)
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnRoundStartedEvent__ctor_BattleBitAPI_Addons_EventHandler_Common_EventModule_BattleBitAPI_Addons_EventHandler_Common_Event_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnRoundStartedEvent.#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)">
+  OnRoundStartedEvent(EventModule, Event)
   
   </h3>
 
@@ -488,22 +495,14 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MessageHandlerService(CommandHandlerSettings commandHandlerSettings, IConverter converter, ILogger&lt;MessageHandlerService&gt; logger, IServiceProvider provider, CommandModule commandModule, Command command)</code></pre>
+    <pre><code class="lang-csharp hljs">public OnRoundStartedEvent(EventModule eventModule, Event @event)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>commandHandlerSettings</code> <a class="xref" href="BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings.html">CommandHandlerSettings</a></dt>
+    <dt><code>eventModule</code> <a class="xref" href="BattleBitAPI.Addons.EventHandler.Common.EventModule.html">EventModule</a></dt>
     <dd></dd>
-    <dt><code>converter</code> <a class="xref" href="BattleBitAPI.Addons.CommandHandler.Converters.IConverter.html">IConverter</a></dt>
-    <dd></dd>
-    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.html">MessageHandlerService</a>&gt;</dt>
-    <dd></dd>
-    <dt><code>provider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
-    <dd></dd>
-    <dt><code>commandModule</code> <a class="xref" href="BattleBitAPI.Addons.CommandHandler.Common.CommandModule.html">CommandModule</a></dt>
-    <dd></dd>
-    <dt><code>command</code> <a class="xref" href="BattleBitAPI.Addons.CommandHandler.Common.Command.html">Command</a></dt>
+    <dt><code>event</code> <a class="xref" href="BattleBitAPI.Addons.EventHandler.Common.Event.html">Event</a></dt>
     <dd></dd>
   </dl>
 
@@ -522,10 +521,10 @@
 </h2>
 
 
-  <a id="BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService_OnPlayerTypedMessage_" data-uid="BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage*"></a>
+  <a id="BattleBitAPI_Addons_EventHandler_Events_OnRoundStartedEvent_OnRoundStarted_" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnRoundStartedEvent.OnRoundStarted*"></a>
 
-  <h3 id="BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService_OnPlayerTypedMessage_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Common_ChatChannel_System_String_" data-uid="BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ChatChannel,System.String)">
-  OnPlayerTypedMessage(AddonPlayer, ChatChannel, string)
+  <h3 id="BattleBitAPI_Addons_EventHandler_Events_OnRoundStartedEvent_OnRoundStarted" data-uid="BattleBitAPI.Addons.EventHandler.Events.OnRoundStartedEvent.OnRoundStarted">
+  OnRoundStarted()
   
   </h3>
 
@@ -533,22 +532,13 @@
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task&lt;bool&gt; OnPlayerTypedMessage(AddonPlayer player, ChatChannel channel, string message)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task OnRoundStarted()</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>player</code> <a class="xref" href="BattleBitAPI.Addons.Common.AddonPlayer.html">AddonPlayer</a></dt>
-    <dd></dd>
-    <dt><code>channel</code> <span class="xref">ChatChannel</span></dt>
-    <dd></dd>
-    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
     <dd></dd>
   </dl>
 

@@ -193,17 +193,17 @@ items:
   namespace: BattleBitAPI.Addons.CommandHandler.Handlers
   example: []
   syntax:
-    content: public override Task<bool> OnPlayerTypedMessage(AddonPlayer player, ChatChannel channel, string content)
+    content: public override Task<bool> OnPlayerTypedMessage(AddonPlayer player, ChatChannel channel, string message)
     parameters:
     - id: player
       type: BattleBitAPI.Addons.Common.AddonPlayer
     - id: channel
       type: BattleBitAPI.Common.ChatChannel
-    - id: content
+    - id: message
       type: System.String
     return:
       type: System.Threading.Tasks.Task{System.Boolean}
-    content.vb: Public Overrides Function OnPlayerTypedMessage(player As AddonPlayer, channel As ChatChannel, content As String) As Task(Of Boolean)
+    content.vb: Public Overrides Function OnPlayerTypedMessage(player As AddonPlayer, channel As ChatChannel, message As String) As Task(Of Boolean)
   overridden: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ChatChannel,System.String)
   overload: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.OnPlayerTypedMessage*
   nameWithType.vb: MessageHandlerService.OnPlayerTypedMessage(AddonPlayer, ChatChannel, String)

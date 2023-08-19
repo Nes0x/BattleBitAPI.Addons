@@ -66,11 +66,11 @@ items:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public GameServer GameServer { get; }
+    content: public required GameServer<AddonPlayer> GameServer { get; init; }
     parameters: []
     return:
-      type: BattleBitAPI.Server.GameServer
-    content.vb: Public ReadOnly Property GameServer As GameServer
+      type: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
+    content.vb: Public Property GameServer As GameServer(Of AddonPlayer)
   overload: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.GameServer*
 references:
 - uid: BattleBitAPI.Addons.EventHandler.Events
@@ -374,13 +374,64 @@ references:
   name: GameServer
   nameWithType: OnGameServerDisconnectedArgs.GameServer
   fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerDisconnectedArgs.GameServer
-- uid: BattleBitAPI.Server.GameServer
-  commentId: T:BattleBitAPI.Server.GameServer
+- uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
+  commentId: T:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
   parent: BattleBitAPI.Server
+  definition: BattleBitAPI.Server.GameServer`1
+  href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  name: GameServer<AddonPlayer>
+  nameWithType: GameServer<AddonPlayer>
+  fullName: BattleBitAPI.Server.GameServer<BattleBitAPI.Addons.Common.AddonPlayer>
+  nameWithType.vb: GameServer(Of AddonPlayer)
+  fullName.vb: BattleBitAPI.Server.GameServer(Of BattleBitAPI.Addons.Common.AddonPlayer)
+  name.vb: GameServer(Of AddonPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Server.GameServer`1
+    name: GameServer
+    isExternal: true
+  - name: <
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Server.GameServer`1
+    name: GameServer
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: )
+- uid: BattleBitAPI.Server.GameServer`1
+  commentId: T:BattleBitAPI.Server.GameServer`1
   isExternal: true
-  name: GameServer
-  nameWithType: GameServer
-  fullName: BattleBitAPI.Server.GameServer
+  name: GameServer<TPlayer>
+  nameWithType: GameServer<TPlayer>
+  fullName: BattleBitAPI.Server.GameServer<TPlayer>
+  nameWithType.vb: GameServer(Of TPlayer)
+  fullName.vb: BattleBitAPI.Server.GameServer(Of TPlayer)
+  name.vb: GameServer(Of TPlayer)
+  spec.csharp:
+  - uid: BattleBitAPI.Server.GameServer`1
+    name: GameServer
+    isExternal: true
+  - name: <
+  - name: TPlayer
+  - name: '>'
+  spec.vb:
+  - uid: BattleBitAPI.Server.GameServer`1
+    name: GameServer
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TPlayer
+  - name: )
 - uid: BattleBitAPI.Server
   commentId: N:BattleBitAPI.Server
   isExternal: true

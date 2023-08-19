@@ -6,7 +6,7 @@ items:
   children:
   - BattleBitAPI.Addons.EventHandler.Common.Event
   - BattleBitAPI.Addons.EventHandler.Common.EventAttribute
-  - BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+  - BattleBitAPI.Addons.EventHandler.Common.EventModule
   - BattleBitAPI.Addons.EventHandler.Common.EventType
   langs:
   - csharp
@@ -20,6 +20,7 @@ items:
 references:
 - uid: BattleBitAPI.Addons.EventHandler.Common.Event
   commentId: T:BattleBitAPI.Addons.EventHandler.Common.Event
+  parent: BattleBitAPI.Addons.EventHandler.Common
   isExternal: true
   href: BattleBitAPI.Addons.EventHandler.Common.Event.html
   name: Event
@@ -32,34 +33,14 @@ references:
   name: EventAttribute
   nameWithType: EventAttribute
   fullName: BattleBitAPI.Addons.EventHandler.Common.EventAttribute
-- uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1
-  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventModule`1
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventModule
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventModule
+  parent: BattleBitAPI.Addons.EventHandler.Common
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html
-  name: EventModule<TPlayer>
-  nameWithType: EventModule<TPlayer>
-  fullName: BattleBitAPI.Addons.EventHandler.Common.EventModule<TPlayer>
-  nameWithType.vb: EventModule(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.EventHandler.Common.EventModule(Of TPlayer)
-  name.vb: EventModule(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1
-    name: EventModule
-    isExternal: true
-    href: BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Addons.EventHandler.Common.EventModule`1
-    name: EventModule
-    isExternal: true
-    href: BattleBitAPI.Addons.EventHandler.Common.EventModule-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
+  href: BattleBitAPI.Addons.EventHandler.Common.EventModule.html
+  name: EventModule
+  nameWithType: EventModule
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventModule
 - uid: BattleBitAPI.Addons.EventHandler.Common.EventType
   commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventType
   parent: BattleBitAPI.Addons.EventHandler.Common

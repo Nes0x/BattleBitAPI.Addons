@@ -1,33 +1,35 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BattleBitAPI.Addons.Common.AddonGameServer
-  commentId: T:BattleBitAPI.Addons.Common.AddonGameServer
-  id: AddonGameServer
-  parent: BattleBitAPI.Addons.Common
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent
+  id: OnPlayerReportedEvent
+  parent: BattleBitAPI.Addons.EventHandler.Events
   children:
-  - BattleBitAPI.Addons.Common.AddonGameServer.#ctor
+  - BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)
+  - BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
   langs:
   - csharp
   - vb
-  name: AddonGameServer
-  nameWithType: AddonGameServer
-  fullName: BattleBitAPI.Addons.Common.AddonGameServer
+  name: OnPlayerReportedEvent
+  nameWithType: OnPlayerReportedEvent
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent
   type: Class
   assemblies:
-  - BattleBitAPI.Addons.Common
-  namespace: BattleBitAPI.Addons.Common
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: 'public class AddonGameServer : GameServer<AddonPlayer>, IDisposable'
-    content.vb: Public Class AddonGameServer Inherits GameServer(Of AddonPlayer) Implements IDisposable
+    content: 'public class OnPlayerReportedEvent : EventGameServer, IDisposable'
+    content.vb: Public Class OnPlayerReportedEvent Inherits EventGameServer Implements IDisposable
   inheritance:
   - System.Object
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-  derivedClasses:
-  - BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService
+  - BattleBitAPI.Addons.Common.AddonGameServer
   - BattleBitAPI.Addons.EventHandler.Events.EventGameServer
   implements:
   - System.IDisposable
   inheritedMembers:
+  - BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+  - BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.Tick
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.TryGetPlayer(System.UInt64,BattleBitAPI.Addons.Common.AddonPlayer@)
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnConnected
@@ -51,7 +53,6 @@ items:
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerGivenUp(BattleBitAPI.Addons.Common.AddonPlayer)
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnAPlayerDownedAnotherPlayer(BattleBitAPI.Common.OnPlayerKillArguments{BattleBitAPI.Addons.Common.AddonPlayer})
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnAPlayerRevivedAnotherPlayer(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer)
-  - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnGameStateChanged(BattleBitAPI.Common.GameState,BattleBitAPI.Common.GameState)
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnRoundStarted
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnRoundEnded
@@ -145,35 +146,74 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BattleBitAPI.Addons.Common.AddonGameServer.#ctor
-  commentId: M:BattleBitAPI.Addons.Common.AddonGameServer.#ctor
-  id: '#ctor'
-  parent: BattleBitAPI.Addons.Common.AddonGameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)
+  id: '#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)'
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent
   langs:
   - csharp
   - vb
-  name: AddonGameServer()
-  nameWithType: AddonGameServer.AddonGameServer()
-  fullName: BattleBitAPI.Addons.Common.AddonGameServer.AddonGameServer()
+  name: OnPlayerReportedEvent(EventModule, Event)
+  nameWithType: OnPlayerReportedEvent.OnPlayerReportedEvent(EventModule, Event)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReportedEvent(BattleBitAPI.Addons.EventHandler.Common.EventModule, BattleBitAPI.Addons.EventHandler.Common.Event)
   type: Constructor
   assemblies:
-  - BattleBitAPI.Addons.Common
-  namespace: BattleBitAPI.Addons.Common
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public AddonGameServer()
-    content.vb: Public Sub New()
-  overload: BattleBitAPI.Addons.Common.AddonGameServer.#ctor*
-  nameWithType.vb: AddonGameServer.New()
-  fullName.vb: BattleBitAPI.Addons.Common.AddonGameServer.New()
-  name.vb: New()
+    content: public OnPlayerReportedEvent(EventModule eventModule, Event @event)
+    parameters:
+    - id: eventModule
+      type: BattleBitAPI.Addons.EventHandler.Common.EventModule
+    - id: event
+      type: BattleBitAPI.Addons.EventHandler.Common.Event
+    content.vb: Public Sub New(eventModule As EventModule, [event] As [Event])
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.#ctor*
+  nameWithType.vb: OnPlayerReportedEvent.New(EventModule, Event)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.New(BattleBitAPI.Addons.EventHandler.Common.EventModule, BattleBitAPI.Addons.EventHandler.Common.Event)
+  name.vb: New(EventModule, Event)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
+  id: OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent
+  langs:
+  - csharp
+  - vb
+  name: OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, string)
+  nameWithType: OnPlayerReportedEvent.OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, string)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ReportReason, string)
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
+  example: []
+  syntax:
+    content: public override Task OnPlayerReported(AddonPlayer from, AddonPlayer to, ReportReason reason, string additional)
+    parameters:
+    - id: from
+      type: BattleBitAPI.Addons.Common.AddonPlayer
+    - id: to
+      type: BattleBitAPI.Addons.Common.AddonPlayer
+    - id: reason
+      type: BattleBitAPI.Common.ReportReason
+    - id: additional
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function OnPlayerReported(from As AddonPlayer, [to] As AddonPlayer, reason As ReportReason, additional As String) As Task
+  overridden: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported*
+  nameWithType.vb: OnPlayerReportedEvent.OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, String)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ReportReason, String)
+  name.vb: OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, String)
 references:
-- uid: BattleBitAPI.Addons.Common
-  commentId: N:BattleBitAPI.Addons.Common
+- uid: BattleBitAPI.Addons.EventHandler.Events
+  commentId: N:BattleBitAPI.Addons.EventHandler.Events
   isExternal: true
   href: BattleBitAPI.html
-  name: BattleBitAPI.Addons.Common
-  nameWithType: BattleBitAPI.Addons.Common
-  fullName: BattleBitAPI.Addons.Common
+  name: BattleBitAPI.Addons.EventHandler.Events
+  nameWithType: BattleBitAPI.Addons.EventHandler.Events
+  fullName: BattleBitAPI.Addons.EventHandler.Events
   spec.csharp:
   - uid: BattleBitAPI
     name: BattleBitAPI
@@ -185,10 +225,15 @@ references:
     isExternal: true
     href: BattleBitAPI.Addons.html
   - name: .
-  - uid: BattleBitAPI.Addons.Common
-    name: Common
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
     isExternal: true
-    href: BattleBitAPI.Addons.Common.html
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events
+    name: Events
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.html
   spec.vb:
   - uid: BattleBitAPI
     name: BattleBitAPI
@@ -200,10 +245,15 @@ references:
     isExternal: true
     href: BattleBitAPI.Addons.html
   - name: .
-  - uid: BattleBitAPI.Addons.Common
-    name: Common
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
     isExternal: true
-    href: BattleBitAPI.Addons.Common.html
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events
+    name: Events
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -248,6 +298,22 @@ references:
     isExternal: true
     href: BattleBitAPI.Addons.Common.AddonPlayer.html
   - name: )
+- uid: BattleBitAPI.Addons.Common.AddonGameServer
+  commentId: T:BattleBitAPI.Addons.Common.AddonGameServer
+  parent: BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.Common.AddonGameServer.html
+  name: AddonGameServer
+  nameWithType: AddonGameServer
+  fullName: BattleBitAPI.Addons.Common.AddonGameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventGameServer
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.EventGameServer
+  parent: BattleBitAPI.Addons.EventHandler.Events
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html
+  name: EventGameServer
+  nameWithType: EventGameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventGameServer
 - uid: System.IDisposable
   commentId: T:System.IDisposable
   parent: System
@@ -256,6 +322,22 @@ references:
   name: IDisposable
   nameWithType: IDisposable
   fullName: System.IDisposable
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+  commentId: F:BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+  parent: BattleBitAPI.Addons.EventHandler.Events.EventGameServer
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html#BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+  name: EventModule
+  nameWithType: EventGameServer.EventModule
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
+  commentId: F:BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
+  parent: BattleBitAPI.Addons.EventHandler.Events.EventGameServer
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html#BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
+  name: Event
+  nameWithType: EventGameServer.Event
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
 - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.Tick
   commentId: M:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.Tick
   parent: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
@@ -1055,71 +1137,6 @@ references:
     name: AddonPlayer
     isExternal: true
     href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  - name: )
-- uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
-  commentId: M:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
-  parent: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-  definition: BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
-  href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  name: OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, string)
-  nameWithType: GameServer<AddonPlayer>.OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, string)
-  fullName: BattleBitAPI.Server.GameServer<BattleBitAPI.Addons.Common.AddonPlayer>.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ReportReason, string)
-  nameWithType.vb: GameServer(Of AddonPlayer).OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, String)
-  fullName.vb: BattleBitAPI.Server.GameServer(Of BattleBitAPI.Addons.Common.AddonPlayer).OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ReportReason, String)
-  name.vb: OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, String)
-  spec.csharp:
-  - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
-    name: OnPlayerReported
-    isExternal: true
-  - name: (
-  - uid: BattleBitAPI.Addons.Common.AddonPlayer
-    name: AddonPlayer
-    isExternal: true
-    href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  - name: ','
-  - name: " "
-  - uid: BattleBitAPI.Addons.Common.AddonPlayer
-    name: AddonPlayer
-    isExternal: true
-    href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  - name: ','
-  - name: " "
-  - uid: BattleBitAPI.Common.ReportReason
-    name: ReportReason
-    isExternal: true
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
-    name: OnPlayerReported
-    isExternal: true
-  - name: (
-  - uid: BattleBitAPI.Addons.Common.AddonPlayer
-    name: AddonPlayer
-    isExternal: true
-    href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  - name: ','
-  - name: " "
-  - uid: BattleBitAPI.Addons.Common.AddonPlayer
-    name: AddonPlayer
-    isExternal: true
-    href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  - name: ','
-  - name: " "
-  - uid: BattleBitAPI.Common.ReportReason
-    name: ReportReason
-    isExternal: true
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnGameStateChanged(BattleBitAPI.Common.GameState,BattleBitAPI.Common.GameState)
   commentId: M:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnGameStateChanged(BattleBitAPI.Common.GameState,BattleBitAPI.Common.GameState)
@@ -4579,6 +4596,43 @@ references:
   - uid: BattleBitAPI.Server
     name: Server
     isExternal: true
+- uid: BattleBitAPI.Addons.Common
+  commentId: N:BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.Common
+  nameWithType: BattleBitAPI.Addons.Common
+  fullName: BattleBitAPI.Addons.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html
 - uid: BattleBitAPI.Server.GameServer`1.Tick
   commentId: M:BattleBitAPI.Server.GameServer`1.Tick
   isExternal: true
@@ -5239,58 +5293,6 @@ references:
   - name: ','
   - name: " "
   - name: TPlayer
-  - name: )
-- uid: BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
-  commentId: M:BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: OnPlayerReported(TPlayer, TPlayer, ReportReason, string)
-  nameWithType: GameServer<TPlayer>.OnPlayerReported(TPlayer, TPlayer, ReportReason, string)
-  fullName: BattleBitAPI.Server.GameServer<TPlayer>.OnPlayerReported(TPlayer, TPlayer, BattleBitAPI.Common.ReportReason, string)
-  nameWithType.vb: GameServer(Of TPlayer).OnPlayerReported(TPlayer, TPlayer, ReportReason, String)
-  fullName.vb: BattleBitAPI.Server.GameServer(Of TPlayer).OnPlayerReported(TPlayer, TPlayer, BattleBitAPI.Common.ReportReason, String)
-  name.vb: OnPlayerReported(TPlayer, TPlayer, ReportReason, String)
-  spec.csharp:
-  - uid: BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
-    name: OnPlayerReported
-    isExternal: true
-  - name: (
-  - name: TPlayer
-  - name: ','
-  - name: " "
-  - name: TPlayer
-  - name: ','
-  - name: " "
-  - uid: BattleBitAPI.Common.ReportReason
-    name: ReportReason
-    isExternal: true
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
-    name: OnPlayerReported
-    isExternal: true
-  - name: (
-  - name: TPlayer
-  - name: ','
-  - name: " "
-  - name: TPlayer
-  - name: ','
-  - name: " "
-  - uid: BattleBitAPI.Common.ReportReason
-    name: ReportReason
-    isExternal: true
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: BattleBitAPI.Server.GameServer`1.OnGameStateChanged(BattleBitAPI.Common.GameState,BattleBitAPI.Common.GameState)
   commentId: M:BattleBitAPI.Server.GameServer`1.OnGameStateChanged(BattleBitAPI.Common.GameState,BattleBitAPI.Common.GameState)
@@ -8267,13 +8269,293 @@ references:
   fullName: BattleBitAPI.Server.GameServer<TPlayer>.AllPlayers
   nameWithType.vb: GameServer(Of TPlayer).AllPlayers
   fullName.vb: BattleBitAPI.Server.GameServer(Of TPlayer).AllPlayers
-- uid: BattleBitAPI.Addons.Common.AddonGameServer.#ctor*
-  commentId: Overload:BattleBitAPI.Addons.Common.AddonGameServer.#ctor
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.#ctor
   isExternal: true
-  href: BattleBitAPI.Addons.Common.AddonGameServer.html#BattleBitAPI.Addons.Common.AddonGameServer.#ctor
-  name: AddonGameServer
-  nameWithType: AddonGameServer.AddonGameServer
-  fullName: BattleBitAPI.Addons.Common.AddonGameServer.AddonGameServer
-  nameWithType.vb: AddonGameServer.New
-  fullName.vb: BattleBitAPI.Addons.Common.AddonGameServer.New
+  href: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.html#BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)
+  name: OnPlayerReportedEvent
+  nameWithType: OnPlayerReportedEvent.OnPlayerReportedEvent
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReportedEvent
+  nameWithType.vb: OnPlayerReportedEvent.New
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.New
   name.vb: New
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventModule
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventModule
+  parent: BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Common.EventModule.html
+  name: EventModule
+  nameWithType: EventModule
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventModule
+- uid: BattleBitAPI.Addons.EventHandler.Common.Event
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.Event
+  parent: BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Common.Event.html
+  name: Event
+  nameWithType: Event
+  fullName: BattleBitAPI.Addons.EventHandler.Common.Event
+- uid: BattleBitAPI.Addons.EventHandler.Common
+  commentId: N:BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.EventHandler.Common
+  nameWithType: BattleBitAPI.Addons.EventHandler.Common
+  fullName: BattleBitAPI.Addons.EventHandler.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.html
+- uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
+  commentId: M:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
+  parent: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
+  href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  name: OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, string)
+  nameWithType: GameServer<AddonPlayer>.OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, string)
+  fullName: BattleBitAPI.Server.GameServer<BattleBitAPI.Addons.Common.AddonPlayer>.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ReportReason, string)
+  nameWithType.vb: GameServer(Of AddonPlayer).OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, String)
+  fullName.vb: BattleBitAPI.Server.GameServer(Of BattleBitAPI.Addons.Common.AddonPlayer).OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ReportReason, String)
+  name.vb: OnPlayerReported(AddonPlayer, AddonPlayer, ReportReason, String)
+  spec.csharp:
+  - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
+    name: OnPlayerReported
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.ReportReason
+    name: ReportReason
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
+    name: OnPlayerReported
+    isExternal: true
+  - name: (
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Addons.Common.AddonPlayer
+    name: AddonPlayer
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.ReportReason
+    name: ReportReason
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.html#BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ReportReason,System.String)
+  name: OnPlayerReported
+  nameWithType: OnPlayerReportedEvent.OnPlayerReported
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerReportedEvent.OnPlayerReported
+- uid: BattleBitAPI.Addons.Common.AddonPlayer
+  commentId: T:BattleBitAPI.Addons.Common.AddonPlayer
+  parent: BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  name: AddonPlayer
+  nameWithType: AddonPlayer
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer
+- uid: BattleBitAPI.Common.ReportReason
+  commentId: T:BattleBitAPI.Common.ReportReason
+  parent: BattleBitAPI.Common
+  isExternal: true
+  name: ReportReason
+  nameWithType: ReportReason
+  fullName: BattleBitAPI.Common.ReportReason
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
+  commentId: M:BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: OnPlayerReported(TPlayer, TPlayer, ReportReason, string)
+  nameWithType: GameServer<TPlayer>.OnPlayerReported(TPlayer, TPlayer, ReportReason, string)
+  fullName: BattleBitAPI.Server.GameServer<TPlayer>.OnPlayerReported(TPlayer, TPlayer, BattleBitAPI.Common.ReportReason, string)
+  nameWithType.vb: GameServer(Of TPlayer).OnPlayerReported(TPlayer, TPlayer, ReportReason, String)
+  fullName.vb: BattleBitAPI.Server.GameServer(Of TPlayer).OnPlayerReported(TPlayer, TPlayer, BattleBitAPI.Common.ReportReason, String)
+  name.vb: OnPlayerReported(TPlayer, TPlayer, ReportReason, String)
+  spec.csharp:
+  - uid: BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
+    name: OnPlayerReported
+    isExternal: true
+  - name: (
+  - name: TPlayer
+  - name: ','
+  - name: " "
+  - name: TPlayer
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.ReportReason
+    name: ReportReason
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Server.GameServer`1.OnPlayerReported(`0,`0,BattleBitAPI.Common.ReportReason,System.String)
+    name: OnPlayerReported
+    isExternal: true
+  - name: (
+  - name: TPlayer
+  - name: ','
+  - name: " "
+  - name: TPlayer
+  - name: ','
+  - name: " "
+  - uid: BattleBitAPI.Common.ReportReason
+    name: ReportReason
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BattleBitAPI.Common
+  commentId: N:BattleBitAPI.Common
+  isExternal: true
+  name: BattleBitAPI.Common
+  nameWithType: BattleBitAPI.Common
+  fullName: BattleBitAPI.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+  - name: .
+  - uid: BattleBitAPI.Common
+    name: Common
+    isExternal: true
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+  - name: .
+  - uid: BattleBitAPI.Common
+    name: Common
+    isExternal: true
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

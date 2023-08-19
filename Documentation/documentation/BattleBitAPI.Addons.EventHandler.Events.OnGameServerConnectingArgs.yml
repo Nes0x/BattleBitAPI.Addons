@@ -6,7 +6,7 @@ items:
   parent: BattleBitAPI.Addons.EventHandler.Events
   children:
   - BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.#ctor
-  - BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
+  - BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IpAddress
   langs:
   - csharp
   - vb
@@ -51,27 +51,27 @@ items:
   nameWithType.vb: OnGameServerConnectingArgs.New()
   fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.New()
   name.vb: New()
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
-  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
-  id: IPAddress
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IpAddress
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IpAddress
+  id: IpAddress
   parent: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs
   langs:
   - csharp
   - vb
-  name: IPAddress
-  nameWithType: OnGameServerConnectingArgs.IPAddress
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
+  name: IpAddress
+  nameWithType: OnGameServerConnectingArgs.IpAddress
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IpAddress
   type: Property
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public IPAddress IPAddress { get; }
+    content: public required IPAddress IpAddress { get; init; }
     parameters: []
     return:
       type: System.Net.IPAddress
-    content.vb: Public ReadOnly Property IPAddress As IPAddress
-  overload: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress*
+    content.vb: Public Property IpAddress As IPAddress
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IpAddress*
 references:
 - uid: BattleBitAPI.Addons.EventHandler.Events
   commentId: N:BattleBitAPI.Addons.EventHandler.Events
@@ -367,13 +367,13 @@ references:
   nameWithType.vb: OnGameServerConnectingArgs.New
   fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.New
   name.vb: New
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress*
-  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IpAddress*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IpAddress
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
-  name: IPAddress
-  nameWithType: OnGameServerConnectingArgs.IPAddress
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IPAddress
+  href: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IpAddress
+  name: IpAddress
+  nameWithType: OnGameServerConnectingArgs.IpAddress
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerConnectingArgs.IpAddress
 - uid: System.Net.IPAddress
   commentId: T:System.Net.IPAddress
   parent: System.Net

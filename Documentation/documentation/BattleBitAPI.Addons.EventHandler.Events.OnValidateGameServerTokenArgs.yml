@@ -1,25 +1,27 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
-  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
-  id: OnGameServerReconnectedArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs
+  id: OnValidateGameServerTokenArgs
   parent: BattleBitAPI.Addons.EventHandler.Events
   children:
-  - BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
-  - BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+  - BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.#ctor
+  - BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress
+  - BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port
+  - BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token
   langs:
   - csharp
   - vb
-  name: OnGameServerReconnectedArgs
-  nameWithType: OnGameServerReconnectedArgs
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+  name: OnValidateGameServerTokenArgs
+  nameWithType: OnValidateGameServerTokenArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs
   type: Class
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public class OnGameServerReconnectedArgs
-    content.vb: Public Class OnGameServerReconnectedArgs
+    content: public class OnValidateGameServerTokenArgs
+    content.vb: Public Class OnValidateGameServerTokenArgs
   inheritance:
   - System.Object
   inheritedMembers:
@@ -30,48 +32,90 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
-  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.#ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.#ctor
   id: '#ctor'
-  parent: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs
   langs:
   - csharp
   - vb
-  name: OnGameServerReconnectedArgs()
-  nameWithType: OnGameServerReconnectedArgs.OnGameServerReconnectedArgs()
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.OnGameServerReconnectedArgs()
+  name: OnValidateGameServerTokenArgs()
+  nameWithType: OnValidateGameServerTokenArgs.OnValidateGameServerTokenArgs()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.OnValidateGameServerTokenArgs()
   type: Constructor
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public OnGameServerReconnectedArgs()
+    content: public OnValidateGameServerTokenArgs()
     content.vb: Public Sub New()
-  overload: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor*
-  nameWithType.vb: OnGameServerReconnectedArgs.New()
-  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.New()
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.#ctor*
+  nameWithType.vb: OnValidateGameServerTokenArgs.New()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.New()
   name.vb: New()
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
-  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
-  id: GameServer
-  parent: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress
+  id: IpAddress
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs
   langs:
   - csharp
   - vb
-  name: GameServer
-  nameWithType: OnGameServerReconnectedArgs.GameServer
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+  name: IpAddress
+  nameWithType: OnValidateGameServerTokenArgs.IpAddress
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress
   type: Property
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public required GameServer<AddonPlayer> GameServer { get; init; }
+    content: public required IPAddress IpAddress { get; init; }
     parameters: []
     return:
-      type: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-    content.vb: Public Property GameServer As GameServer(Of AddonPlayer)
-  overload: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer*
+      type: System.Net.IPAddress
+    content.vb: Public Property IpAddress As IPAddress
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress*
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port
+  id: Port
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs
+  langs:
+  - csharp
+  - vb
+  name: Port
+  nameWithType: OnValidateGameServerTokenArgs.Port
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port
+  type: Property
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
+  syntax:
+    content: public required ulong Port { get; init; }
+    parameters: []
+    return:
+      type: System.UInt64
+    content.vb: Public Property Port As ULong
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port*
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token
+  id: Token
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs
+  langs:
+  - csharp
+  - vb
+  name: Token
+  nameWithType: OnValidateGameServerTokenArgs.Token
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token
+  type: Property
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
+  syntax:
+    content: public required string Token { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Token As String
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token*
 references:
 - uid: BattleBitAPI.Addons.EventHandler.Events
   commentId: N:BattleBitAPI.Addons.EventHandler.Events
@@ -357,100 +401,91 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor*
-  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.#ctor
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
-  name: OnGameServerReconnectedArgs
-  nameWithType: OnGameServerReconnectedArgs.OnGameServerReconnectedArgs
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.OnGameServerReconnectedArgs
-  nameWithType.vb: OnGameServerReconnectedArgs.New
-  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.New
+  href: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.#ctor
+  name: OnValidateGameServerTokenArgs
+  nameWithType: OnValidateGameServerTokenArgs.OnValidateGameServerTokenArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.OnValidateGameServerTokenArgs
+  nameWithType.vb: OnValidateGameServerTokenArgs.New
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.New
   name.vb: New
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer*
-  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
-  name: GameServer
-  nameWithType: OnGameServerReconnectedArgs.GameServer
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
-- uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-  commentId: T:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-  parent: BattleBitAPI.Server
-  definition: BattleBitAPI.Server.GameServer`1
-  href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  name: GameServer<AddonPlayer>
-  nameWithType: GameServer<AddonPlayer>
-  fullName: BattleBitAPI.Server.GameServer<BattleBitAPI.Addons.Common.AddonPlayer>
-  nameWithType.vb: GameServer(Of AddonPlayer)
-  fullName.vb: BattleBitAPI.Server.GameServer(Of BattleBitAPI.Addons.Common.AddonPlayer)
-  name.vb: GameServer(Of AddonPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Server.GameServer`1
-    name: GameServer
-    isExternal: true
-  - name: <
-  - uid: BattleBitAPI.Addons.Common.AddonPlayer
-    name: AddonPlayer
-    isExternal: true
-    href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Server.GameServer`1
-    name: GameServer
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: BattleBitAPI.Addons.Common.AddonPlayer
-    name: AddonPlayer
-    isExternal: true
-    href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  - name: )
-- uid: BattleBitAPI.Server.GameServer`1
-  commentId: T:BattleBitAPI.Server.GameServer`1
+  href: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress
+  name: IpAddress
+  nameWithType: OnValidateGameServerTokenArgs.IpAddress
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.IpAddress
+- uid: System.Net.IPAddress
+  commentId: T:System.Net.IPAddress
+  parent: System.Net
   isExternal: true
-  name: GameServer<TPlayer>
-  nameWithType: GameServer<TPlayer>
-  fullName: BattleBitAPI.Server.GameServer<TPlayer>
-  nameWithType.vb: GameServer(Of TPlayer)
-  fullName.vb: BattleBitAPI.Server.GameServer(Of TPlayer)
-  name.vb: GameServer(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Server.GameServer`1
-    name: GameServer
-    isExternal: true
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Server.GameServer`1
-    name: GameServer
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
-- uid: BattleBitAPI.Server
-  commentId: N:BattleBitAPI.Server
+  href: https://learn.microsoft.com/dotnet/api/system.net.ipaddress
+  name: IPAddress
+  nameWithType: IPAddress
+  fullName: System.Net.IPAddress
+- uid: System.Net
+  commentId: N:System.Net
   isExternal: true
-  name: BattleBitAPI.Server
-  nameWithType: BattleBitAPI.Server
-  fullName: BattleBitAPI.Server
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net
+  nameWithType: System.Net
+  fullName: System.Net
   spec.csharp:
-  - uid: BattleBitAPI
-    name: BattleBitAPI
+  - uid: System
+    name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: BattleBitAPI.Server
-    name: Server
+  - uid: System.Net
+    name: Net
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
   spec.vb:
-  - uid: BattleBitAPI
-    name: BattleBitAPI
+  - uid: System
+    name: System
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
   - name: .
-  - uid: BattleBitAPI.Server
-    name: Server
+  - uid: System.Net
+    name: Net
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port
+  name: Port
+  nameWithType: OnValidateGameServerTokenArgs.Port
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Port
+- uid: System.UInt64
+  commentId: T:System.UInt64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint64
+  name: ulong
+  nameWithType: ulong
+  fullName: ulong
+  nameWithType.vb: ULong
+  fullName.vb: ULong
+  name.vb: ULong
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token
+  name: Token
+  nameWithType: OnValidateGameServerTokenArgs.Token
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnValidateGameServerTokenArgs.Token
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

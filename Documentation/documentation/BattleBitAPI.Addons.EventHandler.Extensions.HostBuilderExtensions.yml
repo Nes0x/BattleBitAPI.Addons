@@ -5,7 +5,7 @@ items:
   id: HostBuilderExtensions
   parent: BattleBitAPI.Addons.EventHandler.Extensions
   children:
-  - BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler``1(Microsoft.Extensions.Hosting.IHostBuilder)
+  - BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
   langs:
   - csharp
   - vb
@@ -29,35 +29,30 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler``1(Microsoft.Extensions.Hosting.IHostBuilder)
-  commentId: M:BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler``1(Microsoft.Extensions.Hosting.IHostBuilder)
-  id: AddEventHandler``1(Microsoft.Extensions.Hosting.IHostBuilder)
+- uid: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
+  commentId: M:BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
+  id: AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
   isExtensionMethod: true
   parent: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions
   langs:
   - csharp
   - vb
-  name: AddEventHandler<TPlayer>(IHostBuilder)
-  nameWithType: HostBuilderExtensions.AddEventHandler<TPlayer>(IHostBuilder)
-  fullName: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler<TPlayer>(Microsoft.Extensions.Hosting.IHostBuilder)
+  name: AddEventHandler(IHostBuilder)
+  nameWithType: HostBuilderExtensions.AddEventHandler(IHostBuilder)
+  fullName: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
   type: Method
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Extensions
   syntax:
-    content: 'public static IHostBuilder AddEventHandler<TPlayer>(this IHostBuilder hostBuilder) where TPlayer : Player'
+    content: public static IHostBuilder AddEventHandler(this IHostBuilder hostBuilder)
     parameters:
     - id: hostBuilder
       type: Microsoft.Extensions.Hosting.IHostBuilder
-    typeParameters:
-    - id: TPlayer
     return:
       type: Microsoft.Extensions.Hosting.IHostBuilder
-    content.vb: Public Shared Function AddEventHandler(Of TPlayer As Player)(hostBuilder As IHostBuilder) As IHostBuilder
+    content.vb: Public Shared Function AddEventHandler(hostBuilder As IHostBuilder) As IHostBuilder
   overload: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler*
-  nameWithType.vb: HostBuilderExtensions.AddEventHandler(Of TPlayer)(IHostBuilder)
-  fullName.vb: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler(Of TPlayer)(Microsoft.Extensions.Hosting.IHostBuilder)
-  name.vb: AddEventHandler(Of TPlayer)(IHostBuilder)
 references:
 - uid: BattleBitAPI.Addons.EventHandler.Extensions
   commentId: N:BattleBitAPI.Addons.EventHandler.Extensions
@@ -346,7 +341,7 @@ references:
 - uid: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler*
   commentId: Overload:BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.html#BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler``1(Microsoft.Extensions.Hosting.IHostBuilder)
+  href: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.html#BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler(Microsoft.Extensions.Hosting.IHostBuilder)
   name: AddEventHandler
   nameWithType: HostBuilderExtensions.AddEventHandler
   fullName: BattleBitAPI.Addons.EventHandler.Extensions.HostBuilderExtensions.AddEventHandler

@@ -4,7 +4,7 @@ items:
   commentId: N:BattleBitAPI.Addons.EventHandler
   id: BattleBitAPI.Addons.EventHandler
   children:
-  - BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1
+  - BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService
   langs:
   - csharp
   - vb
@@ -15,31 +15,10 @@ items:
   assemblies:
   - BattleBitAPI.Addons.EventHandler
 references:
-- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1
-  commentId: T:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1
+- uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService
+  commentId: T:BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html
-  name: EventHandlerActivatorService<TPlayer>
-  nameWithType: EventHandlerActivatorService<TPlayer>
-  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService<TPlayer>
-  nameWithType.vb: EventHandlerActivatorService(Of TPlayer)
-  fullName.vb: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService(Of TPlayer)
-  name.vb: EventHandlerActivatorService(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1
-    name: EventHandlerActivatorService
-    isExternal: true
-    href: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService`1
-    name: EventHandlerActivatorService
-    isExternal: true
-    href: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService-1.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
+  href: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService.html
+  name: EventHandlerActivatorService
+  nameWithType: EventHandlerActivatorService
+  fullName: BattleBitAPI.Addons.EventHandler.EventHandlerActivatorService

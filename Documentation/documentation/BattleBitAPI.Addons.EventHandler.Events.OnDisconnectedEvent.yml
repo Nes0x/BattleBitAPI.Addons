@@ -1,39 +1,40 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BattleBitAPI.Addons.Common.AddonGameServer
-  commentId: T:BattleBitAPI.Addons.Common.AddonGameServer
-  id: AddonGameServer
-  parent: BattleBitAPI.Addons.Common
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent
+  id: OnDisconnectedEvent
+  parent: BattleBitAPI.Addons.EventHandler.Events
   children:
-  - BattleBitAPI.Addons.Common.AddonGameServer.#ctor
+  - BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)
+  - BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnected
   langs:
   - csharp
   - vb
-  name: AddonGameServer
-  nameWithType: AddonGameServer
-  fullName: BattleBitAPI.Addons.Common.AddonGameServer
+  name: OnDisconnectedEvent
+  nameWithType: OnDisconnectedEvent
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent
   type: Class
   assemblies:
-  - BattleBitAPI.Addons.Common
-  namespace: BattleBitAPI.Addons.Common
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: 'public class AddonGameServer : GameServer<AddonPlayer>, IDisposable'
-    content.vb: Public Class AddonGameServer Inherits GameServer(Of AddonPlayer) Implements IDisposable
+    content: 'public class OnDisconnectedEvent : EventGameServer, IDisposable'
+    content.vb: Public Class OnDisconnectedEvent Inherits EventGameServer Implements IDisposable
   inheritance:
   - System.Object
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-  derivedClasses:
-  - BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService
+  - BattleBitAPI.Addons.Common.AddonGameServer
   - BattleBitAPI.Addons.EventHandler.Events.EventGameServer
   implements:
   - System.IDisposable
   inheritedMembers:
+  - BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+  - BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.Tick
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.TryGetPlayer(System.UInt64,BattleBitAPI.Addons.Common.AddonPlayer@)
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnConnected
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnTick
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnReconnected
-  - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerConnected(BattleBitAPI.Addons.Common.AddonPlayer)
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerDisconnected(BattleBitAPI.Addons.Common.AddonPlayer)
   - BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ChatChannel,System.String)
@@ -145,35 +146,62 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BattleBitAPI.Addons.Common.AddonGameServer.#ctor
-  commentId: M:BattleBitAPI.Addons.Common.AddonGameServer.#ctor
-  id: '#ctor'
-  parent: BattleBitAPI.Addons.Common.AddonGameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)
+  id: '#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)'
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent
   langs:
   - csharp
   - vb
-  name: AddonGameServer()
-  nameWithType: AddonGameServer.AddonGameServer()
-  fullName: BattleBitAPI.Addons.Common.AddonGameServer.AddonGameServer()
+  name: OnDisconnectedEvent(EventModule, Event)
+  nameWithType: OnDisconnectedEvent.OnDisconnectedEvent(EventModule, Event)
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnectedEvent(BattleBitAPI.Addons.EventHandler.Common.EventModule, BattleBitAPI.Addons.EventHandler.Common.Event)
   type: Constructor
   assemblies:
-  - BattleBitAPI.Addons.Common
-  namespace: BattleBitAPI.Addons.Common
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public AddonGameServer()
-    content.vb: Public Sub New()
-  overload: BattleBitAPI.Addons.Common.AddonGameServer.#ctor*
-  nameWithType.vb: AddonGameServer.New()
-  fullName.vb: BattleBitAPI.Addons.Common.AddonGameServer.New()
-  name.vb: New()
+    content: public OnDisconnectedEvent(EventModule eventModule, Event @event)
+    parameters:
+    - id: eventModule
+      type: BattleBitAPI.Addons.EventHandler.Common.EventModule
+    - id: event
+      type: BattleBitAPI.Addons.EventHandler.Common.Event
+    content.vb: Public Sub New(eventModule As EventModule, [event] As [Event])
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.#ctor*
+  nameWithType.vb: OnDisconnectedEvent.New(EventModule, Event)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.New(BattleBitAPI.Addons.EventHandler.Common.EventModule, BattleBitAPI.Addons.EventHandler.Common.Event)
+  name.vb: New(EventModule, Event)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnected
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnected
+  id: OnDisconnected
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent
+  langs:
+  - csharp
+  - vb
+  name: OnDisconnected()
+  nameWithType: OnDisconnectedEvent.OnDisconnected()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnected()
+  type: Method
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
+  example: []
+  syntax:
+    content: public override Task OnDisconnected()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function OnDisconnected() As Task
+  overridden: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnected*
 references:
-- uid: BattleBitAPI.Addons.Common
-  commentId: N:BattleBitAPI.Addons.Common
+- uid: BattleBitAPI.Addons.EventHandler.Events
+  commentId: N:BattleBitAPI.Addons.EventHandler.Events
   isExternal: true
   href: BattleBitAPI.html
-  name: BattleBitAPI.Addons.Common
-  nameWithType: BattleBitAPI.Addons.Common
-  fullName: BattleBitAPI.Addons.Common
+  name: BattleBitAPI.Addons.EventHandler.Events
+  nameWithType: BattleBitAPI.Addons.EventHandler.Events
+  fullName: BattleBitAPI.Addons.EventHandler.Events
   spec.csharp:
   - uid: BattleBitAPI
     name: BattleBitAPI
@@ -185,10 +213,15 @@ references:
     isExternal: true
     href: BattleBitAPI.Addons.html
   - name: .
-  - uid: BattleBitAPI.Addons.Common
-    name: Common
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
     isExternal: true
-    href: BattleBitAPI.Addons.Common.html
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events
+    name: Events
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.html
   spec.vb:
   - uid: BattleBitAPI
     name: BattleBitAPI
@@ -200,10 +233,15 @@ references:
     isExternal: true
     href: BattleBitAPI.Addons.html
   - name: .
-  - uid: BattleBitAPI.Addons.Common
-    name: Common
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
     isExternal: true
-    href: BattleBitAPI.Addons.Common.html
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Events
+    name: Events
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Events.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -248,6 +286,22 @@ references:
     isExternal: true
     href: BattleBitAPI.Addons.Common.AddonPlayer.html
   - name: )
+- uid: BattleBitAPI.Addons.Common.AddonGameServer
+  commentId: T:BattleBitAPI.Addons.Common.AddonGameServer
+  parent: BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.Common.AddonGameServer.html
+  name: AddonGameServer
+  nameWithType: AddonGameServer
+  fullName: BattleBitAPI.Addons.Common.AddonGameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventGameServer
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.EventGameServer
+  parent: BattleBitAPI.Addons.EventHandler.Events
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html
+  name: EventGameServer
+  nameWithType: EventGameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventGameServer
 - uid: System.IDisposable
   commentId: T:System.IDisposable
   parent: System
@@ -256,6 +310,22 @@ references:
   name: IDisposable
   nameWithType: IDisposable
   fullName: System.IDisposable
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+  commentId: F:BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+  parent: BattleBitAPI.Addons.EventHandler.Events.EventGameServer
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html#BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+  name: EventModule
+  nameWithType: EventGameServer.EventModule
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.EventModule
+- uid: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
+  commentId: F:BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
+  parent: BattleBitAPI.Addons.EventHandler.Events.EventGameServer
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html#BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
+  name: Event
+  nameWithType: EventGameServer.Event
+  fullName: BattleBitAPI.Addons.EventHandler.Events.EventGameServer.Event
 - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.Tick
   commentId: M:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.Tick
   parent: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
@@ -382,27 +452,6 @@ references:
   spec.vb:
   - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnReconnected
     name: OnReconnected
-    isExternal: true
-  - name: (
-  - name: )
-- uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
-  commentId: M:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
-  parent: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-  definition: BattleBitAPI.Server.GameServer`1.OnDisconnected
-  name: OnDisconnected()
-  nameWithType: GameServer<AddonPlayer>.OnDisconnected()
-  fullName: BattleBitAPI.Server.GameServer<BattleBitAPI.Addons.Common.AddonPlayer>.OnDisconnected()
-  nameWithType.vb: GameServer(Of AddonPlayer).OnDisconnected()
-  fullName.vb: BattleBitAPI.Server.GameServer(Of BattleBitAPI.Addons.Common.AddonPlayer).OnDisconnected()
-  spec.csharp:
-  - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
-    name: OnDisconnected
-    isExternal: true
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
-    name: OnDisconnected
     isExternal: true
   - name: (
   - name: )
@@ -4579,6 +4628,43 @@ references:
   - uid: BattleBitAPI.Server
     name: Server
     isExternal: true
+- uid: BattleBitAPI.Addons.Common
+  commentId: N:BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.Common
+  nameWithType: BattleBitAPI.Addons.Common
+  fullName: BattleBitAPI.Addons.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html
 - uid: BattleBitAPI.Server.GameServer`1.Tick
   commentId: M:BattleBitAPI.Server.GameServer`1.Tick
   isExternal: true
@@ -4694,26 +4780,6 @@ references:
   spec.vb:
   - uid: BattleBitAPI.Server.GameServer`1.OnReconnected
     name: OnReconnected
-    isExternal: true
-  - name: (
-  - name: )
-- uid: BattleBitAPI.Server.GameServer`1.OnDisconnected
-  commentId: M:BattleBitAPI.Server.GameServer`1.OnDisconnected
-  isExternal: true
-  name: OnDisconnected()
-  nameWithType: GameServer<TPlayer>.OnDisconnected()
-  fullName: BattleBitAPI.Server.GameServer<TPlayer>.OnDisconnected()
-  nameWithType.vb: GameServer(Of TPlayer).OnDisconnected()
-  fullName.vb: BattleBitAPI.Server.GameServer(Of TPlayer).OnDisconnected()
-  spec.csharp:
-  - uid: BattleBitAPI.Server.GameServer`1.OnDisconnected
-    name: OnDisconnected
-    isExternal: true
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: BattleBitAPI.Server.GameServer`1.OnDisconnected
-    name: OnDisconnected
     isExternal: true
   - name: (
   - name: )
@@ -8267,13 +8333,169 @@ references:
   fullName: BattleBitAPI.Server.GameServer<TPlayer>.AllPlayers
   nameWithType.vb: GameServer(Of TPlayer).AllPlayers
   fullName.vb: BattleBitAPI.Server.GameServer(Of TPlayer).AllPlayers
-- uid: BattleBitAPI.Addons.Common.AddonGameServer.#ctor*
-  commentId: Overload:BattleBitAPI.Addons.Common.AddonGameServer.#ctor
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.#ctor
   isExternal: true
-  href: BattleBitAPI.Addons.Common.AddonGameServer.html#BattleBitAPI.Addons.Common.AddonGameServer.#ctor
-  name: AddonGameServer
-  nameWithType: AddonGameServer.AddonGameServer
-  fullName: BattleBitAPI.Addons.Common.AddonGameServer.AddonGameServer
-  nameWithType.vb: AddonGameServer.New
-  fullName.vb: BattleBitAPI.Addons.Common.AddonGameServer.New
+  href: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.html#BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.#ctor(BattleBitAPI.Addons.EventHandler.Common.EventModule,BattleBitAPI.Addons.EventHandler.Common.Event)
+  name: OnDisconnectedEvent
+  nameWithType: OnDisconnectedEvent.OnDisconnectedEvent
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnectedEvent
+  nameWithType.vb: OnDisconnectedEvent.New
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.New
   name.vb: New
+- uid: BattleBitAPI.Addons.EventHandler.Common.EventModule
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.EventModule
+  parent: BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Common.EventModule.html
+  name: EventModule
+  nameWithType: EventModule
+  fullName: BattleBitAPI.Addons.EventHandler.Common.EventModule
+- uid: BattleBitAPI.Addons.EventHandler.Common.Event
+  commentId: T:BattleBitAPI.Addons.EventHandler.Common.Event
+  parent: BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Common.Event.html
+  name: Event
+  nameWithType: Event
+  fullName: BattleBitAPI.Addons.EventHandler.Common.Event
+- uid: BattleBitAPI.Addons.EventHandler.Common
+  commentId: N:BattleBitAPI.Addons.EventHandler.Common
+  isExternal: true
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.EventHandler.Common
+  nameWithType: BattleBitAPI.Addons.EventHandler.Common
+  fullName: BattleBitAPI.Addons.EventHandler.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.html
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+    href: BattleBitAPI.html
+  - name: .
+  - uid: BattleBitAPI.Addons
+    name: Addons
+    isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler
+    name: EventHandler
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.html
+  - name: .
+  - uid: BattleBitAPI.Addons.EventHandler.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.EventHandler.Common.html
+- uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+  commentId: M:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+  parent: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
+  definition: BattleBitAPI.Server.GameServer`1.OnDisconnected
+  name: OnDisconnected()
+  nameWithType: GameServer<AddonPlayer>.OnDisconnected()
+  fullName: BattleBitAPI.Server.GameServer<BattleBitAPI.Addons.Common.AddonPlayer>.OnDisconnected()
+  nameWithType.vb: GameServer(Of AddonPlayer).OnDisconnected()
+  fullName.vb: BattleBitAPI.Server.GameServer(Of BattleBitAPI.Addons.Common.AddonPlayer).OnDisconnected()
+  spec.csharp:
+  - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+    name: OnDisconnected
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}.OnDisconnected
+    name: OnDisconnected
+    isExternal: true
+  - name: (
+  - name: )
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnected*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnected
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.html#BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnected
+  name: OnDisconnected
+  nameWithType: OnDisconnectedEvent.OnDisconnected
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnDisconnectedEvent.OnDisconnected
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: BattleBitAPI.Server.GameServer`1.OnDisconnected
+  commentId: M:BattleBitAPI.Server.GameServer`1.OnDisconnected
+  isExternal: true
+  name: OnDisconnected()
+  nameWithType: GameServer<TPlayer>.OnDisconnected()
+  fullName: BattleBitAPI.Server.GameServer<TPlayer>.OnDisconnected()
+  nameWithType.vb: GameServer(Of TPlayer).OnDisconnected()
+  fullName.vb: BattleBitAPI.Server.GameServer(Of TPlayer).OnDisconnected()
+  spec.csharp:
+  - uid: BattleBitAPI.Server.GameServer`1.OnDisconnected
+    name: OnDisconnected
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BattleBitAPI.Server.GameServer`1.OnDisconnected
+    name: OnDisconnected
+    isExternal: true
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

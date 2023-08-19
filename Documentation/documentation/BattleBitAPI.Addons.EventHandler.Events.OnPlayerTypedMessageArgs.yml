@@ -1,30 +1,32 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
-  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
-  id: OnSavePlayerStatsArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs
+  id: OnPlayerTypedMessageArgs
   parent: BattleBitAPI.Addons.EventHandler.Events
   children:
-  - BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor
-  - BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer
-  - BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
-  - BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
+  - BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.#ctor
+  - BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel
+  - BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer
+  - BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message
+  - BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player
   langs:
   - csharp
   - vb
-  name: OnSavePlayerStatsArgs
-  nameWithType: OnSavePlayerStatsArgs
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
+  name: OnPlayerTypedMessageArgs
+  nameWithType: OnPlayerTypedMessageArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs
   type: Class
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: 'public class OnSavePlayerStatsArgs : IGameServerArgs'
-    content.vb: Public Class OnSavePlayerStatsArgs Implements IGameServerArgs
+    content: 'public class OnPlayerTypedMessageArgs : IPlayerArgs, IGameServerArgs'
+    content.vb: Public Class OnPlayerTypedMessageArgs Implements IPlayerArgs, IGameServerArgs
   inheritance:
   - System.Object
   implements:
+  - BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs
   - BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
   inheritedMembers:
   - System.Object.GetType
@@ -34,79 +36,103 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor
-  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.#ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.#ctor
   id: '#ctor'
-  parent: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs
   langs:
   - csharp
   - vb
-  name: OnSavePlayerStatsArgs()
-  nameWithType: OnSavePlayerStatsArgs.OnSavePlayerStatsArgs()
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.OnSavePlayerStatsArgs()
+  name: OnPlayerTypedMessageArgs()
+  nameWithType: OnPlayerTypedMessageArgs.OnPlayerTypedMessageArgs()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.OnPlayerTypedMessageArgs()
   type: Constructor
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public OnSavePlayerStatsArgs()
+    content: public OnPlayerTypedMessageArgs()
     content.vb: Public Sub New()
-  overload: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor*
-  nameWithType.vb: OnSavePlayerStatsArgs.New()
-  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.New()
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.#ctor*
+  nameWithType.vb: OnPlayerTypedMessageArgs.New()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.New()
   name.vb: New()
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
-  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
-  id: SteamId
-  parent: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player
+  id: Player
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs
   langs:
   - csharp
   - vb
-  name: SteamId
-  nameWithType: OnSavePlayerStatsArgs.SteamId
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
+  name: Player
+  nameWithType: OnPlayerTypedMessageArgs.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player
+  type: Property
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
+  example: []
+  syntax:
+    content: public required AddonPlayer Player { get; init; }
+    parameters: []
+    return:
+      type: BattleBitAPI.Addons.Common.AddonPlayer
+    content.vb: Public Property Player As AddonPlayer
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player*
+  implements:
+  - BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs.Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel
+  id: ChatChannel
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs
+  langs:
+  - csharp
+  - vb
+  name: ChatChannel
+  nameWithType: OnPlayerTypedMessageArgs.ChatChannel
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel
   type: Property
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public required ulong SteamId { get; init; }
+    content: public required ChatChannel ChatChannel { get; init; }
     parameters: []
     return:
-      type: System.UInt64
-    content.vb: Public Property SteamId As ULong
-  overload: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId*
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
-  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
-  id: PlayerStats
-  parent: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
+      type: BattleBitAPI.Common.ChatChannel
+    content.vb: Public Property ChatChannel As ChatChannel
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel*
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message
+  id: Message
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs
   langs:
   - csharp
   - vb
-  name: PlayerStats
-  nameWithType: OnSavePlayerStatsArgs.PlayerStats
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
+  name: Message
+  nameWithType: OnPlayerTypedMessageArgs.Message
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message
   type: Property
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public required PlayerStats PlayerStats { get; init; }
+    content: public required string Message { get; init; }
     parameters: []
     return:
-      type: BattleBitAPI.Common.PlayerStats
-    content.vb: Public Property PlayerStats As PlayerStats
-  overload: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats*
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer
-  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message*
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer
   id: GameServer
-  parent: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs
   langs:
   - csharp
   - vb
   name: GameServer
-  nameWithType: OnSavePlayerStatsArgs.GameServer
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer
+  nameWithType: OnPlayerTypedMessageArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer
   type: Property
   assemblies:
   - BattleBitAPI.Addons.EventHandler
@@ -118,7 +144,7 @@ items:
     return:
       type: BattleBitAPI.Addons.Common.AddonGameServer
     content.vb: Public Property GameServer As AddonGameServer
-  overload: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer*
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer*
   implements:
   - BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
 references:
@@ -180,6 +206,14 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs
+  parent: BattleBitAPI.Addons.EventHandler.Events
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs.html
+  name: IPlayerArgs
+  nameWithType: IPlayerArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs
 - uid: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
   commentId: T:BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
   parent: BattleBitAPI.Addons.EventHandler.Events
@@ -414,93 +448,39 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor*
-  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.#ctor
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.#ctor
-  name: OnSavePlayerStatsArgs
-  nameWithType: OnSavePlayerStatsArgs.OnSavePlayerStatsArgs
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.OnSavePlayerStatsArgs
-  nameWithType.vb: OnSavePlayerStatsArgs.New
-  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.New
+  href: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.#ctor
+  name: OnPlayerTypedMessageArgs
+  nameWithType: OnPlayerTypedMessageArgs.OnPlayerTypedMessageArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.OnPlayerTypedMessageArgs
+  nameWithType.vb: OnPlayerTypedMessageArgs.New
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.New
   name.vb: New
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId*
-  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
-  name: SteamId
-  nameWithType: OnSavePlayerStatsArgs.SteamId
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.SteamId
-- uid: System.UInt64
-  commentId: T:System.UInt64
-  parent: System
+  href: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player
+  name: Player
+  nameWithType: OnPlayerTypedMessageArgs.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Player
+- uid: BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs.Player
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs.Player
+  parent: BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.uint64
-  name: ulong
-  nameWithType: ulong
-  fullName: ulong
-  nameWithType.vb: ULong
-  fullName.vb: ULong
-  name.vb: ULong
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats*
-  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
-  isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
-  name: PlayerStats
-  nameWithType: OnSavePlayerStatsArgs.PlayerStats
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.PlayerStats
-- uid: BattleBitAPI.Common.PlayerStats
-  commentId: T:BattleBitAPI.Common.PlayerStats
-  parent: BattleBitAPI.Common
-  isExternal: true
-  name: PlayerStats
-  nameWithType: PlayerStats
-  fullName: BattleBitAPI.Common.PlayerStats
-- uid: BattleBitAPI.Common
-  commentId: N:BattleBitAPI.Common
-  isExternal: true
-  name: BattleBitAPI.Common
-  nameWithType: BattleBitAPI.Common
-  fullName: BattleBitAPI.Common
-  spec.csharp:
-  - uid: BattleBitAPI
-    name: BattleBitAPI
-    isExternal: true
-  - name: .
-  - uid: BattleBitAPI.Common
-    name: Common
-    isExternal: true
-  spec.vb:
-  - uid: BattleBitAPI
-    name: BattleBitAPI
-    isExternal: true
-  - name: .
-  - uid: BattleBitAPI.Common
-    name: Common
-    isExternal: true
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer*
-  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer
-  isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer
-  name: GameServer
-  nameWithType: OnSavePlayerStatsArgs.GameServer
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnSavePlayerStatsArgs.GameServer
-- uid: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
-  commentId: P:BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
-  parent: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
-  isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.html#BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
-  name: GameServer
-  nameWithType: IGameServerArgs.GameServer
-  fullName: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
-- uid: BattleBitAPI.Addons.Common.AddonGameServer
-  commentId: T:BattleBitAPI.Addons.Common.AddonGameServer
+  href: BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs.html#BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs.Player
+  name: Player
+  nameWithType: IPlayerArgs.Player
+  fullName: BattleBitAPI.Addons.EventHandler.Events.IPlayerArgs.Player
+- uid: BattleBitAPI.Addons.Common.AddonPlayer
+  commentId: T:BattleBitAPI.Addons.Common.AddonPlayer
   parent: BattleBitAPI.Addons.Common
   isExternal: true
-  href: BattleBitAPI.Addons.Common.AddonGameServer.html
-  name: AddonGameServer
-  nameWithType: AddonGameServer
-  fullName: BattleBitAPI.Addons.Common.AddonGameServer
+  href: BattleBitAPI.Addons.Common.AddonPlayer.html
+  name: AddonPlayer
+  nameWithType: AddonPlayer
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer
 - uid: BattleBitAPI.Addons.Common
   commentId: N:BattleBitAPI.Addons.Common
   isExternal: true
@@ -538,3 +518,80 @@ references:
     name: Common
     isExternal: true
     href: BattleBitAPI.Addons.Common.html
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel
+  name: ChatChannel
+  nameWithType: OnPlayerTypedMessageArgs.ChatChannel
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.ChatChannel
+- uid: BattleBitAPI.Common.ChatChannel
+  commentId: T:BattleBitAPI.Common.ChatChannel
+  parent: BattleBitAPI.Common
+  isExternal: true
+  name: ChatChannel
+  nameWithType: ChatChannel
+  fullName: BattleBitAPI.Common.ChatChannel
+- uid: BattleBitAPI.Common
+  commentId: N:BattleBitAPI.Common
+  isExternal: true
+  name: BattleBitAPI.Common
+  nameWithType: BattleBitAPI.Common
+  fullName: BattleBitAPI.Common
+  spec.csharp:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+  - name: .
+  - uid: BattleBitAPI.Common
+    name: Common
+    isExternal: true
+  spec.vb:
+  - uid: BattleBitAPI
+    name: BattleBitAPI
+    isExternal: true
+  - name: .
+  - uid: BattleBitAPI.Common
+    name: Common
+    isExternal: true
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message
+  name: Message
+  nameWithType: OnPlayerTypedMessageArgs.Message
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer
+  name: GameServer
+  nameWithType: OnPlayerTypedMessageArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerTypedMessageArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
+  parent: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.html#BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
+  name: GameServer
+  nameWithType: IGameServerArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
+- uid: BattleBitAPI.Addons.Common.AddonGameServer
+  commentId: T:BattleBitAPI.Addons.Common.AddonGameServer
+  parent: BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.Common.AddonGameServer.html
+  name: AddonGameServer
+  nameWithType: AddonGameServer
+  fullName: BattleBitAPI.Addons.Common.AddonGameServer

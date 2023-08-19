@@ -1,27 +1,31 @@
 ### YamlMime:ManagedReference
 items:
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
-  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
-  id: OnGameServerReconnectedArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs
+  id: OnAPlayerRevivedAnotherPlayerArgs
   parent: BattleBitAPI.Addons.EventHandler.Events
   children:
-  - BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
-  - BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+  - BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.#ctor
+  - BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.From
+  - BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.GameServer
+  - BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.To
   langs:
   - csharp
   - vb
-  name: OnGameServerReconnectedArgs
-  nameWithType: OnGameServerReconnectedArgs
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+  name: OnAPlayerRevivedAnotherPlayerArgs
+  nameWithType: OnAPlayerRevivedAnotherPlayerArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs
   type: Class
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public class OnGameServerReconnectedArgs
-    content.vb: Public Class OnGameServerReconnectedArgs
+    content: 'public class OnAPlayerRevivedAnotherPlayerArgs : IGameServerArgs'
+    content.vb: Public Class OnAPlayerRevivedAnotherPlayerArgs Implements IGameServerArgs
   inheritance:
   - System.Object
+  implements:
+  - BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
   inheritedMembers:
   - System.Object.GetType
   - System.Object.MemberwiseClone
@@ -30,48 +34,93 @@ items:
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.GetHashCode
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
-  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.#ctor
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.#ctor
   id: '#ctor'
-  parent: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs
   langs:
   - csharp
   - vb
-  name: OnGameServerReconnectedArgs()
-  nameWithType: OnGameServerReconnectedArgs.OnGameServerReconnectedArgs()
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.OnGameServerReconnectedArgs()
+  name: OnAPlayerRevivedAnotherPlayerArgs()
+  nameWithType: OnAPlayerRevivedAnotherPlayerArgs.OnAPlayerRevivedAnotherPlayerArgs()
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.OnAPlayerRevivedAnotherPlayerArgs()
   type: Constructor
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public OnGameServerReconnectedArgs()
+    content: public OnAPlayerRevivedAnotherPlayerArgs()
     content.vb: Public Sub New()
-  overload: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor*
-  nameWithType.vb: OnGameServerReconnectedArgs.New()
-  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.New()
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.#ctor*
+  nameWithType.vb: OnAPlayerRevivedAnotherPlayerArgs.New()
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.New()
   name.vb: New()
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
-  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
-  id: GameServer
-  parent: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.From
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.From
+  id: From
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs
   langs:
   - csharp
   - vb
-  name: GameServer
-  nameWithType: OnGameServerReconnectedArgs.GameServer
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+  name: From
+  nameWithType: OnAPlayerRevivedAnotherPlayerArgs.From
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.From
   type: Property
   assemblies:
   - BattleBitAPI.Addons.EventHandler
   namespace: BattleBitAPI.Addons.EventHandler.Events
   syntax:
-    content: public required GameServer<AddonPlayer> GameServer { get; init; }
+    content: public required AddonPlayer From { get; init; }
     parameters: []
     return:
-      type: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-    content.vb: Public Property GameServer As GameServer(Of AddonPlayer)
-  overload: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer*
+      type: BattleBitAPI.Addons.Common.AddonPlayer
+    content.vb: Public Property From As AddonPlayer
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.From*
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.To
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.To
+  id: To
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs
+  langs:
+  - csharp
+  - vb
+  name: To
+  nameWithType: OnAPlayerRevivedAnotherPlayerArgs.To
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.To
+  type: Property
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
+  syntax:
+    content: public required AddonPlayer To { get; init; }
+    parameters: []
+    return:
+      type: BattleBitAPI.Addons.Common.AddonPlayer
+    content.vb: Public Property [To] As AddonPlayer
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.To*
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.GameServer
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.GameServer
+  id: GameServer
+  parent: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs
+  langs:
+  - csharp
+  - vb
+  name: GameServer
+  nameWithType: OnAPlayerRevivedAnotherPlayerArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.GameServer
+  type: Property
+  assemblies:
+  - BattleBitAPI.Addons.EventHandler
+  namespace: BattleBitAPI.Addons.EventHandler.Events
+  example: []
+  syntax:
+    content: public required AddonGameServer GameServer { get; init; }
+    parameters: []
+    return:
+      type: BattleBitAPI.Addons.Common.AddonGameServer
+    content.vb: Public Property GameServer As AddonGameServer
+  overload: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.GameServer*
+  implements:
+  - BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
 references:
 - uid: BattleBitAPI.Addons.EventHandler.Events
   commentId: N:BattleBitAPI.Addons.EventHandler.Events
@@ -131,6 +180,14 @@ references:
   nameWithType.vb: Object
   fullName.vb: Object
   name.vb: Object
+- uid: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
+  commentId: T:BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
+  parent: BattleBitAPI.Addons.EventHandler.Events
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.html
+  name: IGameServerArgs
+  nameWithType: IGameServerArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
@@ -357,100 +414,95 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor*
-  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.#ctor*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.#ctor
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.#ctor
-  name: OnGameServerReconnectedArgs
-  nameWithType: OnGameServerReconnectedArgs.OnGameServerReconnectedArgs
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.OnGameServerReconnectedArgs
-  nameWithType.vb: OnGameServerReconnectedArgs.New
-  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.New
+  href: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.#ctor
+  name: OnAPlayerRevivedAnotherPlayerArgs
+  nameWithType: OnAPlayerRevivedAnotherPlayerArgs.OnAPlayerRevivedAnotherPlayerArgs
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.OnAPlayerRevivedAnotherPlayerArgs
+  nameWithType.vb: OnAPlayerRevivedAnotherPlayerArgs.New
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.New
   name.vb: New
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer*
-  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.From*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.From
   isExternal: true
-  href: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
-  name: GameServer
-  nameWithType: OnGameServerReconnectedArgs.GameServer
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnGameServerReconnectedArgs.GameServer
-- uid: BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-  commentId: T:BattleBitAPI.Server.GameServer{BattleBitAPI.Addons.Common.AddonPlayer}
-  parent: BattleBitAPI.Server
-  definition: BattleBitAPI.Server.GameServer`1
+  href: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.From
+  name: From
+  nameWithType: OnAPlayerRevivedAnotherPlayerArgs.From
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.From
+- uid: BattleBitAPI.Addons.Common.AddonPlayer
+  commentId: T:BattleBitAPI.Addons.Common.AddonPlayer
+  parent: BattleBitAPI.Addons.Common
+  isExternal: true
   href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  name: GameServer<AddonPlayer>
-  nameWithType: GameServer<AddonPlayer>
-  fullName: BattleBitAPI.Server.GameServer<BattleBitAPI.Addons.Common.AddonPlayer>
-  nameWithType.vb: GameServer(Of AddonPlayer)
-  fullName.vb: BattleBitAPI.Server.GameServer(Of BattleBitAPI.Addons.Common.AddonPlayer)
-  name.vb: GameServer(Of AddonPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Server.GameServer`1
-    name: GameServer
-    isExternal: true
-  - name: <
-  - uid: BattleBitAPI.Addons.Common.AddonPlayer
-    name: AddonPlayer
-    isExternal: true
-    href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Server.GameServer`1
-    name: GameServer
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: BattleBitAPI.Addons.Common.AddonPlayer
-    name: AddonPlayer
-    isExternal: true
-    href: BattleBitAPI.Addons.Common.AddonPlayer.html
-  - name: )
-- uid: BattleBitAPI.Server.GameServer`1
-  commentId: T:BattleBitAPI.Server.GameServer`1
+  name: AddonPlayer
+  nameWithType: AddonPlayer
+  fullName: BattleBitAPI.Addons.Common.AddonPlayer
+- uid: BattleBitAPI.Addons.Common
+  commentId: N:BattleBitAPI.Addons.Common
   isExternal: true
-  name: GameServer<TPlayer>
-  nameWithType: GameServer<TPlayer>
-  fullName: BattleBitAPI.Server.GameServer<TPlayer>
-  nameWithType.vb: GameServer(Of TPlayer)
-  fullName.vb: BattleBitAPI.Server.GameServer(Of TPlayer)
-  name.vb: GameServer(Of TPlayer)
-  spec.csharp:
-  - uid: BattleBitAPI.Server.GameServer`1
-    name: GameServer
-    isExternal: true
-  - name: <
-  - name: TPlayer
-  - name: '>'
-  spec.vb:
-  - uid: BattleBitAPI.Server.GameServer`1
-    name: GameServer
-    isExternal: true
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TPlayer
-  - name: )
-- uid: BattleBitAPI.Server
-  commentId: N:BattleBitAPI.Server
-  isExternal: true
-  name: BattleBitAPI.Server
-  nameWithType: BattleBitAPI.Server
-  fullName: BattleBitAPI.Server
+  href: BattleBitAPI.html
+  name: BattleBitAPI.Addons.Common
+  nameWithType: BattleBitAPI.Addons.Common
+  fullName: BattleBitAPI.Addons.Common
   spec.csharp:
   - uid: BattleBitAPI
     name: BattleBitAPI
     isExternal: true
+    href: BattleBitAPI.html
   - name: .
-  - uid: BattleBitAPI.Server
-    name: Server
+  - uid: BattleBitAPI.Addons
+    name: Addons
     isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html
   spec.vb:
   - uid: BattleBitAPI
     name: BattleBitAPI
     isExternal: true
+    href: BattleBitAPI.html
   - name: .
-  - uid: BattleBitAPI.Server
-    name: Server
+  - uid: BattleBitAPI.Addons
+    name: Addons
     isExternal: true
+    href: BattleBitAPI.Addons.html
+  - name: .
+  - uid: BattleBitAPI.Addons.Common
+    name: Common
+    isExternal: true
+    href: BattleBitAPI.Addons.Common.html
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.To*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.To
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.To
+  name: To
+  nameWithType: OnAPlayerRevivedAnotherPlayerArgs.To
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.To
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.GameServer*
+  commentId: Overload:BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.GameServer
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.html#BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.GameServer
+  name: GameServer
+  nameWithType: OnAPlayerRevivedAnotherPlayerArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnAPlayerRevivedAnotherPlayerArgs.GameServer
+- uid: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
+  commentId: P:BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
+  parent: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs
+  isExternal: true
+  href: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.html#BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
+  name: GameServer
+  nameWithType: IGameServerArgs.GameServer
+  fullName: BattleBitAPI.Addons.EventHandler.Events.IGameServerArgs.GameServer
+- uid: BattleBitAPI.Addons.Common.AddonGameServer
+  commentId: T:BattleBitAPI.Addons.Common.AddonGameServer
+  parent: BattleBitAPI.Addons.Common
+  isExternal: true
+  href: BattleBitAPI.Addons.Common.AddonGameServer.html
+  name: AddonGameServer
+  nameWithType: AddonGameServer
+  fullName: BattleBitAPI.Addons.Common.AddonGameServer

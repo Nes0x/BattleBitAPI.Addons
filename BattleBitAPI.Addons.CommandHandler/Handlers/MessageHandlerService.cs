@@ -27,9 +27,9 @@ public class MessageHandlerService : AddonGameServer
         _command = command;
     }
 
-    public override Task<bool> OnPlayerTypedMessage(AddonPlayer player, ChatChannel channel, string content)
+    public override Task<bool> OnPlayerTypedMessage(AddonPlayer player, ChatChannel channel, string message)
     {
-        if (!content.StartsWith(
+        if (!message.StartsWith(
                 $"{_commandHandlerSettings.CommandRegex.ToLower()}{_command.CommandName.ToLower()}"))
             return Task.FromResult(true);
 
@@ -47,7 +47,7 @@ public class MessageHandlerService : AddonGameServer
             ServiceProvider = _provider
         };
 
-        var parametersFromCommand = content.Split(" ").ToList();
+        var parametersFromCommand = message.Split(" ").ToList();
 
         var result = _converter.TryConvertParameters(parametersFromCommand,
             _command,
@@ -64,9 +64,9 @@ public class MessageHandlerService : AddonGameServer
                 }
                 catch (Exception e)
                 {
-                    var message = e.Message;
-                    _logger.LogError(message, e);
-                    player.Message(message);
+                    var errorMessage = e.Message;
+                    _logger.LogError(errorMessage, e);
+                    player.Message(errorMessage);
                     return Task.FromResult(_commandHandlerSettings.ShowCommandOnChatWhenError);
                 }
             }

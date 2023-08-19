@@ -16,7 +16,7 @@ public class CommandHandlerActivatorService : IHostedService
     private readonly CommandHandlerSettings _commandHandlerSettings;
     private readonly IEnumerable<CommandModule> _commandModules;
     private readonly IConverter _converter;
-    private readonly List<Func<MessageHandlerService>> _handlers;
+    private readonly List<Func<AddonGameServer>> _handlers;
     private readonly ILogger<MessageHandlerService> _logger;
     private readonly IServiceProvider _provider;
     private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
@@ -34,7 +34,7 @@ public class CommandHandlerActivatorService : IHostedService
         _converter = converter;
         _logger = logger;
         _provider = provider;
-        _handlers = new List<Func<MessageHandlerService>>();
+        _handlers = new List<Func<AddonGameServer>>();
     }
 
     public Task StartAsync(CancellationToken cancellationToken)
@@ -45,7 +45,7 @@ public class CommandHandlerActivatorService : IHostedService
             CommandModules.Add(commandModule);
             foreach (var command in commandModule.Commands)
             {
-                var handler = () => new MessageHandlerService(_commandHandlerSettings, _converter, _logger, _provider,
+                Func<AddonGameServer> handler = () => new MessageHandlerService(_commandHandlerSettings, _converter, _logger, _provider,
                     commandModule, command);
                 _handlers.Add(handler);
                 _serverListener.OnCreatingGameServerInstance += handler;

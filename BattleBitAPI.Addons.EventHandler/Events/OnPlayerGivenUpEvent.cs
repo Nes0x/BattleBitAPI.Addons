@@ -3,17 +3,17 @@ using BattleBitAPI.Addons.EventHandler.Common;
 
 namespace BattleBitAPI.Addons.EventHandler.Events;
 
-public class OnPlayerConnectedEvent : EventGameServer
+public class OnPlayerGivenUpEvent : EventGameServer
 {
-    public OnPlayerConnectedEvent(EventModule eventModule, Event @event) : base(eventModule, @event)
+    public OnPlayerGivenUpEvent(EventModule eventModule, Event @event) : base(eventModule, @event)
     {
     }
 
-    public override Task OnPlayerConnected(AddonPlayer player)
+    public override Task OnPlayerGivenUp(AddonPlayer player)
     {
         return (Task)Event.MethodInfo.Invoke(EventModule, new[]
         {
-            new OnPlayerConnectedArgs()
+            new OnPlayerGivenUpArgs()
             {
                 Player = player,
                 GameServer = this
@@ -21,9 +21,11 @@ public class OnPlayerConnectedEvent : EventGameServer
         
         });
     }
+
+
 }
 
-public class OnPlayerConnectedArgs : IPlayerArgs, IGameServerArgs
+public class OnPlayerGivenUpArgs : IPlayerArgs, IGameServerArgs
 {
     public required AddonPlayer Player { get; init; }
     public required AddonGameServer GameServer { get; init; }

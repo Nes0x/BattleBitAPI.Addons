@@ -8,7 +8,7 @@ public abstract class EventGameServer : AddonGameServer
     protected readonly EventModule EventModule;
     protected readonly Event Event;
 
-    protected EventGameServer(EventModule eventModule, Event @event)
+    public EventGameServer(EventModule eventModule, Event @event)
     {
         EventModule = eventModule;
         Event = @event;

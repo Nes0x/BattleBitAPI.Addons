@@ -2,7 +2,6 @@
 using BattleBitAPI.Addons.Common;
 using BattleBitAPI.Addons.EventHandler.Common;
 using BattleBitAPI.Addons.EventHandler.Events;
-using BattleBitAPI.Common;
 using BattleBitAPI.Server;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
@@ -27,7 +26,7 @@ public class EventHandlerActivatorService : IHostedService
         ModifyEventModules();
         try
         {
-            // RegisterEvents();
+            RegisterEvents();
         }
         catch (Exception e)
         {
@@ -46,11 +45,93 @@ public class EventHandlerActivatorService : IHostedService
         foreach (var eventModule in _eventModules)
         foreach (var @event in eventModule.Events)
         {
-            switch (@event.EventType)
+            try
             {
-                case EventType.OnPlayerConnected:
-                    _serverListener.OnCreatingGameServerInstance += () => new OnPlayerConnectedEvent(eventModule, @event);
-                    break;
+                var eventGameServer = (EventGameServer)Activator.CreateInstance(Type.GetType($"BattleBitAPI.Addons.EventHandler.Events.{@event.EventType.ToString()}Event"),eventModule, @event);
+                if (eventGameServer is not null)
+                {
+                    _serverListener.OnCreatingGameServerInstance += () => eventGameServer;
+                }
+            }
+            catch (Exception)
+            {
+                switch (@event.EventType)
+                {
+                    case EventType.OnGameServerConnecting:
+                        _serverListener.OnGameServerConnecting += address =>
+                        {
+                            return (Task<bool>)@event.MethodInfo.Invoke(eventModule, new[]
+                            {
+                                new OnGameServerConnectingArgs()
+                                {
+                                    IpAddress = address
+                                }
+                            });
+                        };
+                        break;
+                    case EventType.OnValidateGameServerToken:
+                        _serverListener.OnValidateGameServerToken += (address, port, token) => 
+                        {
+                            return (Task<bool>)@event.MethodInfo.Invoke(eventModule, new[]
+                            {
+                                new OnValidateGameServerTokenArgs()
+                                {
+                                    IpAddress = address,
+                                    Port = port,
+                                    Token = token
+                                }
+                            });
+                        };
+                        break;
+                    case EventType.OnGameServerConnected:
+                        _serverListener.OnGameServerConnected += server => 
+                        {
+                            return (Task)@event.MethodInfo.Invoke(eventModule, new[]
+                            {
+                                new OnGameServerConnectedArgs()
+                                {
+                                    GameServer = server
+                                }
+                            });
+                        };
+                        break;
+                    case EventType.OnGameServerReconnected:
+                        _serverListener.OnGameServerReconnected += server => 
+                        {
+                            return (Task)@event.MethodInfo.Invoke(eventModule, new[]
+                            {
+                                new OnGameServerReconnectedArgs()
+                                {
+                                    GameServer = server
+                                }
+                            });
+                        };
+                        break;
+                    case EventType.OnGameServerDisconnected:
+                        _serverListener.OnGameServerDisconnected += server => 
+                        {
+                            return (Task)@event.MethodInfo.Invoke(eventModule, new[]
+                            {
+                                new OnGameServerDisconnectedArgs()
+                                {
+                                    GameServer = server
+                                }
+                            });
+                        };
+                        break;
+                    case EventType.OnCreatingGameServerInstance:
+                        _serverListener.OnCreatingGameServerInstance += () =>
+                        {
+                            return (AddonGameServer)@event.MethodInfo.Invoke(eventModule, null);
+                        };
+                        break;
+                    case EventType.OnCreatingPlayerInstance:
+                        _serverListener.OnCreatingPlayerInstance += () =>
+                        {
+                            return (AddonPlayer)@event.MethodInfo.Invoke(eventModule, null);
+                        };
+                        break;
+                }
             }
         }
     }

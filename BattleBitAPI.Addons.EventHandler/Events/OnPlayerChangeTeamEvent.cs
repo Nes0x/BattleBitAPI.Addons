@@ -17,15 +17,17 @@ public class OnPlayerChangeTeamEvent : EventGameServer
             new OnPlayerChangeTeamArgs()
             {
                 Player = player,
-                Team = team
+                Team = team,
+                GameServer = this
             }
         
         });
     }
 }
 
-public class OnPlayerChangeTeamArgs : IPlayerArgs
+public class OnPlayerChangeTeamArgs : IPlayerArgs, IGameServerArgs
 {
+    public required AddonGameServer GameServer { get; init; }
     public required AddonPlayer Player { get; init; }
     public required Team Team { get; init; }
 }

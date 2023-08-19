@@ -11,7 +11,7 @@ namespace BattleBitAPI.Addons.EventHandler;
 public class EventHandlerActivatorService : IHostedService
 {
     private readonly IEnumerable<EventModule> _eventModules;
-    private readonly List<Func<EventGameServer>> _eventGameHandlers;
+    private readonly List<Func<AddonGameServer>> _eventGameHandlers;
     private readonly ILogger<EventHandlerActivatorService> _logger;
     private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
 
@@ -19,7 +19,7 @@ public class EventHandlerActivatorService : IHostedService
         ServerListener<AddonPlayer, AddonGameServer> serverListener, ILogger<EventHandlerActivatorService> logger)
     {
         _eventModules = eventModules;
-        _eventGameHandlers = new List<Func<EventGameServer>>();
+        _eventGameHandlers = new List<Func<AddonGameServer>>();
         _serverListener = serverListener;
         _logger = logger;
     }
@@ -54,10 +54,10 @@ public class EventHandlerActivatorService : IHostedService
         foreach (var @event in eventModule.Events)
             try
             {
-                var eventGameServer = (EventGameServer)Activator.CreateInstance(
+                var eventGameServer = (AddonGameServer)Activator.CreateInstance(
                     Type.GetType($"BattleBitAPI.Addons.EventHandler.Events.{@event.EventType.ToString()}Event"),
                     eventModule, @event);
-                var handler = () => eventGameServer;
+                Func<AddonGameServer> handler = () => eventGameServer;
                 if (eventGameServer is null) continue;
                 _serverListener.OnCreatingGameServerInstance += handler;
                 _eventGameHandlers.Add(handler!);

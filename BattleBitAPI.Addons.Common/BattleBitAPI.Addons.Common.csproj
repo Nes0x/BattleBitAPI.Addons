@@ -9,7 +9,6 @@
         <Description>Various helper functions for unofficial battlebit libraries.</Description>
         <PackageProjectUrl>https://github.com/Nes0x/BattleBitAPI.Addons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
-        <LangVersion>11</LangVersion>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>battlebit;battlebitapi.addons;battlebitapi.common</PackageTags>
     </PropertyGroup>

@@ -9,7 +9,6 @@
         <Description>A unofficial library for creating commands.</Description>
         <PackageProjectUrl>https://github.com/Nes0x/BattleBitAPI.Addons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
-        <LangVersion>11</LangVersion>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>battlebit;battlebitapi.addons;battlebitapi.commands</PackageTags>
     </PropertyGroup>

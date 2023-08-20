@@ -120,13 +120,22 @@
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html#BattleBitAPI_Addons_EventHandler_Events_EventGameServer_EventModule">EventGameServer.EventModule</a>
-    </div>
-    <div>
       <a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html#BattleBitAPI_Addons_EventHandler_Events_EventGameServer_Event">EventGameServer.Event</a>
     </div>
     <div>
+      <a class="xref" href="BattleBitAPI.Addons.EventHandler.Events.EventGameServer.html#BattleBitAPI_Addons_EventHandler_Events_EventGameServer_EventModule">EventGameServer.EventModule</a>
+    </div>
+    <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.Tick()</span>
+    </div>
+    <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.PlayersOf(Team)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GameServer&lt;AddonPlayer&gt;.SearchPlayerByName(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GameServer&lt;AddonPlayer&gt;.SearchPlayerByName(params string[])</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">GameServer&lt;AddonPlayer&gt;.TryGetPlayer(ulong, out AddonPlayer)</a>
@@ -136,9 +145,6 @@
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.OnTick()</span>
-    </div>
-    <div>
-      <span class="xref">GameServer&lt;AddonPlayer&gt;.OnReconnected()</span>
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.OnPlayerConnected(AddonPlayer)</span>
@@ -165,13 +171,16 @@
       <span class="xref">GameServer&lt;AddonPlayer&gt;.OnPlayerChangedRole(AddonPlayer, GameRole)</span>
     </div>
     <div>
-      <span class="xref">GameServer&lt;AddonPlayer&gt;.OnPlayerJoinedSquad(AddonPlayer, Squads)</span>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.OnPlayerJoinedSquad(AddonPlayer, Squad&lt;AddonPlayer&gt;)</span>
     </div>
     <div>
-      <span class="xref">GameServer&lt;AddonPlayer&gt;.OnPlayerLeftSquad(AddonPlayer, Squads)</span>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.OnPlayerLeftSquad(AddonPlayer, Squad&lt;AddonPlayer&gt;)</span>
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.OnPlayerChangeTeam(AddonPlayer, Team)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">GameServer&lt;AddonPlayer&gt;.OnSquadPointsChanged(Squad&lt;AddonPlayer&gt;, int)</a>
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.OnPlayerSpawning(AddonPlayer, OnPlayerSpawnArguments)</span>
@@ -204,6 +213,9 @@
       <span class="xref">GameServer&lt;AddonPlayer&gt;.OnRoundEnded()</span>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">GameServer&lt;AddonPlayer&gt;.OnSessionChanged(long, long)</a>
+    </div>
+    <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.WriteToSocket(Stream)</span>
     </div>
     <div>
@@ -231,7 +243,13 @@
       <span class="xref">GameServer&lt;AddonPlayer&gt;.ForceEndGame()</span>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GameServer&lt;AddonPlayer&gt;.SayToChat(string)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GameServer&lt;AddonPlayer&gt;.SayToAllChat(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GameServer&lt;AddonPlayer&gt;.SayToChat(string, ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GameServer&lt;AddonPlayer&gt;.SayToChat(string, Player&lt;AddonPlayer&gt;)</a>
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.StopServer()</span>
@@ -339,6 +357,9 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">GameServer&lt;AddonPlayer&gt;.Heal(Player&lt;AddonPlayer&gt;, float)</a>
     </div>
     <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">GameServer&lt;AddonPlayer&gt;.SetSquadPointsOf(Team, Squads, int)</a>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">GameServer&lt;AddonPlayer&gt;.SetPrimaryWeapon(ulong, WeaponItem, int, bool)</a>
     </div>
     <div>
@@ -375,6 +396,12 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GameServer&lt;AddonPlayer&gt;.SetThrowable(Player&lt;AddonPlayer&gt;, string, int, bool)</a>
     </div>
     <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.IterateMembersOf(Squad&lt;AddonPlayer&gt;)</span>
+    </div>
+    <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.GetSquad(Team, Squads)</span>
+    </div>
+    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">GameServer&lt;AddonPlayer&gt;.CloseConnection(string)</a>
     </div>
     <div>
@@ -382,9 +409,6 @@
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.ToString()</span>
-    </div>
-    <div>
-      <span class="xref">GameServer&lt;AddonPlayer&gt;.SetInstance(GameServer&lt;AddonPlayer&gt;, GameServer&lt;AddonPlayer&gt;.Internal)</span>
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.ServerHash</span>
@@ -397,9 +421,6 @@
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.GamePort</span>
-    </div>
-    <div>
-      <span class="xref">GameServer&lt;AddonPlayer&gt;.Socket</span>
     </div>
     <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.IsPasswordProtected</span>
@@ -435,6 +456,12 @@
       <span class="xref">GameServer&lt;AddonPlayer&gt;.ServerRulesText</span>
     </div>
     <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.RoundIndex</span>
+    </div>
+    <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.SessionID</span>
+    </div>
+    <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.ServerSettings</span>
     </div>
     <div>
@@ -453,7 +480,22 @@
       <span class="xref">GameServer&lt;AddonPlayer&gt;.ReconnectFlag</span>
     </div>
     <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.TeamASquads</span>
+    </div>
+    <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.TeamBSquads</span>
+    </div>
+    <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.AllSquads</span>
+    </div>
+    <div>
       <span class="xref">GameServer&lt;AddonPlayer&gt;.AllPlayers</span>
+    </div>
+    <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.AllTeamAPlayers</span>
+    </div>
+    <div>
+      <span class="xref">GameServer&lt;AddonPlayer&gt;.AllTeamBPlayers</span>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>

@@ -368,6 +368,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService-1.yml",
       "output": {
         ".html": {

@@ -1037,15 +1037,15 @@ references:
   commentId: T:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService
   fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService
   nameWithType: CommandHandlerActivatorService
-- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Common.CommandModule},BattleBitAPI.Addons.CommandHandler.Validations.IValidator,BattleBitAPI.Server.ServerListener{BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonGameServer},BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService},System.IServiceProvider)
-  name: CommandHandlerActivatorService(IEnumerable<CommandModule>, IValidator, ServerListener<AddonPlayer, AddonGameServer>, CommandHandlerSettings, IConverter, ILogger<MessageHandlerService>, IServiceProvider)
-  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService__ctor_System_Collections_Generic_IEnumerable_BattleBitAPI_Addons_CommandHandler_Common_CommandModule__BattleBitAPI_Addons_CommandHandler_Validations_IValidator_BattleBitAPI_Server_ServerListener_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Addons_Common_AddonGameServer__BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_BattleBitAPI_Addons_CommandHandler_Converters_IConverter_Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_CommandHandler_Handlers_MessageHandlerService__System_IServiceProvider_
-  commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Common.CommandModule},BattleBitAPI.Addons.CommandHandler.Validations.IValidator,BattleBitAPI.Server.ServerListener{BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonGameServer},BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService},System.IServiceProvider)
-  name.vb: New(IEnumerable(Of CommandModule), IValidator, ServerListener(Of AddonPlayer, AddonGameServer), CommandHandlerSettings, IConverter, ILogger(Of MessageHandlerService), IServiceProvider)
-  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.CommandHandlerActivatorService(System.Collections.Generic.IEnumerable<BattleBitAPI.Addons.CommandHandler.Common.CommandModule>, BattleBitAPI.Addons.CommandHandler.Validations.IValidator, BattleBitAPI.Server.ServerListener<BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonGameServer>, BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService>, System.IServiceProvider)
-  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.New(System.Collections.Generic.IEnumerable(Of BattleBitAPI.Addons.CommandHandler.Common.CommandModule), BattleBitAPI.Addons.CommandHandler.Validations.IValidator, BattleBitAPI.Server.ServerListener(Of BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonGameServer), BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService), System.IServiceProvider)
-  nameWithType: CommandHandlerActivatorService.CommandHandlerActivatorService(IEnumerable<CommandModule>, IValidator, ServerListener<AddonPlayer, AddonGameServer>, CommandHandlerSettings, IConverter, ILogger<MessageHandlerService>, IServiceProvider)
-  nameWithType.vb: CommandHandlerActivatorService.New(IEnumerable(Of CommandModule), IValidator, ServerListener(Of AddonPlayer, AddonGameServer), CommandHandlerSettings, IConverter, ILogger(Of MessageHandlerService), IServiceProvider)
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Common.CommandModule},BattleBitAPI.Addons.CommandHandler.Validations.IValidator,BattleBitAPI.Server.ServerListener{BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonGameServer},BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent},System.IServiceProvider)
+  name: CommandHandlerActivatorService(IEnumerable<CommandModule>, IValidator, ServerListener<AddonPlayer, AddonGameServer>, CommandHandlerSettings, IConverter, ILogger<MessageEvent>, IServiceProvider)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService__ctor_System_Collections_Generic_IEnumerable_BattleBitAPI_Addons_CommandHandler_Common_CommandModule__BattleBitAPI_Addons_CommandHandler_Validations_IValidator_BattleBitAPI_Server_ServerListener_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Addons_Common_AddonGameServer__BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_BattleBitAPI_Addons_CommandHandler_Converters_IConverter_Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_CommandHandler_Handlers_MessageEvent__System_IServiceProvider_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.#ctor(System.Collections.Generic.IEnumerable{BattleBitAPI.Addons.CommandHandler.Common.CommandModule},BattleBitAPI.Addons.CommandHandler.Validations.IValidator,BattleBitAPI.Server.ServerListener{BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Addons.Common.AddonGameServer},BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent},System.IServiceProvider)
+  name.vb: New(IEnumerable(Of CommandModule), IValidator, ServerListener(Of AddonPlayer, AddonGameServer), CommandHandlerSettings, IConverter, ILogger(Of MessageEvent), IServiceProvider)
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.CommandHandlerActivatorService(System.Collections.Generic.IEnumerable<BattleBitAPI.Addons.CommandHandler.Common.CommandModule>, BattleBitAPI.Addons.CommandHandler.Validations.IValidator, BattleBitAPI.Server.ServerListener<BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonGameServer>, BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent>, System.IServiceProvider)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.New(System.Collections.Generic.IEnumerable(Of BattleBitAPI.Addons.CommandHandler.Common.CommandModule), BattleBitAPI.Addons.CommandHandler.Validations.IValidator, BattleBitAPI.Server.ServerListener(Of BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Addons.Common.AddonGameServer), BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent), System.IServiceProvider)
+  nameWithType: CommandHandlerActivatorService.CommandHandlerActivatorService(IEnumerable<CommandModule>, IValidator, ServerListener<AddonPlayer, AddonGameServer>, CommandHandlerSettings, IConverter, ILogger<MessageEvent>, IServiceProvider)
+  nameWithType.vb: CommandHandlerActivatorService.New(IEnumerable(Of CommandModule), IValidator, ServerListener(Of AddonPlayer, AddonGameServer), CommandHandlerSettings, IConverter, ILogger(Of MessageEvent), IServiceProvider)
 - uid: BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.#ctor*
   name: CommandHandlerActivatorService
   href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.CommandHandlerActivatorService.html#BattleBitAPI_Addons_CommandHandler_Handlers_CommandHandlerActivatorService__ctor_
@@ -1178,6 +1178,45 @@ references:
   fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.IMessageHandler(Of TPlayer).OnPlayerTypedMessage
   nameWithType: IMessageHandler<TPlayer>.OnPlayerTypedMessage
   nameWithType.vb: IMessageHandler(Of TPlayer).OnPlayerTypedMessage
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent
+  name: MessageEvent
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.html
+  commentId: T:BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent
+  nameWithType: MessageEvent
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.#ctor(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent},System.IServiceProvider,BattleBitAPI.Addons.CommandHandler.Common.CommandModule,BattleBitAPI.Addons.CommandHandler.Common.Command)
+  name: MessageEvent(CommandHandlerSettings, IConverter, ILogger<MessageEvent>, IServiceProvider, CommandModule, Command)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.html#BattleBitAPI_Addons_CommandHandler_Handlers_MessageEvent__ctor_BattleBitAPI_Addons_CommandHandler_Common_CommandHandlerSettings_BattleBitAPI_Addons_CommandHandler_Converters_IConverter_Microsoft_Extensions_Logging_ILogger_BattleBitAPI_Addons_CommandHandler_Handlers_MessageEvent__System_IServiceProvider_BattleBitAPI_Addons_CommandHandler_Common_CommandModule_BattleBitAPI_Addons_CommandHandler_Common_Command_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.#ctor(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings,BattleBitAPI.Addons.CommandHandler.Converters.IConverter,Microsoft.Extensions.Logging.ILogger{BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent},System.IServiceProvider,BattleBitAPI.Addons.CommandHandler.Common.CommandModule,BattleBitAPI.Addons.CommandHandler.Common.Command)
+  name.vb: New(CommandHandlerSettings, IConverter, ILogger(Of MessageEvent), IServiceProvider, CommandModule, Command)
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.MessageEvent(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger<BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent>, System.IServiceProvider, BattleBitAPI.Addons.CommandHandler.Common.CommandModule, BattleBitAPI.Addons.CommandHandler.Common.Command)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.New(BattleBitAPI.Addons.CommandHandler.Common.CommandHandlerSettings, BattleBitAPI.Addons.CommandHandler.Converters.IConverter, Microsoft.Extensions.Logging.ILogger(Of BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent), System.IServiceProvider, BattleBitAPI.Addons.CommandHandler.Common.CommandModule, BattleBitAPI.Addons.CommandHandler.Common.Command)
+  nameWithType: MessageEvent.MessageEvent(CommandHandlerSettings, IConverter, ILogger<MessageEvent>, IServiceProvider, CommandModule, Command)
+  nameWithType.vb: MessageEvent.New(CommandHandlerSettings, IConverter, ILogger(Of MessageEvent), IServiceProvider, CommandModule, Command)
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.#ctor*
+  name: MessageEvent
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.html#BattleBitAPI_Addons_CommandHandler_Handlers_MessageEvent__ctor_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.#ctor
+  name.vb: New
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.MessageEvent
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.New
+  nameWithType: MessageEvent.MessageEvent
+  nameWithType.vb: MessageEvent.New
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ChatChannel,System.String)
+  name: OnPlayerTypedMessage(AddonPlayer, ChatChannel, string)
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.html#BattleBitAPI_Addons_CommandHandler_Handlers_MessageEvent_OnPlayerTypedMessage_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Common_ChatChannel_System_String_
+  commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ChatChannel,System.String)
+  name.vb: OnPlayerTypedMessage(AddonPlayer, ChatChannel, String)
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ChatChannel, string)
+  fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ChatChannel, String)
+  nameWithType: MessageEvent.OnPlayerTypedMessage(AddonPlayer, ChatChannel, string)
+  nameWithType.vb: MessageEvent.OnPlayerTypedMessage(AddonPlayer, ChatChannel, String)
+- uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage*
+  name: OnPlayerTypedMessage
+  href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.html#BattleBitAPI_Addons_CommandHandler_Handlers_MessageEvent_OnPlayerTypedMessage_
+  commentId: Overload:BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage
+  nameWithType: MessageEvent.OnPlayerTypedMessage
 - uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService
   name: MessageHandlerService
   href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageHandlerService.html
@@ -1969,18 +2008,6 @@ references:
   commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnConnected
   fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnConnected
   nameWithType: EventType.OnConnected
-- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnCreatingGameServerInstance
-  name: OnCreatingGameServerInstance
-  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnCreatingGameServerInstance
-  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnCreatingGameServerInstance
-  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnCreatingGameServerInstance
-  nameWithType: EventType.OnCreatingGameServerInstance
-- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnCreatingPlayerInstance
-  name: OnCreatingPlayerInstance
-  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnCreatingPlayerInstance
-  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnCreatingPlayerInstance
-  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnCreatingPlayerInstance
-  nameWithType: EventType.OnCreatingPlayerInstance
 - uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnDisconnected
   name: OnDisconnected
   href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnDisconnected
@@ -2005,12 +2032,6 @@ references:
   commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerDisconnected
   fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerDisconnected
   nameWithType: EventType.OnGameServerDisconnected
-- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
-  name: OnGameServerReconnected
-  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameServerReconnected
-  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
-  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameServerReconnected
-  nameWithType: EventType.OnGameServerReconnected
 - uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnGameStateChanged
   name: OnGameStateChanged
   href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnGameStateChanged
@@ -2107,12 +2128,6 @@ references:
   commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerTypedMessage
   fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnPlayerTypedMessage
   nameWithType: EventType.OnPlayerTypedMessage
-- uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnReconnected
-  name: OnReconnected
-  href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnReconnected
-  commentId: F:BattleBitAPI.Addons.EventHandler.Common.EventType.OnReconnected
-  fullName: BattleBitAPI.Addons.EventHandler.Common.EventType.OnReconnected
-  nameWithType: EventType.OnReconnected
 - uid: BattleBitAPI.Addons.EventHandler.Common.EventType.OnRoundEnded
   name: OnRoundEnded
   href: documentation/BattleBitAPI.Addons.EventHandler.Common.EventType.html#BattleBitAPI_Addons_EventHandler_Common_EventType_OnRoundEnded
@@ -5706,12 +5721,15 @@ references:
   fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.New
   nameWithType: OnPlayerJoinedSquadEvent.OnPlayerJoinedSquadEvent
   nameWithType.vb: OnPlayerJoinedSquadEvent.New
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.Squads)
-  name: OnPlayerJoinedSquad(AddonPlayer, Squads)
-  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoinedSquadEvent_OnPlayerJoinedSquad_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Common_Squads_
-  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.Squads)
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.Squads)
-  nameWithType: OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(AddonPlayer, Squads)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Server.Squad{BattleBitAPI.Addons.Common.AddonPlayer})
+  name: OnPlayerJoinedSquad(AddonPlayer, Squad<AddonPlayer>)
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoinedSquadEvent_OnPlayerJoinedSquad_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Server_Squad_BattleBitAPI_Addons_Common_AddonPlayer__
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Server.Squad{BattleBitAPI.Addons.Common.AddonPlayer})
+  name.vb: OnPlayerJoinedSquad(AddonPlayer, Squad(Of AddonPlayer))
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Server.Squad<BattleBitAPI.Addons.Common.AddonPlayer>)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Server.Squad(Of BattleBitAPI.Addons.Common.AddonPlayer))
+  nameWithType: OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(AddonPlayer, Squad<AddonPlayer>)
+  nameWithType.vb: OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad(AddonPlayer, Squad(Of AddonPlayer))
 - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.OnPlayerJoinedSquad*
   name: OnPlayerJoinedSquad
   href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerJoinedSquadEvent.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerJoinedSquadEvent_OnPlayerJoinedSquad_
@@ -5960,12 +5978,15 @@ references:
   fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.New
   nameWithType: OnPlayerLeftSquadEvent.OnPlayerLeftSquadEvent
   nameWithType.vb: OnPlayerLeftSquadEvent.New
-- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.OnPlayerLeftSquad(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.Squads)
-  name: OnPlayerLeftSquad(AddonPlayer, Squads)
-  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerLeftSquadEvent_OnPlayerLeftSquad_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Common_Squads_
-  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.OnPlayerLeftSquad(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.Squads)
-  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.OnPlayerLeftSquad(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.Squads)
-  nameWithType: OnPlayerLeftSquadEvent.OnPlayerLeftSquad(AddonPlayer, Squads)
+- uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.OnPlayerLeftSquad(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Server.Squad{BattleBitAPI.Addons.Common.AddonPlayer})
+  name: OnPlayerLeftSquad(AddonPlayer, Squad<AddonPlayer>)
+  href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerLeftSquadEvent_OnPlayerLeftSquad_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Server_Squad_BattleBitAPI_Addons_Common_AddonPlayer__
+  commentId: M:BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.OnPlayerLeftSquad(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Server.Squad{BattleBitAPI.Addons.Common.AddonPlayer})
+  name.vb: OnPlayerLeftSquad(AddonPlayer, Squad(Of AddonPlayer))
+  fullName: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.OnPlayerLeftSquad(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Server.Squad<BattleBitAPI.Addons.Common.AddonPlayer>)
+  fullName.vb: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.OnPlayerLeftSquad(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Server.Squad(Of BattleBitAPI.Addons.Common.AddonPlayer))
+  nameWithType: OnPlayerLeftSquadEvent.OnPlayerLeftSquad(AddonPlayer, Squad<AddonPlayer>)
+  nameWithType.vb: OnPlayerLeftSquadEvent.OnPlayerLeftSquad(AddonPlayer, Squad(Of AddonPlayer))
 - uid: BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.OnPlayerLeftSquad*
   name: OnPlayerLeftSquad
   href: documentation/BattleBitAPI.Addons.EventHandler.Events.OnPlayerLeftSquadEvent.html#BattleBitAPI_Addons_EventHandler_Events_OnPlayerLeftSquadEvent_OnPlayerLeftSquad_

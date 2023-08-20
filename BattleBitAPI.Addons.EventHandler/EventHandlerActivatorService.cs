@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System.Net;
+using System.Reflection;
 using BattleBitAPI.Addons.Common;
 using BattleBitAPI.Addons.EventHandler.Common;
 using BattleBitAPI.Addons.EventHandler.Events;
@@ -11,7 +12,7 @@ namespace BattleBitAPI.Addons.EventHandler;
 public class EventHandlerActivatorService : IHostedService
 {
     private readonly IEnumerable<EventModule> _eventModules;
-    private readonly List<Func<AddonGameServer>> _eventGameHandlers;
+    private readonly List<Func<IPAddress, ushort, AddonGameServer>> _eventGameHandlers;
     private readonly ILogger<EventHandlerActivatorService> _logger;
     private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
 
@@ -19,7 +20,7 @@ public class EventHandlerActivatorService : IHostedService
         ServerListener<AddonPlayer, AddonGameServer> serverListener, ILogger<EventHandlerActivatorService> logger)
     {
         _eventModules = eventModules;
-        _eventGameHandlers = new List<Func<AddonGameServer>>();
+        _eventGameHandlers = new List<Func<IPAddress, ushort, AddonGameServer>>();
         _serverListener = serverListener;
         _logger = logger;
     }
@@ -57,9 +58,9 @@ public class EventHandlerActivatorService : IHostedService
                 var eventGameServer = (AddonGameServer)Activator.CreateInstance(
                     Type.GetType($"BattleBitAPI.Addons.EventHandler.Events.{@event.EventType.ToString()}Event"),
                     eventModule, @event);
-                Func<AddonGameServer> handler = () => eventGameServer;
                 if (eventGameServer is null) continue;
-                _serverListener.OnCreatingGameServerInstance += handler;
+                Func<IPAddress, ushort, AddonGameServer> handler = (_, _) => eventGameServer;
+                _serverListener.OnCreatingGameServerInstance += handler ;
                 _eventGameHandlers.Add(handler!);
             }
             catch (Exception)
@@ -104,18 +105,6 @@ public class EventHandlerActivatorService : IHostedService
                             });
                         };
                         break;
-                    case EventType.OnGameServerReconnected:
-                        _serverListener.OnGameServerReconnected += server =>
-                        {
-                            return (Task)@event.MethodInfo.Invoke(eventModule, new[]
-                            {
-                                new OnGameServerReconnectedArgs
-                                {
-                                    GameServer = server
-                                }
-                            });
-                        };
-                        break;
                     case EventType.OnGameServerDisconnected:
                         _serverListener.OnGameServerDisconnected += server =>
                         {
@@ -126,18 +115,6 @@ public class EventHandlerActivatorService : IHostedService
                                     GameServer = server
                                 }
                             });
-                        };
-                        break;
-                    case EventType.OnCreatingGameServerInstance:
-                        _serverListener.OnCreatingGameServerInstance += () =>
-                        {
-                            return (AddonGameServer)@event.MethodInfo.Invoke(eventModule, null);
-                        };
-                        break;
-                    case EventType.OnCreatingPlayerInstance:
-                        _serverListener.OnCreatingPlayerInstance += () =>
-                        {
-                            return (AddonPlayer)@event.MethodInfo.Invoke(eventModule, null);
                         };
                         break;
                 }

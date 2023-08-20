@@ -21,11 +21,6 @@ public class OnGameServerConnectedArgs
     public required GameServer<AddonPlayer> GameServer { get; init; }
 }
 
-public class OnGameServerReconnectedArgs
-{
-    public required GameServer<AddonPlayer> GameServer { get; init; }
-}
-
 public class OnGameServerDisconnectedArgs
 {
     public required GameServer<AddonPlayer> GameServer { get; init; }

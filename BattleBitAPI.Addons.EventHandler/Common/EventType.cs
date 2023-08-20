@@ -22,7 +22,6 @@ public enum EventType
     OnPlayerSpawned,
     OnPlayerSpawning,
     OnPlayerTypedMessage,
-    OnReconnected,
     OnRoundEnded,
     OnRoundStarted,
     OnSavePlayerStats,
@@ -30,8 +29,5 @@ public enum EventType
     OnGameServerConnecting,
     OnValidateGameServerToken,
     OnGameServerConnected,
-    OnGameServerReconnected,
-    OnGameServerDisconnected,
-    OnCreatingGameServerInstance,
-    OnCreatingPlayerInstance
+    OnGameServerDisconnected
 }

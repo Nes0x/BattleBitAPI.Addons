@@ -10,9 +10,9 @@ public class OnPlayerSpawningEvent : EventGameServer
     {
     }
 
-    public override Task<OnPlayerSpawnArguments> OnPlayerSpawning(AddonPlayer player, OnPlayerSpawnArguments request)
+    public override Task<OnPlayerSpawnArguments?> OnPlayerSpawning(AddonPlayer player, OnPlayerSpawnArguments request)
     {
-        return (Task<OnPlayerSpawnArguments>)Event.MethodInfo.Invoke(EventModule, new[]
+        return (Task<OnPlayerSpawnArguments?>)Event.MethodInfo.Invoke(EventModule, new[]
         {
             new OnPlayerSpawningArgs
             {
@@ -22,6 +22,8 @@ public class OnPlayerSpawningEvent : EventGameServer
             }
         });
     }
+
+
 }
 
 public class OnPlayerSpawningArgs : IPlayerArgs, IGameServerArgs

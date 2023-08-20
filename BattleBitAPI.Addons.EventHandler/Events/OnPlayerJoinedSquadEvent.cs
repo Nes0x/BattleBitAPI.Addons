@@ -1,6 +1,5 @@
 ﻿using BattleBitAPI.Addons.Common;
 using BattleBitAPI.Addons.EventHandler.Common;
-using BattleBitAPI.Common;
 using BattleBitAPI.Server;
 
 namespace BattleBitAPI.Addons.EventHandler.Events;
@@ -25,8 +24,6 @@ public class OnPlayerJoinedSquadEvent : EventGameServer
             });
         }
     }
-
-
 }
 
 public class OnPlayerJoinedSquadArgs : IPlayerArgs, IGameServerArgs

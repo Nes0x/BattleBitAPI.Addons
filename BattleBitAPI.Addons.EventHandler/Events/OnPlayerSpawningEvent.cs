@@ -22,8 +22,6 @@ public class OnPlayerSpawningEvent : EventGameServer
             }
         });
     }
-
-
 }
 
 public class OnPlayerSpawningArgs : IPlayerArgs, IGameServerArgs

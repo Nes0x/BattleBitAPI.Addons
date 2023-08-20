@@ -11,8 +11,8 @@ namespace BattleBitAPI.Addons.EventHandler;
 
 public class EventHandlerActivatorService : IHostedService
 {
-    private readonly IEnumerable<EventModule> _eventModules;
     private readonly List<Func<IPAddress, ushort, AddonGameServer>> _eventGameHandlers;
+    private readonly IEnumerable<EventModule> _eventModules;
     private readonly ILogger<EventHandlerActivatorService> _logger;
     private readonly ServerListener<AddonPlayer, AddonGameServer> _serverListener;
 
@@ -60,7 +60,7 @@ public class EventHandlerActivatorService : IHostedService
                     eventModule, @event);
                 if (eventGameServer is null) continue;
                 Func<IPAddress, ushort, AddonGameServer> handler = (_, _) => eventGameServer;
-                _serverListener.OnCreatingGameServerInstance += handler ;
+                _serverListener.OnCreatingGameServerInstance += handler;
                 _eventGameHandlers.Add(handler!);
             }
             catch (Exception)

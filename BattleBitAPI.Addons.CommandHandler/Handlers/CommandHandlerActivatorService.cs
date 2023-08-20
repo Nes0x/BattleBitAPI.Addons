@@ -45,7 +45,8 @@ public class CommandHandlerActivatorService : IHostedService
             CommandModules.Add(commandModule);
             foreach (var command in commandModule.Commands)
             {
-                Func<IPAddress, ushort, AddonGameServer> handler = (ipAddress, port) => new MessageEvent(_commandHandlerSettings, _converter,
+                Func<IPAddress, ushort, AddonGameServer> handler = (ipAddress, port) => new MessageEvent(
+                    _commandHandlerSettings, _converter,
                     _logger, _provider,
                     commandModule, command);
                 _serverListener.OnCreatingGameServerInstance += handler;

@@ -1,9 +1,12 @@
 name: Deploy and publish
 on:
   push:
-    # paths:
-    #   - 'Documentation/**.md'
-    #   - 'Documentation/**.yml'
+    paths:
+      - 'Documentation/**.md'
+      - 'Documentation/**.yml'
+      - 'BattleBitAPI.Addons.CommandHandler/**.**'
+      - 'BattleBitAPI.Addons.Common/**.**'
+      - 'BattleBitAPI.Addons.EventHandler/**.**'
   workflow_dispatch:
 
 jobs:

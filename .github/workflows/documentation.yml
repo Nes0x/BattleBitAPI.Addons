@@ -1,4 +1,4 @@
-name: Deploy and publish
+name: Deploy and publish documentation
 on:
   push:
     paths:

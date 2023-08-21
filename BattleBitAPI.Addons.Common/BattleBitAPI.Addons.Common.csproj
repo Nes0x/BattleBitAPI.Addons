@@ -6,7 +6,7 @@
         <Nullable>enable</Nullable>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Authors>Nes0x</Authors>
-        <Description>Various helper functions for unofficial battlebit libraries.</Description>
+        <Description>Various helper functions for unofficial battlebit addons.</Description>
         <PackageProjectUrl>https://github.com/Nes0x/BattleBitAPI.Addons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>

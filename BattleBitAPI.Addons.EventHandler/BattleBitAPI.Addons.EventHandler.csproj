@@ -8,7 +8,7 @@
         <Authors>Nes0x</Authors>
         <PackageProjectUrl>https://github.com/Nes0x/BattleBitAPI.Addons</PackageProjectUrl>
         <RepositoryUrl>https://github.com/Nes0x/BattleBitAPI.Addons</RepositoryUrl>
-        <Description>A unofficial library for better event handling.</Description>
+        <Description>A unofficial addons for better event handling.</Description>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <PackageTags>battlebit;battlebitapi.addons;battlebitapi.events</PackageTags>
     </PropertyGroup>

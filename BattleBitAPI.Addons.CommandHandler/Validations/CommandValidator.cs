@@ -50,7 +50,7 @@ public class CommandValidator : IValidator
             }
             catch (Exception e)
             {
-                _logger.LogError($"Checker {e.TargetSite.DeclaringType.Name} threw an exception.", e);
+                _logger.LogError("Checker {DeclaringTypeName} threw an exception", e.TargetSite.DeclaringType.Name);
                 return false;
             }
 
@@ -65,8 +65,7 @@ public class CommandValidator : IValidator
                 commandToCheck.Parameters.Length == command.Parameters.Length &&
                 !commandToCheck.Parameters.Except(command.Parameters).Any())
             {
-                _logger.LogError(
-                    $"You cannot have more commands with same name and parameters count with same types. Currently registered is {command.MethodInfo.Name}.");
+                _logger.LogError("You cannot have more commands with same name and parameters count with same types. Currently registered is {MethodInfoName}", command.MethodInfo.Name);
                 return false;
             }
 

@@ -73,11 +73,11 @@ public class CommandConverter : IConverter
             convertedType = Convert.ChangeType(value, type);
             return true;
         }
-        catch (InvalidCastException invalidCastException)
+        catch (InvalidCastException)
         {
             var typeReaders = _typeReaders.Where(tr => tr.Type == type).ToArray();
             if (typeReaders.Length == 0)
-                _logger.LogError($"Cannot convert {type.Name} type. Try add custom type reader.", invalidCastException);
+                _logger.LogError("Cannot convert {TypeName} type. Try add custom type reader", type.Name);
             else
                 foreach (var typeReader in typeReaders)
                 {
@@ -87,10 +87,10 @@ public class CommandConverter : IConverter
                         convertedType = typeReader.ChangeType(value);
                         return true;
                     }
-                    catch (Exception exception)
+                    catch (Exception e)
                     {
-                        _logger.LogError($"TypeReader {exception.TargetSite.DeclaringType.Name} threw an exception.",
-                            exception);
+                        _logger.LogError("TypeReader {Name} threw an exception",
+                            e.TargetSite.DeclaringType.Name);
                     }
                 }
         }

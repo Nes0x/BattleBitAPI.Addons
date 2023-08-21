@@ -27,7 +27,7 @@ public class MessageEvent : AddonGameServer
         _command = command;
     }
 
-    public override Task<bool> OnPlayerTypedMessage(AddonPlayer player, ChatChannel channel, string message)
+    public override Task<bool> OnPlayerTypedMessage(AddonPlayer? player, ChatChannel channel, string message)
     {
         if (!message.StartsWith(
                 $"{_commandHandlerSettings.CommandRegex.ToLower()}{_command.CommandName.ToLower()}"))
@@ -35,7 +35,7 @@ public class MessageEvent : AddonGameServer
 
         if (player is null)
         {
-            _logger.LogError("The player is null.");
+            _logger.LogError("The player is null");
             return Task.FromResult(true);
         }
 

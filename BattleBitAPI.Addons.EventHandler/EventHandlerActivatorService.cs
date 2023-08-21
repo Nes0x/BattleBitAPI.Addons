@@ -34,9 +34,8 @@ public class EventHandlerActivatorService : IHostedService
         }
         catch (Exception e)
         {
-            _logger.LogError(
-                $"Your event implementation threw an exception. Class name {e.InnerException.TargetSite.DeclaringType.Name}.",
-                e);
+            _logger.LogError("Your event implementation threw an exception. Class name {DeclaringTypeName}",
+                e.InnerException.TargetSite.DeclaringType.Name);
         }
 
         return Task.CompletedTask;

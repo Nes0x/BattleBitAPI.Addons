@@ -659,13 +659,13 @@ references:
   nameWithType: MessageEvent.MessageEvent
   nameWithType.vb: MessageEvent.New
 - uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ChatChannel,System.String)
-  name: OnPlayerTypedMessage(AddonPlayer, ChatChannel, string)
+  name: OnPlayerTypedMessage(AddonPlayer?, ChatChannel, string)
   href: documentation/BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.html#BattleBitAPI_Addons_CommandHandler_Handlers_MessageEvent_OnPlayerTypedMessage_BattleBitAPI_Addons_Common_AddonPlayer_BattleBitAPI_Common_ChatChannel_System_String_
   commentId: M:BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer,BattleBitAPI.Common.ChatChannel,System.String)
   name.vb: OnPlayerTypedMessage(AddonPlayer, ChatChannel, String)
-  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ChatChannel, string)
+  fullName: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer?, BattleBitAPI.Common.ChatChannel, string)
   fullName.vb: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage(BattleBitAPI.Addons.Common.AddonPlayer, BattleBitAPI.Common.ChatChannel, String)
-  nameWithType: MessageEvent.OnPlayerTypedMessage(AddonPlayer, ChatChannel, string)
+  nameWithType: MessageEvent.OnPlayerTypedMessage(AddonPlayer?, ChatChannel, string)
   nameWithType.vb: MessageEvent.OnPlayerTypedMessage(AddonPlayer, ChatChannel, String)
 - uid: BattleBitAPI.Addons.CommandHandler.Handlers.MessageEvent.OnPlayerTypedMessage*
   name: OnPlayerTypedMessage

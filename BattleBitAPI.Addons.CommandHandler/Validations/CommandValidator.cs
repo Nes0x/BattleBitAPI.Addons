@@ -65,7 +65,9 @@ public class CommandValidator : IValidator
                 commandToCheck.Parameters.Length == command.Parameters.Length &&
                 !commandToCheck.Parameters.Except(command.Parameters).Any())
             {
-                _logger.LogError("You cannot have more commands with same name and parameters count with same types. Currently registered is {MethodInfoName}", command.MethodInfo.Name);
+                _logger.LogError(
+                    "You cannot have more commands with same name and parameters count with same types. Currently registered is {MethodInfoName}",
+                    command.MethodInfo.Name);
                 return false;
             }
 
